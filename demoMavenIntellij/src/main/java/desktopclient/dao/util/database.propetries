@@ -1,0 +1,4 @@
+jdbc.drivers = net.sourceforge.jtds.jdbc.Driver
+jdbc.url = jdbc:jtds:sybase://aseserver:5000/privat_db;charset=UTF-8
+jdbc.userid = privat
+jdbc.password = privat

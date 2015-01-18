@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="rootScene" alignment="center" hgap="10.0" prefHeight="534.0" prefWidth="1046.0" vgap="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desktopclient.gui.main.MainWindowController">
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+    <children>
+           
+        <Label style="-fx-font: NORMAL 20 Tahoma;" text="Бюро кредитных историй" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+    
+        <TableView fx:id="tableView" prefHeight="437.0" prefWidth="1026.0" GridPane.rowIndex="3">
+            <columns>
+                <TableColumn fx:id="fioColumn" prefWidth="228.0" text="ФИО" />
+                <TableColumn fx:id="bdColumn" prefWidth="87.0" text="ДР" />
+                <TableColumn fx:id="innColumn" prefWidth="125.0" text="ИНН" />
+                <TableColumn fx:id="passportColumn" prefWidth="90.0" text="Паспорт" />
+                <TableColumn fx:id="initAmountColumn" prefWidth="75.0" text="Сумма" />
+                <TableColumn fx:id="balanceColumn" minWidth="0.0" prefWidth="73.0" text="Остаток" />
+                <TableColumn fx:id="currencyColumn" prefWidth="57.0" text="Валюта" />
+                <TableColumn fx:id="bankColumn" prefWidth="78.0" text="Банк" />
+                <TableColumn fx:id="initDateColumn" prefWidth="73.0" text="Открыт" />
+                <TableColumn fx:id="finishDateColumn" minWidth="3.0" prefWidth="69.0" text="Закрыт" />
+                <TableColumn fx:id="arrearsColumn" prefWidth="70.0" text="Просрочки" />
+            </columns>
+            <sortOrder>
+                <fx:reference source="fioColumn" />
+            </sortOrder> 
+        </TableView>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" GridPane.rowIndex="2">
+        <items>
+            <Button fx:id="newClientButton" mnemonicParsing="false" onAction="#newClientOnClick" text="Новый клиент" />
+            <HBox>
+               <children>
+                <Button fx:id="addInfoButton" mnemonicParsing="false" onAction="#addInfoOnClick" text="Добавить" />
+                  <Button fx:id="changeInfoButton" mnemonicParsing="false" onAction="#changeInfoOnClick" text="Изменить" />
+               </children>
+            </HBox>
+            <Button fx:id="findClientButton" mnemonicParsing="false" onAction="#findClientOnClick" text="Найти" />
+        </items>
+      </ToolBar>
+    </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
