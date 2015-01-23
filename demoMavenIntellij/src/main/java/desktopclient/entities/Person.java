@@ -8,6 +8,7 @@ import java.time.LocalDate;
  * @author sting
  */
 public class Person implements ISearchable {
+    private Integer id;
     private String name;
     private String surname;
     private String patronymic;
@@ -17,9 +18,11 @@ public class Person implements ISearchable {
     private String passSerial;
 
 
+    /*public Person() {
+        this(0, "", "", "", null, "", "", "");
+    }*/
+
     public Person() {
-        this("", "", "", null, "", "", "");
-        
     }
 
     /**
@@ -32,9 +35,9 @@ public class Person implements ISearchable {
      * @param passNumber номер паспорта
      * @param passSerial серия паспорта
      */
-    public Person(String name, String surname, String patronymic,
+    public Person(Integer id, String name, String surname, String patronymic,
                   LocalDate birthday, String inn, String passNumber, String passSerial) {
-        super();
+        this.id = id;
         this.name = name;
         this.surname = surname;
         this.patronymic = patronymic;
@@ -42,6 +45,14 @@ public class Person implements ISearchable {
         this.inn = inn;
         this.passNumber = passNumber;
         this.passSerial = passSerial;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getName() {

@@ -1,5 +1,9 @@
 package desktopclient;
 
+import desktopclient.bussines.SimpleServiceFactory;
+import desktopclient.dao.IBkiDao;
+import desktopclient.dao.JdbcDao;
+import desktopclient.gui.main.MainModel;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
@@ -9,19 +13,13 @@ import javafx.stage.Stage;
 
 
 public class MainApp extends Application {
-
+    private IBkiDao dapType;
+    private MainModel mainModel;
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/MainScene.fxml"));
-        
-        Scene scene = new Scene(root);
-        scene.getStylesheets().add("/styles/Styles.css");
-        
-        stage.setTitle("JavaFX and Maven");
-        stage.setScene(scene);
-        stage.setResizable(false);
-        stage.show();
-        stage.setOnCloseRequest(event -> Platform.exit());
+        dapType = new JdbcDao();
+        mainModel = new MainModel(new SimpleServiceFactory(dapType));
+        mainModel.callMainWindow(stage);
     }
 
     public static void main(String[] args) {

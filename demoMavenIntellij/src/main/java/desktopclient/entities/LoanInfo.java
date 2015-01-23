@@ -5,8 +5,6 @@
  */
 package desktopclient.entities;
 
-import javafx.beans.property.*;
-
 import java.time.LocalDate;
 
 /**
@@ -14,106 +12,120 @@ import java.time.LocalDate;
  * @author sting
  */
 public class LoanInfo implements ISearchable{
-    private DoubleProperty initAmount;
-    private ObjectProperty<LocalDate> initDate;
-    private ObjectProperty<LocalDate> finishDate;
-    private DoubleProperty balance;
-    private BooleanProperty arrears;
-    private StringProperty bank;
-    private StringProperty currency;
-    private ObjectProperty<Person> person;
+    private Integer id;
+    private Double initAmount;
+    private LocalDate initDate;
+    private LocalDate finishDate;
+    private Double balance;
+    private Boolean arrears;
+    private String bank;
+    private String currency;
+    private Person person;
+
+    /*public LoanInfo() {
+        this(0, 0d, null, null, 0d, false, "", "", null);
+    }*/
 
     public LoanInfo() {
-        this(0d, null, null, 0d, false, "", "", null);
     }
-    
-    
 
-    public LoanInfo(Double initAmount, LocalDate initDate, LocalDate finishDate, Double balance, Boolean arrears, String bank, String currency, Person person) {
-        this.initAmount = new SimpleDoubleProperty(initAmount);
-        this.initDate = new SimpleObjectProperty<>(initDate);
-        this.finishDate = new SimpleObjectProperty<>(finishDate);
-        this.balance = new SimpleDoubleProperty(balance);
-        this.arrears = new SimpleBooleanProperty(arrears);
-        this.bank = new SimpleStringProperty(bank);
-        this.currency = new SimpleStringProperty(currency);
-        this.person = new SimpleObjectProperty<>(person);
+    public LoanInfo(Integer id, Double initAmount, LocalDate initDate, LocalDate finishDate, Double balance, Boolean arrears, String bank, String currency, Person person) {
+        this.id = id;
+        this.initAmount = initAmount;
+        this.initDate = initDate;
+        this.finishDate = finishDate;
+        this.balance = balance;
+        this.arrears = arrears;
+        this.bank = bank;
+        this.currency = currency;
+        this.person = person;
+    }
+
+    @Override
+    public Integer getId() {
+        return id;
+    }
+
+    @Override
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public Double getInitAmount() {
-        return initAmount.getValue();
+        return initAmount;
     }
 
     public void setInitAmount(Double initAmount) {
-        this.initAmount.setValue(initAmount);
+        this.initAmount = initAmount;
     }
 
     public LocalDate getInitDate() {
-        return initDate.getValue();
+        return initDate;
     }
 
     public void setInitDate(LocalDate initDate) {
-        this.initDate.setValue(initDate);
+        this.initDate = initDate;
     }
 
     public LocalDate getFinishDate() {
-        return finishDate.getValue();
+        return finishDate;
     }
 
     public void setFinishDate(LocalDate finishDate) {
-        this.finishDate.setValue(finishDate);
+        this.finishDate = finishDate;
     }
 
     public Double getBalance() {
-        return balance.getValue();
+        return balance;
     }
 
     public void setBalance(Double balance) {
-        this.balance.setValue(balance);
+        this.balance = balance;
     }
 
     public Boolean getArrears() {
-        return arrears.getValue();
+        return arrears;
     }
 
     public void setArrears(Boolean arrears) {
-        this.arrears.setValue(arrears);
+        this.arrears = arrears;
     }
 
     public String getBank() {
-        return bank.getValue();
+        return bank;
     }
 
     public void setBank(String bank) {
-        this.bank.setValue(bank);
+        this.bank = bank;
     }
 
     public String getCurrency() {
-        return currency.getValue();
+        return currency;
     }
 
     public void setCurrency(String currency) {
-        this.currency.setValue(currency);
+        this.currency = currency;
     }
 
     public Person getPerson() {
-        return person.getValue();
+        return person;
     }
 
     public void setPerson(Person person) {
-        this.person.setValue(person);
+        this.person = person;
     }
 
     @Override
     public String toString() {
         return "LoanInfo{" +
-                "initAmount=" + initAmount +
+                "id=" + id +
+                ", initAmount=" + initAmount +
                 ", initDate=" + initDate +
                 ", finishDate=" + finishDate +
                 ", balance=" + balance +
                 ", arrears=" + arrears +
-                ", bank=" + bank +
-                ", currency=" + currency +
+                ", bank='" + bank + '\'' +
+                ", currency='" + currency + '\'' +
                 ", person=" + person +
                 '}';
     }

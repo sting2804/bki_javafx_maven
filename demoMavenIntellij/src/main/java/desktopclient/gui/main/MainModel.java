@@ -1,12 +1,15 @@
 package desktopclient.gui.main;
 
-import desktopclient.dao.ClientDao;
+import desktopclient.bussines.ILoanInfoService;
+import desktopclient.bussines.IPersonService;
+import desktopclient.bussines.IServiceFactory;
 import desktopclient.entities.ISearchable;
+import desktopclient.entities.LoanInfo;
+import desktopclient.entities.Person;
 import desktopclient.gui.changeclient.ChangeInfoWindowController;
 import desktopclient.gui.newclient.NewClientWindowController;
 import desktopclient.gui.searchuser.ClientSearchWindowController;
-import desktopclient.entities.LoanInfo;
-import desktopclient.entities.Person;
+import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
@@ -14,34 +17,80 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 
 /**
- * Created by sting on 10/29/14.
+ * Класс для связи контроллера главного окна с остальными окнами,
+ * включает обработку некоторых событий по открытию новых окон и передаче туда неких данных
  */
 public class MainModel {
 
-    private Person person;
+    /**
+     * ncController контроллер окна создания нового клиента
+     * csController контроллер окна писка клиента
+     * ciController контроллен окна изменения и добавления информации клиенту
+     * mwController контроллер главного окна
+     */
     private NewClientWindowController ncController;
     private ClientSearchWindowController csController;
     private ChangeInfoWindowController ciController;
-    private ClientDao dao;
+    private MainWindowController mwController;
+    /**
+     * loanInfoService объект для связи с кредитной частью дао
+     * personService объект для связи с пользовательской частью дао
+     * serviceFactory объект для получения конкретной реализации кредитных и клиентских сервисов
+     */
+    private ILoanInfoService loanInfoService;
+    private IPersonService personService;
+    private IServiceFactory serviceFactory;
 
     public MainModel() {
+    }
+
+    public MainModel( IServiceFactory serviceFactory) {
+        this.serviceFactory = serviceFactory;
         initComponents();
     }
 
     private void initComponents() {
-        dao = new ClientDao();
+        loanInfoService = serviceFactory.createLoanService();
+        personService = serviceFactory.createPersonService();
     }
 
-    public ArrayList<LoanInfo> getAllRecords(){
-        return dao.getAllRecords();
+    /**
+     * callMainWindow() вызывается из загрузчика для откытия окна
+     */
+    public void callMainWindow(Stage primaryStage){
+        Scene scene = null;
+        FXMLLoader  root;
+        root = new FXMLLoader(getClass().getResource("/fxml/MainScene.fxml"));
+        try {
+             scene = new Scene(root.load());
+            primaryStage.setScene(scene);
+        } catch (IOException ex) {
+            Logger.getLogger(MainModel.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        mwController = root.<MainWindowController>getController();
+        mwController.setMainModel(this);
+        scene.getStylesheets().add("/styles/Styles.css");
+        primaryStage.setTitle("BKI on JavaFX and Maven");
+        primaryStage.setScene(scene);
+        primaryStage.setResizable(false);
+        primaryStage.show();
+        primaryStage.setOnCloseRequest(event -> Platform.exit());
     }
 
+    public List<LoanInfo> getAllRecords(){
+        return loanInfoService.listAll();
+    }
+
+    /**
+     * callSearchWindow() открывает окно поиска
+     * @throws NullPointerException выбрасывает в случае не установки ни одного поля для поиска
+     */
     public void callSearchWindow() throws NullPointerException {
         Stage primaryStage = new Stage();
         FXMLLoader  root;
@@ -62,7 +111,11 @@ public class MainModel {
         }
         //что-то сделать с объектом
     }
-    
+
+    /**
+     * callAddClientWindow() открывает окно создания нового клиента
+     * @throws NullPointerException
+     */
     public void callAddClientWindow() throws NullPointerException {
         Stage primaryStage = new Stage();
         FXMLLoader  root;
@@ -84,8 +137,12 @@ public class MainModel {
         //что-то сделать с объектом
     }
 
-    //вызов окна изменения информации о кредите клиента
-    void callChangeClientWindow(ISearchable curInfo) throws Exception {
+    /**
+     * callChangeClientWindow() открывает окно добавления и изменения информации о кредитах выбранного клиента
+     * @param curInfo выбранная сущность из таблицы
+     * @throws Exception
+     */
+    public void callChangeClientWindow(ISearchable curInfo) throws Exception {
         final Stage primaryStage = new Stage();
         FXMLLoader root;
         primaryStage.initModality(Modality.APPLICATION_MODAL);
@@ -113,7 +170,7 @@ public class MainModel {
         }
         else {
             //что-то сделать с обёектом
-            dao.changeLoanInfo((LoanInfo) curInfo, newInfo);
+            loanInfoService.modify(newInfo);
         }
     }
 }

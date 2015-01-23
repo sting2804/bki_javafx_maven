@@ -12,19 +12,20 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.List;
 
 
 /**
  * Created by sting
  */
-public class ClientDao {
+public class JdbcDao implements IBkiDao {
     IConnectionFactory connectionFactory;
     Connection connection;
-    private ArrayList <String> columnNames;
-    private ArrayList <LoanInfo> data;
+    private List <String> columnNames;
+    private List<LoanInfo> data;
     private int columnCount;
 
-    public ClientDao() {
+    public JdbcDao() {
         this.data = new ArrayList<>();
         connectionFactory = new SimpleConnectionFactory();
         try {
@@ -35,7 +36,12 @@ public class ClientDao {
         }
     }
 
-    public ArrayList<LoanInfo> getAllRecords(){
+    /**
+     * метод для получения всех записей из базы
+     * @return
+     */
+    @Override
+    public List<LoanInfo> getAllRecords(){
         String query = "select * from client_info_view";
         try (PreparedStatement ps = connection.prepareStatement(query)) {
             try (ResultSet answer = ps.executeQuery()){
@@ -74,20 +80,18 @@ public class ClientDao {
         }
         return data;
     }
-
+    @Override
     public boolean isClientExists(Person person) {
-        /*String query = "select * from client_info_view where (name=? and surname=? and patronymic=? and birthday=?) or "+
-                " inn=? or  (pass_serial=? and pass_number=?)";*/
-        String query = "select * from client_info_view where (name=? /*and surname=? and patronymic=? and birthday=?*/)";
+        String query = "select * from client_info_view where (name=? and surname=? and patronymic=? and birthday=?) or "+
+                " inn=? or  (pass_serial=? and pass_number=?)";
         try (PreparedStatement ps = connection.prepareStatement(query)) {
-            //ps.setString(1, "11");
             ps.setString(1, person.getName());
-            /*ps.setString(2, "'"+person.getSurname()+"'");
-            ps.setString(3, "'"+person.getPatronymic()+"'");
+            ps.setString(2, person.getSurname());
+            ps.setString(3, person.getPatronymic());
             ps.setString(4, person.getBirthday().toString());
-            ps.setString(5, "'"+person.getInn()+"'");
-            ps.setString(6, "'"+person.getPassSerial()+"'");
-            ps.setString(7, "'"+person.getPassNumber()+"'");*/
+            ps.setString(5, person.getInn());
+            ps.setString(6, person.getPassSerial());
+            ps.setString(7, person.getPassNumber());
             try (ResultSet answer = ps.executeQuery()){
                 System.out.println(Charset.defaultCharset());
                 if (answer.next()) return true;
@@ -99,19 +103,22 @@ public class ClientDao {
         return false;
     }
 
-    public boolean addNewClient() {
+    @Override
+    public boolean addNewPerson(Person person) {
         return false;
     }
 
-    public boolean changeLoanInfo(LoanInfo curInfo, LoanInfo newInfo) {
+    @Override
+    public boolean addNewInfo(LoanInfo info) {
         return false;
     }
 
-    private String switchMethod(Person person, int searchType, String query){
-
-        return "";
+    @Override
+    public boolean changeInfo(LoanInfo curInfo) {
+        return false;
     }
-    public ArrayList<LoanInfo> getClientInfo(Person person) {
+    @Override
+    public List<LoanInfo> getPersonInfo(Person person) {
         if (!isClientExists(person)) return null;
         String query = "select name, surname, patronymic, birthday, pass_serial, pass_number "+
             "init_amount, init_date, finish_date, balance, arrears, bank, currency "+
@@ -133,22 +140,11 @@ public class ClientDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
-        //jdbcTemplate = new JdbcTemplate(dataSource);
-        //SqlRowSet rowSet = jdbcTemplate.queryForRowSet(query);
-        //SqlRowSetMetaData metaData = rowSet.getMetaData();
-        //columnCount = metaData.getColumnCount();
-        //columnNames = new ArrayList(columnCount);
-        for (int i = 1; i <= columnCount; i++) {
-            //columnNames.add(metaData.getColumnName(i));
-        }
-        //while (rowSet.next()) {
-         //   ArrayList row = new ArrayList(columnCount);
-         //   for (int i = 1; i <= columnCount; i++) {
-                //row.add(rowSet.getString(i));
-         //   }
-            //data.add(row);
-       // }
         return data;
+    }
+
+    @Override
+    public boolean deletePerson(int personId) {
+        return false;
     }
 }

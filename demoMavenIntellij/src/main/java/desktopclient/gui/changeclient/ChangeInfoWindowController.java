@@ -199,7 +199,7 @@ public class ChangeInfoWindowController implements  Initializable, IMyController
             System.out.println("fsyo ploho\n CIWC setSomeObject");
     }
     @Override
-    public Person getPerson() {
+    public Person getSearchableObject() {
         return person;
     }
     public LoanInfo getSearchInfo(){

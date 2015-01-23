@@ -14,8 +14,6 @@ import javafx.util.Callback;
 
 import java.net.URL;
 import java.sql.Date;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.ResourceBundle;
 
 /**
@@ -64,11 +62,16 @@ public class MainWindowController implements Initializable {
     public MainWindowController() {
     }
 
+    public void setMainModel(MainModel mainModel){
+        this.mainModel=mainModel;
+        personsList.addAll(mainModel.getAllRecords());
+    }
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        mainModel = new MainModel();
+        //mainModel = new MainModel();
         setPropertyValueFactory();
-        personsList.addAll(mainModel.getAllRecords());
+
     }
 
     @FXML

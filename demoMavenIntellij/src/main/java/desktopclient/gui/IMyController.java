@@ -8,5 +8,5 @@ import desktopclient.entities.Person;
  */
 public interface IMyController {
     void setSomeObject(ISearchable searchable);
-    Person getPerson();
+    ISearchable getSearchableObject();
 }
