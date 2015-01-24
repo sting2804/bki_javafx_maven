@@ -14,6 +14,7 @@ import javafx.util.Callback;
 
 import java.net.URL;
 import java.sql.Date;
+import java.util.List;
 import java.util.ResourceBundle;
 
 /**
@@ -69,7 +70,6 @@ public class MainWindowController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        //mainModel = new MainModel();
         setPropertyValueFactory();
 
     }
@@ -184,6 +184,8 @@ public class MainWindowController implements Initializable {
     public void findClientOnClick(ActionEvent actionEvent) {
         try {
             mainModel.callSearchWindow();
+            personsList.removeAll(personsList);
+            personsList.addAll(mainModel.getFoundInfo());
         } catch (Exception e) {
             e.printStackTrace();
         }

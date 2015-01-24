@@ -81,21 +81,25 @@ public class ClientSearchWindowController implements Initializable {
         state = methodComboBox.getSelectionModel().getSelectedIndex();
         switch (state){
             case 0:
+                clearForms();
                 byINNGridPane.setVisible(false);
                 byPassportGridPane.setVisible(false);
                 byFIOGridPane.setVisible(true);
                 break;
             case 1:
+                clearForms();
                 byINNGridPane.setVisible(true);
                 byPassportGridPane.setVisible(false);
                 byFIOGridPane.setVisible(false);
                 break;
             case 2:
+                clearForms();
                 byINNGridPane.setVisible(false);
                 byPassportGridPane.setVisible(true);
                 byFIOGridPane.setVisible(false);
                 break;
             default:
+                clearForms();
                 byINNGridPane.setVisible(false);
                 byPassportGridPane.setVisible(false);
                 byFIOGridPane.setVisible(true);
@@ -119,6 +123,15 @@ public class ClientSearchWindowController implements Initializable {
         methodComboBox.getSelectionModel().selectFirst();
     }
 
+    private void clearForms(){
+        surnameSearchTextField.clear();
+        nameSearchTextField.clear();
+        patrinymicSearchTextField.clear();
+        birthdaySearchDatePicker.setValue(null);
+        passportSerialTextField.clear();
+        passportNumberTextField.clear();
+        innTextField.clear();
+    }
 
     public Person getSearchablePerson() {
         return person;

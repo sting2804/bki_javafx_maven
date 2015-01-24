@@ -2,9 +2,7 @@
 package desktopclient.gui.changeclient;
 
 
-import desktopclient.entities.ISearchable;
-import desktopclient.entities.LoanInfo;
-import desktopclient.entities.Person;
+import desktopclient.entities.*;
 import desktopclient.gui.IMyController;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -24,6 +22,7 @@ import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.Iterator;
+import java.util.List;
 import java.util.ResourceBundle;
 
 /**
@@ -58,6 +57,7 @@ public class ChangeInfoWindowController implements  Initializable, IMyController
     private LoanInfo searchInfo;
 
     public ChangeInfoWindowController(){
+
     }
 
     @FXML
@@ -113,17 +113,6 @@ public class ChangeInfoWindowController implements  Initializable, IMyController
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        //будут тянуться из базы
-        ObservableList<String> curitms = FXCollections.observableArrayList();
-        curitms.add("UAH");
-        curitms.add("USD");
-        curitms.add("RUB");
-        currencyComboBox.setItems(curitms);
-        ObservableList<String> bitms = FXCollections.observableArrayList();
-        bitms.add("privat");
-        bitms.add("aval");
-        bitms.add("uksib");
-        bankComboBox.setItems(bitms);
         setDatePickerFormat(birthdayDatePicker);
         setDatePickerFormat(initdateDatePicker);
         setDatePickerFormat(finishdateDatePicker);
@@ -204,6 +193,20 @@ public class ChangeInfoWindowController implements  Initializable, IMyController
     }
     public LoanInfo getSearchInfo(){
         return searchInfo;
+    }
+
+    public void setCurrencyList(List<Currency> currencyList) {
+        ObservableList<String> curitms = FXCollections.observableArrayList();
+        for(Currency c:currencyList)
+            curitms.add(c.getCurrencyCode());
+        currencyComboBox.setItems(curitms);
+    }
+
+    public void setBankList(List<Bank> bankList) {
+        ObservableList<String> bitms = FXCollections.observableArrayList();
+        for(Bank b:bankList)
+            bitms.add(b.getBankName());
+        bankComboBox.setItems(bitms);
     }
 }
 

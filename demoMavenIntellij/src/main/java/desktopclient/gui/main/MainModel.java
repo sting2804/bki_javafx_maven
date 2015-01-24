@@ -3,9 +3,7 @@ package desktopclient.gui.main;
 import desktopclient.bussines.ILoanInfoService;
 import desktopclient.bussines.IPersonService;
 import desktopclient.bussines.IServiceFactory;
-import desktopclient.entities.ISearchable;
-import desktopclient.entities.LoanInfo;
-import desktopclient.entities.Person;
+import desktopclient.entities.*;
 import desktopclient.gui.changeclient.ChangeInfoWindowController;
 import desktopclient.gui.newclient.NewClientWindowController;
 import desktopclient.gui.searchuser.ClientSearchWindowController;
@@ -46,6 +44,10 @@ public class MainModel {
     private ILoanInfoService loanInfoService;
     private IPersonService personService;
     private IServiceFactory serviceFactory;
+    /**
+     * foundInfo хранит информацию об искомом клиенте
+     */
+    private List <LoanInfo> foundInfo;
 
     public MainModel() {
     }
@@ -109,7 +111,7 @@ public class MainModel {
         if(searchPerson == null){
             throw new NullPointerException();
         }
-        //что-то сделать с объектом
+        foundInfo = loanInfoService.listSpecificInfo(searchPerson);
     }
 
     /**
@@ -154,6 +156,8 @@ public class MainModel {
         }
         //передача информации в контроллер 
         ciController = root.<ChangeInfoWindowController>getController();
+        ciController.setCurrencyList(getCurrencyList());
+        ciController.setBankList(getBankList());
         ciController.setSomeObject(curInfo);
         primaryStage.setOnCloseRequest(event -> primaryStage.close());
         primaryStage.setResizable(false);
@@ -172,5 +176,16 @@ public class MainModel {
             //что-то сделать с обёектом
             loanInfoService.modify(newInfo);
         }
+    }
+
+
+    public List<LoanInfo> getFoundInfo() {
+        return foundInfo;
+    }
+    public List<Currency> getCurrencyList(){
+        return loanInfoService.listCurrencies();
+    }
+    public List<Bank> getBankList(){
+        return loanInfoService.listBanks();
     }
 }
