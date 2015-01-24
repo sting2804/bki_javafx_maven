@@ -1,6 +1,8 @@
 package desktopclient.entities;
 
 
+import javafx.beans.property.*;
+
 import java.time.LocalDate;
 
 /**
@@ -8,14 +10,16 @@ import java.time.LocalDate;
  * @author sting
  */
 public class Person implements ISearchable {
-    private Integer id;
-    private String name;
-    private String surname;
-    private String patronymic;
-    private LocalDate birthday;
-    private String inn;
-    private String passNumber;
-    private String passSerial;
+    private IntegerProperty id;
+    private StringProperty name;
+    private StringProperty surname;
+    private StringProperty patronymic;
+    private ObjectProperty<LocalDate> birthday;
+    private StringProperty inn;
+    private StringProperty passNumber;
+    private StringProperty passSerial;
+    //private StringProperty fio;
+    //private StringProperty passport;
 
 
     /*public Person() {
@@ -23,8 +27,15 @@ public class Person implements ISearchable {
     }*/
 
     public Person() {
+        id = new SimpleIntegerProperty();
+        name = new SimpleStringProperty();
+        surname = new SimpleStringProperty();
+        patronymic = new SimpleStringProperty();
+        inn = new SimpleStringProperty();
+        passNumber = new SimpleStringProperty();
+        passSerial = new SimpleStringProperty();
+        birthday = new SimpleObjectProperty<>();
     }
-
     /**
      *
      * @param name имя клиента
@@ -35,8 +46,9 @@ public class Person implements ISearchable {
      * @param passNumber номер паспорта
      * @param passSerial серия паспорта
      */
-    public Person(Integer id, String name, String surname, String patronymic,
-                  LocalDate birthday, String inn, String passNumber, String passSerial) {
+    public Person(IntegerProperty id, StringProperty name, StringProperty surname,
+                  StringProperty patronymic, ObjectProperty<LocalDate> birthday,
+                  StringProperty inn, StringProperty passNumber, StringProperty passSerial) {
         this.id = id;
         this.name = name;
         this.surname = surname;
@@ -47,68 +59,103 @@ public class Person implements ISearchable {
         this.passSerial = passSerial;
     }
 
+    @Override
     public Integer getId() {
+        return id.get();
+    }
+
+
+    public IntegerProperty idProperty() {
         return id;
     }
 
+    @Override
     public void setId(Integer id) {
-        this.id = id;
+        this.id.set(id);
     }
 
     public String getName() {
+        return name.get();
+    }
+
+    public StringProperty nameProperty() {
         return name;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.name.set(name);
     }
 
     public String getSurname() {
+        return surname.get();
+    }
+
+    public StringProperty surnameProperty() {
         return surname;
     }
 
     public void setSurname(String surname) {
-        this.surname = surname;
+        this.surname.set(surname);
     }
 
     public String getPatronymic() {
+        return patronymic.get();
+    }
+
+    public StringProperty patronymicProperty() {
         return patronymic;
     }
 
     public void setPatronymic(String patronymic) {
-        this.patronymic = patronymic;
+        this.patronymic.set(patronymic);
     }
 
     public LocalDate getBirthday() {
+        return birthday.get();
+    }
+
+    public ObjectProperty<LocalDate> birthdayProperty() {
         return birthday;
     }
 
     public void setBirthday(LocalDate birthday) {
-        this.birthday = birthday;
+        this.birthday.set(birthday);
     }
 
     public String getInn() {
+        return inn.get();
+    }
+
+    public StringProperty innProperty() {
         return inn;
     }
 
     public void setInn(String inn) {
-        this.inn = inn;
+        this.inn.set(inn);
     }
 
     public String getPassNumber() {
+        return passNumber.get();
+    }
+
+    public StringProperty passNumberProperty() {
         return passNumber;
     }
 
     public void setPassNumber(String passNumber) {
-        this.passNumber = passNumber;
+        this.passNumber.set(passNumber);
     }
 
     public String getPassSerial() {
+        return passSerial.get();
+    }
+
+    public StringProperty passSerialProperty() {
         return passSerial;
     }
 
     public void setPassSerial(String passSerial) {
-        this.passSerial = passSerial;
+        this.passSerial.set(passSerial);
     }
 
     @Override

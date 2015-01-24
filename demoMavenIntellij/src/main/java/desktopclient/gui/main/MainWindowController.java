@@ -14,7 +14,6 @@ import javafx.util.Callback;
 
 import java.net.URL;
 import java.sql.Date;
-import java.util.List;
 import java.util.ResourceBundle;
 
 /**
@@ -26,11 +25,14 @@ public class MainWindowController implements Initializable {
     public Button newClientButton;
     public Button changeInfoButton;
     public Button addInfoButton;
-    private ObservableList<LoanInfo> personsList = FXCollections.observableArrayList();
+
+    private ObservableList<LoanInfo> infoList;
+    //private ObservableList<Person> personList = FXCollections.observableArrayList();
+
     @FXML
     public TableView tableView;
     @FXML
-    public TableColumn <LoanInfo, Person>fioColumn;
+    public TableColumn<LoanInfo, Person> fioColumn;
     @FXML
     public TableColumn<LoanInfo, Person> bdColumn;
     @FXML
@@ -61,17 +63,17 @@ public class MainWindowController implements Initializable {
     private MainModel mainModel;
 
     public MainWindowController() {
+        infoList = FXCollections.observableArrayList();
     }
 
     public void setMainModel(MainModel mainModel){
         this.mainModel=mainModel;
-        personsList.addAll(mainModel.getAllRecords());
+        infoList.addAll(mainModel.getAllRecords());
     }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         setPropertyValueFactory();
-
     }
 
     @FXML
@@ -85,7 +87,7 @@ public class MainWindowController implements Initializable {
 
 
     private void setPropertyValueFactory() {
-        fioColumn.setCellValueFactory(new PropertyValueFactory<>("person"));
+        fioColumn.setCellValueFactory(new PropertyValueFactory<LoanInfo, Person>("person"));
         fioColumn.setCellFactory(new Callback<TableColumn<LoanInfo, Person>, TableCell<LoanInfo, Person>>() {
             @Override
             public TableCell<LoanInfo, Person> call(TableColumn<LoanInfo, Person> param) {
@@ -93,6 +95,7 @@ public class MainWindowController implements Initializable {
 
                     @Override
                     protected void updateItem(Person item, boolean empty) {
+                        setGraphic(null);
                         if (item != null) {
                             Label fioLabel = new Label(item.getSurname().concat(" ").concat(item.getName()).concat(" ").concat(item.getPatronymic()));
                             setGraphic(fioLabel);
@@ -111,6 +114,7 @@ public class MainWindowController implements Initializable {
 
                     @Override
                     protected void updateItem(Person item, boolean empty) {
+                        setGraphic(null);
                         if (item != null) {
                             Label bdLabel = new Label(item.getBirthday().toString());
                             setGraphic(bdLabel);
@@ -129,6 +133,7 @@ public class MainWindowController implements Initializable {
 
                     @Override
                     protected void updateItem(Person item, boolean empty) {
+                        setGraphic(null);
                         if (item != null) {
                             Label innLabel = new Label(item.getInn());
                             setGraphic(innLabel);
@@ -147,6 +152,7 @@ public class MainWindowController implements Initializable {
 
                     @Override
                     protected void updateItem(Person item, boolean empty) {
+                        setGraphic(null);
                         if (item != null) {
                             Label passportLabel = new Label(item.getPassSerial().concat(" ").concat(item.getPassNumber()));
                             setGraphic(passportLabel);
@@ -157,6 +163,10 @@ public class MainWindowController implements Initializable {
                 return passportCell;
             }
         });
+        /*fioColumn.setCellValueFactory(new PropertyValueFactory<>("fio"));
+        bdColumn.setCellValueFactory(new PropertyValueFactory<>("birthday"));
+        innColumn.setCellValueFactory(new PropertyValueFactory<>("inn"));
+        passportColumn.setCellValueFactory(new PropertyValueFactory<>("passport"));*/
         initAmountColumn.setCellValueFactory(new PropertyValueFactory<>("initAmount"));
         initDateColumn.setCellValueFactory(new PropertyValueFactory<>("initDate"));
         finishDateColumn.setCellValueFactory(new PropertyValueFactory<>("finishDate"));
@@ -164,7 +174,22 @@ public class MainWindowController implements Initializable {
         arrearsColumn.setCellValueFactory(new PropertyValueFactory<>("arrears"));
         bankColumn.setCellValueFactory(new PropertyValueFactory<>("bank"));
         currencyColumn.setCellValueFactory(new PropertyValueFactory<>("currency"));
-        tableView.setItems(personsList);
+        tableView.setItems(infoList);
+        //tableView.setItems(personList);
+    }
+
+    private void setTableViewCellFactory(TableView tableView){
+        tableView.getColumns().add(fioColumn);
+        tableView.getColumns().add(bdColumn);
+        tableView.getColumns().add(innColumn);
+        tableView.getColumns().add(passportColumn);
+        tableView.getColumns().add(initAmountColumn);
+        tableView.getColumns().add(initDateColumn);
+        tableView.getColumns().add(finishDateColumn);
+        tableView.getColumns().add(balanceColumn);
+        tableView.getColumns().add(arrearsColumn);
+        tableView.getColumns().add(bankColumn);
+        tableView.getColumns().add(currencyColumn);
     }
 
     @FXML
@@ -173,7 +198,7 @@ public class MainWindowController implements Initializable {
         if (tableView.getSelectionModel().getSelectedItem() != null) {
                   curRow = tableView.getSelectionModel().getSelectedIndex();
         }
-        LoanInfo curInfo = personsList.get(curRow);
+        LoanInfo curInfo = infoList.get(curRow);
         try {
             mainModel.callChangeClientWindow(curInfo);
         } catch (Exception e) {
@@ -184,19 +209,30 @@ public class MainWindowController implements Initializable {
     public void findClientOnClick(ActionEvent actionEvent) {
         try {
             mainModel.callSearchWindow();
-            personsList.removeAll(personsList);
-            personsList.addAll(mainModel.getFoundInfo());
+            refreshTable(tableView);
+            infoList.addAll(mainModel.getFoundInfo());
+            tableView.setItems(infoList);
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
+    /**
+     * сброс записей таблицы
+     * @param tableView
+     */
+    private void refreshTable(TableView tableView) {
+        infoList = FXCollections.observableArrayList();
+        tableView.setItems(infoList);
+    }
+
     @FXML
     public void addInfoOnClick(ActionEvent actionEvent) {
         int curRow=-1;
         if (tableView.getSelectionModel().getSelectedItem() != null) {
             curRow = tableView.getSelectionModel().getSelectedIndex();
         }
-        Person curInfo = personsList.get(curRow).getPerson();
+        Person curInfo = infoList.get(curRow).getPerson();
         try {
             mainModel.callChangeClientWindow(curInfo);
         } catch (Exception e) {
@@ -210,7 +246,7 @@ public class MainWindowController implements Initializable {
         if (tableView.getSelectionModel().getSelectedItem() != null) {
             curRow = tableView.getSelectionModel().getSelectedIndex();
         }
-        LoanInfo curInfo = personsList.get(curRow);
+        LoanInfo curInfo = infoList.get(curRow);
         try {
             mainModel.callChangeClientWindow(curInfo);
         } catch (Exception e) {

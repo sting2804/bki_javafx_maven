@@ -47,7 +47,7 @@ public class JdbcDao implements IBkiDao {
      */
     @Override
     public List<LoanInfo> getAllRecords(){
-        data.clear();
+        data.removeAll(data);
         String query = "select * from client_info_view";
         try (PreparedStatement ps = connection.prepareStatement(query)) {
             try (ResultSet answer = ps.executeQuery()){
@@ -132,7 +132,7 @@ public class JdbcDao implements IBkiDao {
     @Override
     public List<LoanInfo> getPersonInfo(Person person) {
         if (!isClientExists(person)) return null;
-        data.clear();
+        data.removeAll(data);
         String query = "select name, surname, patronymic, birthday, inn, pass_serial, pass_number, "+
             "init_amount, init_date, finish_date, balance, arrears, bank, currency, client_id, loan_id "+
             "from client_info_view where (name=? and surname=? and patronymic=? and birthday =?) "+
@@ -144,7 +144,7 @@ public class JdbcDao implements IBkiDao {
             try {
                 ps.setString(4, person.getBirthday().toString());
             }catch (Exception e){
-                ps.setString(4, "");
+                ps.setString(4, null);
             }
             ps.setString(5, person.getInn());
             ps.setString(6, person.getPassSerial());

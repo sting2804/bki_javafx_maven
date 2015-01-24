@@ -2,31 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12470f34-a38c-4d60-9aba-82e68dbd6f02" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/changeclient/ChangeInfoWindowController.class" afterPath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/changeclient/ChangeInfoWindowController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/IMyController.class" afterPath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/IMyController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/entities/ISearchable.class" afterPath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/entities/ISearchable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/entities/LoanInfo.class" afterPath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/entities/LoanInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/main/MainModel.class" afterPath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/main/MainModel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/main/MainWindowController$1$1.class" afterPath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/main/MainWindowController$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/main/MainWindowController$1.class" afterPath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/main/MainWindowController$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/main/MainWindowController$2$1.class" afterPath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/main/MainWindowController$2$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/main/MainWindowController$2.class" afterPath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/main/MainWindowController$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/main/MainWindowController$3$1.class" afterPath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/main/MainWindowController$3$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/main/MainWindowController$3.class" afterPath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/main/MainWindowController$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/main/MainWindowController$4$1.class" afterPath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/main/MainWindowController$4$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/main/MainWindowController$4.class" afterPath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/main/MainWindowController$4.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/main/MainWindowController$1$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/main/MainWindowController$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/main/MainWindowController$2$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/main/MainWindowController$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/main/MainWindowController$3$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/main/MainWindowController$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/main/MainWindowController$4$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/main/MainWindowController$4.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/changeclient/ChangeInfoWindowController$1.class" afterPath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/changeclient/ChangeInfoWindowController$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/searchuser/ClientSearchWindowController.class" afterPath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/searchuser/ClientSearchWindowController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/main/MainWindowController.class" afterPath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/main/MainWindowController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/entities/Person.class" afterPath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/entities/Person.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/demoMavenIntellij-1.0.jar" afterPath="$PROJECT_DIR$/demoMavenIntellij/target/demoMavenIntellij-1.0.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/changeclient/ChangeInfoWindowController.java" afterPath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/changeclient/ChangeInfoWindowController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/src/main/resources/fxml/ClientSearchScene.fxml" afterPath="$PROJECT_DIR$/demoMavenIntellij/src/main/resources/fxml/ClientSearchScene.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/fxml/ClientSearchScene.fxml" afterPath="$PROJECT_DIR$/demoMavenIntellij/target/classes/fxml/ClientSearchScene.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/searchuser/ClientSearchWindowController.java" afterPath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/searchuser/ClientSearchWindowController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/JdbcDao.java" afterPath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/JdbcDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/main/MainModel.java" afterPath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/main/MainModel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/main/MainWindowController.java" afterPath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/main/MainWindowController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/entities/Person.java" afterPath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/entities/Person.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/demoMavenIntellij/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/demoMavenIntellij/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/demoMavenIntellij/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -58,23 +50,23 @@
       <file leaf-file-name="JdbcDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/JdbcDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2816" max-vertical-offset="3615">
-              <caret line="217" column="46" selection-start-line="217" selection-start-column="46" selection-end-line="217" selection-end-column="46" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2583" max-vertical-offset="3615">
+              <caret line="182" column="0" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4303#4304#0" expanded="true" />
-                <element signature="e#4331#4332#0" expanded="true" />
-                <element signature="e#4393#4394#0" expanded="true" />
-                <element signature="e#4421#4422#0" expanded="true" />
-                <element signature="e#4486#4487#0" expanded="true" />
-                <element signature="e#4514#4515#0" expanded="true" />
-                <element signature="e#7315#7316#0" expanded="true" />
-                <element signature="e#7343#7344#0" expanded="true" />
-                <marker date="1422059278000" expanded="true" signature="1378:1408" placeholder="select * fro..client_info_view..." />
-                <marker date="1422059278000" expanded="true" signature="3284:3443" placeholder="select * fro..client_info_view..." />
-                <marker date="1422059278000" expanded="true" signature="4684:5028" placeholder="select name,..client_info_view..." />
-                <marker date="1422059278000" expanded="true" signature="7446:7464" placeholder="select * fro..bank..." />
-                <marker date="1422059278000" expanded="true" signature="8111:8133" placeholder="select * fro..currency..." />
+                <element signature="e#4311#4312#0" expanded="true" />
+                <element signature="e#4339#4340#0" expanded="true" />
+                <element signature="e#4401#4402#0" expanded="true" />
+                <element signature="e#4429#4430#0" expanded="true" />
+                <element signature="e#4494#4495#0" expanded="true" />
+                <element signature="e#4522#4523#0" expanded="true" />
+                <element signature="e#7333#7334#0" expanded="true" />
+                <element signature="e#7361#7362#0" expanded="true" />
+                <marker date="1422060236000" expanded="true" signature="1386:1416" placeholder="select * fro..client_info_view..." />
+                <marker date="1422060236000" expanded="true" signature="3292:3451" placeholder="select * fro..client_info_view..." />
+                <marker date="1422060236000" expanded="true" signature="4700:5044" placeholder="select name,..client_info_view..." />
+                <marker date="1422060236000" expanded="true" signature="7464:7482" placeholder="select * fro..bank..." />
+                <marker date="1422060236000" expanded="true" signature="8129:8151" placeholder="select * fro..currency..." />
               </folding>
             </state>
           </provider>
@@ -84,45 +76,8 @@
         <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/entities/ISearchable.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-              <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Bank.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/entities/Bank.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding>
-                <element signature="e#184#185#0" expanded="true" />
-                <element signature="e#215#216#0" expanded="true" />
-                <element signature="e#263#264#0" expanded="true" />
-                <element signature="e#303#304#0" expanded="true" />
-                <element signature="e#338#339#0" expanded="true" />
-                <element signature="e#369#370#0" expanded="true" />
-                <element signature="e#417#418#0" expanded="true" />
-                <element signature="e#457#458#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Currency.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/entities/Currency.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-              <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-              <folding>
-                <element signature="e#235#236#0" expanded="true" />
-                <element signature="e#291#292#0" expanded="true" />
-                <element signature="e#339#340#0" expanded="true" />
-                <element signature="e#378#379#0" expanded="true" />
-                <element signature="e#413#414#0" expanded="true" />
-                <element signature="e#469#470#0" expanded="true" />
-                <element signature="e#517#518#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -130,25 +85,25 @@
       <file leaf-file-name="LoanService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/bussines/LoanService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="167" max-vertical-offset="720">
-              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="161" max-vertical-offset="720">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#595#596#0" expanded="true" />
                 <element signature="e#643#644#0" expanded="true" />
                 <element signature="e#873#874#0" expanded="true" />
                 <element signature="e#914#915#0" expanded="true" />
+                <element signature="e#974#975#0" expanded="true" />
                 <element signature="e#1020#1021#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainModel.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainModel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/main/MainModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.91862565" vertical-offset="1427" max-vertical-offset="2385">
-              <caret line="167" column="37" selection-start-line="167" selection-start-column="37" selection-end-line="167" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1278" max-vertical-offset="2385">
+              <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
               <folding>
                 <element signature="method#callAddClientWindow#0;class#MainModel#0" expanded="false" />
                 <element signature="e#6958#6959#0" expanded="true" />
@@ -158,6 +113,103 @@
                 <element signature="e#7127#7128#0" expanded="true" />
                 <element signature="e#7177#7178#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainWindowController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/main/MainWindowController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.11754069" vertical-offset="1405" max-vertical-offset="2100">
+              <caret line="220" column="28" selection-start-line="220" selection-start-column="28" selection-end-line="220" selection-end-column="28" />
+              <folding>
+                <element signature="e#1800#1801#0" expanded="true" />
+                <element signature="e#1862#1863#0" expanded="true" />
+                <element signature="e#2090#2091#0" expanded="true" />
+                <element signature="e#2131#2132#0" expanded="true" />
+                <element signature="method#newClientOnClick#0;class#MainWindowController#0" expanded="false" />
+                <element signature="method#setPropertyValueFactory#0;class#MainWindowController#0" expanded="false" />
+                <element signature="method#setTableViewCellFactory#0;class#MainWindowController#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainScene.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/resources/fxml/MainScene.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="47" max-vertical-offset="900">
+              <caret line="43" column="15" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Person.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/entities/Person.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="944" max-vertical-offset="2685">
+              <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1854#1855#0" expanded="true" />
+                <element signature="e#1885#1886#0" expanded="true" />
+                <element signature="e#1929#1930#0" expanded="true" />
+                <element signature="e#1954#1955#0" expanded="true" />
+                <element signature="e#2036#2037#0" expanded="true" />
+                <element signature="e#2067#2068#0" expanded="true" />
+                <element signature="e#2100#2101#0" expanded="true" />
+                <element signature="e#2144#2145#0" expanded="true" />
+                <element signature="e#2171#2172#0" expanded="true" />
+                <element signature="e#2211#2212#0" expanded="true" />
+                <element signature="e#2246#2247#0" expanded="true" />
+                <element signature="e#2280#2281#0" expanded="true" />
+                <element signature="e#2316#2317#0" expanded="true" />
+                <element signature="e#2363#2364#0" expanded="true" />
+                <element signature="e#2393#2394#0" expanded="true" />
+                <element signature="e#2439#2440#0" expanded="true" />
+                <element signature="e#2480#2481#0" expanded="true" />
+                <element signature="e#2517#2518#0" expanded="true" />
+                <element signature="e#2556#2557#0" expanded="true" />
+                <element signature="e#2606#2607#0" expanded="true" />
+                <element signature="e#2639#2640#0" expanded="true" />
+                <element signature="e#2691#2692#0" expanded="true" />
+                <element signature="e#2738#2739#0" expanded="true" />
+                <element signature="e#2776#2777#0" expanded="true" />
+                <element signature="e#2813#2814#0" expanded="true" />
+                <element signature="e#2872#2873#0" expanded="true" />
+                <element signature="e#2903#2904#0" expanded="true" />
+                <element signature="e#2954#2955#0" expanded="true" />
+                <element signature="e#2997#2998#0" expanded="true" />
+                <element signature="e#3027#3028#0" expanded="true" />
+                <element signature="e#3059#3060#0" expanded="true" />
+                <element signature="e#3102#3103#0" expanded="true" />
+                <element signature="e#3128#3129#0" expanded="true" />
+                <element signature="e#3166#3167#0" expanded="true" />
+                <element signature="e#3199#3200#0" expanded="true" />
+                <element signature="e#3236#3237#0" expanded="true" />
+                <element signature="e#3275#3276#0" expanded="true" />
+                <element signature="e#3325#3326#0" expanded="true" />
+                <element signature="e#3358#3359#0" expanded="true" />
+                <element signature="e#3410#3411#0" expanded="true" />
+                <element signature="e#3457#3458#0" expanded="true" />
+                <element signature="e#3494#3495#0" expanded="true" />
+                <element signature="e#3533#3534#0" expanded="true" />
+                <element signature="e#3583#3584#0" expanded="true" />
+                <element signature="e#3616#3617#0" expanded="true" />
+                <element signature="e#3668#3669#0" expanded="true" />
+                <element signature="e#3715#3716#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoanInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/entities/LoanInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1470">
+              <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -203,7 +255,6 @@
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/IMyController.java" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/bussines/IModel.java" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/bussines/MainModel.java" />
-        <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/entities/ISearchable.java" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/bussines/IService.java" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/bussines/ISearchableService.java" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/bussines/IPersonService.java" />
@@ -215,9 +266,6 @@
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/MainApp.java" />
         <option value="/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/javafx-src.zip!/javafx/fxml/FXMLLoader.java" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/resources/fxml/ClientSearchScene.fxml" />
-        <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/entities/LoanInfo.java" />
-        <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/entities/Person.java" />
-        <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/main/MainWindowController.java" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/searchuser/ClientSearchWindowController.java" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/bussines/ILoanInfoService.java" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/IBkiDao.java" />
@@ -225,8 +273,12 @@
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/entities/Currency.java" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/bussines/LoanService.java" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/changeclient/ChangeInfoWindowController.java" />
-        <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/JdbcDao.java" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/main/MainModel.java" />
+        <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/JdbcDao.java" />
+        <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/entities/ISearchable.java" />
+        <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/entities/LoanInfo.java" />
+        <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/entities/Person.java" />
+        <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/main/MainWindowController.java" />
       </list>
     </option>
   </component>
@@ -531,121 +583,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="searchuser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bki_diplom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bki_javafx_maven" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demoMavenIntellij" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="desktopclient" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="newclient" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bki_diplom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bki_javafx_maven" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demoMavenIntellij" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="desktopclient" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bki_diplom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bki_javafx_maven" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demoMavenIntellij" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="desktopclient" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="changeclient" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1117,7 +1055,7 @@
       <workItem from="1421959464191" duration="100000" />
       <workItem from="1421960217275" duration="1047000" />
       <workItem from="1421961570173" duration="4364000" />
-      <workItem from="1422041360579" duration="12449000" />
+      <workItem from="1422041360579" duration="19245000" />
     </task>
     <task id="LOCAL-00001" summary="изменил способ запуска, теперь во главе класс MainModel, который конфигурируется при запуске из MainApp, устанавливая тип ДАО и вызывая метод  callMainWindow(). Добавлен пакет бизнес-логики, абстрагирующий уровень представления от непосредственного взаимодействия с ДАО.">
       <created>1422048087838</created>
@@ -1131,11 +1069,17 @@
       <option name="project" value="LOCAL" />
       <updated>1422048189872</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="добавил поттягивание справочников из базы, поправил немного интерфейс, прикрутил поиск, но нужно переделать сам запрос поиска. Некорректно получает данные">
+      <created>1422059619886</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1422059619886</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20368000" />
+    <option name="totallyTimeSpent" value="27164000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1163,7 +1107,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22603719" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26119402" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26119402" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1186,25 +1130,25 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="изменил способ запуска, теперь во главе класс MainModel, который конфигурируется при запуске из MainApp, устанавливая тип ДАО и вызывая метод  callMainWindow(). Добавлен пакет бизнес-логики, абстрагирующий уровень представления от непосредственного взаимодействия с ДАО." />
-    <option name="LAST_COMMIT_MESSAGE" value="изменил способ запуска, теперь во главе класс MainModel, который конфигурируется при запуске из MainApp, устанавливая тип ДАО и вызывая метод  callMainWindow(). Добавлен пакет бизнес-логики, абстрагирующий уровень представления от непосредственного взаимодействия с ДАО." />
+    <MESSAGE value="добавил поттягивание справочников из базы, поправил немного интерфейс, прикрутил поиск, но нужно переделать сам запрос поиска. Некорректно получает данные" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавил поттягивание справочников из базы, поправил немного интерфейс, прикрутил поиск, но нужно переделать сам запрос поиска. Некорректно получает данные" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/main/MainWindowController.java</url>
-          <line>73</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/changeclient/ChangeInfoWindowController.java</url>
           <line>59</line>
           <properties />
           <option name="timeStamp" value="18" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/entities/Person.java</url>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="20" />
+      <option name="time" value="29" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1263,19 +1207,19 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4303#4304#0" expanded="true" />
-            <element signature="e#4331#4332#0" expanded="true" />
-            <element signature="e#4393#4394#0" expanded="true" />
-            <element signature="e#4421#4422#0" expanded="true" />
-            <element signature="e#4486#4487#0" expanded="true" />
-            <element signature="e#4514#4515#0" expanded="true" />
-            <element signature="e#7315#7316#0" expanded="true" />
-            <element signature="e#7343#7344#0" expanded="true" />
-            <marker date="1422059278000" expanded="true" signature="1378:1408" placeholder="select * fro..client_info_view..." />
-            <marker date="1422059278000" expanded="true" signature="3284:3443" placeholder="select * fro..client_info_view..." />
-            <marker date="1422059278000" expanded="true" signature="4684:5028" placeholder="select name,..client_info_view..." />
-            <marker date="1422059278000" expanded="true" signature="7446:7464" placeholder="select * fro..bank..." />
-            <marker date="1422059278000" expanded="true" signature="8111:8133" placeholder="select * fro..currency..." />
+            <element signature="e#4311#4312#0" expanded="true" />
+            <element signature="e#4339#4340#0" expanded="true" />
+            <element signature="e#4401#4402#0" expanded="true" />
+            <element signature="e#4429#4430#0" expanded="true" />
+            <element signature="e#4494#4495#0" expanded="true" />
+            <element signature="e#4522#4523#0" expanded="true" />
+            <element signature="e#7333#7334#0" expanded="true" />
+            <element signature="e#7361#7362#0" expanded="true" />
+            <marker date="1422060236000" expanded="true" signature="1386:1416" placeholder="select * fro..client_info_view..." />
+            <marker date="1422060236000" expanded="true" signature="3292:3451" placeholder="select * fro..client_info_view..." />
+            <marker date="1422060236000" expanded="true" signature="4700:5044" placeholder="select name,..client_info_view..." />
+            <marker date="1422060236000" expanded="true" signature="7464:7482" placeholder="select * fro..bank..." />
+            <marker date="1422060236000" expanded="true" signature="8129:8151" placeholder="select * fro..currency..." />
           </folding>
         </state>
       </provider>
@@ -1472,14 +1416,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1680">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/resources/fxml/MainScene.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
-          <caret line="43" column="15" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -1742,35 +1678,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/entities/LoanInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="1500">
-          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-          <folding>
-            <element signature="e#2502#2503#0" expanded="true" />
-            <element signature="e#2538#2539#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/entities/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1500">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/main/MainWindowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1187" max-vertical-offset="1950">
-          <caret line="194" column="22" selection-start-line="194" selection-start-column="22" selection-end-line="194" selection-end-column="22" />
-          <folding>
-            <element signature="method#setPropertyValueFactory#0;class#MainWindowController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/bussines/ILoanInfoService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="405">
@@ -1781,27 +1688,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/entities/ISearchable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <caret line="7" column="49" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/entities/Bank.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <element signature="e#184#185#0" expanded="true" />
-            <element signature="e#215#216#0" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
-            <element signature="e#338#339#0" expanded="true" />
-            <element signature="e#369#370#0" expanded="true" />
-            <element signature="e#417#418#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
+            <element signature="e#184#185#0" expanded="false" />
+            <element signature="e#215#216#0" expanded="false" />
+            <element signature="e#263#264#0" expanded="false" />
+            <element signature="e#303#304#0" expanded="false" />
+            <element signature="e#338#339#0" expanded="false" />
+            <element signature="e#369#370#0" expanded="false" />
+            <element signature="e#417#418#0" expanded="false" />
+            <element signature="e#457#458#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1811,13 +1710,13 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
           <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
           <folding>
-            <element signature="e#235#236#0" expanded="true" />
-            <element signature="e#291#292#0" expanded="true" />
-            <element signature="e#339#340#0" expanded="true" />
-            <element signature="e#378#379#0" expanded="true" />
-            <element signature="e#413#414#0" expanded="true" />
-            <element signature="e#469#470#0" expanded="true" />
-            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#235#236#0" expanded="false" />
+            <element signature="e#291#292#0" expanded="false" />
+            <element signature="e#339#340#0" expanded="false" />
+            <element signature="e#378#379#0" expanded="false" />
+            <element signature="e#413#414#0" expanded="false" />
+            <element signature="e#469#470#0" expanded="false" />
+            <element signature="e#517#518#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1827,52 +1726,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="964" max-vertical-offset="1905">
           <caret line="115" column="13" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="35103" max-vertical-offset="50565">
-          <caret line="2505" column="0" selection-start-line="2505" selection-start-column="0" selection-end-line="2505" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/bussines/LoanService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="167" max-vertical-offset="720">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#595#596#0" expanded="true" />
-            <element signature="e#643#644#0" expanded="true" />
-            <element signature="e#873#874#0" expanded="true" />
-            <element signature="e#914#915#0" expanded="true" />
-            <element signature="e#1020#1021#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/JdbcDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2816" max-vertical-offset="3615">
-          <caret line="217" column="46" selection-start-line="217" selection-start-column="46" selection-end-line="217" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4303#4304#0" expanded="true" />
-            <element signature="e#4331#4332#0" expanded="true" />
-            <element signature="e#4393#4394#0" expanded="true" />
-            <element signature="e#4421#4422#0" expanded="true" />
-            <element signature="e#4486#4487#0" expanded="true" />
-            <element signature="e#4514#4515#0" expanded="true" />
-            <element signature="e#7315#7316#0" expanded="true" />
-            <element signature="e#7343#7344#0" expanded="true" />
-            <marker date="1422059278000" expanded="true" signature="1378:1408" placeholder="select * fro..client_info_view..." />
-            <marker date="1422059278000" expanded="true" signature="3284:3443" placeholder="select * fro..client_info_view..." />
-            <marker date="1422059278000" expanded="true" signature="4684:5028" placeholder="select name,..client_info_view..." />
-            <marker date="1422059278000" expanded="true" signature="7446:7464" placeholder="select * fro..bank..." />
-            <marker date="1422059278000" expanded="true" signature="8111:8133" placeholder="select * fro..currency..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1896,8 +1749,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/main/MainModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.91862565" vertical-offset="1427" max-vertical-offset="2385">
-          <caret line="167" column="37" selection-start-line="167" selection-start-column="37" selection-end-line="167" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1278" max-vertical-offset="2385">
+          <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
           <folding>
             <element signature="method#callAddClientWindow#0;class#MainModel#0" expanded="false" />
             <element signature="e#6958#6959#0" expanded="true" />
@@ -1906,6 +1759,149 @@
             <element signature="e#7090#7091#0" expanded="true" />
             <element signature="e#7127#7128#0" expanded="true" />
             <element signature="e#7177#7178#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3325792" vertical-offset="24378" max-vertical-offset="50565">
+          <caret line="1756" column="0" selection-start-line="1756" selection-start-column="0" selection-end-line="1756" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/resources/fxml/MainScene.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
+          <caret line="43" column="15" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/bussines/LoanService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="720">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#643#644#0" expanded="true" />
+            <element signature="e#873#874#0" expanded="true" />
+            <element signature="e#914#915#0" expanded="true" />
+            <element signature="e#974#975#0" expanded="true" />
+            <element signature="e#1020#1021#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/JdbcDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2583" max-vertical-offset="3615">
+          <caret line="182" column="0" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4311#4312#0" expanded="true" />
+            <element signature="e#4339#4340#0" expanded="true" />
+            <element signature="e#4401#4402#0" expanded="true" />
+            <element signature="e#4429#4430#0" expanded="true" />
+            <element signature="e#4494#4495#0" expanded="true" />
+            <element signature="e#4522#4523#0" expanded="true" />
+            <element signature="e#7333#7334#0" expanded="true" />
+            <element signature="e#7361#7362#0" expanded="true" />
+            <marker date="1422060236000" expanded="true" signature="1386:1416" placeholder="select * fro..client_info_view..." />
+            <marker date="1422060236000" expanded="true" signature="3292:3451" placeholder="select * fro..client_info_view..." />
+            <marker date="1422060236000" expanded="true" signature="4700:5044" placeholder="select name,..client_info_view..." />
+            <marker date="1422060236000" expanded="true" signature="7464:7482" placeholder="select * fro..bank..." />
+            <marker date="1422060236000" expanded="true" signature="8129:8151" placeholder="select * fro..currency..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/entities/ISearchable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/entities/LoanInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1470">
+          <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/entities/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="944" max-vertical-offset="2685">
+          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1854#1855#0" expanded="true" />
+            <element signature="e#1885#1886#0" expanded="true" />
+            <element signature="e#1929#1930#0" expanded="true" />
+            <element signature="e#1954#1955#0" expanded="true" />
+            <element signature="e#2036#2037#0" expanded="true" />
+            <element signature="e#2067#2068#0" expanded="true" />
+            <element signature="e#2100#2101#0" expanded="true" />
+            <element signature="e#2144#2145#0" expanded="true" />
+            <element signature="e#2171#2172#0" expanded="true" />
+            <element signature="e#2211#2212#0" expanded="true" />
+            <element signature="e#2246#2247#0" expanded="true" />
+            <element signature="e#2280#2281#0" expanded="true" />
+            <element signature="e#2316#2317#0" expanded="true" />
+            <element signature="e#2363#2364#0" expanded="true" />
+            <element signature="e#2393#2394#0" expanded="true" />
+            <element signature="e#2439#2440#0" expanded="true" />
+            <element signature="e#2480#2481#0" expanded="true" />
+            <element signature="e#2517#2518#0" expanded="true" />
+            <element signature="e#2556#2557#0" expanded="true" />
+            <element signature="e#2606#2607#0" expanded="true" />
+            <element signature="e#2639#2640#0" expanded="true" />
+            <element signature="e#2691#2692#0" expanded="true" />
+            <element signature="e#2738#2739#0" expanded="true" />
+            <element signature="e#2776#2777#0" expanded="true" />
+            <element signature="e#2813#2814#0" expanded="true" />
+            <element signature="e#2872#2873#0" expanded="true" />
+            <element signature="e#2903#2904#0" expanded="true" />
+            <element signature="e#2954#2955#0" expanded="true" />
+            <element signature="e#2997#2998#0" expanded="true" />
+            <element signature="e#3027#3028#0" expanded="true" />
+            <element signature="e#3059#3060#0" expanded="true" />
+            <element signature="e#3102#3103#0" expanded="true" />
+            <element signature="e#3128#3129#0" expanded="true" />
+            <element signature="e#3166#3167#0" expanded="true" />
+            <element signature="e#3199#3200#0" expanded="true" />
+            <element signature="e#3236#3237#0" expanded="true" />
+            <element signature="e#3275#3276#0" expanded="true" />
+            <element signature="e#3325#3326#0" expanded="true" />
+            <element signature="e#3358#3359#0" expanded="true" />
+            <element signature="e#3410#3411#0" expanded="true" />
+            <element signature="e#3457#3458#0" expanded="true" />
+            <element signature="e#3494#3495#0" expanded="true" />
+            <element signature="e#3533#3534#0" expanded="true" />
+            <element signature="e#3583#3584#0" expanded="true" />
+            <element signature="e#3616#3617#0" expanded="true" />
+            <element signature="e#3668#3669#0" expanded="true" />
+            <element signature="e#3715#3716#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/main/MainWindowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11754069" vertical-offset="1405" max-vertical-offset="2100">
+          <caret line="220" column="28" selection-start-line="220" selection-start-column="28" selection-end-line="220" selection-end-column="28" />
+          <folding>
+            <element signature="e#1800#1801#0" expanded="true" />
+            <element signature="e#1862#1863#0" expanded="true" />
+            <element signature="e#2090#2091#0" expanded="true" />
+            <element signature="e#2131#2132#0" expanded="true" />
+            <element signature="method#newClientOnClick#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#setPropertyValueFactory#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#setTableViewCellFactory#0;class#MainWindowController#0" expanded="false" />
           </folding>
         </state>
       </provider>
