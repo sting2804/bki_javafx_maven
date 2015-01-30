@@ -1,11 +1,13 @@
 package desktopclient.gui.main;
 
 import desktopclient.bussines.ILoanInfoService;
-import desktopclient.bussines.IPersonService;
+import desktopclient.bussines.trash.IPersonService;
 import desktopclient.bussines.IServiceFactory;
 import desktopclient.entities.*;
 import desktopclient.gui.changeclient.ChangeInfoWindowController;
-import desktopclient.gui.newclient.NewClientWindowController;
+import desktopclient.gui.directories.BankWindowController;
+import desktopclient.gui.directories.CurrencyWindowController;
+import desktopclient.gui.trash.newclient.NewClientWindowController;
 import desktopclient.gui.searchuser.ClientSearchWindowController;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
@@ -16,6 +18,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -31,11 +34,15 @@ public class MainModel {
      * csController контроллер окна писка клиента
      * ciController контроллен окна изменения и добавления информации клиенту
      * mwController контроллер главного окна
+     * bwController контроллер окна добавления банка
+     * cwController контроллер окна добавления валюты
      */
     private NewClientWindowController ncController;
     private ClientSearchWindowController csController;
     private ChangeInfoWindowController ciController;
     private MainWindowController mwController;
+    private BankWindowController bwController;
+    private CurrencyWindowController cwController;
     /**
      * loanInfoService объект для связи с кредитной частью дао
      * personService объект для связи с пользовательской частью дао
@@ -115,13 +122,13 @@ public class MainModel {
     }
 
     /**
-     * callAddClientWindow() открывает окно создания нового клиента
+     * callNewClientWindow() открывает окно создания нового клиента
      * @throws NullPointerException
      */
-    public void callAddClientWindow() throws NullPointerException {
+    public void callNewClientWindow() throws NullPointerException {
         Stage primaryStage = new Stage();
         FXMLLoader  root;
-        root = new FXMLLoader(getClass().getResource("/fxml/NewClientScene.fxml"));
+        root = new FXMLLoader(getClass().getResource("/fxml/trash/NewClientScene.fxml"));
         try {
             primaryStage.setScene(new Scene(root.load()));
         } catch (IOException ex) {
@@ -132,19 +139,35 @@ public class MainModel {
         primaryStage.setOnCloseRequest(event -> primaryStage.close());
         primaryStage.initModality(Modality.APPLICATION_MODAL);
         primaryStage.showAndWait();
-        Person searchPerson = ncController.getPerson();
-        if(searchPerson == null){
-            throw new NullPointerException();
+        Person newPerson = ncController.getPerson();
+        if(newPerson != null){
+            //что-то сделать с объектом
+            Alert a;
+            if(loanInfoService.isClientExists(newPerson)){
+                a = new Alert(Alert.AlertType.INFORMATION);
+                a.setContentText("Клиент существует");
+                a.showAndWait();
+            }
+            /*else if (loanInfoService.add(newPerson)){
+                a = new Alert(Alert.AlertType.INFORMATION);
+                a.setContentText("Клиент добавлен");
+                a.showAndWait();
+            }
+            else {
+                a = new Alert(Alert.AlertType.ERROR);
+                a.setContentText("Клиент не добавлен");
+                a.showAndWait();
+            }*/
         }
-        //что-то сделать с объектом
+
     }
 
     /**
-     * callChangeClientWindow() открывает окно добавления и изменения информации о кредитах выбранного клиента
+     * callChangeClientWindow() открывает окно  изменения информации о кредитах выбранного клиента
      * @param curInfo выбранная сущность из таблицы
      * @throws Exception
      */
-    public void callChangeClientWindow(ISearchable curInfo) throws Exception {
+    public void callChangeClientWindow(LoanInfo curInfo) throws Exception {
         final Stage primaryStage = new Stage();
         FXMLLoader root;
         primaryStage.initModality(Modality.APPLICATION_MODAL);
@@ -156,25 +179,63 @@ public class MainModel {
         }
         //передача информации в контроллер 
         ciController = root.<ChangeInfoWindowController>getController();
-        ciController.setCurrencyList(getCurrencyList());
-        ciController.setBankList(getBankList());
-        ciController.setSomeObject(curInfo);
+        ciController.setMainModel(this);
+        ciController.setCurrencyMap(getCurrencyMap());
+        ciController.setBankMap(getBankMap());
+        ciController.setLoanInfo(curInfo);
         primaryStage.setOnCloseRequest(event -> primaryStage.close());
         primaryStage.setResizable(false);
         primaryStage.showAndWait();
         //получение информации из контроллера
-        LoanInfo newInfo = ciController.getSearchInfo();
-        if(newInfo==null){
-            throw new NullPointerException("");
+        LoanInfo newInfo = ciController.getNewInfo();
+        if(newInfo!=null){
+            if (curInfo.equals(newInfo)){
+                Alert a = new Alert(Alert.AlertType.WARNING);
+                a.setContentText("Данные совпадают и не будут изменениы");
+                a.showAndWait();
+            }
+            else {
+                //что-то сделать с обёектом
+                loanInfoService.modify(newInfo);
+            }
         }
-        if (curInfo.equals(newInfo)){
-            Alert a = new Alert(Alert.AlertType.WARNING);
-            a.setContentText("Данные совпадают и не будут изменениы");
-            a.showAndWait();
+    }
+    /**
+     * callAddInfoWindow() открывает окно добавления информации о кредитах выбранного клиента
+     * @param curInfo выбранная сущность из таблицы
+     * @throws Exception
+     */
+    public void callAddInfoWindow(Person curInfo) throws Exception {
+        final Stage primaryStage = new Stage();
+        FXMLLoader root;
+        primaryStage.initModality(Modality.APPLICATION_MODAL);
+        root = new FXMLLoader(getClass().getResource("/fxml/InfoScene.fxml"));
+        try {
+            primaryStage.setScene(new Scene(root.load()));
+        } catch (IOException ex) {
+            Logger.getLogger(MainModel.class.getName()).log(Level.SEVERE, null, ex);
         }
-        else {
-            //что-то сделать с обёектом
-            loanInfoService.modify(newInfo);
+        //передача информации в контроллер
+        ciController = root.<ChangeInfoWindowController>getController();
+        ciController.setMainModel(this);
+        ciController.setCurrencyMap(getCurrencyMap());
+        ciController.setBankMap(getBankMap());
+        ciController.setPerson(curInfo);
+        primaryStage.setOnCloseRequest(event -> primaryStage.close());
+        primaryStage.setResizable(false);
+        primaryStage.showAndWait();
+        //получение информации из контроллера
+        LoanInfo newInfo = ciController.getNewInfo();
+        if(newInfo!=null){
+            if (curInfo.equals(newInfo)){
+                Alert a = new Alert(Alert.AlertType.WARNING);
+                a.setContentText("Данные совпадают и не будут изменениы");
+                a.showAndWait();
+            }
+            else {
+                //что-то сделать с обёектом
+                loanInfoService.modify(newInfo);
+            }
         }
     }
 
@@ -182,10 +243,114 @@ public class MainModel {
     public List<LoanInfo> getFoundInfo() {
         return foundInfo;
     }
-    public List<Currency> getCurrencyList(){
-        return loanInfoService.listCurrencies();
+    public Map<String,String> getCurrencyMap(){
+        return loanInfoService.getCurrenciesMap();
     }
-    public List<Bank> getBankList(){
-        return loanInfoService.listBanks();
+    public Map<String,String> getBankMap(){
+        return loanInfoService.getBanksMap();
+    }
+
+    public Bank callNewBankWindow(String bankCode) {
+        final Stage primaryStage = new Stage();
+        FXMLLoader root;
+        primaryStage.initModality(Modality.APPLICATION_MODAL);
+        root = new FXMLLoader(getClass().getResource("/fxml/BankScene.fxml"));
+        try {
+            primaryStage.setScene(new Scene(root.load()));
+        } catch (IOException ex) {
+            Logger.getLogger(MainModel.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        //передача информации в контроллер
+        bwController = root.<BankWindowController>getController();
+        bwController.setMainModel(this);
+        bwController.setScreenForms(bankCode);
+        primaryStage.setOnCloseRequest(event -> primaryStage.close());
+        primaryStage.setResizable(false);
+        primaryStage.showAndWait();
+        Alert alert;
+        Bank b = bwController.getBank();
+        if(b!=null) {
+            insertBankIntoDB(b);
+            alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setContentText("Банк добавлен");
+            alert.showAndWait();
+        }
+        else {
+            alert = new Alert(Alert.AlertType.WARNING);
+            alert.setContentText("Банк не добавлен");
+            alert.showAndWait();
+        }
+        return b;
+    }
+
+    private void insertBankIntoDB(Bank bank) {
+        loanInfoService.addBank(bank);
+    }
+    private void insertCurrencyIntoDB(Currency currency) {
+        loanInfoService.addCurrency(currency);
+    }
+
+    public Currency callNewCurrencyWindow(String currencyCode) {
+        final Stage primaryStage = new Stage();
+        FXMLLoader root;
+        primaryStage.initModality(Modality.APPLICATION_MODAL);
+        root = new FXMLLoader(getClass().getResource("/fxml/CurrencyScene.fxml"));
+        try {
+            primaryStage.setScene(new Scene(root.load()));
+        } catch (IOException ex) {
+            Logger.getLogger(MainModel.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        //передача информации в контроллер
+        cwController = root.<CurrencyWindowController>getController();
+        cwController.setMainModel(this);
+        cwController.setScreenForms(currencyCode);
+
+        primaryStage.setOnCloseRequest(event -> primaryStage.close());
+        primaryStage.setResizable(false);
+        primaryStage.showAndWait();
+
+        Alert alert;
+        Currency c = cwController.getCurrency();
+        if (c != null) {
+            insertCurrencyIntoDB(c);
+            alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setContentText("Валюта добавлена");
+            alert.showAndWait();
+        } else {
+            alert = new Alert(Alert.AlertType.WARNING);
+            alert.setContentText("Валюта не добавлена");
+            alert.showAndWait();
+        }
+        return c;
+    }
+
+    public void callNewClientInfoWindow() {
+        final Stage primaryStage = new Stage();
+        FXMLLoader root;
+        primaryStage.initModality(Modality.APPLICATION_MODAL);
+        root = new FXMLLoader(getClass().getResource("/fxml/InfoScene.fxml"));
+        try {
+            primaryStage.setScene(new Scene(root.load()));
+        } catch (IOException ex) {
+            Logger.getLogger(MainModel.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        //передача информации в контроллер
+        ciController = root.<ChangeInfoWindowController>getController();
+        ciController.setMainModel(this);
+        ciController.setCurrencyMap(getCurrencyMap());
+        ciController.setBankMap(getBankMap());
+
+        primaryStage.setOnCloseRequest(event -> primaryStage.close());
+        primaryStage.setResizable(false);
+        primaryStage.showAndWait();
+        //получение информации из контроллера
+        LoanInfo newInfo = ciController.getNewInfo();
+        if(newInfo!=null){
+            if (loanInfoService.isClientExists(newInfo.getPerson())){
+                loanInfoService.addInfo(newInfo);
+            }
+            else
+                loanInfoService.addNewClient(newInfo);
+        }
     }
 }

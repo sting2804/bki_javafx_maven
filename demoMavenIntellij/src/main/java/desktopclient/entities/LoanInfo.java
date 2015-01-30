@@ -5,58 +5,67 @@
  */
 package desktopclient.entities;
 
+import java.io.Serializable;
 import java.time.LocalDate;
+import javafx.beans.property.BooleanProperty;
+import javafx.beans.property.DoubleProperty;
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleBooleanProperty;
+import javafx.beans.property.SimpleDoubleProperty;
+import javafx.beans.property.SimpleIntegerProperty;
 
 /**
  *
  * @author sting
  */
-public class LoanInfo implements ISearchable{
-    private Integer id;
-    private Double initAmount;
+public class LoanInfo implements Serializable{
+    private IntegerProperty id;
+    private DoubleProperty initAmount;
     private LocalDate initDate;
     private LocalDate finishDate;
-    private Double balance;
-    private Boolean arrears;
-    private String bank;
-    private String currency;
+    private DoubleProperty balance;
+    private BooleanProperty arrears;
+    private Bank bank;
+    private Currency currency;
     private Person person;
 
-    /*public LoanInfo() {
-        this(0, 0d, null, null, 0d, false, "", "", null);
-    }*/
-
     public LoanInfo() {
+        this.arrears = new SimpleBooleanProperty();
+        this.id = new SimpleIntegerProperty();
+        this.initAmount = new SimpleDoubleProperty();
+        this.balance = new SimpleDoubleProperty();
     }
 
-    public LoanInfo(Integer id, Double initAmount, LocalDate initDate, LocalDate finishDate, Double balance, Boolean arrears, String bank, String currency, Person person) {
-        this.id = id;
-        this.initAmount = initAmount;
+
+    public LoanInfo(Integer id, Double initAmount, LocalDate initDate,
+                    LocalDate finishDate, Double balance, Boolean arrears,
+                    Bank bank, Currency currency, Person person) {
+        this.id = new SimpleIntegerProperty(id);
+        this.initAmount = new SimpleDoubleProperty(initAmount);
         this.initDate = initDate;
         this.finishDate = finishDate;
-        this.balance = balance;
-        this.arrears = arrears;
+        this.balance = new SimpleDoubleProperty(balance);
+        this.arrears = new SimpleBooleanProperty(arrears);
         this.bank = bank;
         this.currency = currency;
         this.person = person;
     }
 
-    @Override
+
     public Integer getId() {
-        return id;
+        return id.get();
     }
 
-    @Override
     public void setId(Integer id) {
-        this.id = id;
+        this.id.set(id);
     }
 
     public Double getInitAmount() {
-        return initAmount;
+        return initAmount.get();
     }
 
     public void setInitAmount(Double initAmount) {
-        this.initAmount = initAmount;
+        this.initAmount.set(initAmount);
     }
 
     public LocalDate getInitDate() {
@@ -76,43 +85,42 @@ public class LoanInfo implements ISearchable{
     }
 
     public Double getBalance() {
-        return balance;
+        return balance.get();
     }
 
     public void setBalance(Double balance) {
-        this.balance = balance;
+        this.balance.set(balance);
     }
 
     public Boolean getArrears() {
-        return arrears;
+        return arrears.get();
     }
 
     public void setArrears(Boolean arrears) {
-        this.arrears = arrears;
+        this.arrears.set(arrears);
     }
-
-    public String getBank() {
-        return bank;
-    }
-
-    public void setBank(String bank) {
-        this.bank = bank;
-    }
-
-    public String getCurrency() {
-        return currency;
-    }
-
-    public void setCurrency(String currency) {
-        this.currency = currency;
-    }
-
     public Person getPerson() {
         return person;
     }
 
     public void setPerson(Person person) {
         this.person = person;
+    }
+
+    public Bank getBank() {
+        return bank;
+    }
+
+    public void setBank(Bank bank) {
+        this.bank = bank;
+    }
+
+    public Currency getCurrency() {
+        return currency;
+    }
+
+    public void setCurrency(Currency currency) {
+        this.currency = currency;
     }
 
     @Override
@@ -124,9 +132,25 @@ public class LoanInfo implements ISearchable{
                 ", finishDate=" + finishDate +
                 ", balance=" + balance +
                 ", arrears=" + arrears +
-                ", bank='" + bank + '\'' +
-                ", currency='" + currency + '\'' +
+                ", bank=" + bank +
+                ", currency=" + currency +
                 ", person=" + person +
                 '}';
+    }
+    
+    
+    public BooleanProperty arrearsProperty() {
+      return arrears;
+    }
+    public DoubleProperty balanceProperty() {
+      return balance;
+      
+    }
+    public DoubleProperty initAmountProperty() {
+      return initAmount;
+      
+    }
+    public IntegerProperty idProperty() {
+      return id;
     }
 }

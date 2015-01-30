@@ -41,7 +41,7 @@
                </GridPane.margin>
             </Label>
             <TextField fx:id="fioTextField" GridPane.columnIndex="1" />
-            <TextField fx:id="passportTextField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="passportTextField" promptText="серия номер" GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <TextField fx:id="innTextField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
             <Label text="Паспорт" GridPane.halignment="LEFT" GridPane.rowIndex="2">
                <GridPane.margin>
@@ -75,21 +75,19 @@
                   <Insets left="10.0" />
                </GridPane.margin>
             </Label>
-            <Label text="Валюта" GridPane.columnIndex="2" GridPane.halignment="LEFT">
+            <Label text="Код валюты" GridPane.columnIndex="2" GridPane.halignment="LEFT">
                <GridPane.margin>
                   <Insets left="10.0" />
                </GridPane.margin>
             </Label>
-            <ComboBox fx:id="currencyComboBox" prefHeight="26.0" prefWidth="170.0" GridPane.columnIndex="3" />
             <DatePicker fx:id="initdateDatePicker" GridPane.columnIndex="3" GridPane.rowIndex="1" />
             <DatePicker fx:id="finishdateDatePicker" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-            <Label text="Банк" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="3">
+            <Label text="Код банка" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="3">
                <GridPane.margin>
                   <Insets left="10.0" />
                </GridPane.margin>
             </Label>
             <DatePicker fx:id="birthdayDatePicker" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <ComboBox fx:id="bankComboBox" prefHeight="26.0" prefWidth="185.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
             <CheckBox fx:id="arrearsCheckBox" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
             <Label text="Просрочки" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="4">
                <GridPane.margin>
@@ -97,6 +95,8 @@
                </GridPane.margin>
             </Label>
             <Button fx:id="applyButton" mnemonicParsing="false" onAction="#changeInfoOnClick" text="Применить" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="5" />
+            <TextField fx:id="currencyCodeTextField" promptText="Например UAH" GridPane.columnIndex="3" />
+            <TextField fx:id="bankCodeTextField" promptText="(МФО)" GridPane.columnIndex="3" GridPane.rowIndex="3" />
          </children>
          <padding>
             <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />

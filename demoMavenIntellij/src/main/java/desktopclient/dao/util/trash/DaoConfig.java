@@ -3,8 +3,10 @@
  * and open the template in the editor.
  */
 
-package desktopclient.dao.util;
+package desktopclient.dao.util.trash;
 
+
+import desktopclient.dao.util.trash.IConnectionFactory;
 
 public class DaoConfig {
     private static IConnectionFactory connectionFactory = null;

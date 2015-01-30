@@ -1,30 +1,28 @@
 package desktopclient.entities;
 
 
-import javafx.beans.property.*;
-
+import impl.org.controlsfx.i18n.SimpleLocalizedStringProperty;
+import java.io.Serializable;
 import java.time.LocalDate;
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
 
 /**
  *
  * @author sting
  */
-public class Person implements ISearchable {
+public class Person implements Serializable {
     private IntegerProperty id;
     private StringProperty name;
     private StringProperty surname;
     private StringProperty patronymic;
-    private ObjectProperty<LocalDate> birthday;
+    private LocalDate birthday;
     private StringProperty inn;
     private StringProperty passNumber;
     private StringProperty passSerial;
-    //private StringProperty fio;
-    //private StringProperty passport;
 
-
-    /*public Person() {
-        this(0, "", "", "", null, "", "", "");
-    }*/
 
     public Person() {
         id = new SimpleIntegerProperty();
@@ -34,8 +32,8 @@ public class Person implements ISearchable {
         inn = new SimpleStringProperty();
         passNumber = new SimpleStringProperty();
         passSerial = new SimpleStringProperty();
-        birthday = new SimpleObjectProperty<>();
     }
+
     /**
      *
      * @param name имя клиента
@@ -46,40 +44,28 @@ public class Person implements ISearchable {
      * @param passNumber номер паспорта
      * @param passSerial серия паспорта
      */
-    public Person(IntegerProperty id, StringProperty name, StringProperty surname,
-                  StringProperty patronymic, ObjectProperty<LocalDate> birthday,
-                  StringProperty inn, StringProperty passNumber, StringProperty passSerial) {
-        this.id = id;
-        this.name = name;
-        this.surname = surname;
-        this.patronymic = patronymic;
+    public Person(Integer id, String name, String surname, String patronymic,
+                  LocalDate birthday, String inn, String passNumber, String passSerial) {
         this.birthday = birthday;
-        this.inn = inn;
-        this.passNumber = passNumber;
-        this.passSerial = passSerial;
+        this.id = new SimpleIntegerProperty(id);
+        this.name = new SimpleStringProperty(name);
+        this.surname = new SimpleStringProperty(surname);
+        this.patronymic = new SimpleStringProperty(patronymic);
+        this.inn = new SimpleStringProperty(inn);
+        this.passNumber = new SimpleStringProperty(passNumber);
+        this.passSerial = new SimpleStringProperty(passSerial);
     }
 
-    @Override
     public Integer getId() {
         return id.get();
     }
 
-
-    public IntegerProperty idProperty() {
-        return id;
-    }
-
-    @Override
     public void setId(Integer id) {
         this.id.set(id);
     }
 
     public String getName() {
         return name.get();
-    }
-
-    public StringProperty nameProperty() {
-        return name;
     }
 
     public void setName(String name) {
@@ -90,10 +76,6 @@ public class Person implements ISearchable {
         return surname.get();
     }
 
-    public StringProperty surnameProperty() {
-        return surname;
-    }
-
     public void setSurname(String surname) {
         this.surname.set(surname);
     }
@@ -102,32 +84,20 @@ public class Person implements ISearchable {
         return patronymic.get();
     }
 
-    public StringProperty patronymicProperty() {
-        return patronymic;
-    }
-
     public void setPatronymic(String patronymic) {
         this.patronymic.set(patronymic);
     }
 
     public LocalDate getBirthday() {
-        return birthday.get();
-    }
-
-    public ObjectProperty<LocalDate> birthdayProperty() {
         return birthday;
     }
 
     public void setBirthday(LocalDate birthday) {
-        this.birthday.set(birthday);
+        this.birthday = birthday;
     }
 
     public String getInn() {
         return inn.get();
-    }
-
-    public StringProperty innProperty() {
-        return inn;
     }
 
     public void setInn(String inn) {
@@ -138,20 +108,12 @@ public class Person implements ISearchable {
         return passNumber.get();
     }
 
-    public StringProperty passNumberProperty() {
-        return passNumber;
-    }
-
     public void setPassNumber(String passNumber) {
         this.passNumber.set(passNumber);
     }
 
     public String getPassSerial() {
         return passSerial.get();
-    }
-
-    public StringProperty passSerialProperty() {
-        return passSerial;
     }
 
     public void setPassSerial(String passSerial) {
@@ -169,5 +131,27 @@ public class Person implements ISearchable {
                 ", passNumber='" + passNumber + '\'' +
                 ", passSerial='" + passSerial + '\'' +
                 '}';
+    }
+    
+    public IntegerProperty idProperty() {
+      return id;
+    }
+    public StringProperty nameProperty() {
+      return name;
+    }
+    public StringProperty surnameProperty() {
+      return surname;
+    }
+    public StringProperty patronymicProperty() {
+      return patronymic;
+    }
+    public StringProperty passNumberProperty() {
+      return passNumber;
+    }
+    public StringProperty passSerialProperty() {
+      return passSerial;
+    }
+    public StringProperty innProperty() {
+      return inn;
     }
 }

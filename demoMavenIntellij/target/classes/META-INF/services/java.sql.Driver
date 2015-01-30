@@ -1,1 +1,1 @@
-net.sourceforge.jtds.jdbc.Driver
+com.sybase.jdbc4.jdbc.SybDriver

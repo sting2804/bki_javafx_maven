@@ -4,7 +4,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.Font?>
-<AnchorPane id="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desktopclient.gui.newclient.NewClientWindowController">
+<AnchorPane id="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desktopclient.gui.trash.newclient.NewClientWindowController">
    <children>
       <Label alignment="TOP_CENTER" layoutX="116.0" layoutY="-2.0" nodeOrientation="LEFT_TO_RIGHT" text="Добавление нового клиента" textAlignment="CENTER" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0">
          <font>

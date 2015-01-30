@@ -1,11 +1,9 @@
 
-package desktopclient.gui.newclient;
+package desktopclient.gui.trash.newclient;
 
 
 import desktopclient.entities.LoanInfo;
 import desktopclient.entities.Person;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -20,7 +18,6 @@ import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
-import java.util.Iterator;
 import java.util.ResourceBundle;
 
 /**
