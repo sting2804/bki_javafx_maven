@@ -1,35 +1,44 @@
 package desktopclient.gui.main;
 
-import com.sun.rowset.internal.Row;
 import desktopclient.entities.Bank;
 import desktopclient.entities.Currency;
 import desktopclient.entities.LoanInfo;
 import desktopclient.entities.Person;
+import desktopclient.utils.DateConverter;
+import javafx.beans.property.ObjectProperty;
+import javafx.beans.property.SimpleObjectProperty;
+import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.CheckBoxTableCell;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.GridPane;
-import javafx.util.Callback;
 
 import java.net.URL;
 import java.sql.Date;
-import java.util.Comparator;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.List;
+import java.util.Optional;
 import java.util.ResourceBundle;
-import javafx.scene.control.cell.CheckBoxTableCell;
 
 /**
  * @author sting
  */
 public class MainWindowController implements Initializable {
 
-
+    @FXML
     public Button newClientButton;
+    @FXML
     public Button changeInfoButton;
+    @FXML
     public Button addInfoButton;
+    @FXML
+    public Button resetButton;
 
     private ObservableList<LoanInfo> infoList;
 
@@ -58,8 +67,6 @@ public class MainWindowController implements Initializable {
     @FXML
     public TableColumn<LoanInfo, Currency> currencyColumn;
     @FXML
-    public Button addNewButton;
-    @FXML
     public Button findClientButton;
     @FXML
     public GridPane rootScene;
@@ -82,7 +89,17 @@ public class MainWindowController implements Initializable {
     public void setMainModel(MainModel mainModel){
         this.mainModel=mainModel;
         refreshTable(tableView);
-        infoList.addAll(mainModel.getAllRecords());
+
+        List<LoanInfo> tempList = mainModel.getAllRecords();
+        if (tempList != null) infoList.addAll(tempList);
+        else {
+            Alert alert = new Alert(Alert.AlertType.ERROR, "Отсутсвует связь с сервером. " +
+                    "Устраните неисправность и повторите запуск программы", ButtonType.OK);
+            Optional<ButtonType> result = alert.showAndWait();
+            if (result.get() == ButtonType.OK) {
+                System.exit(0);
+            }
+        }
     }
 
     @Override
@@ -92,15 +109,13 @@ public class MainWindowController implements Initializable {
 
     @FXML
     public void newClientOnClick(ActionEvent actionEvent) {
-//        try {
-//            mainModel.callNewClientWindow();
-//            refreshTable(tableView);
-//            infoList.addAll(mainModel.getAllRecords());
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
         try {
             mainModel.callNewClientInfoWindow();
+            refreshTable(tableView);
+
+            List<LoanInfo> tmpList = mainModel.getAllRecords();
+            if (tmpList != null) infoList.addAll(tmpList);
+
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -108,7 +123,7 @@ public class MainWindowController implements Initializable {
 
 
     private void setPropertyValueFactory() {
-
+        DateConverter converter = new DateConverter();
         fioColumn.setSortType(TableColumn.SortType.ASCENDING);
         fioColumn.setCellValueFactory(new PropertyValueFactory<>("person"));
         fioColumn.setCellFactory((TableColumn<LoanInfo, Person> param) -> {
@@ -124,6 +139,7 @@ public class MainWindowController implements Initializable {
             };
             return fioCell;
         });
+
         bdColumn.setCellValueFactory(new PropertyValueFactory<>("person"));
         bdColumn.setCellFactory((TableColumn<LoanInfo, Person> param) -> {
             TableCell<LoanInfo, Person> bdCell = new TableCell<LoanInfo, Person>() {
@@ -131,13 +147,17 @@ public class MainWindowController implements Initializable {
                 protected void updateItem(Person item, boolean empty) {
                     setGraphic(null);
                     if (item != null) {
-                        Label bdLabel = new Label(item.getBirthday().toString());
+                        SimpleStringProperty property = new SimpleStringProperty();
+                        DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
+                        property.setValue(dateFormat.format(converter.to(item.getBirthday())));
+                        Label bdLabel = new Label(property.get());
                         setGraphic(bdLabel);
                     }
                 }
             };
             return bdCell;
         });
+
         innColumn.setCellValueFactory(new PropertyValueFactory<>("person"));
         innColumn.setCellFactory((TableColumn<LoanInfo, Person> param) -> {
             TableCell<LoanInfo, Person> innCell = new TableCell<LoanInfo, Person>() {
@@ -167,8 +187,18 @@ public class MainWindowController implements Initializable {
             return passportCell;
         });
         initAmountColumn.setCellValueFactory(new PropertyValueFactory<>("initAmount"));
-        initDateColumn.setCellValueFactory(new PropertyValueFactory<>("initDate"));
-        finishDateColumn.setCellValueFactory(new PropertyValueFactory<>("finishDate"));
+        initDateColumn.setCellValueFactory(item -> {
+            ObjectProperty property = new SimpleObjectProperty();
+            DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
+            property.setValue(dateFormat.format(converter.to(item.getValue().getInitDate())));
+            return property;
+        });
+        finishDateColumn.setCellValueFactory(item -> {
+            ObjectProperty property = new SimpleObjectProperty();
+            DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
+            property.setValue(dateFormat.format(converter.to(item.getValue().getFinishDate())));
+            return property;
+        });
         balanceColumn.setCellValueFactory(new PropertyValueFactory<>("balance"));
         arrearsColumn.setCellValueFactory(new PropertyValueFactory<>("arrears"));
         arrearsColumn.setCellFactory(CheckBoxTableCell.forTableColumn(arrearsColumn));
@@ -208,8 +238,10 @@ public class MainWindowController implements Initializable {
         try {
             mainModel.callSearchWindow();
             refreshTable(tableView);
-            infoList.addAll(mainModel.getFoundInfo());
-            tableView.setItems(infoList);
+
+            List<LoanInfo> tmpList = mainModel.getAllRecords();
+            if (tmpList != null) infoList.addAll(tmpList);
+
         } catch (Exception e) {
         }
     }
@@ -232,6 +264,11 @@ public class MainWindowController implements Initializable {
         try {
             Person curInfo = infoList.get(curRow).getPerson();
             mainModel.callAddInfoWindow(curInfo);
+            refreshTable(tableView);
+
+            List<LoanInfo> tmpList = mainModel.getAllRecords();
+            if (tmpList != null) infoList.addAll(tmpList);
+
         }catch (ArrayIndexOutOfBoundsException ex){
             new Alert(Alert.AlertType.WARNING, "Выберите поле в таблице").showAndWait();
         } catch (Exception e) {
@@ -248,6 +285,11 @@ public class MainWindowController implements Initializable {
         try {
             LoanInfo curInfo = infoList.get(curRow);
             mainModel.callChangeClientWindow(curInfo);
+            refreshTable(tableView);
+
+            List<LoanInfo> tmpList = mainModel.getAllRecords();
+            if (tmpList != null) infoList.addAll(tmpList);
+
         } catch (ArrayIndexOutOfBoundsException ex) {
             new Alert(Alert.AlertType.WARNING, "Выберите поле в таблице").showAndWait();
         } catch (Exception e) {
@@ -255,7 +297,9 @@ public class MainWindowController implements Initializable {
         }
     }
 
-    /*public void onSort(SortEvent<TableView<S>> tableViewSortEvent) {
-
-    }*/
+    public void resetTableRecords(ActionEvent actionEvent) {
+        refreshTable(tableView);
+        List<LoanInfo> tmpList = mainModel.getAllRecords();
+        if (tmpList != null) infoList.addAll(tmpList);
+    }
 }

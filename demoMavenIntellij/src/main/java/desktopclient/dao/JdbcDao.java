@@ -2,49 +2,46 @@ package desktopclient.dao;
 
 
 import desktopclient.dao.util.ConnectionManager;
-import desktopclient.dao.util.IConnectionManager;
 import desktopclient.entities.Bank;
 import desktopclient.entities.Currency;
 import desktopclient.entities.LoanInfo;
 import desktopclient.entities.Person;
+import desktopclient.utils.Converter;
+import desktopclient.utils.DateConverter;
+import org.apache.log4j.Logger;
 
 import java.sql.*;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
 /**
- * Created by sting
+ *
  */
 public class JdbcDao implements IBkiDao {
+
+    private static final Logger log = Logger.getLogger(JdbcDao.class);
+
     Connection connection;
     private List<LoanInfo> data;
     private Map<String, String> banks;
     private Map<String, String> currencies;
-    private IConnectionManager connectionManager;
+    private Converter<Date, LocalDate> dateConverter;
 
     public JdbcDao() {
         this.data = new ArrayList<>();
         this.currencies = new HashMap<>();
         this.banks = new HashMap<>();
-        connectionManager = new ConnectionManager();
-        try {
-            //задумывалось использование шаблонного метода
-            connection = connectionManager.getConnection();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        //задумывалось использование шаблонного метода
+        connection = ConnectionManager.getConnection();
+        dateConverter = new DateConverter();
     }
 
-    /**
-     * метод для получения всех записей из базы
-     *
-     * @return
-     */
     @Override
     public List<LoanInfo> getAllRecords() {
+        if (connection == null) return null;
         data.removeAll(data);
         String query = "select * from client_info_view";
         try (PreparedStatement ps = connection.prepareStatement(query)) {
@@ -58,91 +55,178 @@ public class JdbcDao implements IBkiDao {
                     currency = new Currency();
                     person = new Person();
                     loanInfo = new LoanInfo();
-                    person.setName(answer.getString(1));
-                    person.setSurname(answer.getString(2));
-                    person.setPatronymic(answer.getString(3));
-                    person.setBirthday(answer.getDate(4).toLocalDate());
-                    person.setInn(answer.getString(5));
-                    person.setPassSerial(answer.getString(6));
-                    person.setPassNumber(answer.getString(7));
-                    person.setId(answer.getInt(17));
+                    int i = 1;
+                    person.setName(answer.getString(i++));
+                    person.setSurname(answer.getString(i++));
+                    person.setPatronymic(answer.getString(i++));
+                    person.setBirthday(answer.getDate(i++).toLocalDate());
+                    person.setInn(answer.getString(i++));
+                    person.setPassSerial(answer.getString(i++));
+                    person.setPassNumber(answer.getString(i++));
+                    loanInfo.setInitAmount(answer.getDouble(i++));
+                    try {
+                        loanInfo.setInitDate(answer.getDate(i++).toLocalDate());
+                    } catch (Exception e) {
+                        log.error(e.getMessage());
+                    }
+                    try {
+                        loanInfo.setFinishDate(answer.getDate(i++).toLocalDate());
+                    } catch (Exception e) {
+                        log.error(e.getMessage());
+                    }
+                    try {
+                        loanInfo.setBalance(answer.getDouble(i++));
+                    } catch (Exception e) {
+                        log.error(e.getMessage());
+                    }
+                    loanInfo.setArrears(answer.getBoolean(i++));
+                    bank.setCode(answer.getString(i++));
+                    bank.setName(answer.getString(i++));
+
+                    currency.setCode(answer.getString(i++));
+                    currency.setName(answer.getString(i++));
+                    person.setId(answer.getInt(i++));
+
+                    loanInfo.setId(answer.getInt(i));
 
                     loanInfo.setPerson(person);
-
-                    bank.setCode(answer.getString(13));
-                    bank.setName(answer.getString(14));
-
                     loanInfo.setBank(bank);
-
-                    currency.setCode(answer.getString(15));
-                    currency.setName(answer.getString(16));
-
                     loanInfo.setCurrency(currency);
 
-                    loanInfo.setInitAmount(answer.getDouble(8));
-                    try {
-                        loanInfo.setInitDate(answer.getDate(9).toLocalDate());
-                    } catch (Exception e) {
-                    }
-                    try {
-                        loanInfo.setFinishDate(answer.getDate(10).toLocalDate());
-                    } catch (Exception e) {
-                    }
-                    try {
-                        loanInfo.setBalance(answer.getDouble(11));
-                    } catch (Exception e) {
-                    }
-                    loanInfo.setArrears(answer.getBoolean(12));
-                    loanInfo.setId(answer.getInt(18));
                     data.add(loanInfo);
                 }
             }
         } catch (SQLException e) {
-            e.printStackTrace();
-
+            log.error(e.getMessage());
         }
         return data;
     }
 
     @Override
     public boolean isClientExists(Person person) {
+        if (connection == null) return false;
         String query = "select 1 from client_info_view where (name=? and surname=? and patronymic=? and birthday=?) or " +
                 " inn=? or  (pass_serial=? and pass_number=?)";
         try (PreparedStatement ps = connection.prepareStatement(query)) {
-            ps.setString(1, person.getName());
-            ps.setString(2, person.getSurname());
-            ps.setString(3, person.getPatronymic());
+            int i = 1;
+            ps.setString(i++, person.getName());
+            ps.setString(i++, person.getSurname());
+            ps.setString(i++, person.getPatronymic());
             try {
-                ps.setString(4, person.getBirthday().toString());
+                ps.setString(i++, person.getBirthday().toString());
             } catch (Exception e) {
-                ps.setString(4, "");
+                ps.setString(i, "");
             }
-            ps.setString(5, person.getInn());
-            ps.setString(6, person.getPassSerial());
-            ps.setString(7, person.getPassNumber());
+            ps.setString(i++, person.getInn());
+            ps.setString(i++, person.getPassSerial());
+            ps.setString(i, person.getPassNumber());
             try (ResultSet answer = ps.executeQuery()) {
                 if (answer.next()) return true;
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            log.error(e.getMessage());
             return false;
         }
         return false;
     }
 
-
     @Override
     public boolean addNewInfo(LoanInfo info) {
-        return false;
+        if (connection == null) return false;
+        int id;
+        String callQuery = "{call GET_ID (?,?)}";
+        String query = "insert into loan(loan_id, currency_code, bank_code, client_id, " +
+                "init_amount, init_date, finish_date, balance, arrears) values(?, ?, ?, ?, ?, ?, ?, ?, ?)";
+        try (CallableStatement cs = connection.prepareCall(callQuery);
+             PreparedStatement ps = connection.prepareStatement(query)) {
+            int i = 1;
+            cs.setString(i++, "loan");
+            cs.registerOutParameter(i, Types.INTEGER);
+            cs.execute();
+            id = cs.getInt(i);
+            i = 1;
+            ps.setInt(i++, id);
+            ps.setString(i++, info.getCurrency().getCode());
+            ps.setString(i++, info.getBank().getCode());
+            ps.setInt(i++, info.getPerson().getId());
+            ps.setDouble(i++, info.getInitAmount());
+            ps.setDate(i++, dateConverter.to(info.getInitDate()));
+            ps.setDate(i++, dateConverter.to(info.getFinishDate()));
+            ps.setDouble(i++, info.getBalance());
+            ps.setBoolean(i, info.getArrears());
+            ps.execute();
+        } catch (SQLException e) {
+            log.error(e.getMessage());
+            return false;
+        }
+        return true;
     }
 
     @Override
-    public boolean changeInfo(LoanInfo curInfo) {
+    public boolean changeInfo(LoanInfo oldInfo, LoanInfo newInfo) {
+        if (connection == null) return false;
+        if (updatePerson(oldInfo.getPerson(), newInfo.getPerson())) {
+            String str = "currency_code=?, bank_code=?, client_id=?," +
+                    " init_amount=?, init_date=?, finish_date=?, balance=?, arrears=?";
+            String query = "update loan set " + str + " where loan_id=?";
+            try (PreparedStatement ps = connection.prepareStatement(query)) {
+                int i = 1;
+                ps.setString(i++, newInfo.getCurrency().getCode());
+                ps.setString(i++, newInfo.getBank().getCode());
+                ps.setInt(i++, oldInfo.getPerson().getId());
+                ps.setDouble(i++, newInfo.getInitAmount());
+                ps.setDate(i++, dateConverter.to(newInfo.getInitDate()));
+                ps.setDate(i++, dateConverter.to(newInfo.getFinishDate()));
+                ps.setDouble(i++, newInfo.getBalance());
+                ps.setBoolean(i++, newInfo.getArrears());
+
+                ps.setInt(i, oldInfo.getId());
+
+                ps.execute();
+            } catch (SQLException e) {
+                log.error(e.getMessage());
+                return false;
+            }
+            return true;
+        }
         return false;
+    }
+
+    /**
+     * Обновляет запись в таблице клиентов
+     *
+     * @param oldPerson данные, на которые запрос ориентируется для изменения записи
+     * @param newPerson новые данные
+     * @return возвращает true в случае удачи и false в обратном
+     */
+    private boolean updatePerson(Person oldPerson, Person newPerson) {
+        if (connection == null) return false;
+        String str = "inn=?, name=?, surname=?, patronymic=?," +
+                "birthday=?, pass_serial=?, pass_number=?";
+        String query = "update client set " + str + " where client_id=?";
+        try (PreparedStatement ps = connection.prepareStatement(query)) {
+            int i = 1;
+            ps.setString(i++, newPerson.getInn());
+            ps.setString(i++, newPerson.getName());
+            ps.setString(i++, newPerson.getSurname());
+            ps.setString(i++, newPerson.getPatronymic());
+            ps.setDate(i++, dateConverter.to(newPerson.getBirthday()));
+            ps.setString(i++, newPerson.getPassSerial());
+            ps.setString(i++, newPerson.getPassNumber());
+
+            ps.setInt(i, oldPerson.getId());
+
+            ps.execute();
+        } catch (SQLException e) {
+            log.error(e.getMessage());
+            return false;
+        }
+        return true;
     }
 
     @Override
     public List<LoanInfo> getPersonInfo(Person person) {
+        if (connection == null) return null;
         if (!isClientExists(person)) return null;
         data.removeAll(data);
         String query = "select name, surname, patronymic, birthday, inn, " +
@@ -151,17 +235,18 @@ public class JdbcDao implements IBkiDao {
                 "from client_info_view where (name=? and surname=? and patronymic=? and birthday =?) " +
                 " or inn=? or  (pass_serial=? and pass_number=?)";
         try (PreparedStatement ps = connection.prepareStatement(query)) {
-            ps.setString(1, person.getName());
-            ps.setString(2, person.getSurname());
-            ps.setString(3, person.getPatronymic());
+            int i = 1;
+            ps.setString(i++, person.getName());
+            ps.setString(i++, person.getSurname());
+            ps.setString(i++, person.getPatronymic());
             try {
-                ps.setString(4, person.getBirthday().toString());
+                ps.setString(i++, person.getBirthday().toString());
             } catch (Exception e) {
-                ps.setString(4, null);
+                ps.setString(i, null);
             }
-            ps.setString(5, person.getInn());
-            ps.setString(6, person.getPassSerial());
-            ps.setString(7, person.getPassNumber());
+            ps.setString(i++, person.getInn());
+            ps.setString(i++, person.getPassSerial());
+            ps.setString(i++, person.getPassNumber());
             try (ResultSet answer = ps.executeQuery()) {
                 LoanInfo loanInfo;
                 Bank bank;
@@ -171,58 +256,54 @@ public class JdbcDao implements IBkiDao {
                     currency = new Currency();
                     person = new Person();
                     loanInfo = new LoanInfo();
-                    person.setName(answer.getString(1));
-                    person.setSurname(answer.getString(2));
-                    person.setPatronymic(answer.getString(3));
-                    person.setBirthday(answer.getDate(4).toLocalDate());
-                    person.setInn(answer.getString(5));
-                    person.setPassSerial(answer.getString(6));
-                    person.setPassNumber(answer.getString(7));
-                    person.setId(answer.getInt(17));
-
-                    loanInfo.setPerson(person);
-
-                    bank.setCode(answer.getString(13));
-                    bank.setName(answer.getString(14));
-
-                    loanInfo.setBank(bank);
-
-                    currency.setCode(answer.getString(15));
-                    currency.setName(answer.getString(16));
+                    i = 1;
+                    person.setName(answer.getString(i++));
+                    person.setSurname(answer.getString(i++));
+                    person.setPatronymic(answer.getString(i++));
+                    person.setBirthday(answer.getDate(i++).toLocalDate());
+                    person.setInn(answer.getString(i++));
+                    person.setPassSerial(answer.getString(i++));
+                    person.setPassNumber(answer.getString(i++));
+                    loanInfo.setInitAmount(answer.getDouble(i++));
+                    try {
+                        loanInfo.setInitDate(answer.getDate(i++).toLocalDate());
+                    } catch (Exception e) {
+                        log.error(e.getMessage());
+                    }
+                    try {
+                        loanInfo.setFinishDate(answer.getDate(i++).toLocalDate());
+                    } catch (Exception e) {
+                        log.error(e.getMessage());
+                    }
+                    try {
+                        loanInfo.setBalance(answer.getDouble(i++));
+                    } catch (Exception e) {
+                        log.error(e.getMessage());
+                    }
+                    loanInfo.setArrears(answer.getBoolean(i++));
+                    bank.setCode(answer.getString(i++));
+                    bank.setName(answer.getString(i++));
+                    currency.setCode(answer.getString(i++));
+                    currency.setName(answer.getString(i++));
+                    person.setId(answer.getInt(i++));
+                    loanInfo.setId(answer.getInt(i));
 
                     loanInfo.setCurrency(currency);
+                    loanInfo.setBank(bank);
+                    loanInfo.setPerson(person);
 
-                    loanInfo.setInitAmount(answer.getDouble(8));
-                    try {
-                        loanInfo.setInitDate(answer.getDate(9).toLocalDate());
-                    } catch (Exception e) {
-                    }
-                    try {
-                        loanInfo.setFinishDate(answer.getDate(10).toLocalDate());
-                    } catch (Exception e) {
-                    }
-                    try {
-                        loanInfo.setBalance(answer.getDouble(11));
-                    } catch (Exception e) {
-                    }
-                    loanInfo.setArrears(answer.getBoolean(12));
-                    loanInfo.setId(answer.getInt(18));
                     data.add(loanInfo);
                 }
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            log.error(e.getMessage());
         }
         return data;
     }
 
     @Override
-    public boolean deletePerson(int personId) {
-        return false;
-    }
-
-    @Override
     public Map<String, String> getBanksMap() {
+        if (connection == null) return null;
         banks.clear();
         String query = "select bank_code, bank_name from bank";
         try (PreparedStatement ps = connection.prepareStatement(query)) {
@@ -232,14 +313,14 @@ public class JdbcDao implements IBkiDao {
                 }
             }
         } catch (SQLException e) {
-            e.printStackTrace();
-
+            log.error(e.getMessage());
         }
         return banks;
     }
 
     @Override
     public Map<String, String> getCurrenciesMap() {
+        if (connection == null) return null;
         currencies.clear();
         String query = "select currency_code, currency_name from currency";
         try (PreparedStatement ps = connection.prepareStatement(query)) {
@@ -249,21 +330,64 @@ public class JdbcDao implements IBkiDao {
                 }
             }
         } catch (SQLException e) {
-            e.printStackTrace();
-
+            log.error(e.getMessage());
         }
         return currencies;
     }
 
     @Override
     public boolean addNewClient(LoanInfo info) {
-        if (addNewPerson(info.getPerson())){
-
+        int clientId = addNewPerson(info.getPerson());
+        if (clientId != -1) {
+            addNewInfo(info);
         }
         return false;
     }
 
-    private boolean addNewPerson(Person person) {
+    @Override
+    public boolean addNewCurrency(Currency currency) {
+        if (connection == null) return false;
+
+        String query = "insert into currency(currency_code, currency_name) values(?, ?)";
+        try (PreparedStatement ps = connection.prepareStatement(query)) {
+            int i = 1;
+            ps.setString(i++, currency.getCode());
+            ps.setString(i, currency.getName());
+            ps.execute();
+
+        } catch (SQLException e) {
+            log.error(e.getMessage());
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public boolean addNewBank(Bank bank) {
+        if (connection == null) return false;
+
+        String query = "insert into bank(bank_code, bank_name) values(?, ?)";
+        try (PreparedStatement ps = connection.prepareStatement(query)) {
+            int i = 1;
+            ps.setString(i++, bank.getCode());
+            ps.setString(i, bank.getName());
+            ps.execute();
+
+        } catch (SQLException e) {
+            log.error(e.getMessage());
+            return false;
+        }
+        return true;
+    }
+
+    /**
+     * Добавляет одну запись в таблицу client
+     *
+     * @param person содержит информацию о клиенте
+     * @return Возвращает id клиента, вставленного в базу. Если вставка не произошла, возвращает -1
+     */
+    private int addNewPerson(Person person) {
+        if (connection == null) return -1;
         int id;
         String callQuery = "{call GET_ID (?,?)}";
         String query = "insert into client(client_id, inn, name, surname, patronymic," +
@@ -281,14 +405,14 @@ public class JdbcDao implements IBkiDao {
             ps.setString(i++, person.getName());
             ps.setString(i++, person.getSurname());
             ps.setString(i++, person.getPatronymic());
-            ps.setDate(i++, new Date(person.getBirthday().toEpochDay()));
+            ps.setDate(i++, dateConverter.to(person.getBirthday()));
             ps.setString(i++, person.getPassSerial());
-            ps.setString(i++, person.getPassNumber());
+            ps.setString(i, person.getPassNumber());
             ps.execute();
         } catch (SQLException e) {
-            e.printStackTrace();
-            return false;
+            log.error(e.getMessage());
+            return -1;
         }
-        return true;
+        return id;
     }
 }

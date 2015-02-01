@@ -1,13 +1,13 @@
 package desktopclient.entities;
 
 
-import impl.org.controlsfx.i18n.SimpleLocalizedStringProperty;
-import java.io.Serializable;
-import java.time.LocalDate;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
+
+import java.io.Serializable;
+import java.time.LocalDate;
 
 /**
  *

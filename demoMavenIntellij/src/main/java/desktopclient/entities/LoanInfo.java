@@ -5,14 +5,10 @@
  */
 package desktopclient.entities;
 
+import javafx.beans.property.*;
+
 import java.io.Serializable;
 import java.time.LocalDate;
-import javafx.beans.property.BooleanProperty;
-import javafx.beans.property.DoubleProperty;
-import javafx.beans.property.IntegerProperty;
-import javafx.beans.property.SimpleBooleanProperty;
-import javafx.beans.property.SimpleDoubleProperty;
-import javafx.beans.property.SimpleIntegerProperty;
 
 /**
  *
@@ -123,21 +119,6 @@ public class LoanInfo implements Serializable{
         this.currency = currency;
     }
 
-    @Override
-    public String toString() {
-        return "LoanInfo{" +
-                "id=" + id +
-                ", initAmount=" + initAmount +
-                ", initDate=" + initDate +
-                ", finishDate=" + finishDate +
-                ", balance=" + balance +
-                ", arrears=" + arrears +
-                ", bank=" + bank +
-                ", currency=" + currency +
-                ", person=" + person +
-                '}';
-    }
-    
     
     public BooleanProperty arrearsProperty() {
       return arrears;

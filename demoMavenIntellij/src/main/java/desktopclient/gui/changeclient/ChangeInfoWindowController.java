@@ -6,6 +6,8 @@ import desktopclient.entities.Currency;
 import desktopclient.entities.LoanInfo;
 import desktopclient.entities.Person;
 import desktopclient.gui.main.MainModel;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -26,9 +28,9 @@ public class ChangeInfoWindowController implements Initializable {
     @FXML
     public Button applyButton;
     @FXML
-    public TextField currencyCodeTextField;
+    public ComboBox<String> bankCodeComboBox;
     @FXML
-    public TextField bankCodeTextField;
+    public ComboBox<String> currencyCodeComboBox;
     @FXML
     TextField fioTextField;
     @FXML
@@ -50,15 +52,31 @@ public class ChangeInfoWindowController implements Initializable {
 
     private Person person;
     private LoanInfo searchInfo;
+
+    private ObservableList<String> bankCodes;
+    private ObservableList<String> currencyCodes;
+
     private Map<String, String> bankMap;
     private Map<String, String> currencyMap;
     private MainModel mainModel;
+
 
     public ChangeInfoWindowController() {
     }
 
     public void setMainModel(MainModel mainModel) {
         this.mainModel = mainModel;
+        initCollections();
+    }
+
+    private void initCollections() {
+        bankMap = mainModel.getBankMap();
+        currencyMap = mainModel.getCurrencyMap();
+        if (bankMap == null || currencyMap == null) return;
+        bankCodes = FXCollections.observableArrayList(bankMap.keySet());
+        currencyCodes = FXCollections.observableArrayList(currencyMap.keySet());
+        bankCodeComboBox.setItems(bankCodes);
+        currencyCodeComboBox.setItems(currencyCodes);
     }
 
     @FXML
@@ -76,10 +94,10 @@ public class ChangeInfoWindowController implements Initializable {
             initAmount = null;
             balance = null;
         }
-        String currencyCode = currencyCodeTextField.getText();
+        String currencyCode = currencyCodeComboBox.getValue();
         LocalDate initDate = initdateDatePicker.getValue();
         LocalDate finishDate = finishdateDatePicker.getValue();
-        String bankCode = bankCodeTextField.getText();
+        String bankCode = bankCodeComboBox.getValue();
         Boolean arrears = arrearsCheckBox.isSelected();
         Bank bank;
         Currency currency;
@@ -131,39 +149,58 @@ public class ChangeInfoWindowController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-//        setDatePickerFormat(birthdayDatePicker);
-//        setDatePickerFormat(initdateDatePicker);
-//        setDatePickerFormat(finishdateDatePicker);
+        setDatePickerFormat(birthdayDatePicker);
+        setDatePickerFormat(initdateDatePicker);
+        setDatePickerFormat(finishdateDatePicker);
     }
 
+    /**
+     * задаёт формат даты для указанного объекта класса DatePicker
+     *
+     * @param datePicker
+     */
     private void setDatePickerFormat(DatePicker datePicker) {
-        datePicker.setConverter(new StringConverter<LocalDate>() {
-            private DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
+        datePicker.setConverter(createConverter("dd.MM.yyyy"));
+    }
+
+    /**
+     * Задаёт конвертор формата по заданому шаблону
+     *
+     * @param pattern описывает требуемый формат
+     * @return
+     */
+    private StringConverter<LocalDate> createConverter(String pattern) {
+        StringConverter<LocalDate> converter = new StringConverter<LocalDate>() {
+            DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern(pattern);
 
             @Override
-            public String toString(LocalDate object) {
-                if (object == null)
+            public String toString(LocalDate date) {
+                if (date != null) {
+                    return dateFormatter.format(date);
+                } else {
                     return "";
-                return dateTimeFormatter.format(object);
+                }
             }
 
             @Override
             public LocalDate fromString(String string) {
-                if (string == null)
+                if (string != null && !string.isEmpty()) {
+                    return LocalDate.parse(string, dateFormatter);
+                } else {
                     return null;
-                return LocalDate.parse(string);
+                }
             }
-        });
+        };
+        return converter;
     }
-
 
     private void setScreenForms(LoanInfo loanInfo) {
         if (loanInfo != null) {
             setScreenForms(loanInfo.getPerson());
             initialAmountTextField.setText(loanInfo.getInitAmount().toString());
             balanceTextField.setText(loanInfo.getBalance().toString());
-            bankCodeTextField.setText(loanInfo.getBank().getCode());
-            currencyCodeTextField.setText(loanInfo.getCurrency().getCode());
+            bankCodeComboBox.setValue(loanInfo.getBank().getCode());
+            currencyCodeComboBox.setValue(loanInfo.getCurrency().getCode());
             initdateDatePicker.setValue(loanInfo.getInitDate());
             finishdateDatePicker.setValue(loanInfo.getFinishDate());
             arrearsCheckBox.setSelected(loanInfo.getArrears());

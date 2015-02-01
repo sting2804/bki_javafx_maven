@@ -13,8 +13,11 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
+import javafx.util.StringConverter;
 
 import java.net.URL;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ResourceBundle;
 
 /**
@@ -121,7 +124,49 @@ public class ClientSearchWindowController implements Initializable {
         observableList.add(2, "По паспорту");
         methodComboBox.setItems(observableList);
         methodComboBox.getSelectionModel().selectFirst();
+        setDatePickerFormat(birthdaySearchDatePicker);
     }
+
+    /**
+     * задаёт формат даты для указанного объекта класса DatePicker
+     *
+     * @param datePicker
+     */
+    private void setDatePickerFormat(DatePicker datePicker) {
+        datePicker.setConverter(createConverter("dd.MM.yyyy"));
+    }
+
+    /**
+     * Задаёт конвертор формата по заданому шаблону
+     *
+     * @param pattern описывает требуемый формат
+     * @return
+     */
+    private StringConverter<LocalDate> createConverter(String pattern) {
+        StringConverter<LocalDate> converter = new StringConverter<LocalDate>() {
+            DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern(pattern);
+
+            @Override
+            public String toString(LocalDate date) {
+                if (date != null) {
+                    return dateFormatter.format(date);
+                } else {
+                    return "";
+                }
+            }
+
+            @Override
+            public LocalDate fromString(String string) {
+                if (string != null && !string.isEmpty()) {
+                    return LocalDate.parse(string, dateFormatter);
+                } else {
+                    return null;
+                }
+            }
+        };
+        return converter;
+    }
+
 
     private void clearForms(){
         surnameSearchTextField.clear();

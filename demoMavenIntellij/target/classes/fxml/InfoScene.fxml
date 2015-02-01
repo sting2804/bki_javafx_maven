@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.Font?>
+
 <AnchorPane id="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desktopclient.gui.changeclient.ChangeInfoWindowController">
    <children>
       <Label alignment="TOP_CENTER" layoutX="116.0" layoutY="-2.0" nodeOrientation="LEFT_TO_RIGHT" text="Изменение клиента" textAlignment="CENTER" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0">
@@ -95,8 +98,8 @@
                </GridPane.margin>
             </Label>
             <Button fx:id="applyButton" mnemonicParsing="false" onAction="#changeInfoOnClick" text="Применить" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="5" />
-            <TextField fx:id="currencyCodeTextField" promptText="Например UAH" GridPane.columnIndex="3" />
-            <TextField fx:id="bankCodeTextField" promptText="(МФО)" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <ComboBox fx:id="bankCodeComboBox" editable="true" prefHeight="26.0" prefWidth="177.0" promptText="(МФО)" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <ComboBox fx:id="currencyCodeComboBox" editable="true" prefHeight="26.0" prefWidth="204.0" promptText="Например USD" GridPane.columnIndex="3" />
          </children>
          <padding>
             <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />

@@ -95,8 +95,10 @@
                </GridPane.margin>
             </Label>
             <Button fx:id="applyButton" mnemonicParsing="false" onAction="#changeInfoOnClick" text="Применить" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="5" />
-            <TextField fx:id="currencyCodeTextField" promptText="Например UAH" GridPane.columnIndex="3" />
-            <TextField fx:id="bankCodeTextField" promptText="(МФО)" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+             <ComboBox fx:id="bankCodeComboBox" editable="true" prefHeight="26.0" prefWidth="177.0" promptText="(МФО)"
+                       GridPane.columnIndex="3" GridPane.rowIndex="3"/>
+             <ComboBox fx:id="currencyCodeComboBox" editable="true" prefHeight="26.0" prefWidth="204.0"
+                       promptText="Например USD" GridPane.columnIndex="3"/>
          </children>
          <padding>
             <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />

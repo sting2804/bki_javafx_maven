@@ -2,13 +2,16 @@ package desktopclient.gui.main;
 
 import desktopclient.bussines.ILoanInfoService;
 import desktopclient.bussines.trash.IPersonService;
-import desktopclient.bussines.IServiceFactory;
-import desktopclient.entities.*;
+import desktopclient.bussines.trash.IServiceFactory;
+import desktopclient.entities.Bank;
+import desktopclient.entities.Currency;
+import desktopclient.entities.LoanInfo;
+import desktopclient.entities.Person;
 import desktopclient.gui.changeclient.ChangeInfoWindowController;
 import desktopclient.gui.directories.BankWindowController;
 import desktopclient.gui.directories.CurrencyWindowController;
-import desktopclient.gui.trash.newclient.NewClientWindowController;
 import desktopclient.gui.searchuser.ClientSearchWindowController;
+import desktopclient.gui.trash.newclient.NewClientWindowController;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -19,8 +22,6 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 
 /**
@@ -29,6 +30,7 @@ import java.util.logging.Logger;
  */
 public class MainModel {
 
+    private static final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(MainModel.class);
     /**
      * ncController контроллер окна создания нового клиента
      * csController контроллер окна писка клиента
@@ -79,8 +81,8 @@ public class MainModel {
         try {
              scene = new Scene(root.load());
             primaryStage.setScene(scene);
-        } catch (IOException ex) {
-            Logger.getLogger(MainModel.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException e) {
+            log.error(e.getMessage());
         }
         mwController = root.<MainWindowController>getController();
         mwController.setMainModel(this);
@@ -89,7 +91,10 @@ public class MainModel {
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);
         primaryStage.show();
-        primaryStage.setOnCloseRequest(event -> Platform.exit());
+        primaryStage.setOnCloseRequest(event -> {
+            Platform.exit();
+            System.exit(0);
+        });
     }
 
     public List<LoanInfo> getAllRecords(){
@@ -106,8 +111,8 @@ public class MainModel {
         root = new FXMLLoader(getClass().getResource("/fxml/ClientSearchScene.fxml"));
         try {
             primaryStage.setScene(new Scene(root.load()));
-        } catch (IOException ex) {
-            Logger.getLogger(MainModel.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException e) {
+            log.error(e.getMessage());
         }
         csController = root.<ClientSearchWindowController>getController();
         primaryStage.setResizable(false);
@@ -115,49 +120,8 @@ public class MainModel {
         primaryStage.initModality(Modality.APPLICATION_MODAL);
         primaryStage.showAndWait();
         Person searchPerson = csController.getSearchablePerson();
-        if(searchPerson == null){
-            throw new NullPointerException();
-        }
-        foundInfo = loanInfoService.listSpecificInfo(searchPerson);
-    }
-
-    /**
-     * callNewClientWindow() открывает окно создания нового клиента
-     * @throws NullPointerException
-     */
-    public void callNewClientWindow() throws NullPointerException {
-        Stage primaryStage = new Stage();
-        FXMLLoader  root;
-        root = new FXMLLoader(getClass().getResource("/fxml/trash/NewClientScene.fxml"));
-        try {
-            primaryStage.setScene(new Scene(root.load()));
-        } catch (IOException ex) {
-            Logger.getLogger(MainModel.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        ncController = root.<NewClientWindowController>getController();
-        primaryStage.setResizable(false);
-        primaryStage.setOnCloseRequest(event -> primaryStage.close());
-        primaryStage.initModality(Modality.APPLICATION_MODAL);
-        primaryStage.showAndWait();
-        Person newPerson = ncController.getPerson();
-        if(newPerson != null){
-            //что-то сделать с объектом
-            Alert a;
-            if(loanInfoService.isClientExists(newPerson)){
-                a = new Alert(Alert.AlertType.INFORMATION);
-                a.setContentText("Клиент существует");
-                a.showAndWait();
-            }
-            /*else if (loanInfoService.add(newPerson)){
-                a = new Alert(Alert.AlertType.INFORMATION);
-                a.setContentText("Клиент добавлен");
-                a.showAndWait();
-            }
-            else {
-                a = new Alert(Alert.AlertType.ERROR);
-                a.setContentText("Клиент не добавлен");
-                a.showAndWait();
-            }*/
+        if (searchPerson != null) {
+            foundInfo = loanInfoService.listSpecificInfo(searchPerson);
         }
 
     }
@@ -174,8 +138,8 @@ public class MainModel {
         root = new FXMLLoader(getClass().getResource("/fxml/InfoScene.fxml"));
         try {
             primaryStage.setScene(new Scene(root.load()));
-        } catch (IOException ex) {
-            Logger.getLogger(MainModel.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException e) {
+            log.error(e.getMessage());
         }
         //передача информации в контроллер 
         ciController = root.<ChangeInfoWindowController>getController();
@@ -188,18 +152,17 @@ public class MainModel {
         primaryStage.showAndWait();
         //получение информации из контроллера
         LoanInfo newInfo = ciController.getNewInfo();
+        if (curInfo.equals(newInfo)) {
+            new Alert(Alert.AlertType.WARNING, "Данные совпадают, менять нечего").showAndWait();
+            return;
+        }
         if(newInfo!=null){
-            if (curInfo.equals(newInfo)){
-                Alert a = new Alert(Alert.AlertType.WARNING);
-                a.setContentText("Данные совпадают и не будут изменениы");
-                a.showAndWait();
-            }
-            else {
-                //что-то сделать с обёектом
-                loanInfoService.modify(newInfo);
+            if (loanInfoService.isClientExists(newInfo.getPerson())) {
+                loanInfoService.modify(curInfo, newInfo);
             }
         }
     }
+
     /**
      * callAddInfoWindow() открывает окно добавления информации о кредитах выбранного клиента
      * @param curInfo выбранная сущность из таблицы
@@ -212,8 +175,8 @@ public class MainModel {
         root = new FXMLLoader(getClass().getResource("/fxml/InfoScene.fxml"));
         try {
             primaryStage.setScene(new Scene(root.load()));
-        } catch (IOException ex) {
-            Logger.getLogger(MainModel.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException e) {
+            log.error(e.getMessage());
         }
         //передача информации в контроллер
         ciController = root.<ChangeInfoWindowController>getController();
@@ -227,101 +190,11 @@ public class MainModel {
         //получение информации из контроллера
         LoanInfo newInfo = ciController.getNewInfo();
         if(newInfo!=null){
-            if (curInfo.equals(newInfo)){
-                Alert a = new Alert(Alert.AlertType.WARNING);
-                a.setContentText("Данные совпадают и не будут изменениы");
-                a.showAndWait();
-            }
-            else {
-                //что-то сделать с обёектом
-                loanInfoService.modify(newInfo);
-            }
+            if (loanInfoService.isClientExists(newInfo.getPerson())) {
+                loanInfoService.addInfo(newInfo);
+            } else
+                loanInfoService.addNewClient(newInfo);
         }
-    }
-
-
-    public List<LoanInfo> getFoundInfo() {
-        return foundInfo;
-    }
-    public Map<String,String> getCurrencyMap(){
-        return loanInfoService.getCurrenciesMap();
-    }
-    public Map<String,String> getBankMap(){
-        return loanInfoService.getBanksMap();
-    }
-
-    public Bank callNewBankWindow(String bankCode) {
-        final Stage primaryStage = new Stage();
-        FXMLLoader root;
-        primaryStage.initModality(Modality.APPLICATION_MODAL);
-        root = new FXMLLoader(getClass().getResource("/fxml/BankScene.fxml"));
-        try {
-            primaryStage.setScene(new Scene(root.load()));
-        } catch (IOException ex) {
-            Logger.getLogger(MainModel.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        //передача информации в контроллер
-        bwController = root.<BankWindowController>getController();
-        bwController.setMainModel(this);
-        bwController.setScreenForms(bankCode);
-        primaryStage.setOnCloseRequest(event -> primaryStage.close());
-        primaryStage.setResizable(false);
-        primaryStage.showAndWait();
-        Alert alert;
-        Bank b = bwController.getBank();
-        if(b!=null) {
-            insertBankIntoDB(b);
-            alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setContentText("Банк добавлен");
-            alert.showAndWait();
-        }
-        else {
-            alert = new Alert(Alert.AlertType.WARNING);
-            alert.setContentText("Банк не добавлен");
-            alert.showAndWait();
-        }
-        return b;
-    }
-
-    private void insertBankIntoDB(Bank bank) {
-        loanInfoService.addBank(bank);
-    }
-    private void insertCurrencyIntoDB(Currency currency) {
-        loanInfoService.addCurrency(currency);
-    }
-
-    public Currency callNewCurrencyWindow(String currencyCode) {
-        final Stage primaryStage = new Stage();
-        FXMLLoader root;
-        primaryStage.initModality(Modality.APPLICATION_MODAL);
-        root = new FXMLLoader(getClass().getResource("/fxml/CurrencyScene.fxml"));
-        try {
-            primaryStage.setScene(new Scene(root.load()));
-        } catch (IOException ex) {
-            Logger.getLogger(MainModel.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        //передача информации в контроллер
-        cwController = root.<CurrencyWindowController>getController();
-        cwController.setMainModel(this);
-        cwController.setScreenForms(currencyCode);
-
-        primaryStage.setOnCloseRequest(event -> primaryStage.close());
-        primaryStage.setResizable(false);
-        primaryStage.showAndWait();
-
-        Alert alert;
-        Currency c = cwController.getCurrency();
-        if (c != null) {
-            insertCurrencyIntoDB(c);
-            alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setContentText("Валюта добавлена");
-            alert.showAndWait();
-        } else {
-            alert = new Alert(Alert.AlertType.WARNING);
-            alert.setContentText("Валюта не добавлена");
-            alert.showAndWait();
-        }
-        return c;
     }
 
     public void callNewClientInfoWindow() {
@@ -331,8 +204,8 @@ public class MainModel {
         root = new FXMLLoader(getClass().getResource("/fxml/InfoScene.fxml"));
         try {
             primaryStage.setScene(new Scene(root.load()));
-        } catch (IOException ex) {
-            Logger.getLogger(MainModel.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException e) {
+            log.error(e.getMessage());
         }
         //передача информации в контроллер
         ciController = root.<ChangeInfoWindowController>getController();
@@ -345,12 +218,80 @@ public class MainModel {
         primaryStage.showAndWait();
         //получение информации из контроллера
         LoanInfo newInfo = ciController.getNewInfo();
-        if(newInfo!=null){
-            if (loanInfoService.isClientExists(newInfo.getPerson())){
+        if (newInfo != null) {
+            if (loanInfoService.isClientExists(newInfo.getPerson())) {
                 loanInfoService.addInfo(newInfo);
-            }
-            else
+            } else
                 loanInfoService.addNewClient(newInfo);
         }
+    }
+
+    public Bank callNewBankWindow(String bankCode) {
+        final Stage primaryStage = new Stage();
+        FXMLLoader root;
+        primaryStage.initModality(Modality.APPLICATION_MODAL);
+        root = new FXMLLoader(getClass().getResource("/fxml/BankScene.fxml"));
+        try {
+            primaryStage.setScene(new Scene(root.load()));
+        } catch (IOException e) {
+            log.error(e.getMessage());
+        }
+        //передача информации в контроллер
+        bwController = root.<BankWindowController>getController();
+        bwController.setMainModel(this);
+        bwController.setScreenForms(bankCode);
+        primaryStage.setOnCloseRequest(event -> primaryStage.close());
+        primaryStage.setResizable(false);
+        primaryStage.showAndWait();
+        Bank b = bwController.getBank();
+        if(b!=null) {
+            if (loanInfoService.addBank(b))
+                new Alert(Alert.AlertType.INFORMATION, "Банк добавлен").showAndWait();
+            else new Alert(Alert.AlertType.WARNING, "Банк не добавлен").showAndWait();
+        }
+        else {
+            new Alert(Alert.AlertType.WARNING, "Банк не добавлен").showAndWait();
+        }
+        return b;
+    }
+
+    public Currency callNewCurrencyWindow(String currencyCode) {
+        final Stage primaryStage = new Stage();
+        FXMLLoader root;
+        primaryStage.initModality(Modality.APPLICATION_MODAL);
+        root = new FXMLLoader(getClass().getResource("/fxml/CurrencyScene.fxml"));
+        try {
+            primaryStage.setScene(new Scene(root.load()));
+        } catch (IOException e) {
+            log.error(e.getMessage());
+        }
+        //передача информации в контроллер
+        cwController = root.<CurrencyWindowController>getController();
+        cwController.setMainModel(this);
+        cwController.setScreenForms(currencyCode);
+
+        primaryStage.setOnCloseRequest(event -> primaryStage.close());
+        primaryStage.setResizable(false);
+        primaryStage.showAndWait();
+
+        Currency c = cwController.getCurrency();
+        if (c != null) {
+            if (loanInfoService.addCurrency(c))
+                new Alert(Alert.AlertType.INFORMATION, "Банк добавлен").showAndWait();
+            else new Alert(Alert.AlertType.WARNING, "Банк не добавлен").showAndWait();
+        } else {
+            new Alert(Alert.AlertType.WARNING, "Банк не добавлен").showAndWait();
+        }
+        return c;
+    }
+
+    //работа со справочниками
+
+    public Map<String, String> getCurrencyMap() {
+        return loanInfoService.getCurrenciesMap();
+    }
+
+    public Map<String, String> getBankMap() {
+        return loanInfoService.getBanksMap();
     }
 }
