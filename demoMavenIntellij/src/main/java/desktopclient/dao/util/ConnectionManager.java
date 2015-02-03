@@ -5,7 +5,6 @@ import org.apache.log4j.Logger;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.sql.Connection;
@@ -28,11 +27,11 @@ public class ConnectionManager {
     private ConnectionManager() {
     }
 
-    private static void initilize() {
+    private static void initialize() {
         prop = new Properties();
-        try (InputStream is = Files.newInputStream(Paths.get(ConnectionManager.class.getResource("/properties/connectionProperties.properties").toURI()))) {
+        try (InputStream is = Files.newInputStream(Paths.get("/Users/sting/GitHub/bki_javafx_maven/demoMavenIntellij/src/main/resources/properties/connectionProperties.properties"))) {
             prop.load(is);
-        } catch (IOException | URISyntaxException e) {
+        } catch (IOException e) {
             log.error(e.getMessage());
         }
     }
@@ -45,7 +44,7 @@ public class ConnectionManager {
     }
 
     public static Connection getConnection() {
-        initilize();
+        initialize();
         if (connection == null) {
             SybDataSource dataSource = new SybDataSource();
             dataSource.setUser(prop.getProperty("jdbc.user"));

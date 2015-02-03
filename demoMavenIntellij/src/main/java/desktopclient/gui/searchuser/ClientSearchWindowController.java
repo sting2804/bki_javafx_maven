@@ -67,7 +67,8 @@ public class ClientSearchWindowController implements Initializable {
             case 0:
                 person.setName(nameSearchTextField.getText());
                 person.setSurname(surnameSearchTextField.getText());
-                person.setPatronymic(patrinymicSearchTextField.getText());
+                if (!patrinymicSearchTextField.getText().isEmpty())
+                    person.setPatronymic(patrinymicSearchTextField.getText());
                 person.setBirthday(birthdaySearchDatePicker.getValue());
                 break;
             case 1:

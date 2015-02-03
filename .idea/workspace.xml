@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="12470f34-a38c-4d60-9aba-82e68dbd6f02" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/util/trash/IConnectionManager.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/util/IConnectionManager.java" afterPath="" />
+    <list default="true" id="12470f34-a38c-4d60-9aba-82e68dbd6f02" name="Default" comment="Релиз 1.1">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/util/trash/SimpleConnectionFactory.java" afterPath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/util/SimpleConnectionFactory.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/changeclient/ChangeInfoWindowController$1.class" afterPath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/changeclient/ChangeInfoWindowController$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/changeclient/ChangeInfoWindowController.class" afterPath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/changeclient/ChangeInfoWindowController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/searchuser/ClientSearchWindowController.class" afterPath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/searchuser/ClientSearchWindowController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/entities/LoanInfo.class" afterPath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/entities/LoanInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/MainApp.class" afterPath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/MainApp.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/main/MainModel.class" afterPath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/main/MainModel.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/main/MainWindowController$1.class" afterPath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/main/MainWindowController$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/main/MainWindowController$2.class" afterPath="$PROJECT_DIR$/demoMavenIntellij/target/classes/desktopclient/gui/main/MainWindowController$2.class" />
@@ -18,20 +17,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/changeclient/ChangeInfoWindowController.java" afterPath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/changeclient/ChangeInfoWindowController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/searchuser/ClientSearchWindowController.java" afterPath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/searchuser/ClientSearchWindowController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/util/ConnectionManager.java" afterPath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/util/ConnectionManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/src/main/resources/fxml/InfoScene.fxml" afterPath="$PROJECT_DIR$/demoMavenIntellij/src/main/resources/fxml/InfoScene.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/util/trash/DaoConfig.java" afterPath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/util/trash/DaoConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/fxml/InfoScene.fxml" afterPath="$PROJECT_DIR$/demoMavenIntellij/target/classes/fxml/InfoScene.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/JdbcDao.java" afterPath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/JdbcDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/entities/LoanInfo.java" afterPath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/entities/LoanInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/demoMavenIntellij/target/classes/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/MainApp.java" afterPath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/MainApp.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/main/MainModel.java" afterPath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/main/MainModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/src/main/resources/fxml/MainScene.fxml" afterPath="$PROJECT_DIR$/demoMavenIntellij/src/main/resources/fxml/MainScene.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/classes/fxml/MainScene.fxml" afterPath="$PROJECT_DIR$/demoMavenIntellij/target/classes/fxml/MainScene.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/main/MainWindowController.java" afterPath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/main/MainWindowController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/entities/Person.java" afterPath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/entities/Person.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/util/trash/SimpleConnectionFactory.java" afterPath="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/util/trash/SimpleConnectionFactory.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/demoMavenIntellij/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/demoMavenIntellij.iml" afterPath="$PROJECT_DIR$/demoMavenIntellij/demoMavenIntellij.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/demoMavenIntellij/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/demoMavenIntellij/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demoMavenIntellij/pom.xml" afterPath="$PROJECT_DIR$/demoMavenIntellij/pom.xml" />
@@ -62,48 +54,122 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainApp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/MainApp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-              <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MainWindowController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/main/MainWindowController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2310" max-vertical-offset="4275">
-              <caret line="232" column="37" selection-start-line="232" selection-start-column="37" selection-end-line="232" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="3092" max-vertical-offset="4290">
+              <caret line="242" column="37" selection-start-line="242" selection-start-column="37" selection-end-line="242" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainModel.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/main/MainModel.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/demoMavenIntellij/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.78221416" vertical-offset="619" max-vertical-offset="4140">
-              <caret line="89" column="28" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.38961038" vertical-offset="0" max-vertical-offset="1530">
+              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChangeInfoWindowController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/changeclient/ChangeInfoWindowController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="779" max-vertical-offset="3030">
+              <caret line="230" column="0" selection-start-line="230" selection-start-column="0" selection-end-line="230" selection-end-column="0" />
               <folding>
-                <element signature="method#MainModel#0;class#MainModel#0" expanded="false" />
-                <element signature="e#3502#3503#0" expanded="true" />
-                <element signature="e#3550#3551#0" expanded="true" />
+                <element signature="method#createConverter#0;class#ChangeInfoWindowController#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainScene.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/resources/fxml/MainScene.fxml">
+      <file leaf-file-name="ClientSearchWindowController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/searchuser/ClientSearchWindowController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915">
-              <caret line="13" column="52" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="632" max-vertical-offset="2520">
+              <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JdbcDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/JdbcDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="3302" max-vertical-offset="5325">
+              <caret line="304" column="0" selection-start-line="304" selection-start-column="0" selection-end-line="304" selection-end-column="0" />
+              <folding>
+                <element signature="method#getAllRecords#0;class#JdbcDao#0" expanded="false" />
+                <marker date="1422996012000" expanded="true" signature="1279:1309" placeholder="select * fro..client_info_view..." />
+                <marker date="1422996012000" expanded="true" signature="3864:4032" placeholder="select 1 fro..client_info_view..." />
+                <marker date="1422996012000" expanded="true" signature="5173:5345" placeholder="insert into ..." />
+                <marker date="1422996012000" expanded="true" signature="6711:6754" placeholder="update loan ..." />
+                <marker date="1422996012000" expanded="true" signature="8168:8215" placeholder="update clien..." />
+                <marker date="1422996012000" expanded="true" signature="9186:9601" placeholder="select name,..client_info_view..." />
+                <marker date="1422996012000" expanded="true" signature="12671:12708" placeholder="select bank_..bank..." />
+                <marker date="1422996012000" expanded="true" signature="13263:13312" placeholder="select curre..currency..." />
+                <marker date="1422996012000" expanded="true" signature="14113:14176" placeholder="insert into ..." />
+                <marker date="1422996012000" expanded="true" signature="14669:14720" placeholder="insert into ..." />
+                <marker date="1422996012000" expanded="true" signature="15476:15624" placeholder="insert into ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log4j.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/resources/log4j.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="157" max-vertical-offset="690">
+              <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IBkiDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/IBkiDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1305">
+              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/main/MainModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="3800" max-vertical-offset="4365">
+              <caret line="301" column="45" selection-start-line="301" selection-start-column="45" selection-end-line="301" selection-end-column="45" />
+              <folding>
+                <element signature="method#MainModel#0;class#MainModel#0" expanded="false" />
+                <element signature="e#11821#11822#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoanService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/bussines/LoanService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="107" max-vertical-offset="735">
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding>
+                <element signature="e#665#666#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -118,6 +184,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="sting2804" />
         <option value="sting2804 &lt;slinnik284@gmail.com&gt;" />
       </list>
     </option>
@@ -126,7 +193,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/bussines/IService.java" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/bussines/ISearchableService.java" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/IDaoFactory.java" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/SimpleDaoFactory.java" />
@@ -140,7 +206,6 @@
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/resources/fxml/bankScene.fxml" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/resources/fxml/currencyScene.fxml" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/resources/fxml/ClientSearchScene.fxml" />
-        <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/directories/BankWindowController.java" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/directories/CurrencyWindowController.java" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/resources/properties/connectionProperties.prop" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/util/IConnector.java" />
@@ -150,33 +215,35 @@
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/bussines/IPersonService.java" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/bussines/PersonService.java" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/resources/fxml/InfoScene.fxml" />
-        <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/bussines/ILoanInfoService.java" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/entities/Bank.java" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/entities/Currency.java" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/entities/LoanInfo.java" />
-        <option value="$PROJECT_DIR$/demoMavenIntellij/pom.xml" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/util/IConnectionManager.java" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/util/trash/SimpleConnectionFactory.java" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/resources/properties/log4j.properties" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/bussines/trash/SimpleServiceFactory.java" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/util/trash/IConnectionManager.java" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/resources/log4j.xml" />
-        <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/bussines/LoanService.java" />
-        <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/IBkiDao.java" />
-        <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/bussines/trash/PersonService.java" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/bussines/trash/IPersonService.java" />
-        <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/util/ConnectionManager.java" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/Converter.java" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/DateConverter.java" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/utils/Converter.java" />
-        <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/JdbcDao.java" />
-        <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/changeclient/ChangeInfoWindowController.java" />
-        <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/main/MainWindowController.java" />
-        <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/searchuser/ClientSearchWindowController.java" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/resources/fxml/MainScene.fxml" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/MainApp.java" />
+        <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/util/ConnectionManager.java" />
+        <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/directories/BankWindowController.java" />
+        <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/bussines/ILoanInfoService.java" />
+        <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/bussines/LoanService.java" />
+        <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/IBkiDao.java" />
+        <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/bussines/trash/PersonService.java" />
+        <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/changeclient/ChangeInfoWindowController.java" />
+        <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/searchuser/ClientSearchWindowController.java" />
+        <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/resources/log4j.xml" />
+        <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/JdbcDao.java" />
+        <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/main/MainWindowController.java" />
         <option value="$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/main/MainModel.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/demoMavenIntellij/pom.xml" />
       </list>
     </option>
   </component>
@@ -367,6 +434,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bki_diplom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bki_javafx_maven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demoMavenIntellij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="properties" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -428,40 +525,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="desktopclient" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bki_diplom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bki_javafx_maven" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demoMavenIntellij" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="desktopclient" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -644,6 +707,78 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bki_diplom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bki_javafx_maven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demoMavenIntellij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="desktopclient" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bki_diplom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bki_javafx_maven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demoMavenIntellij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="desktopclient" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bussines" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1110,7 +1245,10 @@
       <workItem from="1422728633700" duration="3688000" />
       <workItem from="1422742803864" duration="5797000" />
       <workItem from="1422794480232" duration="1044000" />
-      <workItem from="1422795882663" duration="18749000" />
+      <workItem from="1422795882663" duration="18908000" />
+      <workItem from="1422912781025" duration="507000" />
+      <workItem from="1422962177553" duration="3943000" />
+      <workItem from="1422992008250" duration="4587000" />
     </task>
     <task id="LOCAL-00001" summary="изменил способ запуска, теперь во главе класс MainModel, который конфигурируется при запуске из MainApp, устанавливая тип ДАО и вызывая метод  callMainWindow(). Добавлен пакет бизнес-логики, абстрагирующий уровень представления от непосредственного взаимодействия с ДАО.">
       <created>1422048087838</created>
@@ -1142,15 +1280,21 @@
       <option name="project" value="LOCAL" />
       <updated>1422656691764</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Всё готово. Можно сказать первый релиз">
+      <created>1422830579746</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1422830579746</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82528000" />
+    <option name="totallyTimeSpent" value="91724000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1158,9 +1302,10 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287841" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39826304" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39702234" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21745351" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -1168,15 +1313,14 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19456366" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20314735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22889842" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28163773" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28039703" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287841" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1193,6 +1337,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
@@ -1200,7 +1345,10 @@
     <MESSAGE value="добавил поттягивание справочников из базы, поправил немного интерфейс, прикрутил поиск, но нужно переделать сам запрос поиска. Некорректно получает данные" />
     <MESSAGE value="Добавил обновление таблицы" />
     <MESSAGE value="Изменил окно добавления клиента. Теперь добавление и изменения являются тремя вариациями одного окна. Добавил инсерт через дао в таблицу клиентов с получением id из процедуры GET_ID" />
-    <option name="LAST_COMMIT_MESSAGE" value="Изменил окно добавления клиента. Теперь добавление и изменения являются тремя вариациями одного окна. Добавил инсерт через дао в таблицу клиентов с получением id из процедуры GET_ID" />
+    <MESSAGE value="Всё готово. Можно сказать первый релиз" />
+    <option name="LAST_COMMIT_MESSAGE" value="Всё готово. Можно сказать первый релиз" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1212,42 +1360,36 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/JdbcDao.java</url>
-          <line>134</line>
-          <properties />
-          <option name="timeStamp" value="53" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/JdbcDao.java</url>
-          <line>227</line>
-          <properties />
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/JdbcDao.java</url>
-          <line>338</line>
-          <properties />
-          <option name="timeStamp" value="60" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/JdbcDao.java</url>
-          <line>347</line>
+          <line>353</line>
           <properties />
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/JdbcDao.java</url>
-          <line>365</line>
+          <line>371</line>
           <properties />
           <option name="timeStamp" value="62" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/JdbcDao.java</url>
-          <line>387</line>
+          <line>111</line>
           <properties />
-          <option name="timeStamp" value="63" />
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/JdbcDao.java</url>
+          <line>233</line>
+          <properties />
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/JdbcDao.java</url>
+          <line>123</line>
+          <properties />
+          <option name="timeStamp" value="79" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="68" />
+      <option name="time" value="80" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1268,22 +1410,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/changeclient/ChangeInfoWindowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="2835">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1380">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="285">
@@ -1309,14 +1435,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="2835">
           <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
-          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding>
+            <element signature="method#createConverter#0;class#ChangeInfoWindowController#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1350,16 +1471,16 @@
             <node x="1090.3753676470587" y="520.0">desktopclient.gui.newclient</node>
             <node x="72.75" y="453.0">desktopclient.bussines.LoanService</node>
             <node x="762.9115196078433" y="464.0">desktopclient.bussines.PersonService</node>
-            <node x="209.52720588235275" y="794.5">desktopclient.bussines.SimpleServiceFactory</node>
             <node x="1143.4637254901959" y="850.5">desktopclient.gui.main</node>
             <node x="2122.4083333333333" y="201.5">desktopclient.dao.util.IConnectionFactory</node>
             <node x="1266.4083333333333" y="212.5">desktopclient.entities</node>
+            <node x="209.52720588235275" y="794.5">desktopclient.bussines.SimpleServiceFactory</node>
             <node x="0.0" y="168.5">desktopclient.bussines.ILoanInfoService</node>
             <node x="513.6300245098039" y="190.5">desktopclient.bussines.IPersonService</node>
             <node x="0.0" y="1237.0">desktopclient.dao.util.ConnectionTypes</node>
-            <node x="1281.4637254901959" y="706.0">desktopclient.dao.JdbcDao</node>
-            <node x="320.75" y="498.0">desktopclient.bussines.IServiceFactory</node>
             <node x="1773.9083333333333" y="101.0">desktopclient.dao.util.AnyConnector</node>
+            <node x="320.75" y="498.0">desktopclient.bussines.IServiceFactory</node>
+            <node x="1281.4637254901959" y="706.0">desktopclient.dao.JdbcDao</node>
             <node x="1749.4083333333333" y="11.0">desktopclient.dao.DriverNotFoundException</node>
             <node x="709.6300245098039" y="135.0">desktopclient.dao.IBkiDao</node>
           </nodes>
@@ -1369,11 +1490,11 @@
               <point x="0.0" y="0.0" />
               <point x="0.0" y="0.0" />
             </edge>
-            <edge source="desktopclient.bussines.PersonService" target="desktopclient.entities">
+            <edge source="desktopclient.gui.main" target="desktopclient.bussines.ILoanInfoService">
               <point x="0.0" y="0.0" />
               <point x="0.0" y="0.0" />
             </edge>
-            <edge source="desktopclient.gui.main" target="desktopclient.bussines.ILoanInfoService">
+            <edge source="desktopclient.bussines.PersonService" target="desktopclient.entities">
               <point x="0.0" y="0.0" />
               <point x="0.0" y="0.0" />
             </edge>
@@ -1381,11 +1502,11 @@
               <point x="0.0" y="0.0" />
               <point x="0.0" y="0.0" />
             </edge>
-            <edge source="desktopclient.gui.main" target="desktopclient.bussines.IServiceFactory">
+            <edge source="desktopclient.dao.util.SimpleConnectionFactory" target="desktopclient.dao.util.AnyConnector">
               <point x="0.0" y="0.0" />
               <point x="0.0" y="0.0" />
             </edge>
-            <edge source="desktopclient.dao.util.SimpleConnectionFactory" target="desktopclient.dao.util.AnyConnector">
+            <edge source="desktopclient.gui.main" target="desktopclient.bussines.IServiceFactory">
               <point x="0.0" y="0.0" />
               <point x="0.0" y="0.0" />
             </edge>
@@ -1492,15 +1613,15 @@
               <point x="0.0" y="0.0" />
               <point x="0.0" y="0.0" />
             </edge>
-            <edge source="desktopclient.bussines.LoanService" target="desktopclient.dao.IBkiDao">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
             <edge source="desktopclient.gui.changeclient" target="desktopclient.gui.IMyController">
               <point x="55.66666666666674" y="-14.5" />
               <point x="1693.3091911764704" y="373.0" />
               <point x="1626.4083333333333" y="373.0" />
               <point x="0.0" y="36.5" />
+            </edge>
+            <edge source="desktopclient.bussines.LoanService" target="desktopclient.dao.IBkiDao">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
             </edge>
             <edge source="desktopclient.dao.util.AnyConnector" target="desktopclient.dao.util.IConnector">
               <point x="72.5" y="-126.0" />
@@ -1508,13 +1629,13 @@
               <point x="2012.9083333333333" y="76.0" />
               <point x="-49.5" y="25.5" />
             </edge>
+            <edge source="desktopclient.dao.JdbcDao" target="desktopclient.entities">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
             <edge source="desktopclient.entities" target="desktopclient.entities">
               <point x="0.0" y="0.0" />
               <point x="1333.4083333333333" y="188.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="desktopclient.dao.JdbcDao" target="desktopclient.entities">
-              <point x="0.0" y="0.0" />
               <point x="0.0" y="0.0" />
             </edge>
             <edge source="desktopclient.gui.main" target="desktopclient.bussines.IPersonService">
@@ -1559,22 +1680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/resources/fxml/ClientSearchScene.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1232" max-vertical-offset="2100">
-          <caret line="127" column="18" selection-start-line="127" selection-start-column="18" selection-end-line="127" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/resources/fxml/BankScene.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38726333" vertical-offset="0" max-vertical-offset="840">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/util/trash/database.propetries">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
@@ -1596,14 +1701,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/resources/properties/connectionProperties.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/util/trash/IConnectionFactory.java">
+    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/util/IConnectionFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
@@ -1624,14 +1722,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/resources/fxml/InfoScene.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1157" max-vertical-offset="1725">
-          <caret line="101" column="32" selection-start-line="101" selection-start-column="32" selection-end-line="101" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.7184684" vertical-offset="35477" max-vertical-offset="50565">
@@ -1643,7 +1733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1651,15 +1740,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
           <caret line="7" column="48" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/entities/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="615" max-vertical-offset="1665">
-          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1667,34 +1747,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/directories/BankWindowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="137" max-vertical-offset="915">
-          <caret line="46" column="26" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
-          <folding>
-            <element signature="e#1059#1060#0" expanded="false" />
-            <element signature="e#1092#1093#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/directories/CurrencyWindowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="107" max-vertical-offset="885">
-          <caret line="24" column="54" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/util/trash/SimpleConnectionFactory.java">
+    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/util/SimpleConnectionFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
           <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1702,15 +1761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
           <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="992" max-vertical-offset="1530">
-          <caret line="90" column="26" selection-start-line="90" selection-start-column="26" selection-end-line="90" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1722,35 +1772,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/bussines/ILoanInfoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
-          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/IBkiDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1305">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/bussines/trash/PersonService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/bussines/trash/IServiceFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1758,7 +1783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
           <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1766,27 +1790,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="853" max-vertical-offset="1470">
           <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-          <folding>
-            <element signature="e#2794#2795#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/resources/log4j.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="139" max-vertical-offset="690">
-          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/bussines/LoanService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="278" max-vertical-offset="735">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding>
-            <element signature="e#1125#1126#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1794,9 +1797,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
           <caret line="17" column="64" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1804,70 +1804,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
           <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/JdbcDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1247" max-vertical-offset="3150">
-          <caret line="204" column="59" selection-start-line="204" selection-start-column="59" selection-end-line="204" selection-end-column="59" />
-          <folding>
-            <element signature="method#getAllRecords#0;class#JdbcDao#0" expanded="false" />
-            <element signature="method#getPersonInfo#0;class#JdbcDao#0" expanded="false" />
-            <element signature="method#getBanksMap#0;class#JdbcDao#0" expanded="false" />
-            <element signature="method#getCurrenciesMap#0;class#JdbcDao#0" expanded="false" />
-            <element signature="method#addNewClient#0;class#JdbcDao#0" expanded="false" />
-            <element signature="method#addNewCurrency#0;class#JdbcDao#0" expanded="false" />
-            <element signature="method#addNewBank#0;class#JdbcDao#0" expanded="false" />
-            <marker date="1422824507000" expanded="true" signature="-1:-1" placeholder="select * fro..client_info_view..." />
-            <marker date="1422824507000" expanded="true" signature="-1:-1" placeholder="select 1 fro..client_info_view..." />
-            <marker date="1422824507000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1422824507000" expanded="true" signature="-1:-1" placeholder="update loan ..." />
-            <marker date="1422824507000" expanded="true" signature="-1:-1" placeholder="update loan ..." />
-            <marker date="1422824507000" expanded="true" signature="-1:-1" placeholder="update clien..." />
-            <marker date="1422824507000" expanded="true" signature="-1:-1" placeholder="update clien..." />
-            <marker date="1422824507000" expanded="true" signature="-1:-1" placeholder="select name,..client_info_view..." />
-            <marker date="1422824507000" expanded="true" signature="-1:-1" placeholder="select bank_..bank..." />
-            <marker date="1422824507000" expanded="true" signature="-1:-1" placeholder="select curre..currency..." />
-            <marker date="1422824507000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1422824507000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1422824507000" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/util/ConnectionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="572" max-vertical-offset="1110">
-          <caret line="62" column="16" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/searchuser/ClientSearchWindowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8094374" vertical-offset="1339" max-vertical-offset="2160">
-          <caret line="138" column="38" selection-start-line="138" selection-start-column="38" selection-end-line="138" selection-end-column="38" />
-          <folding>
-            <element signature="e#4133#4134#0" expanded="true" />
-            <element signature="e#4203#4204#0" expanded="true" />
-            <element signature="method#createConverter#0;class#ClientSearchWindowController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/changeclient/ChangeInfoWindowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5260223" vertical-offset="1907" max-vertical-offset="3015">
-          <caret line="165" column="7" selection-start-line="165" selection-start-column="7" selection-end-line="165" selection-end-column="7" />
-          <folding>
-            <element signature="e#5646#5647#0" expanded="true" />
-            <element signature="e#5716#5717#0" expanded="true" />
-            <element signature="method#createConverter#0;class#ChangeInfoWindowController#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1879,33 +1815,211 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/directories/CurrencyWindowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="107" max-vertical-offset="885">
+          <caret line="24" column="54" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/directories/BankWindowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="92" max-vertical-offset="885">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <element signature="e#1057#1058#0" expanded="false" />
+            <element signature="e#1090#1091#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/resources/fxml/BankScene.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="840">
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/resources/fxml/ClientSearchScene.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1232" max-vertical-offset="2100">
+          <caret line="100" column="67" selection-start-line="100" selection-start-column="67" selection-end-line="100" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/resources/properties/connectionProperties.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/resources/styles/Styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="778">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/resources/fxml/InfoScene.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1710">
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/bussines/ILoanInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/bussines/trash/PersonService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38181818" vertical-offset="0" max-vertical-offset="550">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/MainApp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/util/ConnectionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="945">
+          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/javafx-src.zip!/javafx/scene/control/TableCell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="8882" max-vertical-offset="11385">
+          <caret line="660" column="0" selection-start-line="660" selection-start-column="0" selection-end-line="660" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/entities/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="763" max-vertical-offset="1695">
+          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2216#2217#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/changeclient/ChangeInfoWindowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="779" max-vertical-offset="3030">
+          <caret line="230" column="0" selection-start-line="230" selection-start-column="0" selection-end-line="230" selection-end-column="0" />
+          <folding>
+            <element signature="method#createConverter#0;class#ChangeInfoWindowController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/IBkiDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1305">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/searchuser/ClientSearchWindowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="632" max-vertical-offset="2520">
+          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/resources/log4j.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="157" max-vertical-offset="690">
+          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/dao/JdbcDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3302" max-vertical-offset="5325">
+          <caret line="304" column="0" selection-start-line="304" selection-start-column="0" selection-end-line="304" selection-end-column="0" />
+          <folding>
+            <element signature="method#getAllRecords#0;class#JdbcDao#0" expanded="false" />
+            <marker date="1422996012000" expanded="true" signature="1279:1309" placeholder="select * fro..client_info_view..." />
+            <marker date="1422996012000" expanded="true" signature="3864:4032" placeholder="select 1 fro..client_info_view..." />
+            <marker date="1422996012000" expanded="true" signature="5173:5345" placeholder="insert into ..." />
+            <marker date="1422996012000" expanded="true" signature="6711:6754" placeholder="update loan ..." />
+            <marker date="1422996012000" expanded="true" signature="8168:8215" placeholder="update clien..." />
+            <marker date="1422996012000" expanded="true" signature="9186:9601" placeholder="select name,..client_info_view..." />
+            <marker date="1422996012000" expanded="true" signature="12671:12708" placeholder="select bank_..bank..." />
+            <marker date="1422996012000" expanded="true" signature="13263:13312" placeholder="select curre..currency..." />
+            <marker date="1422996012000" expanded="true" signature="14113:14176" placeholder="insert into ..." />
+            <marker date="1422996012000" expanded="true" signature="14669:14720" placeholder="insert into ..." />
+            <marker date="1422996012000" expanded="true" signature="15476:15624" placeholder="insert into ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/bussines/LoanService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="107" max-vertical-offset="735">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <element signature="e#665#666#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/main/MainModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3800" max-vertical-offset="4365">
+          <caret line="301" column="45" selection-start-line="301" selection-start-column="45" selection-end-line="301" selection-end-column="45" />
+          <folding>
+            <element signature="method#MainModel#0;class#MainModel#0" expanded="false" />
+            <element signature="e#11821#11822#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/main/MainWindowController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2145" max-vertical-offset="4275">
-          <caret line="232" column="37" selection-start-line="232" selection-start-column="37" selection-end-line="232" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="3092" max-vertical-offset="4290">
+          <caret line="242" column="37" selection-start-line="242" selection-start-column="37" selection-end-line="242" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/src/main/java/desktopclient/gui/main/MainModel.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.78221416" vertical-offset="619" max-vertical-offset="4140">
-          <caret line="89" column="28" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="28" />
-          <folding>
-            <element signature="method#MainModel#0;class#MainModel#0" expanded="false" />
-            <element signature="e#3502#3503#0" expanded="true" />
-            <element signature="e#3550#3551#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demoMavenIntellij/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38961038" vertical-offset="0" max-vertical-offset="1530">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>

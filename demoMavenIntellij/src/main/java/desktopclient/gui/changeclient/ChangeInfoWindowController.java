@@ -209,7 +209,8 @@ public class ChangeInfoWindowController implements Initializable {
 
     private void setScreenForms(Person curPerson) {
         if (curPerson != null) {
-            fioTextField.setText(curPerson.getSurname() + " " + curPerson.getName() + " " + curPerson.getPatronymic());
+            fioTextField.setText(curPerson.getSurname() + " " + curPerson.getName());
+            if (curPerson.getPatronymic() != null) fioTextField.appendText(" " + curPerson.getPatronymic());
             passportTextField.setText(curPerson.getPassSerial() + " " + curPerson.getPassNumber());
             birthdayDatePicker.setValue(curPerson.getBirthday());
             innTextField.setText(curPerson.getInn());

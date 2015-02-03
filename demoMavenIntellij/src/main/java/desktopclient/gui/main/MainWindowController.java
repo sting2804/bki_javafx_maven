@@ -132,8 +132,9 @@ public class MainWindowController implements Initializable {
                 protected void updateItem(Person item, boolean empty) {
                     setGraphic(null);
                     if (item != null) {
-                        Label fioLabel = new Label(item.getSurname().concat(" ").concat(item.getName()).concat(" ").concat(item.getPatronymic()));
-                        setGraphic(fioLabel);
+                        String text = item.getSurname().concat(" ").concat(item.getName());
+                        if (item.getPatronymic() != null) text += (" " + item.getPatronymic());
+                        setGraphic(new Label(text));
                     }
                 }
             };
@@ -239,7 +240,7 @@ public class MainWindowController implements Initializable {
             mainModel.callSearchWindow();
             refreshTable(tableView);
 
-            List<LoanInfo> tmpList = mainModel.getAllRecords();
+            List<LoanInfo> tmpList = mainModel.getFoundRecords();
             if (tmpList != null) infoList.addAll(tmpList);
 
         } catch (Exception e) {

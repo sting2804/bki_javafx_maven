@@ -121,7 +121,8 @@ public class MainModel {
         primaryStage.showAndWait();
         Person searchPerson = csController.getSearchablePerson();
         if (searchPerson != null) {
-            foundInfo = loanInfoService.listSpecificInfo(searchPerson);
+            if ((foundInfo = loanInfoService.listSpecificInfo(searchPerson)) == null)
+                new Alert(Alert.AlertType.WARNING, "Клиент не найден").showAndWait();
         }
 
     }
@@ -157,7 +158,8 @@ public class MainModel {
             return;
         }
         if(newInfo!=null){
-            if (loanInfoService.isClientExists(newInfo.getPerson())) {
+            int clientId = loanInfoService.isClientExists(newInfo.getPerson());
+            if (clientId != -1) {
                 loanInfoService.modify(curInfo, newInfo);
             }
         }
@@ -190,8 +192,9 @@ public class MainModel {
         //получение информации из контроллера
         LoanInfo newInfo = ciController.getNewInfo();
         if(newInfo!=null){
-            if (loanInfoService.isClientExists(newInfo.getPerson())) {
-                loanInfoService.addInfo(newInfo);
+            int clientId = loanInfoService.isClientExists(newInfo.getPerson());
+            if (clientId != -1) {
+                loanInfoService.addInfo(newInfo, clientId);
             } else
                 loanInfoService.addNewClient(newInfo);
         }
@@ -219,8 +222,9 @@ public class MainModel {
         //получение информации из контроллера
         LoanInfo newInfo = ciController.getNewInfo();
         if (newInfo != null) {
-            if (loanInfoService.isClientExists(newInfo.getPerson())) {
-                loanInfoService.addInfo(newInfo);
+            int clientId = loanInfoService.isClientExists(newInfo.getPerson());
+            if (clientId != -1) {
+                loanInfoService.addInfo(newInfo, clientId);
             } else
                 loanInfoService.addNewClient(newInfo);
         }
@@ -293,5 +297,17 @@ public class MainModel {
 
     public Map<String, String> getBankMap() {
         return loanInfoService.getBanksMap();
+    }
+
+    public List<LoanInfo> getFoundRecords() {
+        return foundInfo;
+    }
+
+    public List<LoanInfo> getFoundInfo() {
+        return foundInfo;
+    }
+
+    public void setFoundInfo(List<LoanInfo> foundInfo) {
+        this.foundInfo = foundInfo;
     }
 }

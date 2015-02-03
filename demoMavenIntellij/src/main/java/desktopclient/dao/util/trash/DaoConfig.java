@@ -6,7 +6,7 @@
 package desktopclient.dao.util.trash;
 
 
-import desktopclient.dao.util.trash.IConnectionFactory;
+import desktopclient.dao.util.IConnectionFactory;
 
 public class DaoConfig {
     private static IConnectionFactory connectionFactory = null;

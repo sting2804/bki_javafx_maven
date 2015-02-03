@@ -3,11 +3,11 @@ desktopclient/gui/directories/CurrencyWindowController.class
 desktopclient/gui/trash/newclient/NewClientWindowController.class
 desktopclient/utils/Converter.class
 desktopclient/gui/searchuser/ClientSearchWindowController$1.class
+desktopclient/dao/util/IConnectionFactory.class
 desktopclient/entities/Person.class
 desktopclient/dao/util/trash/DaoConfig.class
 desktopclient/bussines/ILoanInfoService.class
 desktopclient/dao/util/trash/IConnectionManager.class
-desktopclient/dao/util/trash/SimpleConnectionFactory.class
 desktopclient/MainApp.class
 desktopclient/bussines/trash/IServiceFactory.class
 desktopclient/dao/IBkiDao.class
@@ -16,7 +16,6 @@ desktopclient/dao/util/trash/DriverNotFoundException.class
 desktopclient/gui/main/MainWindowController$1.class
 desktopclient/gui/main/MainWindowController$2.class
 desktopclient/gui/main/MainWindowController$6.class
-desktopclient/dao/util/trash/IConnectionFactory.class
 desktopclient/gui/main/MainWindowController$3.class
 desktopclient/gui/main/MainWindowController$4.class
 desktopclient/entities/IDirectory.class
@@ -24,6 +23,7 @@ desktopclient/gui/main/MainWindowController$5.class
 desktopclient/bussines/trash/SimpleServiceFactory.class
 desktopclient/gui/searchuser/ClientSearchWindowController.class
 desktopclient/bussines/trash/IPersonService.class
+desktopclient/dao/util/SimpleConnectionFactory.class
 desktopclient/gui/trash/newclient/NewClientWindowController$1.class
 desktopclient/entities/Bank.class
 desktopclient/bussines/LoanService.class

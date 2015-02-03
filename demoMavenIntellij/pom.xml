@@ -11,7 +11,7 @@
 
     <groupId>bki_demoMavenIntellij</groupId>
     <artifactId>demoMavenIntellij</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
     <name>DesktopClientNew</name>
     <organization>
         <name>My Organisation</name>

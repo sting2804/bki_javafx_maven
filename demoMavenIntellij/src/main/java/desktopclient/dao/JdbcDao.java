@@ -103,9 +103,9 @@ public class JdbcDao implements IBkiDao {
     }
 
     @Override
-    public boolean isClientExists(Person person) {
-        if (connection == null) return false;
-        String query = "select 1 from client_info_view where (name=? and surname=? and patronymic=? and birthday=?) or " +
+    public int isClientExists(Person person) {
+        if (connection == null) return -1;
+        String query = "select client_id from client_info_view where (name=? and surname=? and patronymic=? and birthday=?) or " +
                 " inn=? or  (pass_serial=? and pass_number=?)";
         try (PreparedStatement ps = connection.prepareStatement(query)) {
             int i = 1;
@@ -113,25 +113,28 @@ public class JdbcDao implements IBkiDao {
             ps.setString(i++, person.getSurname());
             ps.setString(i++, person.getPatronymic());
             try {
-                ps.setString(i++, person.getBirthday().toString());
-            } catch (Exception e) {
+                ps.setDate(i++, dateConverter.to(person.getBirthday()));
+            } catch (SQLException e) {
                 ps.setString(i, "");
             }
             ps.setString(i++, person.getInn());
             ps.setString(i++, person.getPassSerial());
             ps.setString(i, person.getPassNumber());
             try (ResultSet answer = ps.executeQuery()) {
-                if (answer.next()) return true;
+                if (answer.next()) {
+                    int id = answer.getInt(1);
+                    return id;
+                }
             }
         } catch (SQLException e) {
             log.error(e.getMessage());
-            return false;
+            return -1;
         }
-        return false;
+        return -1;
     }
 
     @Override
-    public boolean addNewInfo(LoanInfo info) {
+    public boolean addNewInfo(LoanInfo info, int clientId) {
         if (connection == null) return false;
         int id;
         String callQuery = "{call GET_ID (?,?)}";
@@ -148,7 +151,7 @@ public class JdbcDao implements IBkiDao {
             ps.setInt(i++, id);
             ps.setString(i++, info.getCurrency().getCode());
             ps.setString(i++, info.getBank().getCode());
-            ps.setInt(i++, info.getPerson().getId());
+            ps.setInt(i++, clientId);
             ps.setDouble(i++, info.getInitAmount());
             ps.setDate(i++, dateConverter.to(info.getInitDate()));
             ps.setDate(i++, dateConverter.to(info.getFinishDate()));
@@ -156,7 +159,7 @@ public class JdbcDao implements IBkiDao {
             ps.setBoolean(i, info.getArrears());
             ps.execute();
         } catch (SQLException e) {
-            log.error(e.getMessage());
+            log.info(e.getMessage());
             return false;
         }
         return true;
@@ -227,7 +230,8 @@ public class JdbcDao implements IBkiDao {
     @Override
     public List<LoanInfo> getPersonInfo(Person person) {
         if (connection == null) return null;
-        if (!isClientExists(person)) return null;
+        int clientId = isClientExists(person);
+        if (clientId == -1) return null;
         data.removeAll(data);
         String query = "select name, surname, patronymic, birthday, inn, " +
                 "pass_serial, pass_number, init_amount, init_date, finish_date, " +
@@ -240,13 +244,13 @@ public class JdbcDao implements IBkiDao {
             ps.setString(i++, person.getSurname());
             ps.setString(i++, person.getPatronymic());
             try {
-                ps.setString(i++, person.getBirthday().toString());
-            } catch (Exception e) {
+                ps.setDate(i++, dateConverter.to(person.getBirthday()));
+            } catch (SQLException e) {
                 ps.setString(i, null);
             }
             ps.setString(i++, person.getInn());
             ps.setString(i++, person.getPassSerial());
-            ps.setString(i++, person.getPassNumber());
+            ps.setString(i, person.getPassNumber());
             try (ResultSet answer = ps.executeQuery()) {
                 LoanInfo loanInfo;
                 Bank bank;
@@ -267,17 +271,17 @@ public class JdbcDao implements IBkiDao {
                     loanInfo.setInitAmount(answer.getDouble(i++));
                     try {
                         loanInfo.setInitDate(answer.getDate(i++).toLocalDate());
-                    } catch (Exception e) {
+                    } catch (SQLException e) {
                         log.error(e.getMessage());
                     }
                     try {
                         loanInfo.setFinishDate(answer.getDate(i++).toLocalDate());
-                    } catch (Exception e) {
+                    } catch (SQLException e) {
                         log.error(e.getMessage());
                     }
                     try {
                         loanInfo.setBalance(answer.getDouble(i++));
-                    } catch (Exception e) {
+                    } catch (SQLException e) {
                         log.error(e.getMessage());
                     }
                     loanInfo.setArrears(answer.getBoolean(i++));
@@ -339,7 +343,8 @@ public class JdbcDao implements IBkiDao {
     public boolean addNewClient(LoanInfo info) {
         int clientId = addNewPerson(info.getPerson());
         if (clientId != -1) {
-            addNewInfo(info);
+            if (addNewInfo(info, clientId))
+                return true;
         }
         return false;
     }

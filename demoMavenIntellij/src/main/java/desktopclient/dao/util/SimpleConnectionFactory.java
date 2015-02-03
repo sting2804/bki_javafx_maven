@@ -1,7 +1,5 @@
 
-package desktopclient.dao.util.trash;
-
-import desktopclient.dao.util.ConnectionManager;
+package desktopclient.dao.util;
 
 import java.sql.Connection;
 import java.sql.SQLException;
