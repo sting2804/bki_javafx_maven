@@ -22,12 +22,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="APIServer" />
+        <module name="APIServerIdea" />
+        <module name="APISQA" />
+        <module name="demoApi" />
         <module name="demoMavenIntellij" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="APIServer" target="1.8" />
       <module name="demoMavenIntellij" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
-

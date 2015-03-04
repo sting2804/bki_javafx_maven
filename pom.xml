@@ -10,5 +10,6 @@
     </properties>
   <modules>
     <module>demoMavenIntellij</module>
+    <module>APIServer</module>
   </modules>
 </project>

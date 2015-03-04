@@ -6,12 +6,23 @@
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
   </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/APIServer" />
+  </component>
   <component name="IdProvider" IDEtalkID="69551FF2AA44A11A72FD772AE3D86BFC" />
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/APISQA/pom.xml" />
+        <option value="$PROJECT_DIR$/APIServerIdea/pom.xml" />
+        <option value="$PROJECT_DIR$/APISpringMVCServer/pom.xml" />
+        <option value="$PROJECT_DIR$/WebBki/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
