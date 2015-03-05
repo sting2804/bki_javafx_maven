@@ -27,6 +27,7 @@
         <module name="APISQA" />
         <module name="demoApi" />
         <module name="demoMavenIntellij" />
+        <module name="projectEntities" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

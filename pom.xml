@@ -11,5 +11,6 @@
   <modules>
     <module>demoMavenIntellij</module>
     <module>APIServer</module>
+      <module>projectEntities</module>
   </modules>
 </project>

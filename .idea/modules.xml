@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/APIServer/APIServer.iml" filepath="$PROJECT_DIR$/APIServer/APIServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/bki_diplom.iml" filepath="$PROJECT_DIR$/bki_diplom.iml" />
       <module fileurl="file://$PROJECT_DIR$/demoMavenIntellij/demoMavenIntellij.iml" filepath="$PROJECT_DIR$/demoMavenIntellij/demoMavenIntellij.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projectEntities/projectEntities.iml" filepath="$PROJECT_DIR$/projectEntities/projectEntities.iml" />
     </modules>
   </component>
 </project>

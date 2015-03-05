@@ -1,6 +1,7 @@
 package com.privat.bki.apiserver.wrappers;
 
 import com.privat.bki.apiserver.entities.Client;
+import com.privat.bki.apiserver.entities.Person;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -12,31 +13,23 @@ import java.util.List;
  */
 @XmlRootElement(name = "clients")
 @XmlSeeAlso(value = {Client.class})
-public class ClientListWrapper<Client> {
-    int count;
-    List <Client> clients;
+public class ClientListWrapper {
+
+    List <Person> clients;
 
     public ClientListWrapper() {
     }
 
-    public ClientListWrapper(List<Client> clients) {
+    public ClientListWrapper(List<Person> clients) {
         this.clients = clients;
-        count = clients.size();
     }
 
-    public int getCount() {
-        return count;
-    }
-
-    public void setCount(int count) {
-        this.count = count;
-    }
     @XmlElement(name = "client")
-    public List<Client> getClients() {
+    public List<Person> getClients() {
         return clients;
     }
 
-    public void setClients(List<Client> clients) {
+    public void setClients(List<Person> clients) {
         this.clients = clients;
     }
 }
