@@ -3,9 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/APIServer/APIServer.iml" filepath="$PROJECT_DIR$/APIServer/APIServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BusinessInterfaces/BusinessInterfaces.iml" filepath="$PROJECT_DIR$/BusinessInterfaces/BusinessInterfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DesktopApp/DesktopApp.iml" filepath="$PROJECT_DIR$/DesktopApp/DesktopApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/bki_diplom.iml" filepath="$PROJECT_DIR$/bki_diplom.iml" />
-      <module fileurl="file://$PROJECT_DIR$/demoMavenIntellij/demoMavenIntellij.iml" filepath="$PROJECT_DIR$/demoMavenIntellij/demoMavenIntellij.iml" />
-      <module fileurl="file://$PROJECT_DIR$/projectEntities/projectEntities.iml" filepath="$PROJECT_DIR$/projectEntities/projectEntities.iml" />
     </modules>
   </component>
 </project>
