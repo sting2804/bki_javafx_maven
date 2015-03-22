@@ -1,0 +1,5 @@
+conf xml: 2015-03-07 01:56:53,758 INFO  (org.springframework.context.support.AbstractApplicationContext:510) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@46ab7fb4: startup date [Sat Mar 07 01:56:53 EET 2015]; root of context hierarchy
+conf xml: 2015-03-07 01:56:53,814 INFO  (org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317) - Loading XML bean definitions from class path resource [spring/spring-config.xml]
+conf xml: 2015-03-07 01:59:12,233 INFO  (org.springframework.context.support.AbstractApplicationContext:510) - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@83b168f: startup date [Sat Mar 07 01:59:12 EET 2015]; root of context hierarchy
+conf xml: 2015-03-07 01:59:12,304 INFO  (org.springframework.beans.factory.xml.XmlBeanDefinitionReader:317) - Loading XML bean definitions from class path resource [spring/spring-config.xml]
+conf xml: 2015-03-07 02:02:37,221 WARN  (org.springframework.web.client.RestTemplate:608) - POST request for "http://localhost:8181/select/is-exists" resulted in 500 (Internal Server Error); invoking error handler

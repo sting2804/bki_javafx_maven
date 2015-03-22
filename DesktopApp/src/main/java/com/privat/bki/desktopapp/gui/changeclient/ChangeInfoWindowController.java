@@ -25,10 +25,7 @@ import java.util.ResourceBundle;
  * @author sting
  */
 public class ChangeInfoWindowController implements Initializable {
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
 
-    }
     @FXML
     public Button applyButton;
     @FXML
@@ -110,9 +107,8 @@ public class ChangeInfoWindowController implements Initializable {
                 initDate == null || finishDate == null || bankCode.equals("")) {
             alert.setContentText("Заполните все поля");
             alert.showAndWait();
-        }
-        else {
-            if(bankMap.get(bankCode) == null) {
+        } else {
+            if (bankMap.get(bankCode) == null) {
                 //вызов окна добавления нового банка
                 bank = mainModel.callNewBankWindow(bankCode);
                 //обновить карту банков
@@ -120,12 +116,12 @@ public class ChangeInfoWindowController implements Initializable {
             } else {
                 bank = new Bank(bankCode, bankMap.get(bankCode));
             }
-            if(currencyMap.get(currencyCode)==null){
+            if (currencyMap.get(currencyCode) == null) {
                 //вызов окна добавления новой валюты
                 currency = mainModel.callNewCurrencyWindow(currencyCode);
                 //обновить карту валют
                 currencyMap = mainModel.getBankMap();
-            } else{
+            } else {
                 currency = new Currency(currencyCode, currencyMap.get(currencyCode));
             }
             person = new Person();
@@ -158,21 +154,21 @@ public class ChangeInfoWindowController implements Initializable {
         setDatePickerFormat(finishdateDatePicker);
     }
 
-    *
+    /**
      * задаёт формат даты для указанного объекта класса DatePicker
      *
      * @param datePicker
-
+     */
     private void setDatePickerFormat(DatePicker datePicker) {
         datePicker.setConverter(createConverter("dd.MM.yyyy"));
     }
 
-    *
+    /**
      * Задаёт конвертор формата по заданому шаблону
      *
      * @param pattern описывает требуемый формат
      * @return
-
+     */
     private StringConverter<LocalDate> createConverter(String pattern) {
         StringConverter<LocalDate> converter = new StringConverter<LocalDate>() {
             DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern(pattern);
@@ -227,7 +223,7 @@ public class ChangeInfoWindowController implements Initializable {
     }
 
     public void setPerson(Person person) {
-        this.person =  person;
+        this.person = person;
         setScreenForms(person);
     }
 

@@ -1,13 +1,11 @@
 package com.privat.bki.desktopapp.gui.main;
 
-import com.privat.bki.desktopapp.bussines.ILoanInfoService;
-import com.privat.bki.desktopapp.bussines.trash.IPersonService;
-import com.privat.bki.desktopapp.bussines.trash.IServiceFactory;
 import com.privat.bki.desktopapp.gui.changeclient.ChangeInfoWindowController;
 import com.privat.bki.desktopapp.gui.directories.BankWindowController;
 import com.privat.bki.desktopapp.gui.directories.CurrencyWindowController;
 import com.privat.bki.desktopapp.gui.searchuser.ClientSearchWindowController;
 import com.privat.bki.desktopapp.gui.trash.newclient.NewClientWindowController;
+import com.privat.bki.desktopapp.utils.DaoRestTemplateService;
 import com.privat.bki.entities.Bank;
 import com.privat.bki.entities.Currency;
 import com.privat.bki.entities.LoanInfo;
@@ -18,6 +16,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.util.List;
@@ -28,7 +28,11 @@ import java.util.Map;
  * Класс для связи контроллера главного окна с остальными окнами,
  * включает обработку некоторых событий по открытию новых окон и передаче туда неких данных
  */
+@Component
 public class MainModel {
+
+    @Autowired
+    DaoRestTemplateService service;
 
     private static final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(MainModel.class);
     /**
@@ -45,30 +49,13 @@ public class MainModel {
     private MainWindowController mwController;
     private BankWindowController bwController;
     private CurrencyWindowController cwController;
-    /**
-     * loanInfoService объект для связи с кредитной частью дао
-     * personService объект для связи с пользовательской частью дао
-     * serviceFactory объект для получения конкретной реализации кредитных и клиентских сервисов
-     */
-    private ILoanInfoService loanInfoService;
-    private IPersonService personService;
-    private IServiceFactory serviceFactory;
+
     /**
      * foundInfo хранит информацию об искомом клиенте
      */
     private List<LoanInfo> foundInfo;
 
     public MainModel() {
-    }
-
-    public MainModel(IServiceFactory serviceFactory) {
-        this.serviceFactory = serviceFactory;
-        initComponents();
-    }
-
-    private void initComponents() {
-        loanInfoService = serviceFactory.createLoanService();
-        personService = serviceFactory.createPersonService();
     }
 
     /**
@@ -87,7 +74,7 @@ public class MainModel {
         mwController = root.<MainWindowController>getController();
         mwController.setMainModel(this);
         scene.getStylesheets().add("/styles/Styles.css");
-        primaryStage.setTitle("BKI on JavaFX and Maven");
+        primaryStage.setTitle("BKI on JavaFX");
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);
         primaryStage.show();
@@ -98,7 +85,7 @@ public class MainModel {
     }
 
     public List<LoanInfo> getAllRecords() {
-        return loanInfoService.listAll();
+        return service.listAll();
     }
 
     /**
@@ -122,7 +109,7 @@ public class MainModel {
         primaryStage.showAndWait();
         Person searchPerson = csController.getSearchablePerson();
         if (searchPerson != null) {
-            if ((foundInfo = loanInfoService.listSpecificInfo(searchPerson)) == null)
+            if ((foundInfo = service.listSpecificInfo(searchPerson)) == null)
                 new Alert(Alert.AlertType.WARNING, "Клиент не найден").showAndWait();
         }
 
@@ -160,9 +147,9 @@ public class MainModel {
             return;
         }
         if (newInfo != null) {
-            int clientId = loanInfoService.isClientExists(newInfo.getPerson());
+            int clientId = service.isClientExists(newInfo.getPerson());
             if (clientId != -1) {
-                loanInfoService.modify(curInfo, newInfo);
+                service.modify(curInfo, newInfo);
             }
         }
     }
@@ -195,11 +182,11 @@ public class MainModel {
         //получение информации из контроллера
         LoanInfo newInfo = ciController.getNewInfo();
         if (newInfo != null) {
-            int clientId = loanInfoService.isClientExists(newInfo.getPerson());
+            int clientId = service.isClientExists(newInfo.getPerson());
             if (clientId != -1) {
-                loanInfoService.addInfo(newInfo, clientId);
+                service.addInfo(newInfo, clientId);
             } else
-                loanInfoService.addNewClient(newInfo);
+                service.addNewClient(newInfo);
         }
     }
 
@@ -225,11 +212,11 @@ public class MainModel {
         //получение информации из контроллера
         LoanInfo newInfo = ciController.getNewInfo();
         if (newInfo != null) {
-            int clientId = loanInfoService.isClientExists(newInfo.getPerson());
+            int clientId = service.isClientExists(newInfo.getPerson());
             if (clientId != -1) {
-                loanInfoService.addInfo(newInfo, clientId);
+                service.addInfo(newInfo, clientId);
             } else
-                loanInfoService.addNewClient(newInfo);
+                service.addNewClient(newInfo);
         }
     }
 
@@ -252,7 +239,7 @@ public class MainModel {
         primaryStage.showAndWait();
         Bank b = bwController.getBank();
         if (b != null) {
-            if (loanInfoService.addBank(b))
+            if (service.addBank(b))
                 new Alert(Alert.AlertType.INFORMATION, "Банк добавлен").showAndWait();
             else new Alert(Alert.AlertType.WARNING, "Банк не добавлен").showAndWait();
         } else {
@@ -282,7 +269,7 @@ public class MainModel {
 
         Currency c = cwController.getCurrency();
         if (c != null) {
-            if (loanInfoService.addCurrency(c))
+            if (service.addCurrency(c))
                 new Alert(Alert.AlertType.INFORMATION, "Банк добавлен").showAndWait();
             else new Alert(Alert.AlertType.WARNING, "Банк не добавлен").showAndWait();
         } else {
@@ -294,11 +281,11 @@ public class MainModel {
     //работа со справочниками
 
     public Map<String, String> getCurrencyMap() {
-        return loanInfoService.getCurrenciesMap();
+        return service.getCurrenciesMap();
     }
 
     public Map<String, String> getBankMap() {
-        return loanInfoService.getBanksMap();
+        return service.getBanksMap();
     }
 
     public List<LoanInfo> getFoundRecords() {

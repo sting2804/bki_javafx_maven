@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="APIServerMVC:war exploded">
+    <output-path>$PROJECT_DIR$/classes/artifacts/APIServerMVC_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="APIServerMVC/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="APIServerMVC" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

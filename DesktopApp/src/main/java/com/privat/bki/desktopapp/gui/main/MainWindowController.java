@@ -22,6 +22,7 @@ import java.net.URL;
 import java.sql.Date;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 import java.util.ResourceBundle;
@@ -75,7 +76,7 @@ public class MainWindowController implements Initializable {
 
     public MainWindowController() {
         infoList = FXCollections.observableArrayList();
-        tableView.sortPolicyProperty().set(t -> {
+        /*tableView.sortPolicyProperty().set(t -> {
             Comparator<LoanInfo> comparator = (r1, r2)
                     -> r1 == rowTotal ? 1 //rowTotal at the bottom
                     : r2 == rowTotal ? -1 //rowTotal at the bottom
@@ -83,7 +84,7 @@ public class MainWindowController implements Initializable {
                     : t.getComparator().compare(r1, r2); //columns are sorted: sort accordingly
             FXCollections.sort(table.getItems(), comparator);
             return true;
-        });
+        });*/
     }
 
     public void setMainModel(MainModel mainModel) {

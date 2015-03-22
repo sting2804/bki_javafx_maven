@@ -1,6 +1,5 @@
 package com.privat.bki.desktopapp;
 
-import com.privat.bki.desktopapp.bussines.trash.SimpleServiceFactory;
 
 import com.privat.bki.desktopapp.gui.main.MainModel;
 import javafx.application.Application;
@@ -8,7 +7,6 @@ import javafx.stage.Stage;
 import org.apache.log4j.xml.DOMConfigurator;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
 
 public class MainApp extends Application {
 
@@ -18,7 +16,7 @@ public class MainApp extends Application {
     @Override
     public void start(Stage stage) throws Exception {
 
-        mainModel = new MainModel();
+        mainModel = context.getBean(MainModel.class);
         mainModel.callMainWindow(stage);
     }
 
