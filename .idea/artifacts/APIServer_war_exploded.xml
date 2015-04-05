@@ -36,10 +36,10 @@
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.4.2" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.4.0" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.4.2" />
+          <element id="library" level="project" name="Maven: org.mockito:mockito-all:1.9.5" />
           <element id="archive" name="BusinessInterfaces-1.0.jar">
             <element id="module-output" name="BusinessInterfaces" />
           </element>
-          <element id="library" level="project" name="Maven: org.mockito:mockito-all:1.9.5" />
         </element>
       </element>
       <element id="directory" name="META-INF">

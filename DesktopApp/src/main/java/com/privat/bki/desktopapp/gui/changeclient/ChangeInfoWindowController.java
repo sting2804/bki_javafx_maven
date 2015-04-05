@@ -97,14 +97,19 @@ public class ChangeInfoWindowController implements Initializable {
         }
         String currencyCode = currencyCodeComboBox.getValue();
         LocalDate initDate = initdateDatePicker.getValue();
-        LocalDate finishDate = finishdateDatePicker.getValue();
+        LocalDate finishDate;
+        try{
+            finishDate = finishdateDatePicker.getValue();
+        } catch (NullPointerException e){
+            finishDate = null;
+        }
         String bankCode = bankCodeComboBox.getValue();
         Boolean arrears = arrearsCheckBox.isSelected();
         Bank bank;
         Currency currency;
         if (fio[0].equals("") || passport[0].equals("") || inn.equals("") || birthday == null ||
                 initAmount == null || balance == null || currencyCode.equals("") ||
-                initDate == null || finishDate == null || bankCode.equals("")) {
+                initDate == null /*|| finishDate == null*/ || bankCode.equals("")) {
             alert.setContentText("Заполните все поля");
             alert.showAndWait();
         } else {
@@ -202,7 +207,12 @@ public class ChangeInfoWindowController implements Initializable {
             bankCodeComboBox.setValue(loanInfo.getBank().getCode());
             currencyCodeComboBox.setValue(loanInfo.getCurrency().getCode());
             initdateDatePicker.setValue(loanInfo.getInitDate());
-            finishdateDatePicker.setValue(loanInfo.getFinishDate());
+            try{
+                finishdateDatePicker.setValue(loanInfo.getFinishDate());
+            }
+            catch (Exception e){
+                e.printStackTrace();
+            }
             arrearsCheckBox.setSelected(loanInfo.getArrears());
         }
     }

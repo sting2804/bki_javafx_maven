@@ -7,7 +7,7 @@
     <version>1.0</version>
   </parent>
 
-    <groupId>com.privat.bki</groupId>
+
     <artifactId>APIServer</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
@@ -116,14 +116,14 @@
             <version>2.4.2</version>
         </dependency>
         <dependency>
-            <groupId>com.privat.bki</groupId>
-            <artifactId>BusinessInterfaces</artifactId>
-            <version>1.0</version>
-        </dependency>
-        <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-all</artifactId>
             <version>1.9.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.privat.bki</groupId>
+            <artifactId>BusinessInterfaces</artifactId>
+            <version>1.0</version>
         </dependency>
     </dependencies>
 
@@ -166,7 +166,7 @@
                                 <artifactItem>
                                     <groupId>javax</groupId>
                                     <artifactId>javaee-endorsed-api</artifactId>
-                                    <version>6.0</version>
+                                    <version>7.0</version>
                                     <type>jar</type>
                                 </artifactItem>
                             </artifactItems>

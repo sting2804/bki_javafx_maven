@@ -1,6 +1,5 @@
 package com.privat.bki.apiserver.mappers;
 
-import com.privat.bki.apiserver.spring.beans.dao.JdbcDao;
 import com.privat.bki.entities.Bank;
 import com.privat.bki.entities.Currency;
 import com.privat.bki.entities.LoanInfo;
@@ -38,17 +37,20 @@ public class LoanInfoRowMapper implements RowMapper<LoanInfo>{
         try {
             loanInfo.setInitDate(rs.getDate(i++).toLocalDate());
         } catch (SQLException e) {
-            log.error(e.getMessage());
+            //log.error(e.getMessage());
+            loanInfo.setFinishDate(null);
         }
         try {
             loanInfo.setFinishDate(rs.getDate(i++).toLocalDate());
-        } catch (SQLException e) {
-            log.error(e.getMessage());
+        } catch (Exception e) {
+//            log.error(e.getMessage());
+            loanInfo.setFinishDate(null);
         }
         try {
             loanInfo.setBalance(rs.getDouble(i++));
         } catch (SQLException e) {
-            log.error(e.getMessage());
+            //log.error(e.getMessage());
+            loanInfo.setFinishDate(null);
         }
         loanInfo.setArrears(rs.getBoolean(i++));
         bank.setCode(rs.getString(i++));

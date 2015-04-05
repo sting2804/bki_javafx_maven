@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Heading</h1>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+                <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+                <br>Ut enim ad minim veniam, quis nostrud</p>
+
+            <div>
+                <span>Search    </span>
+                <input ng-model="query" >
+            </div>
+            <span>Now selected: </span>
+            <b ng-bind="selectedItem"></b>
+            <table st-table="displayed" class="table table-bordered table-hover table-striped">
+                <thead>
+                <tr>
+                    <th st-sort="$index">#</th>
+                    <th st-sort="surname">ПІБ</th>
+                    <th ng-click="predicate = 'birthday'; reverse=!reverse">ДН</th>
+                    <th ng-click="predicate = 'inn'; reverse=!reverse">ІНН</th>
+                    <th ng-click="predicate = 'passSerial'; reverse=!reverse">Паспорт</th>
+                    <th ng-click="predicate = 'amount'; reverse=!reverse">Сума</th>
+                    <th>Залишок</th>
+                    <th>Валюта</th>
+                    <th>Банк</th>
+                    <th>Відкрит</th>
+                    <th>Закрит</th>
+                    <th>Прострочки</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="l in loans | filter: query" ng-click="selectItem(l)">
+                    <td ng-bind="$index"></td>
+                    <td>{{l.surname}} {{l.name}} {{l.patronymic}}</td>
+                    <td>{{l.birthday}}</td>
+                    <td>{{l.inn}}</td>
+                    <td>{{l.passSerial}} {{l.passNumber}}</td>
+                    <td>{{l.amount}}</td>
+                    <td>{{l.balance}}</td>
+                    <td>{{l.currency}}</td>
+                    <td>{{l.bank}}</td>
+                    <td>{{l.opened}}</td>
+                    <td>{{l.closed}}</td>
+                    <td>{{l.arrears}}</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="5" class="text-center">
+                        <div st-items-by-page="10" st-pagination="" st-template="views/pagination/pagination.custom.html"></div>
+                    </td>
+                </tr>
+                </tfoot>
+            </table>
+            <button class="ui-button" ng-click="edit(selectedItem)">Edit</button>
+            <button class="ui-button" ng-click="openEditModal(selectedItem)">EditModal</button>
+        </div>
+    </div>
+</div>

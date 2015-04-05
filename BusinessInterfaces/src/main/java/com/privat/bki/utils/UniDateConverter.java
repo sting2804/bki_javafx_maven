@@ -4,19 +4,18 @@ package com.privat.bki.utils;
 import java.sql.Date;
 import java.time.LocalDate;
 
-
 /**
  * Created by sting on 2/1/15.
  */
 
-public class DateConverter implements Converter<Date, LocalDate> {
+public class UniDateConverter implements Converter<Date, LocalDate> {
     @Override
     public LocalDate from(Date date) {
-        return date == null ? null : date.toLocalDate();
+        return date == null ? null : LocalDate.ofEpochDay(date.getTime());
     }
     @Override
     public Date to(LocalDate ld) {
-        return ld == null ? null : Date.valueOf(ld);
+        return ld == null ? null : new Date(ld.toEpochDay());
     }
     @Override
     public Class<Date> fromType() {

@@ -8,7 +8,7 @@ import com.privat.bki.entities.Currency;
 import com.privat.bki.entities.LoanInfo;
 import com.privat.bki.entities.Person;
 import com.privat.bki.utils.Converter;
-import com.privat.bki.utils.DateConverter;
+import com.privat.bki.utils.SqlDateConverter;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -40,7 +40,7 @@ public class JdbcDao implements IBkiDao {
     private JdbcTemplate jdbcTemplate;
 
     public JdbcDao() {
-        dateConverter = new DateConverter();
+        dateConverter = new SqlDateConverter();
         this.data = new ArrayList<>();
         this.currencies = new HashMap<>();
         this.banks = new HashMap<>();

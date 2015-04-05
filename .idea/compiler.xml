@@ -32,9 +32,10 @@
         <module name="projectEntities" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8">
       <module name="APIServer" target="1.8" />
-      <module name="demoMavenIntellij" target="1.8" />
+      <module name="bki_diplom" target="1.8" />
+      <module name="BusinessInterfaces" target="1.8" />
       <module name="DesktopApp" target="1.8" />
     </bytecodeTargetLevel>
   </component>

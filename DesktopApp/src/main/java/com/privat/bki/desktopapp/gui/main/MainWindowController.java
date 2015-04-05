@@ -4,7 +4,7 @@ import com.privat.bki.entities.Bank;
 import com.privat.bki.entities.Currency;
 import com.privat.bki.entities.LoanInfo;
 import com.privat.bki.entities.Person;
-import com.privat.bki.utils.DateConverter;
+import com.privat.bki.utils.SqlDateConverter;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
@@ -22,7 +22,6 @@ import java.net.URL;
 import java.sql.Date;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 import java.util.ResourceBundle;
@@ -122,7 +121,7 @@ public class MainWindowController implements Initializable {
 
 
     private void setPropertyValueFactory() {
-        DateConverter converter = new DateConverter();
+        SqlDateConverter converter = new SqlDateConverter();
         fioColumn.setSortType(TableColumn.SortType.ASCENDING);
         fioColumn.setCellValueFactory(new PropertyValueFactory<>("person"));
         fioColumn.setCellFactory((TableColumn<LoanInfo, Person> param) -> {
@@ -196,7 +195,12 @@ public class MainWindowController implements Initializable {
         finishDateColumn.setCellValueFactory(item -> {
             ObjectProperty property = new SimpleObjectProperty();
             DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
-            property.setValue(dateFormat.format(converter.to(item.getValue().getFinishDate())));
+            try {
+                property.setValue(dateFormat.format(converter.to(item.getValue().getFinishDate())));
+            }
+            catch (Exception e){
+
+            }
             return property;
         });
         balanceColumn.setCellValueFactory(new PropertyValueFactory<>("balance"));
