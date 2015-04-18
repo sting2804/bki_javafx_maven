@@ -16,6 +16,7 @@ import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.springframework.jdbc.core.simple.SimpleJdbcCall;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.sql.Date;
 import java.time.LocalDate;
@@ -28,6 +29,7 @@ import java.util.Map;
  *
  */
 @Component("jdbcDao")
+@Service
 public class JdbcDao implements IBkiDao {
 
     private static final Logger log = Logger.getLogger(JdbcDao.class);

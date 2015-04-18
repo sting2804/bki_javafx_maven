@@ -30,13 +30,15 @@
         <module name="demoMavenIntellij" />
         <module name="DesktopApp" />
         <module name="projectEntities" />
+        <module name="SSAPI" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="APIServer" target="1.8" />
-      <module name="bki_diplom" target="1.8" />
-      <module name="BusinessInterfaces" target="1.8" />
+      <module name="bki_diplom" target="1.5" />
+      <module name="BusinessInterfaces" target="1.5" />
       <module name="DesktopApp" target="1.8" />
+      <module name="SSAPI" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

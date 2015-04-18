@@ -8,6 +8,7 @@ import com.privat.bki.entities.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Map;
@@ -16,6 +17,7 @@ import java.util.Map;
  * Created by sting on 3/1/15.
  */
 @Component
+@Service
 public class DaoService {
     @Autowired
     @Qualifier("jdbcDao")

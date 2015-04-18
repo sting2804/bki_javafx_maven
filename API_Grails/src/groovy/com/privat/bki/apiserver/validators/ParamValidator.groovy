@@ -3,14 +3,15 @@ package com.privat.bki.apiserver.validators
 /**
  * Created by sting on 3/29/15.
  */
-static class ParamValidator {
+class ParamValidator {
     def errors = []
-    def paramsShouldExist=[:]
-    def params=[:]
+    def paramsShouldExist = [:]
+    def params = [:]
 
     ParamValidator(Map paramsShouldExist, Map params) {
         this.paramsShouldExist = paramsShouldExist
         this.params = params
+        validateParams(paramsShouldExist,params)
     }
 
     private Boolean validateParams(Map paramsShouldExist, Map params) {
@@ -21,7 +22,7 @@ static class ParamValidator {
         }
     }
 
-    boolean isValid(){
+    boolean isValid() {
         return errors?.size() <= 0
     }
 }

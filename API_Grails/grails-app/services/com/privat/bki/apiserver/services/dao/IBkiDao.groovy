@@ -4,13 +4,11 @@ import com.privat.bki.entities.Bank
 import com.privat.bki.entities.Currency
 import com.privat.bki.entities.LoanInfo
 import com.privat.bki.entities.Person
-import grails.transaction.Transactional
 
 
 /**
  * Created by sting on 1/23/15.
  */
-@Transactional
 interface IBkiDao {
     List<LoanInfo> getRecord(int id)
     /**

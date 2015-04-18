@@ -9,7 +9,7 @@ import java.sql.SQLException
 /**
  * Created by sting on 3/2/15.
  */
-public class CurrencyRowMapper implements RowMapper<Currency> {
+class CurrencyRowMapper implements RowMapper<Currency> {
     @Override
     Currency mapRow(ResultSet rs, int ii) throws SQLException {
         Currency currency = new Currency()

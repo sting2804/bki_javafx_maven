@@ -15,6 +15,10 @@ class UrlMappings {
                 action = [GET: "selectAll"]
             }
 
+            "/loans/$id?"(controller: 'loanInformation'){
+                action = [GET: "selectClient"]
+            }
+
             "/employeeRoles"(controller: 'employeeRole')
 
             "/protocolStatuses"(controller: 'protocolStatus')

@@ -19,6 +19,11 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:4.1.5.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.1.5.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-oxm:4.1.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:3.2.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:3.2.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:3.2.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-taglibs:3.2.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-acl:3.2.4.RELEASE" />
           <element id="library" level="project" name="Maven: javax.servlet.jsp.jstl:javax.servlet.jsp.jstl-api:1.2.1" />
           <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
           <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />

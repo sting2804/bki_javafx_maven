@@ -35,7 +35,7 @@
             <tr ng-repeat="l in loans | filter: query" ng-click="selectItem(l)">
                 <td>{{l.id}}</td>
                 <td>{{l.person.surname}} {{l.person.name}} {{l.person.patronymic}}</td>
-                <td>{{l.person.birthday | date}}</td>
+                <td>{{l.person.birthday | date: 'yyyy-MM-dd'}}</td>
                 <td>{{l.person.inn}}</td>
                 <td>{{l.person.passSerial}} {{l.person.passNumber}}</td>
                 <td>{{l.initAmount}}</td>

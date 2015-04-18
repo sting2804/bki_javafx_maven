@@ -8,7 +8,7 @@ import com.privat.bki.entities.Currency
 import com.privat.bki.entities.LoanInfo
 import com.privat.bki.entities.Person
 import com.privat.bki.utils.Converter
-import com.privat.bki.utils.DateConverter
+import com.privat.bki.utils.SqlDateConverter
 import grails.transaction.Transactional
 import org.apache.log4j.Logger
 import org.springframework.jdbc.core.JdbcTemplate
@@ -34,7 +34,7 @@ class JdbcDao implements IBkiDao {
     private JdbcTemplate jdbcTemplate
 
     JdbcDao() {
-        dateConverter = new DateConverter()
+        dateConverter = new SqlDateConverter()
         this.data = []
         this.currencies = [:]
         this.banks = [:]

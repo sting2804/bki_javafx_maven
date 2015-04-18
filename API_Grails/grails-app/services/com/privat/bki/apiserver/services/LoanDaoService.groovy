@@ -1,6 +1,6 @@
 package com.privat.bki.apiserver.services
 
-import com.privat.bki.apiserver.services.dao.IBkiDao
+import com.privat.bki.apiserver.services.dao.JdbcDao
 import com.privat.bki.apiserver.validators.ParamValidator
 import com.privat.bki.entities.Bank
 import com.privat.bki.entities.LoanInfo
@@ -10,8 +10,8 @@ import org.codehaus.groovy.grails.web.servlet.mvc.GrailsParameterMap
 
 @Transactional
 class LoanDaoService {
-    private IBkiDao jdbcDao
-    private ParamValidator validator
+    JdbcDao jdbcDao
+    ParamValidator validator
 
     List<LoanInfo> getRecord(int id) {
         return jdbcDao.getRecord(id)
@@ -23,8 +23,12 @@ class LoanDaoService {
 
     List<LoanInfo> listSpecificInfo(GrailsParameterMap params){//Person person) {
         validator = new ParamValidator(['person'], params)
-        Person person = new Person(params.id, params.name, )
-        return validator.isValid()?jdbcDao.getPersonInfo(person):validator.errors
+        if(validator.isValid()) {
+            Person person = new Person(params.id, params.name, params.surname, params.patronymic, params.birthday,
+                    params.inn, params.passNumber, params.passSerial)
+            return jdbcDao.getPersonInfo(person)
+        }
+        else validator.errors
     }
 
     Integer isClientExists(Person person) {

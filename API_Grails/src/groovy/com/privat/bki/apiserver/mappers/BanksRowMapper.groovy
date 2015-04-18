@@ -10,7 +10,7 @@ import java.sql.SQLException
 /**
  * Created by sting on 3/2/15.
  */
-static class BanksRowMapper implements RowMapper<Bank>{
+class BanksRowMapper implements RowMapper<Bank>{
     @Override
     Bank mapRow(ResultSet rs, int ii) throws SQLException{
         Bank bank = new Bank()

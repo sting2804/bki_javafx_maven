@@ -5,7 +5,7 @@ import com.privat.bki.entities.Person
 /**
  * Created by sting on 3/29/15.
  */
-static class PersonParser implements AbstractParser{
+class PersonParser implements AbstractParser{
     @Override
     def parseObject(Map params){
         return new Person(params.id, params.name, params.surname, params.patronymic,

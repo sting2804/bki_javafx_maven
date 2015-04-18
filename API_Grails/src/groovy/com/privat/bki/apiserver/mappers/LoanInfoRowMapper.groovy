@@ -1,4 +1,4 @@
-
+package com.privat.bki.apiserver.mappers
 
 import com.privat.bki.entities.Bank
 import com.privat.bki.entities.Currency
@@ -13,7 +13,7 @@ import java.sql.SQLException
 /**
  * Created by sting on 3/2/15.
  */
-public class LoanInfoRowMapper implements RowMapper<LoanInfo> {
+class LoanInfoRowMapper implements RowMapper<LoanInfo> {
     private static final Logger log = Logger.getLogger(LoanInfoRowMapper.class)
     @Override
      LoanInfo mapRow(ResultSet rs, int ii) throws SQLException {
