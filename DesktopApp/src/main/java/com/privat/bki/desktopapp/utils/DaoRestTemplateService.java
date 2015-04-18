@@ -68,6 +68,7 @@ public class DaoRestTemplateService {
             data = response.getBody();
         } catch (Exception e) {
             e.printStackTrace();
+            return null;
         }
         return data.getClients();
     }

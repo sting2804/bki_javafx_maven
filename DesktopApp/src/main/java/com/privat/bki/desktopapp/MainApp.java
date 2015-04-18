@@ -16,6 +16,7 @@ public class MainApp extends Application {
     @Override
     public void start(Stage stage) throws Exception {
 
+
         mainModel = context.getBean(MainModel.class);
         mainModel.callMainWindow(stage);
     }

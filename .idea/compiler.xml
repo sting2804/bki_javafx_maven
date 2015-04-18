@@ -38,7 +38,6 @@
       <module name="bki_diplom" target="1.5" />
       <module name="BusinessInterfaces" target="1.5" />
       <module name="DesktopApp" target="1.8" />
-      <module name="SSAPI" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

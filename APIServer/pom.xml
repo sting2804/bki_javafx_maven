@@ -18,11 +18,16 @@
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java-version>1.8</java-version>
-        <spring-version>4.1.5.RELEASE</spring-version>
-        <spring.securiry>3.2.4.RELEASE</spring.securiry>
+        <spring-version>4.1.6.RELEASE</spring-version>
+        <spring.securiry>3.2.7.RELEASE</spring.securiry>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.0.1</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
@@ -92,7 +97,7 @@
             <version>1.2.1</version>
         </dependency>
         <dependency>
-            <groupId>javax.servlet</groupId>
+            <groupId>javax.servlet.jsp.jstl</groupId>
             <artifactId>jstl</artifactId>
             <version>1.2</version>
         </dependency>

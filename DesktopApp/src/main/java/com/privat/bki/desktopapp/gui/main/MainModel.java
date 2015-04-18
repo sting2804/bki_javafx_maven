@@ -72,7 +72,12 @@ public class MainModel {
             log.error(e.getMessage());
         }
         mwController = root.<MainWindowController>getController();
-        mwController.setMainModel(this);
+        //try {
+            mwController.setMainModel(this);
+        /*} catch (Exception e){
+            new Alert(Alert.AlertType.WARNING, "Connection refused. \nAt the moment the server is down").showAndWait();
+            return;
+        }*/
         scene.getStylesheets().add("/styles/Styles.css");
         primaryStage.setTitle("BKI on JavaFX");
         primaryStage.setScene(scene);

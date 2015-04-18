@@ -94,7 +94,7 @@ public class MainWindowController implements Initializable {
         if (tempList != null) infoList.addAll(tempList);
         else {
             Alert alert = new Alert(Alert.AlertType.ERROR, "Отсутсвует связь с сервером. " +
-                    "Устраните неисправность и повторите запуск программы", ButtonType.OK);
+                    "Повторите запуск программы позже", ButtonType.OK);
             Optional<ButtonType> result = alert.showAndWait();
             if (result.get() == ButtonType.OK) {
                 System.exit(0);
