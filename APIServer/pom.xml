@@ -97,7 +97,7 @@
             <version>1.2.1</version>
         </dependency>
         <dependency>
-            <groupId>javax.servlet.jsp.jstl</groupId>
+            <groupId>jstl</groupId>
             <artifactId>jstl</artifactId>
             <version>1.2</version>
         </dependency>
@@ -153,6 +153,16 @@
             <groupId>com.privat.bki</groupId>
             <artifactId>BusinessInterfaces</artifactId>
             <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-all</artifactId>
+            <version>2.4.3</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <artifactId>jackson-datatype-jsr310</artifactId>
+            <version>2.5.2</version>
         </dependency>
     </dependencies>
 

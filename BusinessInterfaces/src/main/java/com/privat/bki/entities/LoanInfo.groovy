@@ -5,6 +5,10 @@
  */
 package com.privat.bki.entities
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize
+import com.fasterxml.jackson.databind.annotation.JsonSerialize
+import com.privat.bki.utils.JsonDateDeserializer
+import com.privat.bki.utils.JsonDateSerializer
 import com.privat.bki.utils.LocalDateAdapter
 import javafx.beans.property.*
 
@@ -17,7 +21,11 @@ import java.time.LocalDate
 class LoanInfo implements Serializable {
     private IntegerProperty id
     private DoubleProperty initAmount
+    @JsonDeserialize(using = JsonDateDeserializer.class)
+    @JsonSerialize(using = JsonDateSerializer.class)
     private LocalDate initDate
+    @JsonDeserialize(using = JsonDateDeserializer.class)
+    @JsonSerialize(using = JsonDateSerializer.class)
     private LocalDate finishDate
     private DoubleProperty balance
     private BooleanProperty arrears

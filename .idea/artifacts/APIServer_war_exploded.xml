@@ -26,7 +26,7 @@
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-taglibs:3.2.7.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-acl:3.2.7.RELEASE" />
           <element id="library" level="project" name="Maven: javax.servlet.jsp.jstl:javax.servlet.jsp.jstl-api:1.2.1" />
-          <element id="library" level="project" name="Maven: javax.servlet.jsp.jstl:jstl:1.2" />
+          <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
           <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
           <element id="library" level="project" name="Maven: javax.xml.bind:jaxb-api:2.2.7" />
           <element id="library" level="project" name="Maven: com.sun.xml.bind:jaxb-impl:2.2.7" />
@@ -46,6 +46,8 @@
           <element id="archive" name="BusinessInterfaces-1.0.jar">
             <element id="module-output" name="BusinessInterfaces" />
           </element>
+          <element id="library" level="project" name="Maven: org.codehaus.groovy:groovy-all:2.4.3" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.5.2" />
         </element>
       </element>
       <element id="directory" name="META-INF">

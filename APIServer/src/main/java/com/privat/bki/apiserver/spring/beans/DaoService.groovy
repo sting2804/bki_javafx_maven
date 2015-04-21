@@ -62,4 +62,39 @@ class DaoService {
         return dao.addNewCurrency(currency)
     }
 
+    /**
+     * самый предпочитаемый банк
+     */
+    def getTheMostPreferredBank(){
+
+    }
+
+    /**
+     * возвращает возраст клиентов, которые чаще берут кредиты
+     */
+    def getOftenTakingClientsAge(){
+
+    }
+
+    /**
+     * статистика использования банков в разных регионах
+     */
+    def getBankUsageByRegions(){
+
+    }
+
+    /**
+     * предпочитаемые периоды времени для кредитов
+     */
+    def getTheMostPreferredPeriodsForCredits(){
+
+    }
+
+    /**
+     * статистика по срочности (продолжительности срока) кредитов
+     */
+    def getTimesForCreditingDuration(){
+
+    }
+
 }

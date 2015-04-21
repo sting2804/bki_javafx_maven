@@ -1,5 +1,4 @@
 package com.privat.bki.apiserver.spring.beans.dao
-
 import com.privat.bki.apiserver.mappers.BanksRowMapper
 import com.privat.bki.apiserver.mappers.CurrencyRowMapper
 import com.privat.bki.apiserver.mappers.LoanInfoRowMapper
@@ -20,11 +19,6 @@ import org.springframework.stereotype.Service
 
 import java.sql.Date
 import java.time.LocalDate
-import java.util.ArrayList
-import java.util.HashMap
-import java.util.List
-import java.util.Map
-
 /**
  *
  */

@@ -1,5 +1,10 @@
 package com.privat.bki.entities
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize
+import com.fasterxml.jackson.databind.annotation.JsonSerialize
+import com.privat.bki.utils.JsonDateDeserializer
+import com.privat.bki.utils.JsonDateSerializer
+
 import javax.xml.bind.annotation.XmlElement
 import javax.xml.bind.annotation.XmlRootElement
 import java.time.LocalDate
@@ -13,6 +18,8 @@ class Client {
     private String name
     private String surname
     private String patronymic
+    @JsonDeserialize(using = JsonDateDeserializer.class)
+    @JsonSerialize(using = JsonDateSerializer.class)
     private LocalDate birthday
     private String inn
     private String passNumber

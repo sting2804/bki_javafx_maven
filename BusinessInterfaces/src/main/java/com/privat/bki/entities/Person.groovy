@@ -1,4 +1,9 @@
 package com.privat.bki.entities
+
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize
+import com.fasterxml.jackson.databind.annotation.JsonSerialize
+import com.privat.bki.utils.JsonDateDeserializer
+import com.privat.bki.utils.JsonDateSerializer
 import com.privat.bki.utils.LocalDateAdapter
 import javafx.beans.property.IntegerProperty
 import javafx.beans.property.SimpleIntegerProperty
@@ -16,6 +21,8 @@ class Person implements Serializable {
     private StringProperty name
     private StringProperty surname
     private StringProperty patronymic
+    @JsonDeserialize(using = JsonDateDeserializer.class)
+    @JsonSerialize(using = JsonDateSerializer.class)
     private LocalDate birthday
     private StringProperty inn
     private StringProperty passNumber

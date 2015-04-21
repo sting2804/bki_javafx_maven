@@ -12,13 +12,17 @@ import com.privat.bki.entities.Person;
 import com.privat.bki.wrappers.BankMapWrapper;
 import com.privat.bki.wrappers.CurrencyMapWrapper;
 import com.privat.bki.wrappers.LoanInfoListWrapper;
+import org.apache.commons.codec.binary.Base64;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Component;
+import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import java.nio.charset.Charset;
 import java.util.List;
 import java.util.Map;
 
@@ -28,19 +32,59 @@ import java.util.Map;
 @Service
 public class DaoRestTemplateService {
 
+
+
     RestTemplate restTemplate;
+    HttpHeaders headers;
     private LoanInfoListWrapper data;
-    private static final String baseUrl = "http://localhost:8181/api/loans/";
+    private static final String baseUrl = "http://localhost:8181/loans";
 
     public DaoRestTemplateService() {
     }
-/*
-    public static RestTemplate getRestTemplate() {
-        return context.getBean(RestTemplate.class);
-    }*/
+
     @Autowired
     public DaoRestTemplateService(RestTemplate restTemplate) {
         this.restTemplate = restTemplate;
+    }
+
+    public boolean restAuthenticate(String username, String password){
+        ResponseEntity response = doAuthenticate(username, password);
+        if(response !=null && response.getStatusCode().value()==302)
+            return true;
+        return false;
+    }
+
+    private HttpHeaders createHeaders(String username, String password ){
+        HttpHeaders headers =  new HttpHeaders(){
+            {
+                String auth = username + ":" + password;
+                byte[] encodedAuth = Base64.encodeBase64(
+                        auth.getBytes(Charset.forName("US-ASCII")) );
+                String authHeader = "Basic " + new String( encodedAuth );
+                set( "Authorization", authHeader );
+            }
+        };
+        headers.add("Content-Type", "application/json");
+        headers.add("Accept", "application/json");
+
+        this.headers=headers;
+
+        return headers;
+    }
+
+    private ResponseEntity doAuthenticate(String username, String password){
+        try {
+            //restTemplate.getMessageConverters().add(new MappingJackson2HttpMessageConverter());
+            HttpHeaders headers = createHeaders(username,password);
+            HttpEntity request = new HttpEntity(headers);
+            ResponseEntity<LoanInfoListWrapper> response = restTemplate.exchange("http://localhost:8181/loans",
+                    HttpMethod.POST, request, LoanInfoListWrapper.class);
+            return response;
+        }
+        catch (Exception e){
+            e.printStackTrace();
+            return null;
+        }
     }
 
     public List<LoanInfo> getRecord(int id) {
@@ -48,7 +92,7 @@ public class DaoRestTemplateService {
             data.setClients(null);
         try {
             ResponseEntity<LoanInfoListWrapper> response = restTemplate.getForEntity(
-                    baseUrl + "get/info/{id}",
+                    baseUrl + "/get/info/{id}",
                     LoanInfoListWrapper.class, id);
             data = response.getBody();
         } catch (Exception e) {
@@ -62,10 +106,13 @@ public class DaoRestTemplateService {
         if (data != null)
             data.setClients(null);
         try {
-            ResponseEntity<LoanInfoListWrapper> response = restTemplate.getForEntity(
-                    baseUrl + "get/all",
+
+            HttpEntity<String> entity = new HttpEntity<>(headers);
+            ResponseEntity<LoanInfoListWrapper> response = restTemplate.exchange(
+                    baseUrl + "/get/all", HttpMethod.GET, entity,
                     LoanInfoListWrapper.class);
             data = response.getBody();
+            System.out.println(response.toString());
         } catch (Exception e) {
             e.printStackTrace();
             return null;
@@ -103,7 +150,7 @@ public class DaoRestTemplateService {
         BankMapWrapper map = null;
         try {
             ResponseEntity<BankMapWrapper> response = restTemplate.getForEntity(
-                    baseUrl + "get/banks",
+                    baseUrl + "/get/banks",
                     BankMapWrapper.class);
             map = response.getBody();
         } catch (Exception e) {
@@ -116,7 +163,7 @@ public class DaoRestTemplateService {
         CurrencyMapWrapper map = null;
         try {
             ResponseEntity<CurrencyMapWrapper> response = restTemplate.getForEntity(
-                    baseUrl + "get/currencies",
+                    baseUrl + "/get/currencies",
                     CurrencyMapWrapper.class);
             map = response.getBody();
         } catch (Exception e) {

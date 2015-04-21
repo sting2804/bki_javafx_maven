@@ -3,8 +3,8 @@ package com.privat.bki.desktopapp.gui.main;
 import com.privat.bki.desktopapp.gui.changeclient.ChangeInfoWindowController;
 import com.privat.bki.desktopapp.gui.directories.BankWindowController;
 import com.privat.bki.desktopapp.gui.directories.CurrencyWindowController;
+import com.privat.bki.desktopapp.gui.login.LoginController;
 import com.privat.bki.desktopapp.gui.searchuser.ClientSearchWindowController;
-import com.privat.bki.desktopapp.gui.trash.newclient.NewClientWindowController;
 import com.privat.bki.desktopapp.utils.DaoRestTemplateService;
 import com.privat.bki.entities.Bank;
 import com.privat.bki.entities.Currency;
@@ -43,12 +43,12 @@ public class MainModel {
      * bwController контроллер окна добавления банка
      * cwController контроллер окна добавления валюты
      */
-    private NewClientWindowController ncController;
     private ClientSearchWindowController csController;
     private ChangeInfoWindowController ciController;
     private MainWindowController mwController;
     private BankWindowController bwController;
     private CurrencyWindowController cwController;
+    private LoginController liController;
 
     /**
      * foundInfo хранит информацию об искомом клиенте
@@ -59,9 +59,46 @@ public class MainModel {
     }
 
     /**
+     * вход в систему
+     * @param username
+     * @param password
+     */
+    public boolean authenticateUser(String username, String password){
+        return service.restAuthenticate(username,password);
+    }
+
+    /**
+     * callLoginWindow() вызывается из загрузчика для откытия окна
+     */
+    public void callLoginWindow() {
+        Stage primaryStage = new Stage();
+        Scene scene = null;
+        FXMLLoader root;
+        root = new FXMLLoader(getClass().getResource("/fxml/LoginScene.fxml"));
+        try {
+            scene = new Scene(root.load());
+            primaryStage.setScene(scene);
+        } catch (IOException e) {
+            log.error(e.getMessage());
+        }
+        liController = root.<LoginController>getController();
+        liController.setMainModel(this);
+        scene.getStylesheets().add("/styles/Styles.css");
+        primaryStage.setTitle("JavaFX");
+        primaryStage.setScene(scene);
+        primaryStage.setResizable(false);
+        primaryStage.showAndWait();
+        primaryStage.setOnCloseRequest(event -> {
+            Platform.exit();
+            System.exit(0);
+        });
+    }
+
+    /**
      * callMainWindow() вызывается из загрузчика для откытия окна
      */
     public void callMainWindow(Stage primaryStage) {
+        callLoginWindow();
         Scene scene = null;
         FXMLLoader root;
         root = new FXMLLoader(getClass().getResource("/fxml/MainScene.fxml"));
@@ -72,12 +109,7 @@ public class MainModel {
             log.error(e.getMessage());
         }
         mwController = root.<MainWindowController>getController();
-        //try {
-            mwController.setMainModel(this);
-        /*} catch (Exception e){
-            new Alert(Alert.AlertType.WARNING, "Connection refused. \nAt the moment the server is down").showAndWait();
-            return;
-        }*/
+        mwController.setMainModel(this);
         scene.getStylesheets().add("/styles/Styles.css");
         primaryStage.setTitle("BKI on JavaFX");
         primaryStage.setScene(scene);
