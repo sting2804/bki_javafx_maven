@@ -1,6 +1,6 @@
 package com.privat.bki.apiserver.mappers
 
-import com.privat.bki.entities.Bank
+import com.privat.bki.business.entities.Bank
 import org.springframework.jdbc.core.RowMapper
 
 import java.sql.ResultSet

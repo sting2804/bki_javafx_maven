@@ -43,15 +43,15 @@
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.4.0" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.4.2" />
           <element id="library" level="project" name="Maven: org.mockito:mockito-all:1.9.5" />
-          <element id="archive" name="BusinessInterfaces-1.0.jar">
-            <element id="module-output" name="BusinessInterfaces" />
-          </element>
           <element id="library" level="project" name="Maven: org.codehaus.groovy:groovy-all:2.4.3" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.5.2" />
+          <element id="archive" name="BusinessInterfaces-1.1.jar">
+            <element id="module-output" name="BusinessInterfaces" />
+          </element>
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/APIServer/target/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/APIServer/target/APIServer-1.0/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="APIServer/web/Web" />
     </root>

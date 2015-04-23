@@ -9,8 +9,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <modules>
-        <module>DesktopApp</module>
         <module>APIServer</module>
         <module>BusinessInterfaces</module>
+        <module>DesktopApp</module>
     </modules>
 </project>

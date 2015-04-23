@@ -1,9 +1,10 @@
 package com.privat.bki.apiserver.spring.beans
 import com.privat.bki.apiserver.spring.beans.dao.IBkiDao
-import com.privat.bki.entities.Bank
-import com.privat.bki.entities.Currency
-import com.privat.bki.entities.LoanInfo
-import com.privat.bki.entities.Person
+import com.privat.bki.business.entities.Bank
+import com.privat.bki.business.entities.Currency
+import com.privat.bki.business.entities.LoanInfo
+import com.privat.bki.business.entities.Person
+
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.stereotype.Component

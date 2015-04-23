@@ -8,19 +8,20 @@
       http://www.springframework.org/schema/beans
       http://www.springframework.org/schema/beans/spring-beans-4.1.xsd">
 
-    <global-method-security secured-annotations="enabled" />
+    <global-method-security secured-annotations="disabled" />
 
     <http pattern="/login/**" security="none"/>
+    <http pattern="/**" security="none"/>
 
-    <http use-expressions="false">
-        <intercept-url pattern="/**" access="ROLE_ADMIN"/>
-        <remember-me token-validity-seconds="2419200" /><!--помнит 4 недели-->
+    <!--<http use-expressions="true">
+        &lt;!&ndash;<intercept-url pattern="/" access="permitAll"/>&ndash;&gt;
+        <remember-me token-validity-seconds="2419200" />&lt;!&ndash;помнит 4 недели&ndash;&gt;
         <form-login login-page="/login"
                     default-target-url="/loans"/>
-                    <!--authentication-failure-url="/login.html?login_error=1" -->
+                    &lt;!&ndash;authentication-failure-url="/login.html?login_error=1" &ndash;&gt;
         <logout logout-success-url="/login"/>
 
-    </http>
+    </http>-->
 
 
     <authentication-manager alias="authenticationManager">

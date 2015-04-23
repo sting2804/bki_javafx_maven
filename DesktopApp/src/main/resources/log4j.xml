@@ -21,12 +21,12 @@
     </appender>
 
     <!-- откуда писать-->
-    <logger name="com.privat.bki.desktopapp" additivity="false">
+    <logger name="com.privat.bki.com.privat.bki.desktopapp" additivity="false">
         <level value="info" />
         <appender-ref ref="stdout" />
     </logger>
 
-    <logger name="com.privat.bki.desktopapp" additivity="false">
+    <logger name="com.privat.bki.com.privat.bki.desktopapp" additivity="false">
         <level value="info" />
         <appender-ref ref="fileout" />
     </logger>

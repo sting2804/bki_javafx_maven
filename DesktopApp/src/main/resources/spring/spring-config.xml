@@ -7,7 +7,7 @@
        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd">
 
-    <context:component-scan base-package="com.privat.bki.desktopapp"/>
+    <context:component-scan base-package="com.privat.bki.com.privat.bki.desktopapp"/>
     <context:annotation-config/>
     <bean id="objectMapper" class="com.fasterxml.jackson.databind.ObjectMapper"/>
     <bean id="jacksonConverter"
@@ -27,4 +27,5 @@
             </list>
         </property>
     </bean>
+
 </beans>

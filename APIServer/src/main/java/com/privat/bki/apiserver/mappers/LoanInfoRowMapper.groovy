@@ -1,9 +1,9 @@
 package com.privat.bki.apiserver.mappers
 
-import com.privat.bki.entities.Bank
-import com.privat.bki.entities.Currency
-import com.privat.bki.entities.LoanInfo
-import com.privat.bki.entities.Person
+import com.privat.bki.business.entities.Bank
+import com.privat.bki.business.entities.Currency
+import com.privat.bki.business.entities.LoanInfo
+import com.privat.bki.business.entities.Person
 import org.apache.log4j.Logger
 import org.springframework.jdbc.core.RowMapper
 

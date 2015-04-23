@@ -1,10 +1,10 @@
 package com.privat.bki.apiserver.mappers
 
-import com.privat.bki.entities.Currency
 import org.springframework.jdbc.core.RowMapper
 
 import java.sql.ResultSet
 import java.sql.SQLException
+import com.privat.bki.business.entities.Currency
 
 /**
  * Created by sting on 3/2/15.

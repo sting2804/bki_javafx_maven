@@ -27,15 +27,6 @@
             <ref bean="jaxb2CollectionConverter"/>
         </mvc:message-converters>
     </mvc:annotation-driven>
-    <bean id="restTemplate" class="org.springframework.web.client.RestTemplate">
-        <property name="messageConverters">
-            <list>
-                <ref bean="jaxb2XmlConverter"/>
-                <ref bean="jacksonConverter"/>
-                <ref bean="jaxb2CollectionConverter"/>
-            </list>
-        </property>
-    </bean>
     <bean id="viewResolver"
           class="org.springframework.web.servlet.view.InternalResourceViewResolver"
           p:viewClass="org.springframework.web.servlet.view.JstlView"

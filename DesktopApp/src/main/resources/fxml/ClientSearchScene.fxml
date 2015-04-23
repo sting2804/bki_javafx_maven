@@ -4,7 +4,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
-<AnchorPane id="AnchorPane" prefHeight="271.0" prefWidth="359.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.privat.bki.desktopapp.gui.searchuser.ClientSearchWindowController">
+<AnchorPane id="AnchorPane" prefHeight="271.0" prefWidth="359.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.privat.bki.com.privat.bki.desktopapp.gui.searchuser.ClientSearchWindowController">
    <children>
       <GridPane fx:id="byPassportGridPane" layoutX="162.0" layoutY="94.0" visible="false" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="85.0">
          <columnConstraints>

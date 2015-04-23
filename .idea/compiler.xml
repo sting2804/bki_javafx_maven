@@ -22,15 +22,31 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="APIServer" />
         <module name="APIServerIdea" />
         <module name="APISQA" />
         <module name="BusinessInterfaces" />
         <module name="demoApi" />
         <module name="demoMavenIntellij" />
-        <module name="DesktopApp" />
         <module name="projectEntities" />
         <module name="SSAPI" />
+      </profile>
+      <profile default="false" name="Annotation profile for APIServer" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Annotation profile for DesktopApp" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Annotation profile for DestopClient" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
@@ -38,6 +54,7 @@
       <module name="bki_diplom" target="1.5" />
       <module name="BusinessInterfaces" target="1.5" />
       <module name="DesktopApp" target="1.8" />
+      <module name="DestopClient" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

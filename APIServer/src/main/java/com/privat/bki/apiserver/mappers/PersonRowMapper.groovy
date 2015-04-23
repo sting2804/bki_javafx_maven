@@ -1,6 +1,6 @@
 package com.privat.bki.apiserver.mappers
 
-import com.privat.bki.entities.Person
+import com.privat.bki.business.entities.Person
 import org.springframework.jdbc.core.RowMapper
 
 import java.sql.ResultSet
