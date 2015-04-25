@@ -5,6 +5,7 @@
       <configuration>
         <fileset id="fileset" name="Spring Application Context" removed="false">
           <file>file://$MODULE_DIR$/API_Grails/web-app/WEB-INF/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/Server/src/main/webapp/WEB-INF/spring/dispatcher-servlet.xml</file>
         </fileset>
       </configuration>
     </facet>
