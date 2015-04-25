@@ -12,7 +12,6 @@ import javafx.stage.Stage;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-
 public class LoginController implements Initializable {
     @FXML
     public Button applyButton;

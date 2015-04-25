@@ -2,70 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abda6744-f048-4d01-bdc3-6e5b6ad88420" name="Default" comment="всё запускается, только не шлются запросы с desktopApp.">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/static/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/static/css/bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/static/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/static/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/static/css/bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/static/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/static/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/static/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/static/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/static/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/static/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/static/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/static/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/static/js/npm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/entities/Bank.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/entities/Client.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/entities/Currency.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/entities/IDirectory.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/entities/LoanInfo.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/entities/Person.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/utils/Converter.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/utils/JsonDateDeserializer.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/utils/JsonDateSerializer.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/utils/LocalDateAdapter.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/utils/SqlDateConverter.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/utils/UniDateConverter.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/wrappers/BankMapWrapper.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/wrappers/ClientListWrapper.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/wrappers/CurrencyMapWrapper.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/wrappers/LoanInfoListWrapper.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/Account.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/RestAuthClient.groovy" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/APIServer_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/APIServer_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/directories/BankWindowController.java" afterPath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/directories/BankWindowController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/mappers/BanksRowMapper.groovy" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/mappers/BanksRowMapper.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BusinessInterfaces/BusinessInterfaces.iml" afterPath="$PROJECT_DIR$/BusinessInterfaces/BusinessInterfaces.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/changeclient/ChangeInfoWindowController.java" afterPath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/changeclient/ChangeInfoWindowController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/searchuser/ClientSearchWindowController.java" afterPath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/searchuser/ClientSearchWindowController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/mappers/CurrencyRowMapper.groovy" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/mappers/CurrencyRowMapper.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/directories/CurrencyWindowController.java" afterPath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/directories/CurrencyWindowController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/DaoRestTemplateService.java" afterPath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/DaoRestTemplateService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/beans/DaoService.groovy" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/beans/DaoService.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopApp/DesktopApp.iml" afterPath="$PROJECT_DIR$/DesktopApp/DesktopApp.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/beans/dao/IBkiDao.groovy" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/beans/dao/IBkiDao.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/beans/dao/JdbcDao.groovy" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/beans/dao/JdbcDao.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/mappers/LoanInfoRowMapper.groovy" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/mappers/LoanInfoRowMapper.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/login/LoginController.java" afterPath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/login/LoginController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/controllers/MainController.groovy" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/controllers/MainController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/main/MainModel.java" afterPath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/main/MainModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/main/MainWindowController.java" afterPath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/main/MainWindowController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/mappers/PersonRowMapper.groovy" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/mappers/PersonRowMapper.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/spring/application-security.xml" afterPath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/spring/application-security.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/webapp/pages/index.jsp" afterPath="$PROJECT_DIR$/APIServer/src/main/webapp/pages/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/resources/log4j.xml" afterPath="$PROJECT_DIR$/APIServer/src/main/resources/log4j.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopApp/logFile.log" afterPath="$PROJECT_DIR$/DesktopApp/logFile.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/webapp/pages/login.jsp" afterPath="$PROJECT_DIR$/APIServer/src/main/webapp/pages/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebAngular/app/views/logining/logining.js" afterPath="$PROJECT_DIR$/WebAngular/app/views/logining/logining.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/pom.xml" afterPath="$PROJECT_DIR$/APIServer/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BusinessInterfaces/pom.xml" afterPath="$PROJECT_DIR$/BusinessInterfaces/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopApp/pom.xml" afterPath="$PROJECT_DIR$/DesktopApp/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopApp/src/main/resources/spring/spring-config.xml" afterPath="$PROJECT_DIR$/DesktopApp/src/main/resources/spring/spring-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bki_diplom.iws" />
@@ -117,7 +54,18 @@
     <favorites_list name="bki_diplom" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/login/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.07672634">
+              <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -138,7 +86,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
   </component>
@@ -191,7 +139,6 @@
         <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/mappers/CurrencyRowMapper.groovy" />
         <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/beans/dao/IBkiDao.groovy" />
         <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/mappers/LoanInfoRowMapper.groovy" />
-        <option value="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/login/LoginController.java" />
         <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/beans/DaoService.groovy" />
         <option value="$PROJECT_DIR$/WebAngular/app/views/logining/logining.js" />
         <option value="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/spring/application-security.xml" />
@@ -201,6 +148,7 @@
         <option value="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/main/MainModel.java" />
         <option value="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/changeclient/ChangeInfoWindowController.java" />
         <option value="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/main/MainWindowController.java" />
+        <option value="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/login/LoginController.java" />
       </list>
     </option>
   </component>
@@ -237,26 +185,6 @@
         <PATH_ELEMENT>
           <option name="myItemId" value="" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="DesktopApp" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="APIServer" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
       </PATH>
     </treeState>
@@ -376,39 +304,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="BusinessInterfaces" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bki_diplom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bki_javafx_maven" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BusinessInterfaces" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bki_diplom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bki_javafx_maven" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BusinessInterfaces" />
+              <option name="myItemId" value="DesktopApp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -430,7 +326,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="BusinessInterfaces" />
+              <option name="myItemId" value="DesktopApp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -443,162 +339,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="business" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bki_diplom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bki_javafx_maven" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="APIServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bki_diplom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bki_javafx_maven" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="APIServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bki_diplom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bki_javafx_maven" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="APIServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bki_diplom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bki_javafx_maven" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="APIServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bki_diplom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bki_javafx_maven" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="APIServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bki_diplom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bki_javafx_maven" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="APIServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1934,7 +1674,7 @@
       <workItem from="1429376220293" duration="24406000" />
       <workItem from="1429524439225" duration="13930000" />
       <workItem from="1429641439646" duration="1987000" />
-      <workItem from="1429989846969" duration="2759000" />
+      <workItem from="1429989846969" duration="3654000" />
     </task>
     <task id="LOCAL-00001" summary="Почти готовый рест. Работает для json, почти работает под xml">
       <created>1425498065232</created>
@@ -1996,35 +1736,36 @@
       <option name="project" value="LOCAL" />
       <updated>1429643112365</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="всё запускается, только не шлются запросы с desktopApp.">
+      <created>1429995700220</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1429995700220</updated>
+    </task>
+    <task id="LOCAL-00012" summary="всё запускается, только не шлются запросы с desktopApp.">
+      <created>1429996335646</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1429996335646</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="204024000" />
+    <option name="totallyTimeSpent" value="204919000" />
   </component>
-  <component name="TodoView" selected-index="0">
+  <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
       <is-autoscroll-to-source value="true" />
     </todo-panel>
     <todo-panel id="all">
       <are-packages-shown value="true" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
       <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="default-changelist">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2034,7 +1775,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39800996" sideWeight="0.5035765" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22704715" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6119403" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2045,7 +1786,8 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2300995" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47885573" sideWeight="0.6888412" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47885573" sideWeight="0.6888412" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3233831" sideWeight="0.4978701" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22031474" sideWeight="0.5009901" order="6" side_tool="true" content_ui="tabs" />
@@ -2060,7 +1802,6 @@
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2365,20 +2106,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/login/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="14" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#723#724#0" expanded="false" />
-            <element signature="e#765#766#0" expanded="false" />
-            <element signature="e#849#850#0" expanded="false" />
-            <element signature="e#888#889#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/beans/DaoService.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2479,6 +2206,14 @@
             <marker date="1429994427000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
             <marker date="1429994427000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/login/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07672634">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
