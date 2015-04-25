@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!-- was: <?xml version="1.0" encoding="UTF-8"?> -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+          http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+          http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <context:component-scan base-package="com.privat.bki.webapp.spring.controllers"/>
+    <mvc:resources mapping="/resources/**" location="/WEB-INF/resources/"/>
+    <bean id="objectMapper" class="com.fasterxml.jackson.databind.ObjectMapper"/>
+    <bean id="jacksonConverter"
+          class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"
+          p:objectMapper-ref="objectMapper"/>
+    <bean id="jaxb2XmlConverter"
+          class="org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverter"/>
+    <bean id="jaxb2CollectionConverter"
+          class="org.springframework.http.converter.xml.Jaxb2CollectionHttpMessageConverter"/>
+    <mvc:annotation-driven>
+        <mvc:message-converters>
+            <ref bean="jaxb2XmlConverter"/>
+            <ref bean="jacksonConverter"/>
+            <ref bean="jaxb2CollectionConverter"/>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+    <bean id="restTemplate" class="org.springframework.web.client.RestTemplate">
+        <property name="messageConverters">
+            <list>
+                <ref bean="jaxb2XmlConverter"/>
+                <ref bean="jacksonConverter"/>
+                <ref bean="jaxb2CollectionConverter"/>
+            </list>
+        </property>
+    </bean>
+    <bean id="viewResolver"
+          class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+          p:viewClass="org.springframework.web.servlet.view.JstlView"
+          p:prefix="/WEB-INF/jsp/"
+          p:suffix=".jsp"/>
+</beans>

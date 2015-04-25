@@ -2,92 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abda6744-f048-4d01-bdc3-6e5b6ad88420" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DestopClient/src/main/resources/fxml/BankScene.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/directories/BankWindowController.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/changeclient/ChangeInfoWindowController.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DestopClient/src/main/resources/fxml/ClientSearchScene.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/searchuser/ClientSearchWindowController.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DestopClient/src/main/resources/fxml/CurrencyScene.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/directories/CurrencyWindowController.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/DaoRestTemplateService.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DestopClient/DestopClient.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DestopClient/src/main/resources/fxml/InfoScene.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/login/LoginController.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DestopClient/src/main/resources/fxml/LoginScene.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DestopClient/src/main/java/com/privat/bki/desktopapp/MainApp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/main/MainModel.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DestopClient/src/main/resources/fxml/MainScene.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/main/MainWindowController.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DestopClient/src/main/java/com/privat/bki/desktopapp/utils/RestAuthClient.groovy" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DestopClient/src/main/resources/styles/Styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BusinessInterfaces/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DestopClient/src/main/resources/log4j.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BusinessInterfaces/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BusinessInterfaces/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DestopClient/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BusinessInterfaces/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DestopClient/src/main/resources/spring/spring-config.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BusinessInterfaces/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BusinessInterfaces/.idea/workspace.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Spring_4_1_5_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Spring_MVC_4_1_5_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/entities/Client.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/Account.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/entities/Bank.groovy" afterPath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/entities/Bank.groovy" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/entities/Currency.groovy" afterPath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/entities/Currency.groovy" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/entities/IDirectory.groovy" afterPath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/entities/IDirectory.groovy" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/entities/LoanInfo.groovy" afterPath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/entities/LoanInfo.groovy" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/entities/Person.groovy" afterPath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/entities/Person.groovy" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/utils/Converter.groovy" afterPath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/utils/Converter.groovy" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/utils/JsonDateDeserializer.groovy" afterPath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/utils/JsonDateDeserializer.groovy" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/utils/JsonDateSerializer.groovy" afterPath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/utils/JsonDateSerializer.groovy" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/utils/LocalDateAdapter.groovy" afterPath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/utils/LocalDateAdapter.groovy" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/utils/SqlDateConverter.groovy" afterPath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/utils/SqlDateConverter.groovy" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/utils/UniDateConverter.groovy" afterPath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/utils/UniDateConverter.groovy" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/wrappers/BankMapWrapper.groovy" afterPath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/wrappers/BankMapWrapper.groovy" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/wrappers/ClientListWrapper.groovy" afterPath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/wrappers/ClientListWrapper.groovy" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/wrappers/CurrencyMapWrapper.groovy" afterPath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/wrappers/CurrencyMapWrapper.groovy" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/wrappers/LoanInfoListWrapper.groovy" afterPath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/wrappers/LoanInfoListWrapper.groovy" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/MainApp.java" afterPath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/MainApp.groovy" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/changeclient/ChangeInfoWindowController.java" afterPath="$PROJECT_DIR$/DestopClient/src/main/java/com/privat/bki/desktopapp/gui/changeclient/ChangeInfoWindowController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/directories/BankWindowController.java" afterPath="$PROJECT_DIR$/DestopClient/src/main/java/com/privat/bki/desktopapp/gui/directories/BankWindowController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/directories/CurrencyWindowController.java" afterPath="$PROJECT_DIR$/DestopClient/src/main/java/com/privat/bki/desktopapp/gui/directories/CurrencyWindowController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/login/LoginController.java" afterPath="$PROJECT_DIR$/DestopClient/src/main/java/com/privat/bki/desktopapp/gui/login/LoginController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/main/MainModel.java" afterPath="$PROJECT_DIR$/DestopClient/src/main/java/com/privat/bki/desktopapp/gui/main/MainModel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/main/MainWindowController.java" afterPath="$PROJECT_DIR$/DestopClient/src/main/java/com/privat/bki/desktopapp/gui/main/MainWindowController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/searchuser/ClientSearchWindowController.java" afterPath="$PROJECT_DIR$/DestopClient/src/main/java/com/privat/bki/desktopapp/gui/searchuser/ClientSearchWindowController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/DaoRestTemplateService.java" afterPath="$PROJECT_DIR$/DestopClient/src/main/java/com/privat/bki/desktopapp/utils/DaoRestTemplateService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/APIServer.iml" afterPath="$PROJECT_DIR$/APIServer/APIServer.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/APIServer_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/APIServer_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/BankScene.fxml" afterPath="$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/BankScene.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/mappers/BanksRowMapper.groovy" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/mappers/BanksRowMapper.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BusinessInterfaces/BusinessInterfaces.iml" afterPath="$PROJECT_DIR$/BusinessInterfaces/BusinessInterfaces.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/ClientSearchScene.fxml" afterPath="$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/ClientSearchScene.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/mappers/CurrencyRowMapper.groovy" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/mappers/CurrencyRowMapper.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/CurrencyScene.fxml" afterPath="$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/CurrencyScene.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/beans/DaoService.groovy" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/beans/DaoService.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopApp/DesktopApp.iml" afterPath="$PROJECT_DIR$/DesktopApp/DesktopApp.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/beans/dao/IBkiDao.groovy" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/beans/dao/IBkiDao.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/InfoScene.fxml" afterPath="$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/InfoScene.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/beans/dao/JdbcDao.groovy" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/beans/dao/JdbcDao.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/mappers/LoanInfoRowMapper.groovy" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/mappers/LoanInfoRowMapper.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/LoginScene.fxml" afterPath="$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/LoginScene.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/controllers/MainController.groovy" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/controllers/MainController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/MainScene.fxml" afterPath="$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/MainScene.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/mappers/PersonRowMapper.groovy" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/mappers/PersonRowMapper.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/spring/application-security.xml" afterPath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/spring/application-security.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/spring/dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/spring/dispatcher-servlet.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/static/css/bootstrap-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/static/css/bootstrap-theme.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/static/css/bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/static/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/static/css/bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/static/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/static/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/static/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/static/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/static/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/static/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/static/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/static/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/static/js/npm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/entities/Bank.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/entities/Currency.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/entities/IDirectory.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/entities/LoanInfo.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/entities/Person.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/utils/JsonDateDeserializer.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/utils/SqlDateConverter.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/utils/UniDateConverter.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/wrappers/BankMapWrapper.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/wrappers/ClientListWrapper.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/wrappers/CurrencyMapWrapper.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/wrappers/LoanInfoListWrapper.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/RestAuthClient.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DestopClient/DestopClient.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DestopClient/pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DestopClient/src/main/java/com/privat/bki/desktopapp/MainApp.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DestopClient/src/main/java/com/privat/bki/desktopapp/gui/changeclient/ChangeInfoWindowController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DestopClient/src/main/java/com/privat/bki/desktopapp/gui/directories/BankWindowController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DestopClient/src/main/java/com/privat/bki/desktopapp/gui/directories/CurrencyWindowController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DestopClient/src/main/java/com/privat/bki/desktopapp/gui/login/LoginController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DestopClient/src/main/java/com/privat/bki/desktopapp/gui/main/MainModel.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DestopClient/src/main/java/com/privat/bki/desktopapp/gui/main/MainWindowController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DestopClient/src/main/java/com/privat/bki/desktopapp/gui/searchuser/ClientSearchWindowController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DestopClient/src/main/java/com/privat/bki/desktopapp/utils/DaoRestTemplateService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DestopClient/src/main/java/com/privat/bki/desktopapp/utils/RestAuthClient.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DestopClient/src/main/resources/fxml/BankScene.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DestopClient/src/main/resources/fxml/ClientSearchScene.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DestopClient/src/main/resources/fxml/CurrencyScene.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DestopClient/src/main/resources/fxml/InfoScene.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DestopClient/src/main/resources/fxml/LoginScene.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DestopClient/src/main/resources/fxml/MainScene.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DestopClient/src/main/resources/log4j.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DestopClient/src/main/resources/spring/spring-config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DestopClient/src/main/resources/styles/Styles.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopApp/src/main/resources/log4j.xml" afterPath="$PROJECT_DIR$/DesktopApp/src/main/resources/log4j.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logFile.log" afterPath="$PROJECT_DIR$/logFile.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopApp/logFile.log" afterPath="$PROJECT_DIR$/DesktopApp/logFile.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebAngular/app/views/logining/logining.js" afterPath="$PROJECT_DIR$/WebAngular/app/views/logining/logining.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/pom.xml" afterPath="$PROJECT_DIR$/APIServer/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BusinessInterfaces/pom.xml" afterPath="$PROJECT_DIR$/BusinessInterfaces/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopApp/pom.xml" afterPath="$PROJECT_DIR$/DesktopApp/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopApp/src/main/resources/spring/spring-config.xml" afterPath="$PROJECT_DIR$/DesktopApp/src/main/resources/spring/spring-config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bki_diplom.iws" />
@@ -169,7 +132,7 @@
       <file leaf-file-name="ChangeInfoWindowController.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/changeclient/ChangeInfoWindowController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.75">
+            <state vertical-scroll-proportion="0.0">
               <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
               <folding>
                 <element signature="e#51#95#0" expanded="true" />
@@ -181,7 +144,7 @@
       <file leaf-file-name="LoginController.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/login/LoginController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.375">
+            <state vertical-scroll-proportion="0.0">
               <caret line="45" column="11" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
               <folding />
             </state>
@@ -201,8 +164,8 @@
       <file leaf-file-name="MainModel.groovy" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/main/MainModel.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9375">
-              <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+            <state vertical-scroll-proportion="1.4442568">
+              <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
               <folding>
                 <element signature="e#43#87#0" expanded="true" />
               </folding>
@@ -225,7 +188,7 @@
       <file leaf-file-name="ClientSearchWindowController.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/searchuser/ClientSearchWindowController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.642858">
+            <state vertical-scroll-proportion="0.0">
               <caret line="80" column="27" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
               <folding>
                 <element signature="e#50#96#0" expanded="true" />
@@ -237,7 +200,7 @@
       <file leaf-file-name="BankWindowController.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/directories/BankWindowController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.4107143">
+            <state vertical-scroll-proportion="0.0">
               <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
               <folding>
                 <element signature="e#50#94#0" expanded="true" />
@@ -249,7 +212,7 @@
       <file leaf-file-name="CurrencyWindowController.groovy" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/directories/CurrencyWindowController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.875">
+            <state vertical-scroll-proportion="0.0">
               <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
               <folding>
                 <element signature="e#50#98#0" expanded="true" />
@@ -495,8 +458,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -2224,18 +2187,6 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="executeSpecs" factoryName="Gauge Execution">
-      <setting name="environment" value="" />
-      <setting name="specsToExecute" value="" />
-      <setting name="tags" value="" />
-      <setting name="parallelNodes" value="" />
-      <setting name="execInParallel" value="false" />
-      <setting name="programParameters" value="" />
-      <setting name="workingDirectory" value="" />
-      <envMap />
-      <setting name="rowsRange" value="" />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -2429,12 +2380,12 @@
       </method>
     </configuration>
     <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="Application.MainApp" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-      <item index="2" class="java.lang.String" itemvalue="Maven.BusinessInterfaces [clean compile package install]" />
-      <item index="3" class="java.lang.String" itemvalue="Maven.DesktopApp [clean,compile,...]" />
-      <item index="4" class="java.lang.String" itemvalue="Tomcat Server.ApiServer-8" />
-      <item index="5" class="java.lang.String" itemvalue="Tomcat Server.WebApp" />
+      <item index="0" class="java.lang.String" itemvalue="Maven.BusinessInterfaces [clean compile package install]" />
+      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.ApiServer-8" />
+      <item index="2" class="java.lang.String" itemvalue="Tomcat Server.WebApp" />
+      <item index="3" class="java.lang.String" itemvalue="Application.MainApp" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="5" class="java.lang.String" itemvalue="Maven.DesktopApp [clean,compile,...]" />
     </list>
     <recent_temporary>
       <list size="3">
@@ -2515,6 +2466,7 @@
       <workItem from="1429680962910" duration="2707000" />
       <workItem from="1429782496288" duration="8508000" />
       <workItem from="1429825625431" duration="2646000" />
+      <workItem from="1429998469699" duration="240000" />
     </task>
     <task id="LOCAL-00001" summary="Почти готовый рест. Работает для json, почти работает под xml">
       <created>1425498065232</created>
@@ -2592,7 +2544,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222178000" />
+    <option name="totallyTimeSpent" value="222418000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -2616,44 +2568,44 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22885571" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20457797" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39800996" sideWeight="0.5035765" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22704715" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32711443" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21459228" sideWeight="0.4990099" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31840795" sideWeight="0.49642345" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22885571" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39179105" sideWeight="0.6888412" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32462686" sideWeight="0.4978701" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22704715" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22031474" sideWeight="0.5009901" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14020029" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32711443" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21459228" sideWeight="0.4990099" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31840795" sideWeight="0.49642345" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39179105" sideWeight="0.6888412" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32462686" sideWeight="0.4978701" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
@@ -2794,7 +2746,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="28" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
-          <folding />
+          <folding>
+            <element signature="e#36#87#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2810,7 +2764,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding />
+          <folding>
+            <element signature="e#51#95#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2928,47 +2884,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="127.24138">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DestopClient/src/main/resources/fxml/BankScene.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DestopClient/src/main/java/com/privat/bki/desktopapp/utils/RestAuthClient.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DestopClient/src/main/java/com/privat/bki/desktopapp/MainApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DestopClient/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="109" column="21" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DestopClient/src/main/java/com/privat/bki/desktopapp/gui/changeclient/ChangeInfoWindowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -3043,22 +2962,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-          <folding>
-            <marker date="1429826039000" expanded="true" signature="-1:-1" placeholder="select * fro..client_info_view..." />
-            <marker date="1429826039000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..client_info_view..." />
-            <marker date="1429826039000" expanded="true" signature="-1:-1" placeholder="SELECT TOP 1..client_info_view..." />
-            <marker date="1429826039000" expanded="true" signature="-1:-1" placeholder="SELECT name,..client_info_view..." />
-            <marker date="1429826039000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1429826039000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1429826039000" expanded="true" signature="-1:-1" placeholder="currency_cod..." />
-            <marker date="1429826039000" expanded="true" signature="-1:-1" placeholder="update loan ..." />
-            <marker date="1429826039000" expanded="true" signature="-1:-1" placeholder="inn=?, name=..." />
-            <marker date="1429826039000" expanded="true" signature="-1:-1" placeholder="update clien..." />
-            <marker date="1429826039000" expanded="true" signature="-1:-1" placeholder="SELECT bank_..bank..." />
-            <marker date="1429826039000" expanded="true" signature="-1:-1" placeholder="SELECT curre..currency..." />
-            <marker date="1429826039000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1429826039000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3096,78 +3000,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/RestAuthClient.groovy">
+    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/MainApp.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
           <folding>
-            <element signature="e#40#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/changeclient/ChangeInfoWindowController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.75">
-          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-          <folding>
-            <element signature="e#51#95#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/directories/BankWindowController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4107143">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-          <folding>
-            <element signature="e#50#94#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/directories/CurrencyWindowController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.875">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-          <folding>
-            <element signature="e#50#98#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/login/LoginController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.375">
-          <caret line="45" column="11" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DesktopApp/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="114" column="34" selection-start-line="114" selection-start-column="34" selection-end-line="114" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/main/MainWindowController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="91" column="21" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="21" />
-          <folding>
-            <element signature="e#43#87#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/searchuser/ClientSearchWindowController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.642858">
-          <caret line="80" column="27" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
-          <folding>
-            <element signature="e#50#96#0" expanded="true" />
+            <element signature="e#36#87#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3183,22 +3021,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/MainApp.groovy">
+    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/changeclient/ChangeInfoWindowController.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
           <folding>
-            <element signature="e#36#87#0" expanded="true" />
+            <element signature="e#51#95#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/login/LoginController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="11" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DesktopApp/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="114" column="34" selection-start-line="114" selection-start-column="34" selection-end-line="114" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/main/MainModel.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9375">
-          <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+        <state vertical-scroll-proportion="1.4442568">
+          <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
           <folding>
             <element signature="e#43#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/main/MainWindowController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="91" column="21" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="21" />
+          <folding>
+            <element signature="e#43#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/searchuser/ClientSearchWindowController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="80" column="27" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
+          <folding>
+            <element signature="e#50#96#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/directories/BankWindowController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding>
+            <element signature="e#50#94#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/directories/CurrencyWindowController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding>
+            <element signature="e#50#98#0" expanded="true" />
           </folding>
         </state>
       </provider>
