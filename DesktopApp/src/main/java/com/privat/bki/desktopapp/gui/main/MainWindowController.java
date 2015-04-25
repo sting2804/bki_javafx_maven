@@ -1,10 +1,9 @@
 package com.privat.bki.desktopapp.gui.main;
-
-import com.privat.bki.entities.Bank;
-import com.privat.bki.entities.Currency;
-import com.privat.bki.entities.LoanInfo;
-import com.privat.bki.entities.Person;
-import com.privat.bki.utils.SqlDateConverter;
+import com.privat.bki.business.entities.Bank;
+import com.privat.bki.business.entities.Currency;
+import com.privat.bki.business.entities.LoanInfo;
+import com.privat.bki.business.entities.Person;
+import com.privat.bki.business.utils.SqlDateConverter;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
@@ -75,15 +74,15 @@ public class MainWindowController implements Initializable {
 
     public MainWindowController() {
         infoList = FXCollections.observableArrayList();
-        /*tableView.sortPolicyProperty().set(t -> {
-            Comparator<LoanInfo> comparator = (r1, r2)
-                    -> r1 == rowTotal ? 1 //rowTotal at the bottom
-                    : r2 == rowTotal ? -1 //rowTotal at the bottom
-                    : t.getComparator() == null ? 0 //no column sorted: don't change order
-                    : t.getComparator().compare(r1, r2); //columns are sorted: sort accordingly
-            FXCollections.sort(table.getItems(), comparator);
-            return true;
-        });*/
+        //tableView.sortPolicyProperty().set(t -> {
+        //Comparator<LoanInfo> comparator = (r1, r2)
+        //-> r1 == rowTotal ? 1 //rowTotal at the bottom
+        //: r2 == rowTotal ? -1 //rowTotal at the bottom
+        //: t.getComparator() == null ? 0 //no column sorted: don't change order
+        //: t.getComparator().compare(r1, r2) //columns are sorted: sort accordingly
+        //FXCollections.sort(table.getItems(), comparator)
+        //return true
+        //})
     }
 
     public void setMainModel(MainModel mainModel) {
@@ -124,66 +123,54 @@ public class MainWindowController implements Initializable {
         SqlDateConverter converter = new SqlDateConverter();
         fioColumn.setSortType(TableColumn.SortType.ASCENDING);
         fioColumn.setCellValueFactory(new PropertyValueFactory<>("person"));
-        fioColumn.setCellFactory((TableColumn<LoanInfo, Person> param) -> {
-            TableCell<LoanInfo, Person> fioCell = new TableCell<LoanInfo, Person>() {
-                @Override
-                protected void updateItem(Person item, boolean empty) {
-                    setGraphic(null);
-                    if (item != null) {
-                        String text = item.getSurname().concat(" ").concat(item.getName());
-                        if (item.getPatronymic() != null) text += (" " + item.getPatronymic());
-                        setGraphic(new Label(text));
-                    }
+        fioColumn.setCellFactory(param -> new TableCell<LoanInfo, Person>() {
+            @Override
+            protected void updateItem(Person item, boolean empty) {
+                setGraphic(null);
+                if (item != null) {
+                    String text = item.getSurname().concat(" ").concat(item.getName());
+                    if (item.getPatronymic() != null) text += (" " + item.getPatronymic());
+                    setGraphic(new Label(text));
                 }
-            };
-            return fioCell;
+            }
         });
 
         bdColumn.setCellValueFactory(new PropertyValueFactory<>("person"));
-        bdColumn.setCellFactory((TableColumn<LoanInfo, Person> param) -> {
-            TableCell<LoanInfo, Person> bdCell = new TableCell<LoanInfo, Person>() {
-                @Override
-                protected void updateItem(Person item, boolean empty) {
-                    setGraphic(null);
-                    if (item != null) {
-                        SimpleStringProperty property = new SimpleStringProperty();
-                        DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
-                        property.setValue(dateFormat.format(converter.to(item.getBirthday())));
-                        Label bdLabel = new Label(property.get());
-                        setGraphic(bdLabel);
-                    }
+        bdColumn.setCellFactory(param -> new TableCell<LoanInfo, Person>() {
+            @Override
+            protected void updateItem(Person item, boolean empty) {
+                setGraphic(null);
+                if (item != null) {
+                    SimpleStringProperty property = new SimpleStringProperty();
+                    DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
+                    property.setValue(dateFormat.format(converter.to(item.getBirthday())));
+                    Label bdLabel = new Label(property.get());
+                    setGraphic(bdLabel);
                 }
-            };
-            return bdCell;
+            }
         });
 
         innColumn.setCellValueFactory(new PropertyValueFactory<>("person"));
-        innColumn.setCellFactory((TableColumn<LoanInfo, Person> param) -> {
-            TableCell<LoanInfo, Person> innCell = new TableCell<LoanInfo, Person>() {
-                @Override
-                protected void updateItem(Person item, boolean empty) {
-                    setGraphic(null);
-                    if (item != null) {
-                        Label innLabel = new Label(item.getInn());
-                        setGraphic(innLabel);
-                    }
+        innColumn.setCellFactory(param -> new TableCell<LoanInfo, Person>() {
+            @Override
+            protected void updateItem(Person item, boolean empty) {
+                setGraphic(null);
+                if (item != null) {
+                    Label innLabel = new Label(item.getInn());
+                    setGraphic(innLabel);
                 }
-            };
-            return innCell;
+            }
         });
         passportColumn.setCellValueFactory(new PropertyValueFactory<>("person"));
-        passportColumn.setCellFactory((TableColumn<LoanInfo, Person> param) -> {
-            TableCell<LoanInfo, Person> passportCell = new TableCell<LoanInfo, Person>() {
-                @Override
-                protected void updateItem(Person item, boolean empty) {
-                    setGraphic(null);
-                    if (item != null) {
-                        Label passportLabel = new Label(item.getPassSerial().concat(" ").concat(item.getPassNumber()));
-                        setGraphic(passportLabel);
-                    }
+        passportColumn.setCellFactory(param -> new TableCell<LoanInfo, Person>() {
+            @Override
+            protected void updateItem(Person item, boolean empty) {
+                setGraphic(null);
+                if (item != null) {
+                    Label passportLabel = new Label(item.getPassSerial().concat(" ").concat(item.getPassNumber()));
+                    setGraphic(passportLabel);
                 }
-            };
-            return passportCell;
+            }
         });
         initAmountColumn.setCellValueFactory(new PropertyValueFactory<>("initAmount"));
         initDateColumn.setCellValueFactory(item -> {
@@ -197,9 +184,7 @@ public class MainWindowController implements Initializable {
             DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
             try {
                 property.setValue(dateFormat.format(converter.to(item.getValue().getFinishDate())));
-            }
-            catch (Exception e){
-
+            } catch (Exception ignored) {
             }
             return property;
         });
@@ -207,32 +192,26 @@ public class MainWindowController implements Initializable {
         arrearsColumn.setCellValueFactory(new PropertyValueFactory<>("arrears"));
         arrearsColumn.setCellFactory(CheckBoxTableCell.forTableColumn(arrearsColumn));
         bankColumn.setCellValueFactory(new PropertyValueFactory<>("bank"));
-        bankColumn.setCellFactory((TableColumn<LoanInfo, Bank> param) -> {
-            TableCell<LoanInfo, Bank> bankCell = new TableCell<LoanInfo, Bank>() {
-                @Override
-                protected void updateItem(Bank item, boolean empty) {
-                    setGraphic(null);
-                    if (item != null) {
-                        Label bankLabel = new Label(item.getCode());
-                        setGraphic(bankLabel);
-                    }
+        bankColumn.setCellFactory(param -> new TableCell<LoanInfo, Bank>() {
+            @Override
+            protected void updateItem(Bank item, boolean empty) {
+                setGraphic(null);
+                if (item != null) {
+                    Label bankLabel = new Label(item.getCode());
+                    setGraphic(bankLabel);
                 }
-            };
-            return bankCell;
+            }
         });
         currencyColumn.setCellValueFactory(new PropertyValueFactory<>("currency"));
-        currencyColumn.setCellFactory((TableColumn<LoanInfo, Currency> param) -> {
-            TableCell<LoanInfo, Currency> currencyCell = new TableCell<LoanInfo, Currency>() {
-                @Override
-                protected void updateItem(Currency item, boolean empty) {
-                    setGraphic(null);
-                    if (item != null) {
-                        Label currencyLabel = new Label(item.getCode());
-                        setGraphic(currencyLabel);
-                    }
+        currencyColumn.setCellFactory(param -> new TableCell<LoanInfo, Currency>() {
+            @Override
+            protected void updateItem(Currency item, boolean empty) {
+                setGraphic(null);
+                if (item != null) {
+                    Label currencyLabel = new Label(item.getCode());
+                    setGraphic(currencyLabel);
                 }
-            };
-            return currencyCell;
+            }
         });
         tableView.setItems(infoList);
     }
@@ -246,7 +225,7 @@ public class MainWindowController implements Initializable {
             List<LoanInfo> tmpList = mainModel.getFoundRecords();
             if (tmpList != null) infoList.addAll(tmpList);
 
-        } catch (Exception e) {
+        } catch (Exception ignored) {
         }
     }
 

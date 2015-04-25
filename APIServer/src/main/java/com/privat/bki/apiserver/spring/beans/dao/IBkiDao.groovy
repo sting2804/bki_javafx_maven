@@ -1,11 +1,9 @@
 package com.privat.bki.apiserver.spring.beans.dao
-import com.privat.bki.entities.Bank
-import com.privat.bki.entities.Currency
-import com.privat.bki.entities.LoanInfo
-import com.privat.bki.entities.Person
-/**
- * Created by sting on 1/23/15.
- */
+import com.privat.bki.business.entities.Bank
+import com.privat.bki.business.entities.Currency
+import com.privat.bki.business.entities.LoanInfo
+import com.privat.bki.business.entities.Person
+
 interface IBkiDao {
     List<LoanInfo> getRecord(int id)
     /**

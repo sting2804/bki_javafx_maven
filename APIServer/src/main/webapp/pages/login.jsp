@@ -11,8 +11,8 @@
 	<meta name="author" content="">
 
 	<title>Spring Security</title>
-	<link href="<c:url value="/resources/css/styles.css"/>" rel="stylesheet">
-	<link href="<c:url value="/resources/css/bootstrap.css" />" rel="stylesheet">
+	<link href="<c:url value="/pages/css/styles.css"/>" rel="stylesheet">
+	<link href="<c:url value="/pages/css/bootstrap.css" />" rel="stylesheet">
 
 </head>
 

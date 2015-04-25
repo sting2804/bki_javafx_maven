@@ -1,14 +1,11 @@
 package com.privat.bki.apiserver.mappers
 
-import com.privat.bki.entities.Person
+import com.privat.bki.business.entities.Person
 import org.springframework.jdbc.core.RowMapper
 
 import java.sql.ResultSet
 import java.sql.SQLException
 
-/**
- * Created by sting on 3/2/15.
- */
 class PersonRowMapper implements RowMapper<Person> {
     @Override
     Person mapRow(ResultSet rs, int ii) throws SQLException {

@@ -1,11 +1,9 @@
 package com.privat.bki.desktopapp.gui.changeclient;
-
-
+import com.privat.bki.business.entities.Bank;
+import com.privat.bki.business.entities.Currency;
+import com.privat.bki.business.entities.LoanInfo;
+import com.privat.bki.business.entities.Person;
 import com.privat.bki.desktopapp.gui.main.MainModel;
-import com.privat.bki.entities.Bank;
-import com.privat.bki.entities.Currency;
-import com.privat.bki.entities.LoanInfo;
-import com.privat.bki.entities.Person;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -33,23 +31,23 @@ public class ChangeInfoWindowController implements Initializable {
     @FXML
     public ComboBox<String> currencyCodeComboBox;
     @FXML
-    TextField fioTextField;
+    public TextField fioTextField;
     @FXML
-    TextField passportTextField;
+    public TextField passportTextField;
     @FXML
-    TextField innTextField;
+    public TextField innTextField;
     @FXML
-    TextField initialAmountTextField;
+    public TextField initialAmountTextField;
     @FXML
-    TextField balanceTextField;
+    public TextField balanceTextField;
     @FXML
-    DatePicker initdateDatePicker;
+    public DatePicker initdateDatePicker;
     @FXML
-    DatePicker finishdateDatePicker;
+    public DatePicker finishdateDatePicker;
     @FXML
-    DatePicker birthdayDatePicker;
+    public DatePicker birthdayDatePicker;
     @FXML
-    CheckBox arrearsCheckBox;
+    public CheckBox arrearsCheckBox;
 
     private Person person;
     private LoanInfo searchInfo;
@@ -109,7 +107,7 @@ public class ChangeInfoWindowController implements Initializable {
         Currency currency;
         if (fio[0].equals("") || passport[0].equals("") || inn.equals("") || birthday == null ||
                 initAmount == null || balance == null || currencyCode.equals("") ||
-                initDate == null /*|| finishDate == null*/ || bankCode.equals("")) {
+                initDate == null || bankCode.equals("")) {
             alert.setContentText("Заполните все поля");
             alert.showAndWait();
         } else {
@@ -175,7 +173,7 @@ public class ChangeInfoWindowController implements Initializable {
      * @return
      */
     private StringConverter<LocalDate> createConverter(String pattern) {
-        StringConverter<LocalDate> converter = new StringConverter<LocalDate>() {
+        return new StringConverter<LocalDate>() {
             DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern(pattern);
 
             @Override
@@ -196,7 +194,6 @@ public class ChangeInfoWindowController implements Initializable {
                 }
             }
         };
-        return converter;
     }
 
     private void setScreenForms(LoanInfo loanInfo) {

@@ -1,28 +1,27 @@
 package com.privat.bki.desktopapp.gui.main;
-
+import com.privat.bki.business.entities.Bank;
+import com.privat.bki.business.entities.Currency;
+import com.privat.bki.business.entities.LoanInfo;
+import com.privat.bki.business.entities.Person;
 import com.privat.bki.desktopapp.gui.changeclient.ChangeInfoWindowController;
 import com.privat.bki.desktopapp.gui.directories.BankWindowController;
 import com.privat.bki.desktopapp.gui.directories.CurrencyWindowController;
 import com.privat.bki.desktopapp.gui.login.LoginController;
 import com.privat.bki.desktopapp.gui.searchuser.ClientSearchWindowController;
 import com.privat.bki.desktopapp.utils.DaoRestTemplateService;
-import com.privat.bki.entities.Bank;
-import com.privat.bki.entities.Currency;
-import com.privat.bki.entities.LoanInfo;
-import com.privat.bki.entities.Person;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
-
 
 /**
  * Класс для связи контроллера главного окна с остальными окнами,
@@ -32,9 +31,9 @@ import java.util.Map;
 public class MainModel {
 
     @Autowired
-    DaoRestTemplateService service;
+    public DaoRestTemplateService service;
 
-    private static final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger(MainModel.class);
+    private static final Logger log = Logger.getLogger(MainModel.class);
     /**
      * ncController контроллер окна создания нового клиента
      * csController контроллер окна писка клиента
@@ -168,7 +167,7 @@ public class MainModel {
         } catch (IOException e) {
             log.error(e.getMessage());
         }
-        //передача информации в контроллер 
+        //передача информации в контроллер
         ciController = root.<ChangeInfoWindowController>getController();
         ciController.setMainModel(this);
         ciController.setCurrencyMap(getCurrencyMap());
@@ -267,7 +266,7 @@ public class MainModel {
         } catch (IOException e) {
             log.error(e.getMessage());
         }
-        //передача информации в контроллер
+        //передача информации в контроллер;
         bwController = root.<BankWindowController>getController();
         bwController.setMainModel(this);
         bwController.setScreenForms(bankCode);

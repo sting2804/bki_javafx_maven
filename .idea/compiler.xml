@@ -22,15 +22,27 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="APIServer" />
         <module name="APIServerIdea" />
         <module name="APISQA" />
         <module name="BusinessInterfaces" />
         <module name="demoApi" />
         <module name="demoMavenIntellij" />
-        <module name="DesktopApp" />
         <module name="projectEntities" />
         <module name="SSAPI" />
+      </profile>
+      <profile default="false" name="Annotation profile for APIServer" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="APIServer" />
+      </profile>
+      <profile default="false" name="Annotation profile for DesktopApp" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="DesktopApp" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">

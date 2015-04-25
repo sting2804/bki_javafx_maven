@@ -6,9 +6,9 @@
 
 <html>
 <head>
-    <link href="<c:url value="/resources/css/styles.css"/>" rel="stylesheet">
+    <link href="<c:url value="/pages/css/styles.css"/>" rel="stylesheet">
     <!-- Bootstrap core CSS -->
-    <link href="<c:url value="/resources/css/bootstrap.css" />" rel="stylesheet">
+    <link href="<c:url value="/pages/css/bootstrap.css" />" rel="stylesheet">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Welcome to Spring Web MVC project</title>
 </head>

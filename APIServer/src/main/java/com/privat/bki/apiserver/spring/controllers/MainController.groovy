@@ -1,13 +1,13 @@
 package com.privat.bki.apiserver.spring.controllers
 
 import com.privat.bki.apiserver.spring.beans.DaoService
-import com.privat.bki.entities.Bank
-import com.privat.bki.entities.Currency
-import com.privat.bki.entities.LoanInfo
-import com.privat.bki.entities.Person
-import com.privat.bki.wrappers.BankMapWrapper
-import com.privat.bki.wrappers.CurrencyMapWrapper
-import com.privat.bki.wrappers.LoanInfoListWrapper
+import com.privat.bki.business.entities.Bank
+import com.privat.bki.business.entities.Currency
+import com.privat.bki.business.entities.LoanInfo
+import com.privat.bki.business.entities.Person
+import com.privat.bki.business.wrappers.BankMapWrapper
+import com.privat.bki.business.wrappers.CurrencyMapWrapper
+import com.privat.bki.business.wrappers.LoanInfoListWrapper
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.security.access.annotation.Secured
@@ -32,7 +32,7 @@ class MainController {
     DaoService daoService
 
     @Secured (["ROLE_USER", "ROLE_ADMIN"])
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping(method = GET)
     String callHello(Model model) {
         return "index"
     }

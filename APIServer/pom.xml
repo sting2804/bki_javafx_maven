@@ -150,9 +150,9 @@
             <version>1.9.5</version>
         </dependency>
         <dependency>
-            <groupId>com.privat.bki</groupId>
+            <groupId>com.privat.bki.business</groupId>
             <artifactId>BusinessInterfaces</artifactId>
-            <version>1.0</version>
+            <version>1.2</version>
         </dependency>
         <dependency>
             <groupId>org.codehaus.groovy</groupId>

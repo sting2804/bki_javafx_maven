@@ -12,11 +12,11 @@
 
     <http pattern="/login/**" security="none"/>
 
-    <http use-expressions="false">
-        <intercept-url pattern="/**" access="ROLE_ADMIN"/>
+    <http use-expressions="true">
+        <intercept-url pattern="/**" access="hasAnyRole('ROLE_ADMIN','ROLE_USER')"/>
         <remember-me token-validity-seconds="2419200" /><!--помнит 4 недели-->
         <form-login login-page="/login"
-                    default-target-url="/loans"/>
+                    default-target-url="/loans/get/all"/>
                     <!--authentication-failure-url="/login.html?login_error=1" -->
         <logout logout-success-url="/login"/>
 

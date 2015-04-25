@@ -1,7 +1,6 @@
 
 package com.privat.bki.desktopapp.gui.searchuser;
-
-import com.privat.bki.entities.Person;
+import com.privat.bki.business.entities.Person;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -30,27 +29,27 @@ public class ClientSearchWindowController implements Initializable {
     private Person person;
 
     @FXML
-    ComboBox<String> methodComboBox;
+    public ComboBox<String> methodComboBox;
     @FXML
-    GridPane byPassportGridPane;
+    public GridPane byPassportGridPane;
     @FXML
-    GridPane byFIOGridPane;
+    public GridPane byFIOGridPane;
     @FXML
-    GridPane byINNGridPane;
+    public GridPane byINNGridPane;
     @FXML
-    TextField surnameSearchTextField;
+    public TextField surnameSearchTextField;
     @FXML
-    TextField nameSearchTextField;
+    public TextField nameSearchTextField;
     @FXML
-    TextField patrinymicSearchTextField;
+    public TextField patrinymicSearchTextField;
     @FXML
-    DatePicker birthdaySearchDatePicker;
+    public DatePicker birthdaySearchDatePicker;
     @FXML
-    TextField passportSerialTextField;
+    public TextField passportSerialTextField;
     @FXML
-    TextField passportNumberTextField;
+    public TextField passportNumberTextField;
     @FXML
-    TextField innTextField;
+    public TextField innTextField;
     private int state;
 
     public int getState() {
@@ -82,7 +81,7 @@ public class ClientSearchWindowController implements Initializable {
         }
     }
     @FXML
-    public void choiceBoxMethodsOnAction(ActionEvent event) {
+    void choiceBoxMethodsOnAction(ActionEvent event) {
         state = methodComboBox.getSelectionModel().getSelectedIndex();
         switch (state){
             case 0:
@@ -145,7 +144,7 @@ public class ClientSearchWindowController implements Initializable {
      * @return
      */
     private StringConverter<LocalDate> createConverter(String pattern) {
-        StringConverter<LocalDate> converter = new StringConverter<LocalDate>() {
+        return new StringConverter<LocalDate>() {
             DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern(pattern);
 
             @Override
@@ -166,7 +165,6 @@ public class ClientSearchWindowController implements Initializable {
                 }
             }
         };
-        return converter;
     }
 
 

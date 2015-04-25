@@ -12,9 +12,7 @@ import javafx.stage.Stage;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-/**
- * Created by sting on 4/19/15.
- */
+
 public class LoginController implements Initializable {
     @FXML
     public Button applyButton;
@@ -49,7 +47,8 @@ public class LoginController implements Initializable {
         password = passwordTextField.getText();
         if (username != null && !username.equals("") &&
                 password != null && !password.equals("")) {
-            isAuthenticated = mainModel.authenticateUser(username, password);
+            isAuthenticated = mainModel.authenticateUser(username, password)
+            //isAuthenticated = true;
             if (isAuthenticated) {
                 Stage stage = (Stage) usernameTextField.getScene().getWindow();
                 stage.close();

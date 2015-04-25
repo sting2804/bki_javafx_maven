@@ -1,7 +1,6 @@
 package com.privat.bki.desktopapp.gui.directories;
-
+import com.privat.bki.business.entities.Currency;
 import com.privat.bki.desktopapp.gui.main.MainModel;
-import com.privat.bki.entities.Currency;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;

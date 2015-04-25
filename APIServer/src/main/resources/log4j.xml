@@ -20,12 +20,11 @@
         </layout>
     </appender>
     <!-- откуда писать-->
-    <logger name="com.privat.bki.apiserver" additivity="false">
-        <level value="info" />
-        <appender-ref ref="stdout" />
+    <logger name="org.springframework.web" additivity="false">
+        <level value="debug" />
     </logger>
 
-    <logger name="com.privat.bki.apiserver" additivity="false">
+    <logger name="org.springframework.web" additivity="false">
         <level value="info" />
         <appender-ref ref="fileout" />
     </logger>
