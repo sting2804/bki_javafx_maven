@@ -1,0 +1,23 @@
+<div class="modal-header">
+    <h3 class="modal-title">Додавання інформації</h3>
+</div>
+<div class="modal-body">
+    <input ng-model="item.person.name" placeholder="Ім'я">
+    <input ng-model="item.person.surname" placeholder="Призвище">
+    <input ng-model="item.person.patronymic"placeholder="По батькові">
+    <input ng-model="item.person.birthday" placeholder="День народження">
+    <input ng-model="item.person.inn" placeholder="ІНН">
+    <input ng-model="item.person.passSerial" placeholder="Серія паспорта">
+    <input ng-model="item.person.passNumber" placeholder="Номер паспорта">
+    <input placeholder="Початкова сума">
+    <input placeholder="Залишок">
+    <input placeholder="Дата відкриття">
+    <input placeholder="Дата закріття">
+    <input placeholder="Прострочки">
+    <input placeholder="Код банку">
+    <input placeholder="Код валюти">
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="ok()">OK</button>
+    <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+</div>
