@@ -10,18 +10,25 @@
 
     <global-method-security secured-annotations="enabled" />
 
-    <http pattern="/login/**" security="none"/>
-
-    <http use-expressions="true">
+    <http use-expressions="true" entry-point-ref="restAuthenticationEntryPoint">
+        <intercept-url pattern="/login/**" access="permitAll"/>
+        <intercept-url pattern="/resources/**" access="permitAll" />
         <intercept-url pattern="/**" access="hasAnyRole('ROLE_ADMIN','ROLE_USER')"/>
         <remember-me token-validity-seconds="2419200" /><!--помнит 4 недели-->
-        <form-login login-page="/login"
-                    default-target-url="/loans/get/all"/>
-                    <!--authentication-failure-url="/login.html?login_error=1" -->
-        <logout logout-success-url="/login"/>
+        <form-login login-page="/login" login-processing-url="/resources/j_spring_security_check"
+                    default-target-url="/loans/get/all"
+                    authentication-success-handler-ref="mySuccessHandler"
+                    authentication-failure-handler-ref="myFailureHandler" />
+        <logout logout-url="/resources/j_spring_security_logout"/>
 
+        <http-basic />
     </http>
-
+    <!-- Connect the custom authentication success handler -->
+    <beans:bean id="mySuccessHandler"
+                class="com.privat.bki.apiserver.spring.security.RestAuthenticationSuccessHandler" />
+    <!-- Using default failure handler -->
+    <beans:bean id="myFailureHandler"
+                class="org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler" />
 
     <authentication-manager alias="authenticationManager">
         <authentication-provider >

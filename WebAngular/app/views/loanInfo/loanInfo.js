@@ -21,7 +21,14 @@ angular.module('myApp.loanInfo', ['ngRoute'])
 
         $scope.getAllRecords = function(){
 
-            $http({method: 'GET', url: 'http://localhost:8181/select/all.json'}).
+            var config = {headers:  {
+                'Authorization': "Basic "
+                + btoa('admin:admin'),
+                'Accept': 'application/json',
+                "X-Testing" : "testing"
+            }
+            };
+            $http.get('http://localhost:8181/loans/get/all',config).
                 success(function(data) {
                     $scope.loans = angular.fromJson(data.clients);
                 }).

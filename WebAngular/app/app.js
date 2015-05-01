@@ -6,7 +6,7 @@ angular.module('myApp', [
     'myApp.about',
     'myApp.home',
     'myApp.loanInfo',
-    'myApp.logining',
+    'myApp.login',
     'myApp.recommendations',
     'ui.bootstrap',
     'smart-table'
