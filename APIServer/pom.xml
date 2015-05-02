@@ -28,6 +28,7 @@
             <artifactId>javax.servlet-api</artifactId>
             <version>3.0.1</version>
         </dependency>
+        <!--Spring-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
@@ -58,6 +59,7 @@
             <artifactId>spring-jdbc</artifactId>
             <version>${spring-version}</version>
         </dependency>
+        <!--Spring security-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-tx</artifactId>
@@ -101,10 +103,11 @@
             <artifactId>jstl</artifactId>
             <version>1.2</version>
         </dependency>
+
         <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-web-api</artifactId>
-            <version>6.0</version>
+            <version>7.0</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -175,9 +178,6 @@
                 <configuration>
                     <source>${java-version}</source>
                     <target>${java-version}</target>
-                    <compilerArguments>
-                        <endorseddirs>${endorsed.dir}</endorseddirs>
-                    </compilerArguments>
                 </configuration>
             </plugin>
             <plugin>

@@ -97,8 +97,8 @@ public class DaoRestTemplateService {
         try {
             HttpEntity<String> entity = new HttpEntity<>(createHeaders("admin","admin"));
 //            HttpEntity<String> entity = new HttpEntity<>(headers);
-            ResponseEntity<LoanInfoListWrapper> response = restTemplate.exchange(
-                    baseUrl + "/get/all", HttpMethod.GET, entity,
+            ResponseEntity<LoanInfoListWrapper> response = restTemplate.getForEntity(
+                    baseUrl + "/get/all",
                     LoanInfoListWrapper.class);
             data = response.getBody();
             System.out.println(response.toString());

@@ -13,10 +13,12 @@ import java.security.Principal
 @Controller
 //@RequestMapping("/login")
 class LoginController {
-    @RequestMapping(method = RequestMethod.GET)
+
+    /*@RequestMapping(method = RequestMethod.GET)
     String loginPage(Model model){
         return "login"
-    }
+    }*/
+
     @RequestMapping(value = "/login")
     public Principal user(Principal user) {
         return user;

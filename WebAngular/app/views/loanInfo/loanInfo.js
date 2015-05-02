@@ -24,8 +24,7 @@ angular.module('myApp.loanInfo', ['ngRoute'])
             var config = {headers:  {
                 'Authorization': "Basic "
                 + btoa('admin:admin'),
-                'Accept': 'application/json',
-                "X-Testing" : "testing"
+                'Accept': 'application/json'
             }
             };
             $http.get('http://localhost:8181/loans/get/all',config).
