@@ -24,9 +24,9 @@ public class WebAppConfig implements WebApplicationInitializer {
 
         ctx.setServletContext(servletContext);
 
-        ServletRegistration.Dynamic servlet = servletContext.addServlet("dispatcher",
+        ServletRegistration.Dynamic servlet = servletContext.addServlet("dispatcher2",
                 new DispatcherServlet(ctx));
         servlet.addMapping("/");
-        servlet.setLoadOnStartup(1);
+        servlet.setLoadOnStartup(2);
     }
 }
