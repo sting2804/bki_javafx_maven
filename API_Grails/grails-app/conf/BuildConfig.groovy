@@ -5,6 +5,7 @@ grails.project.test.reports.dir = "target/test-reports"
 grails.project.work.dir = "target/work"
 grails.project.target.level = 1.8
 grails.project.source.level = 1.8
+grails.server.port.http = 8090
 //grails.project.war.file = "target/${appName}-${appVersion}.war"
 
 grails.project.fork = [
@@ -61,6 +62,8 @@ grails.project.dependency.resolution = {
         compile ":scaffolding:2.1.2"
         compile ':cache:1.1.8'
         compile ":asset-pipeline:1.9.9"
+        compile "org.codehaus.jackson:jackson-core-asl:1.9.8"
+        compile "org.codehaus.jackson:jackson-mapper-asl:1.9.8"
 
         // plugins needed at runtime but not for compilation
         //runtime ":hibernate4:4.3.6.1" // or ":hibernate:3.6.10.18"

@@ -1,6 +1,6 @@
 package com.privat.bki.apiserver.parsers
 
-import com.privat.bki.entities.Person
+import com.privat.bki.business.entities.Person
 
 /**
  * Created by sting on 3/29/15.
@@ -8,7 +8,8 @@ import com.privat.bki.entities.Person
 class PersonParser implements AbstractParser{
     @Override
     def parseObject(Map params){
-        return new Person(params.id, params.name, params.surname, params.patronymic,
-                params.birthday, params.inn, params.passNumber, params.passSerial)
+        return null
+        /*return new Person(params.id, params.name, params.surname, params.patronymic,
+                params.birthday, params.inn, params.passNumber, params.passSerial)*/
     }
 }

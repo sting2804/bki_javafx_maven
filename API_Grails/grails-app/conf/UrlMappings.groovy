@@ -11,11 +11,11 @@ class UrlMappings {
         "500"(view:'/error')
         group("/api") {
 
-            "/loans"(controller: 'loanInformation'){
+            "/loans/all"(controller: 'loanInformation'){
                 action = [GET: "selectAll"]
             }
 
-            "/loans/$id?"(controller: 'loanInformation'){
+            "/loans"(controller: 'loanInformation'){
                 action = [GET: "selectClient"]
             }
 

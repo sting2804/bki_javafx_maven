@@ -9,7 +9,7 @@
           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
           http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-    <!--<import resource="dao-config.xml"/>-->
+    <import resource="dao-config.xml"/>
     <context:component-scan base-package="com.privat.bki.apiserver.spring"/>
     <mvc:resources mapping="/resources/**" location="/pages/"/>
     <bean id="objectMapper" class="com.fasterxml.jackson.databind.ObjectMapper"/>
@@ -30,6 +30,7 @@
 
     <bean id="viewResolver"
           class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+          p:order="2"
           p:viewClass="org.springframework.web.servlet.view.JstlView"
           p:prefix="pages/"
           p:suffix=".jsp"/>

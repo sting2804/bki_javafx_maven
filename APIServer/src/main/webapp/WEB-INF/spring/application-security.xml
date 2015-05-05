@@ -11,13 +11,7 @@
     <global-method-security secured-annotations="enabled" />
 
 
-    <http auto-config="true" use-expressions="true">
-        <intercept-url pattern="/**" access="permitAll"/>
-        <remember-me token-validity-seconds="2419200" /><!--помнит 4 недели-->
-
-        <http-basic/>
-
-    </http>
+    <http pattern="/**" security="none"/>
 
 
     <authentication-manager alias="authenticationManager">

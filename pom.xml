@@ -12,5 +12,6 @@
         <module>DesktopApp</module>
         <module>APIServer</module>
         <module>BusinessInterfaces</module>
-    </modules>
+    <module>API</module>
+  </modules>
 </project>

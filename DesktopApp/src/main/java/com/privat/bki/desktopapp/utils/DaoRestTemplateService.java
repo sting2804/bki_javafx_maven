@@ -31,7 +31,7 @@ public class DaoRestTemplateService {
     public RestTemplate restTemplate;
     private HttpHeaders headers;
     private LoanInfoListWrapper data;
-    private static final String baseUrl = "http://localhost:8181/loans";
+    private static final String baseUrl = "http://localhost:8090/API_Grails/loans";
 
     public DaoRestTemplateService() {
     }
@@ -95,12 +95,13 @@ public class DaoRestTemplateService {
         if (data != null)
             data.setClients(null);
         try {
-            HttpEntity<String> entity = new HttpEntity<>(createHeaders("admin","admin"));
+//            HttpEntity<String> entity = new HttpEntity<>();
 //            HttpEntity<String> entity = new HttpEntity<>(headers);
-            ResponseEntity<LoanInfoListWrapper> response = restTemplate.exchange(
-                    baseUrl + "/get/all", HttpMethod.GET, entity,
-                    LoanInfoListWrapper.class);
-            data = response.getBody();
+            /*ResponseEntity<LoanInfoListWrapper> response = restTemplate.exchange(
+                    baseUrl + "/all", HttpMethod.GET, entity,
+                    LoanInfoListWrapper.class);*/
+            LoanInfoListWrapper response = restTemplate.getForObject(baseUrl+"/all",LoanInfoListWrapper.class);
+            //data = response.getBody();
             System.out.println(response.toString());
         } catch (Exception e) {
             e.printStackTrace();

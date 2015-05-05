@@ -1,7 +1,9 @@
 package com.privat.bki.apiserver.controllers
 
-import com.privat.bki.entities.Person
-import com.privat.bki.wrappers.LoanInfoListWrapper
+import com.privat.bki.business.entities.Person
+import com.privat.bki.business.wrappers.LoanInfoListWrapper
+import grails.converters.JSON
+import org.springframework.web.bind.annotation.RequestBody
 
 class LoanInformationController {
 
@@ -16,13 +18,13 @@ class LoanInformationController {
     //@RequestMapping(value = "/select/all", method = GET)
     //@ResponseBody
     public def selectAll() {
-        return loanDaoService.listAll();
+        loanDaoService.listAll() as JSON
     }
 
     //@RequestMapping(value = "/select/client", method = POST)
     //@ResponseBody
-    public LoanInfoListWrapper selectClient() {
-        return new LoanInfoListWrapper(loanDaoService.listSpecificInfo(params));
+    def selectClient() {
+        new Date() as JSON
     }
 
 /*    //@RequestMapping(value = "/select/info/{id}", method = GET)

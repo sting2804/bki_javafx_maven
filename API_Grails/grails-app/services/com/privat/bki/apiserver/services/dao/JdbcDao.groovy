@@ -3,12 +3,8 @@ package com.privat.bki.apiserver.services.dao
 import com.privat.bki.apiserver.mappers.BanksRowMapper
 import com.privat.bki.apiserver.mappers.CurrencyRowMapper
 import com.privat.bki.apiserver.mappers.LoanInfoRowMapper
-import com.privat.bki.entities.Bank
-import com.privat.bki.entities.Currency
-import com.privat.bki.entities.LoanInfo
-import com.privat.bki.entities.Person
-import com.privat.bki.utils.Converter
-import com.privat.bki.utils.SqlDateConverter
+import com.privat.bki.business.entities.*
+import com.privat.bki.business.utils.*
 import grails.transaction.Transactional
 import org.apache.log4j.Logger
 import org.springframework.jdbc.core.JdbcTemplate
@@ -31,7 +27,7 @@ class JdbcDao implements IBkiDao {
     private def banks
     private def currencies
     private Converter<Date, LocalDate> dateConverter
-    private JdbcTemplate jdbcTemplate
+    JdbcTemplate jdbcTemplate
 
     JdbcDao() {
         dateConverter = new SqlDateConverter()

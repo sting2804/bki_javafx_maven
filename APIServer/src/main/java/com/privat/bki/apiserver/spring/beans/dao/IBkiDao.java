@@ -1,25 +1,31 @@
-package com.privat.bki.apiserver.services.dao
+package com.privat.bki.apiserver.spring.beans.dao;
 
-import com.privat.bki.business.entities.*
+import com.privat.bki.business.entities.Bank;
+import com.privat.bki.business.entities.Currency;
+import com.privat.bki.business.entities.LoanInfo;
+import com.privat.bki.business.entities.Person;
+
+import java.util.List;
+import java.util.Map;
 
 
 /**
  * Created by sting on 1/23/15.
  */
-interface IBkiDao {
-    List<LoanInfo> getRecord(int id)
+public interface IBkiDao {
+    List<LoanInfo> getRecord(int id);
     /**
      * получение всех записей из базы
      * @return возвращает список со всеми записями из бд, полученными из view
      */
-    List<LoanInfo> getAllRecords()
+    List<LoanInfo> getAllRecords();
 
     /**
      * получение информации о существовании конкретного клиента
      * @param person параметр для поиска
      * @return возвращает id  если клиент существует и -1 если такой клиент не найден в бд
      */
-    Integer isClientExists(Person person)
+    Integer isClientExists(Person person);
 
     /**
      * добавляет только информацию для существующего клиента
@@ -28,7 +34,7 @@ interface IBkiDao {
      * @param clientId указывает id клиента, котрому будет добавлена информация
      * @return возвращает true в случае успеха и false в случае неудачи
      */
-    Boolean addNewInfo(LoanInfo info, int clientId)
+    Boolean addNewInfo(LoanInfo info, int clientId);
 
     /**
      * Обновление информации о клиенте и кредите
@@ -39,26 +45,26 @@ interface IBkiDao {
      * @param newInfo содержит обновлённую информацию
      * @return возвращает true в случае успеха и false в случае неудачи
      */
-    Boolean changeInfo(int infoId, int clientId, LoanInfo newInfo)
+    Boolean changeInfo(int infoId, int clientId, LoanInfo newInfo);
 
     /**
      * Получение кредитов указанного клиента
      * @param person основная информация о клиенте
      * @return возвращает список кредитов
      */
-    List<LoanInfo> getPersonInfo(Person person)
+    List<LoanInfo> getPersonInfo(Person person);
 
     /**
      * Получает список банков из бд
      * @return возвращает map <код, имя> банка
      */
-    Map<String, String> getBanksMap()
+    Map<String, String> getBanksMap();
 
     /**
      * Получает список валют из бд
      * @return возвращает map <код, имя> валюты
      */
-    Map<String, String> getCurrenciesMap()
+    Map<String, String> getCurrenciesMap();
 
     /**
      * добавляет запись в таблицы client и loan.
@@ -67,19 +73,19 @@ interface IBkiDao {
      * @param info входной параметр, содержащий информацию новом клиенте и кредите
      * @return Возвращает true в случае успешного добавления и false в случае ошибки
      */
-    Boolean addNewClient(LoanInfo info)
+    Boolean addNewClient(LoanInfo info);
 
     /**
      * Добавление новой валюты в бд
      * @param currency сожержит код и название валюты
      * @return Возвращает true в случае успешного добавления и false в случае ошибки
      */
-    Boolean addNewCurrency(Currency currency)
+    Boolean addNewCurrency(Currency currency);
 
     /**
      * Добавление нового банка в бд
      * @param bank сожержит код и название валюты
      * @return Возвращает true в случае успешного добавления и false в случае ошибки
      */
-    Boolean addNewBank(Bank bank)
+    Boolean addNewBank(Bank bank);
 }

@@ -5,12 +5,12 @@
   "homepage": "https://github.com/angular/angular-seed",
   "license": "MIT",
   "private": true,
-  /*"dependencies": {
+  "dependencies": {
     "angular": "1.2.x",
     "angular-route": "1.2.x",
     "angular-loader": "1.2.x",
     "angular-mocks": "~1.2.x",
     "html5-boilerplate": "~4.3.0",
     "angular-smart-table": "2.0.1"
-  }*/
+  }
 }

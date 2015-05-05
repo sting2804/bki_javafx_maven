@@ -1,6 +1,6 @@
 package com.privat.bki.apiserver.mappers
 
-import com.privat.bki.entities.Currency
+import com.privat.bki.business.entities.Currency
 import org.springframework.jdbc.core.RowMapper
 
 import java.sql.ResultSet
