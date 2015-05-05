@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/APIServer/APIServer.iml" filepath="$PROJECT_DIR$/APIServer/APIServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/BusinessInterfaces/BusinessInterfaces.iml" filepath="$PROJECT_DIR$/BusinessInterfaces/BusinessInterfaces.iml" />
       <module fileurl="file://$PROJECT_DIR$/DesktopApp/DesktopApp.iml" filepath="$PROJECT_DIR$/DesktopApp/DesktopApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebClient/WebClient.iml" filepath="$PROJECT_DIR$/WebClient/WebClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/bki_diplom.iml" filepath="$PROJECT_DIR$/bki_diplom.iml" />
     </modules>
   </component>

@@ -35,19 +35,19 @@ public class LoanInfoRowMapper implements RowMapper<LoanInfo>{
         loanInfo.setInitAmount(rs.getDouble(i++));
         try {
             loanInfo.setInitDate(rs.getDate(i++).toLocalDate());
-        } catch (SQLException e) {
+        } catch (SQLException | NullPointerException e) {
             //log.error(e.getMessage());
             loanInfo.setInitDate(null);
         }
         try {
             loanInfo.setFinishDate(rs.getDate(i++).toLocalDate());
-        } catch (SQLException e) {
+        } catch (SQLException | NullPointerException e) {
             //log.error(e.getMessage());
             loanInfo.setFinishDate(null);
         }
         try {
             loanInfo.setBalance(rs.getDouble(i++));
-        } catch (SQLException e) {
+        } catch (SQLException | NullPointerException e) {
             //log.error(e.getMessage());
             loanInfo.setBalance(null);
         }

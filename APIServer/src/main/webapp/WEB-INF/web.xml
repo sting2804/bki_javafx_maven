@@ -56,9 +56,7 @@
 
     <servlet-mapping>
         <servlet-name>dispatcher</servlet-name>
-        <url-pattern>*.json</url-pattern>
-        <url-pattern>*.xml</url-pattern>
-        <url-pattern>/</url-pattern>
+        <url-pattern>/api/*</url-pattern>
     </servlet-mapping>
     <!--<session-config>-->
         <!--<session-timeout>-->
