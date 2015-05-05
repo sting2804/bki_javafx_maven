@@ -31,7 +31,7 @@ public class DaoRestTemplateService {
     public RestTemplate restTemplate;
     private HttpHeaders headers;
     private LoanInfoListWrapper data;
-    private static final String baseUrl = "http://localhost:8190";
+    private static final String baseUrl = "http://localhost:8190/api";
 
     public DaoRestTemplateService() {
     }
@@ -68,7 +68,7 @@ public class DaoRestTemplateService {
         try {
             HttpHeaders headers = createHeaders(username,password);
             HttpEntity request = new HttpEntity(headers);
-            return restTemplate.exchange("http://localhost:8190/loans",
+            return restTemplate.exchange("http://localhost:8190/api/loans",
                     HttpMethod.POST, request, LoanInfoListWrapper.class);
         }
         catch (Exception e){
@@ -100,9 +100,9 @@ public class DaoRestTemplateService {
             /*ResponseEntity<LoanInfoListWrapper> response = restTemplate.exchange(
                     baseUrl + "/all", HttpMethod.GET, entity,
                     LoanInfoListWrapper.class);*/
-            LoanInfoListWrapper response = restTemplate.getForObject(baseUrl+"/all",LoanInfoListWrapper.class);
-            //data = response.getBody();
-            System.out.println(response.toString());
+            ResponseEntity<LoanInfoListWrapper> response = restTemplate.getForEntity(
+                    baseUrl+"/loans",LoanInfoListWrapper.class);
+            data = response.getBody();
         } catch (Exception e) {
             e.printStackTrace();
             return null;

@@ -21,9 +21,9 @@
     <bean id="restTemplate" class="org.springframework.web.client.RestTemplate">
         <property name="messageConverters">
             <list>
-                <!--<ref bean="jaxb2XmlConverter"/>-->
+                <ref bean="jaxb2XmlConverter"/>
                 <ref bean="jacksonConverter"/>
-                <!--<ref bean="jaxb2CollectionConverter"/>-->
+                <ref bean="jaxb2CollectionConverter"/>
             </list>
         </property>
     </bean>
