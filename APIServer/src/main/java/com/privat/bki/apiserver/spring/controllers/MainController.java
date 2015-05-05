@@ -27,7 +27,7 @@ import static org.springframework.web.bind.annotation.RequestMethod.*;
  * @author sting
  */
 @Controller
-@RequestMapping(value = "/loans")
+@RequestMapping
 public class MainController {
 
     @Qualifier("daoService")
@@ -39,67 +39,67 @@ public class MainController {
         return "index";
     }
 
-    @RequestMapping(value = "/get/all", method = GET)
+    @RequestMapping(value = "/loans", method = GET)
     @ResponseBody
     public LoanInfoListWrapper selectAll() {
         return new LoanInfoListWrapper(daoService.listAll());
     }
 
-    @RequestMapping(value = "/get/client", method = POST)
+    @RequestMapping(value = "/loans/byClient", method = POST)
     @ResponseBody
     public LoanInfoListWrapper selectClient(@RequestBody Person client) {
         return new LoanInfoListWrapper(daoService.listSpecificInfo(client));
     }
 
-    @RequestMapping(value = "/get/info/{id}", method = GET)
+    @RequestMapping(value = "/loans/{id}", method = GET)
     @ResponseBody
     public LoanInfoListWrapper selectInfoById(@PathVariable("id") int id) {
         return new LoanInfoListWrapper(daoService.getRecord(id));
     }
 
-    @RequestMapping(value = "/get/is-exists", method = POST)
+    @RequestMapping(value = "/loans/isExists", method = POST)
     @ResponseBody
     public Integer isClientExists(@RequestBody Person client) {
         return daoService.isClientExists(client);
     }
 
-    @RequestMapping(value = "/create/info/{clientId}", method = POST)
+    @RequestMapping(value = "/loans/byClient/{clientId}", method = POST)
     @ResponseBody
     public Boolean insertInfo(@RequestBody LoanInfo info, @PathVariable("clientId") int clientId) {
         return daoService.addInfo(info, clientId);
     }
 
-    @RequestMapping(value = "/create/client", method = POST)
+    @RequestMapping(value = "/client", method = POST)
     @ResponseBody
     public boolean insertClient(@RequestBody LoanInfo info) {
         return daoService.addNewClient(info);
     }
 
-    @RequestMapping(value = "/update/info/{loanId}/{clientId}", method = POST)
+    @RequestMapping(value = "/loans/{loanId}/{clientId}", method = PUT)
     @ResponseBody
     public boolean update(@PathVariable("loanId") int loanId, @PathVariable("clientId") int clientId,  @RequestBody LoanInfo newInfo) {
         return daoService.modify(loanId, clientId, newInfo);
     }
 
-    @RequestMapping(value = "/get/banks", method = GET)
+    @RequestMapping(value = "/bank", method = GET)
     @ResponseBody
     public BankMapWrapper selectBanks() {
         return new BankMapWrapper(daoService.getBanksMap());
     }
 
-    @RequestMapping(value = "/get/currencies", method = GET)
+    @RequestMapping(value = "/currency", method = GET)
     @ResponseBody
     public CurrencyMapWrapper selectCurrencies() {
         return new CurrencyMapWrapper(daoService.getCurrenciesMap());
     }
 
-    @RequestMapping(value = "/create/bank", method = POST)
+    @RequestMapping(value = "/bank", method = POST)
     @ResponseBody
     public boolean insertBank(@RequestBody Bank bank) {
         return daoService.addBank(bank);
     }
 
-    @RequestMapping(value = "/create/currency", method = POST)
+    @RequestMapping(value = "/currency", method = POST)
     @ResponseBody
     public boolean insertCurrency(@RequestBody Currency currency) {
         return daoService.addCurrency(currency);

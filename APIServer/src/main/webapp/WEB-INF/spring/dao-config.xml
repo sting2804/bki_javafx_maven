@@ -10,12 +10,12 @@
 
     <context:component-scan base-package="com.privat.bki.apiserver.spring"/>
 
-    <!--<jee:jndi-lookup id="dataSource" resource-ref="true" jndi-name="jdbc/Test" expected-type="javax.sql.DataSource"/>-->
-    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+    <jee:jndi-lookup id="dataSource" resource-ref="true" jndi-name="jdbc/Test" expected-type="javax.sql.DataSource"/>
+    <!--<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource"
         p:driverClassName="net.sourceforge.jtds.jdbc.Driver"
         p:url="jdbc:sybase:Tds:aseserver:5000/privat_db"
         p:username="privat"
-        p:password="privat"/>
+        p:password="privat"/>-->
 
     <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate"
           p:dataSource-ref="dataSource" />
