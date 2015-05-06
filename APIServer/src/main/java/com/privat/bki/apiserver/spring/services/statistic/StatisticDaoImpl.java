@@ -27,12 +27,16 @@ public class StatisticDaoImpl implements StatisticDao {
     }
 
     @Override
-    public Map<String, Integer> theMostCreditAge(int... years) {
-        return null;
+    public Map<Integer, Map<String,Integer>> theMostCreditAge(int... years) {
+        Map<Integer, Map<String,Integer>> ages = new LinkedHashMap<>();
+        for(int year : years){
+            ages.put(year,theMostCreditAge(year));
+        }
+        return ages;
     }
 
     @Override
-    public Integer theMostCreditAge(int year) {
+    public Map<String, Integer> theMostCreditAge(int year) {
         return null;
     }
 }

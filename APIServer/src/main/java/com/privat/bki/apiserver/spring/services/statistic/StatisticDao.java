@@ -24,11 +24,11 @@ public interface StatisticDao {
      * вытягивает с сервера статистику по самым берущим кредиты возрастам по годам
      * @return возвращает мапку классификация возраста-возраст
      */
-    Map<String, Integer> theMostCreditAge(int... years);
+    Map<Integer, Map<String,Integer>> theMostCreditAge(int... years);
     /**
      * вытягивает с сервера статистику по самым берущим кредиты возрастам за год
      * @return возвращает мапку классификация возраста-возраст
      */
-    Integer theMostCreditAge(int year);
+    Map<String, Integer> theMostCreditAge(int year);
 
 }
