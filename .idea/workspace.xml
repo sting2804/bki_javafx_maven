@@ -1,578 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abda6744-f048-4d01-bdc3-6e5b6ad88420" name="Default" comment="the api">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/APIServer_war.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/APIServer_war_exploded.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__backport_util_concurrent_backport_util_concurrent_3_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__classworlds_classworlds_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_4_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_4_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_5_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jsch_0_1_38.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_2_16.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_core_2_2_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_2_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_12.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_httpclient_commons_httpclient_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_javaee_web_api_6_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_jstl_javax_servlet_jsp_jstl_api_1_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_2_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jsr173_api_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jstl_jstl_1_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__nekohtml_nekohtml_1_9_6_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__nekohtml_xercesMinimal_1_9_6_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_exec_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_3_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_3_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_jackrabbit_jackrabbit_jcr_commons_1_5_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_jackrabbit_jackrabbit_webdav_1_5_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_logging_api_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_sink_api_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_artifact_2_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_artifact_manager_2_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_core_2_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_error_diagnostics_2_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_model_2_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_monitor_2_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_plugin_api_2_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_plugin_descriptor_2_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_plugin_parameter_documenter_2_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_plugin_registry_2_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_profile_2_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_project_2_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_repository_metadata_2_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_settings_2_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_toolchain_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_reporting_maven_reporting_api_2_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_file_1_0_beta_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_http_1_0_beta_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_http_lightweight_1_0_beta_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_http_shared_1_0_beta_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_provider_api_1_0_beta_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_ssh_1_0_beta_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_ssh_common_1_0_beta_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_ssh_external_1_0_beta_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_webdav_jackrabbit_1_0_beta_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_all_2_4_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_13.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_lgpl_1_9_13.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_13.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_lgpl_1_9_13.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_xc_1_9_13.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_exec_maven_plugin_1_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_container_default_1_0_alpha_9_stable_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_interactivity_api_1_0_alpha_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_interpolation_1_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_utils_3_0_20.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_controlsfx_controlsfx_8_20_8.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_controlsfx_openjfx_dialogs_1_0_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_all_1_9_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_5_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_5_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_jdk14_1_5_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_nop_1_5_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_plexus_plexus_cipher_1_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_plexus_plexus_sec_dispatcher_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_acl_3_2_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_3_2_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_3_2_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_taglibs_3_2_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_3_2_7_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_1_6_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_1_6_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_1_6_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_1_6_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_1_6_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_1_6_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_4_1_6_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_1_6_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_1_6_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_1_6_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/mappers/BanksRowMapper.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/mappers/CurrencyRowMapper.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/mappers/LoanInfoRowMapper.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/mappers/PersonRowMapper.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/beans/DaoService.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/beans/dao/IBkiDao.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/beans/dao/JdbcDao.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/controllers/MainController.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/API_Grails-grailsPlugins.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/API_Grails.ids" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/API_Grails.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/API_Grails.ipr" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/API_Grails.iws" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/application.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/assets/images/apple-touch-icon-retina.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/assets/images/apple-touch-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/assets/images/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/assets/images/grails_logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/assets/images/skin/database_add.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/assets/images/skin/database_delete.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/assets/images/skin/database_edit.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/assets/images/skin/database_save.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/assets/images/skin/database_table.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/assets/images/skin/exclamation.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/assets/images/skin/house.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/assets/images/skin/information.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/assets/images/skin/shadow.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/assets/images/skin/sorted_asc.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/assets/images/skin/sorted_desc.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/assets/images/spinner.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/assets/images/springsource.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/assets/javascripts/application.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/assets/stylesheets/application.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/assets/stylesheets/errors.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/assets/stylesheets/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/assets/stylesheets/mobile.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/conf/BootStrap.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/conf/BuildConfig.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/conf/Config.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/conf/DataSource.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/conf/UrlMappings.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/conf/spring/resources.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/controllers/com/privat/bki/apiserver/controllers/LoanInformationController.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/i18n/messages.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/i18n/messages_cs_CZ.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/i18n/messages_da.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/i18n/messages_de.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/i18n/messages_es.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/i18n/messages_fr.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/i18n/messages_it.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/i18n/messages_ja.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/i18n/messages_nb.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/i18n/messages_nl.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/i18n/messages_pl.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/i18n/messages_pt_BR.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/i18n/messages_pt_PT.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/i18n/messages_ru.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/i18n/messages_sv.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/i18n/messages_th.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/i18n/messages_zh_CN.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/services/com/privat/bki/apiserver/services/LoanDaoService.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/services/com/privat/bki/apiserver/services/dao/IBkiDao.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/services/com/privat/bki/apiserver/services/dao/JdbcDao.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/views/error.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/views/index.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grails-app/views/layouts/main.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grailsw" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/grailsw.bat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/lib/BusinessInterfaces-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/lib/jconn4-1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/AssetPipelineGrailsPlugin.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/application.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/grails-app/conf/AssetPipelineBootStrap.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/grails-app/conf/AssetUrlMappings.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/grails-app/controllers/asset/pipeline/AssetsController.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/grails-app/services/asset/pipeline/AssetProcessorService.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/grails-app/taglib/asset/pipeline/AssetMethodTagLib.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/grails-app/taglib/asset/pipeline/AssetsTagLib.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/plugin.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/scripts/AssetClean.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/scripts/AssetPrecompile.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/scripts/_AssetCompile.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/scripts/_Events.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/scripts/_Install.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/docs/guide/configuration.gdoc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/docs/guide/extending.gdoc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/docs/guide/extending/assetfile.gdoc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/docs/guide/extending/postprocessors.gdoc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/docs/guide/extending/processors.gdoc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/docs/guide/introduction.gdoc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/docs/guide/toc.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/docs/guide/usage.gdoc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/docs/guide/usage/directives.gdoc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/docs/guide/usage/encoding.gdoc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/docs/guide/usage/linking.gdoc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/docs/guide/usage/organization.gdoc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/asset/pipeline/AbstractAssetFile.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/asset/pipeline/AbstractProcessor.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/asset/pipeline/AssetCompiler.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/asset/pipeline/AssetFile.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/asset/pipeline/AssetHelper.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/asset/pipeline/AssetPipelineFilter.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/asset/pipeline/CacheManager.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/asset/pipeline/CssAssetFile.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/asset/pipeline/DirectiveProcessor.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/asset/pipeline/HtmlAssetFile.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/asset/pipeline/JsAssetFile.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/asset/pipeline/ManifestAssetFile.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/asset/pipeline/Processor.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/asset/pipeline/grails/AssetResourceLocator.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/asset/pipeline/grails/CachingLinkGenerator.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/asset/pipeline/grails/LinkGenerator.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/asset/pipeline/processors/CssMinifyPostProcessor.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/asset/pipeline/processors/CssProcessor.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/asset/pipeline/processors/UglifyJsProcessor.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/README.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/README.org" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/bin/uglifyjs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/docstyle.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/lib/consolidator.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/lib/parse-js.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/lib/process.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/lib/squeeze-more.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/r.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/beautify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/testconsolidator.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/testparser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/1e21.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/array1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/array2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/array3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/array4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/assignment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/concatstring.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/const.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/div-with-regexp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/empty-blocks.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/forstatement.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/if-not.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/if.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/ifreturn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/ifreturn2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/infinite.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/issue10.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/issue11.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/issue13.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/issue14.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/issue16.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/issue17.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/issue20.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/issue21.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/issue25.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/issue27.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/issue278.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/issue28.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/issue29.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/issue30.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/issue34.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/issue349.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/issue353.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/issue372.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/issue4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/issue471.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/issue48.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/issue50.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/issue53.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/issue54.1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/issue68.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/issue69.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/issue9.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/issues222_324.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/mangle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/null_string.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/strict-equals.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/var.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/whitespace.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/expected/with.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/1e21.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/array1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/array2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/array3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/array4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/assignment.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/concatstring.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/const.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/div-with-regexp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/empty-blocks.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/forstatement.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/if-not.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/if.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/ifreturn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/ifreturn2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/infinite.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/issue10.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/issue11.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/issue13.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/issue14.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/issue16.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/issue17.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/issue20.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/issue21.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/issue25.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/issue27.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/issue278.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/issue28.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/issue29.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/issue30.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/issue34.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/issue349.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/issue353.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/issue372.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/issue4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/issue471.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/issue48.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/issue50.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/issue53.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/issue54.1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/issue68.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/issue69.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/issue9.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/issues222_324.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/mangle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/null_string.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/strict-equals.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/var.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/whitespace.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/compress/test/with.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/test/unit/scripts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/tmp/hoist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/tmp/instrument.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/tmp/test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/asset-pipeline-1.9.9/src/groovy/uglifyjs/uglify-js.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/CacheGrailsPlugin.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/application.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/grails-app/conf/DefaultCacheConfig.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/grails-app/services/grails/plugin/cache/GrailsCacheAdminService.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/grails-app/taglib/grails/plugin/cache/CacheTagLib.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/plugin.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/groovy/grails/plugin/cache/ConfigBuilder.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/groovy/grails/plugin/cache/ConfigLoader.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/BlockingCache.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/CacheBeanPostProcessor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/CacheConfigArtefactHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/CacheConfiguration.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/CacheEvict.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/CachePut.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/Cacheable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/CustomCacheKeyGenerator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/GrailsAnnotationCacheOperationSource.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/GrailsCache.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/GrailsCacheManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/GrailsConcurrentMapCache.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/GrailsConcurrentMapCacheManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/GrailsValueWrapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/SerializableByteArrayOutputStream.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/SerializableOutputStream.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/SimpleKeyGenerator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/Timer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/compiler/CacheTransformation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/util/ClassUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/web/AlreadyGzippedException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/web/ContentCacheParameters.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/web/GenericResponseWrapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/web/Header.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/web/HttpDateFormatter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/web/PageInfo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/web/SerializableCookie.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/web/filter/AbstractFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/web/filter/CacheExpressionRootObject.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/web/filter/CacheOperationContext.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/web/filter/DefaultWebKeyGenerator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/web/filter/ExpressionEvaluator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/web/filter/LazyParamAwareEvaluationContext.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/web/filter/NoOpFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/web/filter/PageFragmentCachingFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/web/filter/WebKeyGenerator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/web/filter/simple/MemoryBlockingCache.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/web/filter/simple/MemoryCacheConfiguration.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/cache-1.1.8/src/java/grails/plugin/cache/web/filter/simple/MemoryPageFragmentCachingFilter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/DatabaseMigrationGrailsPlugin.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/application.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/grails-app/conf/DbdocUrlMappings.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/grails-app/controllers/grails/plugin/databasemigration/DbdocController.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/grails-app/views/dbdoc/_globalnav.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/grails-app/views/dbdoc/_index.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/grails-app/views/dbdoc/_overview-summary.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/grails-app/views/dbdoc/_stylesheet.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/plugin.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/scripts/DbmChangelogSync.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/scripts/DbmChangelogSyncSql.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/scripts/DbmChangelogToGroovy.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/scripts/DbmClearChecksums.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/scripts/DbmCreateChangelog.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/scripts/DbmDbDoc.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/scripts/DbmDiff.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/scripts/DbmDropAll.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/scripts/DbmFutureRollbackSql.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/scripts/DbmGenerateChangelog.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/scripts/DbmGenerateGormChangelog.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/scripts/DbmGormDiff.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/scripts/DbmListLocks.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/scripts/DbmListTags.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/scripts/DbmMarkNextChangesetRan.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/scripts/DbmPreviousChangesetSql.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/scripts/DbmRegisterChangelog.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/scripts/DbmReleaseLocks.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/scripts/DbmRollback.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/scripts/DbmRollbackCount.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/scripts/DbmRollbackCountSql.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/scripts/DbmRollbackSql.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/scripts/DbmRollbackToDate.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/scripts/DbmRollbackToDateSql.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/scripts/DbmStatus.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/scripts/DbmTag.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/scripts/DbmUpdate.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/scripts/DbmUpdateCount.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/scripts/DbmUpdateCountSql.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/scripts/DbmUpdateSql.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/scripts/DbmValidate.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/scripts/_DatabaseMigrationCommon.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/scripts/_Events.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/scripts/_Install.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/src/groovy/grails/plugin/databasemigration/ChangelogXml2Groovy.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/src/groovy/grails/plugin/databasemigration/DslBuilder.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/src/groovy/grails/plugin/databasemigration/GormColumn.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/src/groovy/grails/plugin/databasemigration/GormDatabase.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/src/groovy/grails/plugin/databasemigration/GormDatabaseSnapshotGenerator.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/src/groovy/grails/plugin/databasemigration/GormDatabaseTypeConverter.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/src/groovy/grails/plugin/databasemigration/GormDiff.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/src/groovy/grails/plugin/databasemigration/GrailsChange.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/src/groovy/grails/plugin/databasemigration/GrailsChangeLogParser.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/src/groovy/grails/plugin/databasemigration/GrailsClassLoaderResourceAccessor.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/src/groovy/grails/plugin/databasemigration/GrailsDiffStatusListener.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/src/groovy/grails/plugin/databasemigration/GrailsPrecondition.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/src/groovy/grails/plugin/databasemigration/GroovyAwareStringChangeLogSerializer.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/src/groovy/grails/plugin/databasemigration/HibernateAwareTypeConverter.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/src/groovy/grails/plugin/databasemigration/MigrationRunner.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/src/groovy/grails/plugin/databasemigration/MigrationUtils.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/src/groovy/grails/plugin/databasemigration/MySQLCompatibleChangeLogSerializer.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/src/groovy/grails/plugin/databasemigration/MysqlAwareCreateTableGenerator.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/src/groovy/grails/plugin/databasemigration/NoopVisitor.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/src/groovy/grails/plugin/databasemigration/ScriptUtils.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/src/groovy/grails/plugin/databasemigration/Slf4jLogger.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/src/groovy/grails/plugin/databasemigration/dbdoc/AuthorListWriter.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/src/groovy/grails/plugin/databasemigration/dbdoc/AuthorWriter.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/src/groovy/grails/plugin/databasemigration/dbdoc/ChangeLogListWriter.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/src/groovy/grails/plugin/databasemigration/dbdoc/ChangeLogWriter.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/src/groovy/grails/plugin/databasemigration/dbdoc/ColumnWriter.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/src/groovy/grails/plugin/databasemigration/dbdoc/HTMLListWriter.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/src/groovy/grails/plugin/databasemigration/dbdoc/HTMLWriter.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/src/groovy/grails/plugin/databasemigration/dbdoc/MemoryDocVisitor.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/src/groovy/grails/plugin/databasemigration/dbdoc/PendingChangesWriter.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/src/groovy/grails/plugin/databasemigration/dbdoc/PendingSQLWriter.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/src/groovy/grails/plugin/databasemigration/dbdoc/RecentChangesWriter.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/src/groovy/grails/plugin/databasemigration/dbdoc/TableListWriter.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/src/groovy/grails/plugin/databasemigration/dbdoc/TableWriter.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/database-migration-1.4.0/src/resources/changelog.template" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/hibernate4-4.3.6.1/Hibernate4GrailsPlugin.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/hibernate4-4.3.6.1/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/hibernate4-4.3.6.1/application.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/hibernate4-4.3.6.1/plugin.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/hibernate4-4.3.6.1/scripts/CreateHibernateCfgXml.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/hibernate4-4.3.6.1/scripts/SchemaExport.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/hibernate4-4.3.6.1/src/java/hibernate.cfg.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/jquery-1.11.1/JqueryGrailsPlugin.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/jquery-1.11.1/LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/jquery-1.11.1/application.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/jquery-1.11.1/dependencies.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/jquery-1.11.1/grails-app/assets/javascripts/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/jquery-1.11.1/grails-app/conf/JQueryConfig.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/jquery-1.11.1/grails-app/conf/JQueryPluginResources.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/jquery-1.11.1/grails-app/services/JQueryService.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/jquery-1.11.1/grails-app/taglib/JQueryResourceTagLib.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/jquery-1.11.1/grails-app/taglib/JQueryTagLib.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/jquery-1.11.1/plugin.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/jquery-1.11.1/scripts/InstallJQuery.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/jquery-1.11.1/src/groovy/org/codehaus/groovy/grails/plugins/jquery/JQueryConfig.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/jquery-1.11.1/src/groovy/org/codehaus/groovy/grails/plugins/jquery/JQueryProvider.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/jquery-1.11.1/web-app/js/jquery/jquery-1.11.1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/jquery-1.11.1/web-app/js/jquery/jquery-1.11.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/jquery-1.11.1/web-app/js/jquery/jquery-1.11.1.min.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/scaffolding-2.1.2/ScaffoldingGrailsPlugin.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/scaffolding-2.1.2/application.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/scaffolding-2.1.2/plugin.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/scaffolding-2.1.2/scripts/CreateScaffoldController.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/scaffolding-2.1.2/scripts/GenerateAll.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/scaffolding-2.1.2/scripts/GenerateAsyncController.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/scaffolding-2.1.2/scripts/GenerateController.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/scaffolding-2.1.2/scripts/GenerateRestfulController.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/scaffolding-2.1.2/scripts/GenerateViews.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/scaffolding-2.1.2/scripts/_Events.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/scaffolding-2.1.2/scripts/_GrailsGenerate.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/scaffolding-2.1.2/src/groovy/org/codehaus/groovy/grails/scaffolding/DefaultGrailsTemplateGenerator.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/scaffolding-2.1.2/src/java/org/codehaus/groovy/grails/scaffolding/AbstractGrailsTemplateGenerator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/scaffolding-2.1.2/src/java/org/codehaus/groovy/grails/scaffolding/DomainClassPropertyComparator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/scaffolding-2.1.2/src/java/org/codehaus/groovy/grails/scaffolding/GrailsTemplateGenerator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/scaffolding-2.1.2/src/java/org/codehaus/groovy/grails/scaffolding/SimpleDomainClassPropertyComparator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/scaffolding-2.1.2/src/java/org/codehaus/groovy/grails/scaffolding/view/ScaffoldedGroovyPageView.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/scaffolding-2.1.2/src/java/org/codehaus/groovy/grails/scaffolding/view/ScaffoldingViewResolver.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/scaffolding-2.1.2/src/templates/artifacts/ScaffoldingController.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/scaffolding-2.1.2/src/templates/scaffolding/AsyncController.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/scaffolding-2.1.2/src/templates/scaffolding/AsyncSpec.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/scaffolding-2.1.2/src/templates/scaffolding/Controller.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/scaffolding-2.1.2/src/templates/scaffolding/RestfulController.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/scaffolding-2.1.2/src/templates/scaffolding/RestfulSpec.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/scaffolding-2.1.2/src/templates/scaffolding/Spec.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/scaffolding-2.1.2/src/templates/scaffolding/_form.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/scaffolding-2.1.2/src/templates/scaffolding/create.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/scaffolding-2.1.2/src/templates/scaffolding/edit.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/scaffolding-2.1.2/src/templates/scaffolding/index.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/scaffolding-2.1.2/src/templates/scaffolding/renderEditor.template" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/scaffolding-2.1.2/src/templates/scaffolding/show.gsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/tomcat-7.0.55/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/tomcat-7.0.55/TomcatGrailsPlugin.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/tomcat-7.0.55/application.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/tomcat-7.0.55/grails-plugin-tomcat-7.0.55.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/tomcat-7.0.55/plugin.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/tomcat-7.0.55/scripts/Tomcat.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/tomcat-7.0.55/scripts/_Events.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/tomcat-7.0.55/src/groovy/org/grails/plugins/tomcat/InlineExplodedTomcatServer.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/tomcat-7.0.55/src/groovy/org/grails/plugins/tomcat/TomcatLoader.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/tomcat-7.0.55/src/groovy/org/grails/plugins/tomcat/TomcatServer.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/tomcat-7.0.55/src/groovy/org/grails/plugins/tomcat/TomcatServerFactory.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/tomcat-7.0.55/src/groovy/org/grails/plugins/tomcat/fork/ForkedTomcatServer.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/tomcat-7.0.55/src/groovy/org/grails/plugins/tomcat/fork/TomcatDevelopmentRunner.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/tomcat-7.0.55/src/groovy/org/grails/plugins/tomcat/fork/TomcatExecutionContext.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/tomcat-7.0.55/src/groovy/org/grails/plugins/tomcat/fork/TomcatWarRunner.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/tomcat-7.0.55/src/java/org/grails/plugins/tomcat/ParentDelegatingClassLoader.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/tomcat-7.0.55/src/java/org/grails/plugins/tomcat/TomcatKillSwitch.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/webxml-1.4.1/LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/webxml-1.4.1/WebxmlGrailsPlugin.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/webxml-1.4.1/application.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/webxml-1.4.1/dependencies.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/webxml-1.4.1/grails-app/conf/DefaultWebXmlConfig.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/webxml-1.4.1/plugin.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/webxml-1.4.1/scripts/CreateWebXmlConfig.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/webxml-1.4.1/scripts/_Events.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/webxml-1.4.1/src/groovy/grails/plugin/webxml/FilterManager.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/plugins/webxml-1.4.1/src/samples/_WebXmlConfig.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/projectFilesBackup/API_Grails.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/projectFilesBackup/API_Grails.ipr" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/projectFilesBackup/API_Grails.iws" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/src/groovy/com/privat/bki/apiserver/mappers/BanksRowMapper.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/src/groovy/com/privat/bki/apiserver/mappers/CurrencyRowMapper.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/src/groovy/com/privat/bki/apiserver/mappers/LoanInfoRowMapper.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/src/groovy/com/privat/bki/apiserver/mappers/PersonRowMapper.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/src/groovy/com/privat/bki/apiserver/parsers/AbstractParser.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/src/groovy/com/privat/bki/apiserver/parsers/PersonParser.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/src/groovy/com/privat/bki/apiserver/validators/ParamValidator.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/test/unit/api_grails/LoanDaoServiceSpec.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/test/unit/api_grails/LoanInformationControllerSpec.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/web-app/WEB-INF/applicationContext.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/web-app/WEB-INF/sitemesh.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/web-app/WEB-INF/tld/c.tld" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/web-app/WEB-INF/tld/fmt.tld" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/web-app/WEB-INF/tld/grails.tld" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/web-app/WEB-INF/tld/spring-form.tld" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/web-app/WEB-INF/tld/spring.tld" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/wrapper/grails-wrapper-runtime-2.4.4.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/wrapper/grails-wrapper.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/API_Grails/wrapper/springloaded-1.2.1.RELEASE.jar" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/DaoRestTemplateService.java" afterPath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/DaoRestTemplateService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/mappers/LoanInfoRowMapper.java" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/mappers/LoanInfoRowMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/web.xml" />
+    <list default="true" id="abda6744-f048-4d01-bdc3-6e5b6ad88420" name="Default" comment="renamed tha daoService to loanInfoService">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/controllers/StatisticController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticDaoImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/beans/DaoService.java" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/loans/LoanInfoService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/beans/dao/IBkiDao.java" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/loans/LoanInfoDao.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/beans/dao/JdbcDao.java" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/loans/LoanInfoDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/controllers/MainController.java" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/controllers/MainController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/spring/dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/spring/dispatcher-servlet.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bki_diplom.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -629,43 +68,13 @@
         <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/controllers/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding>
-                <element signature="e#2198#2199#0" expanded="false" />
-                <element signature="e#2254#2255#0" expanded="false" />
-                <element signature="e#2638#2639#0" expanded="false" />
-                <element signature="e#2690#2691#0" expanded="false" />
-                <element signature="e#3096#3097#0" expanded="false" />
-                <element signature="e#3163#3164#0" expanded="false" />
-                <element signature="e#3288#3289#0" expanded="false" />
-                <element signature="e#3364#3365#0" expanded="false" />
-                <element signature="e#3491#3492#0" expanded="false" />
-                <element signature="e#3538#3539#0" expanded="false" />
-                <element signature="e#3681#3682#0" expanded="false" />
-                <element signature="e#3736#3737#0" expanded="false" />
+                <element signature="e#0#3727#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1309#1310#0" expanded="true" />
+                <element signature="e#1339#1340#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application-security.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/spring/application-security.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
-              <folding>
-                <marker date="1430864376000" expanded="true" signature="832:893" placeholder="select usern..users..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/spring/applicationContext.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -680,24 +89,119 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DaoRestTemplateService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/DaoRestTemplateService.java">
+      <file leaf-file-name="StatisticController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/controllers/StatisticController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+              <caret line="26" column="80" selection-start-line="26" selection-start-column="80" selection-end-line="26" selection-end-column="80" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StatisticService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#581#582#0" expanded="true" />
+                <element signature="e#635#636#0" expanded="true" />
+                <element signature="e#688#689#0" expanded="true" />
+                <element signature="e#741#742#0" expanded="true" />
+                <element signature="e#810#811#0" expanded="true" />
+                <element signature="e#860#861#0" expanded="true" />
+                <element signature="e#912#913#0" expanded="true" />
+                <element signature="e#961#962#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoanInfoService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/loans/LoanInfoService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoanInfoRowMapper.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/mappers/LoanInfoRowMapper.java">
+      <file leaf-file-name="StatisticDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.71611255">
-              <caret line="51" column="38" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StatisticDaoImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5192308">
+              <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#662#663#0" expanded="true" />
+                <element signature="e#689#690#0" expanded="true" />
+                <element signature="e#769#770#0" expanded="true" />
+                <element signature="e#796#797#0" expanded="true" />
+                <element signature="e#859#860#0" expanded="true" />
+                <element signature="e#886#887#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoanInfoDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/loans/LoanInfoDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+              <folding>
+                <marker date="1430943840000" expanded="true" signature="1833:1878" placeholder="select * fro..client_info_view..." />
+                <marker date="1430943840000" expanded="true" signature="2093:2123" placeholder="SELECT * FRO..client_info_view..." />
+                <marker date="1430943840000" expanded="true" signature="2296:2470" placeholder="SELECT TOP 1..." />
+                <marker date="1430943840000" expanded="true" signature="3021:3436" placeholder="SELECT name,..client_info_view..." />
+                <marker date="1430943840000" expanded="true" signature="4274:4422" placeholder="INSERT INTO ..." />
+                <marker date="1430943840000" expanded="true" signature="5274:5446" placeholder="INSERT INTO ..." />
+                <marker date="1430943840000" expanded="true" signature="6517:6560" placeholder="update loan ..." />
+                <marker date="1430943840000" expanded="true" signature="7434:7481" placeholder="update clien..." />
+                <marker date="1430943840000" expanded="true" signature="7894:7931" placeholder="SELECT bank_..bank..." />
+                <marker date="1430943840000" expanded="true" signature="8241:8290" placeholder="SELECT curre..currency..." />
+                <marker date="1430943840000" expanded="true" signature="8597:8660" placeholder="INSERT INTO ..." />
+                <marker date="1430943840000" expanded="true" signature="8838:8889" placeholder="INSERT INTO ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoanInfoDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/loans/LoanInfoDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dispatcher-servlet.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/spring/dispatcher-servlet.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-31.8">
+              <caret line="53" column="8" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -710,6 +214,7 @@
         <option value="JavaScript File" />
         <option value="spring.security.config" />
         <option value="Jsp File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -735,17 +240,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/config/WebAppConfig.groovy" />
-        <option value="$PROJECT_DIR$/WebAngular/app/views/loanInfo/loanInfo.js" />
-        <option value="$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/LoginScene.fxml" />
-        <option value="$PROJECT_DIR$/APIServer/src/main/webapp/pages/logoutSuccess.jsp" />
-        <option value="$PROJECT_DIR$/APIServer/src/main/webapp/pages/css/styles.css" />
-        <option value="$PROJECT_DIR$/WebAngular/app/views/logining/logining.html" />
-        <option value="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/Account.java" />
-        <option value="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/RestAuthClient.java" />
-        <option value="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/RestAuthClient.groovy" />
-        <option value="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/login/LoginController.groovy" />
-        <option value="$PROJECT_DIR$/DesktopApp/src/main/resources/spring/spring-config.xml" />
         <option value="$PROJECT_DIR$/DesktopApp/pom.xml" />
         <option value="$PROJECT_DIR$/BusinessInterfaces/pom.xml" />
         <option value="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/utils/LocalDateAdapter.groovy" />
@@ -778,14 +272,25 @@
         <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/beans/DaoService.java" />
         <option value="$PROJECT_DIR$/API/src/main/webapp/WEB-INF/pages/index.jsp" />
         <option value="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/spring/application-security.xml" />
-        <option value="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/spring/dispatcher-servlet.xml" />
-        <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/controllers/MainController.java" />
         <option value="$PROJECT_DIR$/APIServer/pom.xml" />
         <option value="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/spring/dao-config.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/DaoRestTemplateService.java" />
         <option value="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/mappers/LoanInfoRowMapper.java" />
+        <option value="$PROJECT_DIR$/DesktopApp/src/main/resources/spring/spring-config.xml" />
+        <option value="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/DaoRestTemplateService.java" />
+        <option value="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/spring/dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/dao/DaoService.java" />
+        <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/dao/JdbcDao.java" />
+        <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/dao/LoansInfoDaoImpl.java" />
+        <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/dao/LoansInfoService.java" />
+        <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/controllers/MainController.java" />
+        <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/loans/LoanInfoDaoImpl.java" />
+        <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/loans/LoanInfoService.java" />
+        <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticService.java" />
+        <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticDao.java" />
+        <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/controllers/StatisticController.java" />
+        <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticDaoImpl.java" />
       </list>
     </option>
   </component>
@@ -842,6 +347,20 @@
         <PATH_ELEMENT>
           <option name="myItemId" value="APIServer" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="APIServer" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Run Configurations" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RunConfigurationsNode" />
         </PATH_ELEMENT>
       </PATH>
       <PATH>
@@ -965,6 +484,40 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bki_javafx_maven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bki_javafx_maven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DesktopApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1040,6 +593,82 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="DesktopApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="desktopapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bki_javafx_maven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bki_javafx_maven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DesktopApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="desktopapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="login" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bki_javafx_maven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bki_javafx_maven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="APIServer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1092,11 +721,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1119,6 +744,170 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apiserver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="statistic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bki_javafx_maven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bki_javafx_maven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="APIServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apiserver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="loans" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bki_javafx_maven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bki_javafx_maven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="APIServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apiserver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bki_javafx_maven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bki_javafx_maven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="APIServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apiserver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bki_javafx_maven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bki_javafx_maven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="APIServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apiserver" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2288,7 +2077,7 @@
       <method />
     </configuration>
     <configuration default="false" name="ApiServer-7" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.59" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8190/loans" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8190/api/loans" />
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="APIServer:war">
@@ -2440,18 +2229,44 @@
         </option>
       </method>
     </configuration>
-    <list size="5">
+    <configuration default="false" name="APIServer [install]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/APIServer" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
       <item index="2" class="java.lang.String" itemvalue="Maven.DesktopApp [clean,install,exec:java...]" />
       <item index="3" class="java.lang.String" itemvalue="Tomcat Server.ApiServer-7" />
       <item index="4" class="java.lang.String" itemvalue="Tomcat Server.ApiServer-8" />
+      <item index="5" class="java.lang.String" itemvalue="Maven.APIServer [install]" />
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-        <item index="2" class="java.lang.String" itemvalue="Maven.DesktopApp [clean,install,exec:java...]" />
+        <item index="0" class="java.lang.String" itemvalue="Maven.DesktopApp [clean,install,exec:java...]" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -2531,7 +2346,7 @@
       <workItem from="1430694380038" duration="2068000" />
       <workItem from="1430768476517" duration="2781000" />
       <workItem from="1430861551788" duration="3982000" />
-      <workItem from="1430865613085" duration="1109000" />
+      <workItem from="1430865613085" duration="7276000" />
     </task>
     <task id="LOCAL-00001" summary="Почти готовый рест. Работает для json, почти работает под xml">
       <created>1425498065232</created>
@@ -2623,11 +2438,23 @@
       <option name="project" value="LOCAL" />
       <updated>1430865515005</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="the api is working again!  removed API_Grails project from parent maven project because it doesn't need again">
+      <created>1430866848806</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1430866848806</updated>
+    </task>
+    <task id="LOCAL-00017" summary="DesktopClient works, but only for ../api/loans. Another requests should be rewrite">
+      <created>1430867263843</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1430867263843</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="218639000" />
+    <option name="totallyTimeSpent" value="224806000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -2656,12 +2483,12 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32619774" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20457797" sideWeight="0.4990099" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38308457" sideWeight="0.4936034" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38308457" sideWeight="0.4936034" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22828785" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47885573" sideWeight="0.57439196" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.47885573" sideWeight="0.57439196" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.54850745" sideWeight="0.49499285" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22031474" sideWeight="0.5009901" order="6" side_tool="true" content_ui="tabs" />
@@ -2709,7 +2536,9 @@
     <MESSAGE value="добавил в коммит проектный хлам" />
     <MESSAGE value="убрал груви в связи с глюками спринга при работе с контроллером на груви" />
     <MESSAGE value="some changed url mapping on loans's controller. Connected spring security, but it doesn't active" />
-    <option name="LAST_COMMIT_MESSAGE" value="some changed url mapping on loans's controller. Connected spring security, but it doesn't active" />
+    <MESSAGE value="the api is working again!  removed API_Grails project from parent maven project because it doesn't need again" />
+    <MESSAGE value="DesktopClient works, but only for ../api/loans. Another requests should be rewrite" />
+    <option name="LAST_COMMIT_MESSAGE" value="DesktopClient works, but only for ../api/loans. Another requests should be rewrite" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2726,7 +2555,7 @@
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/beans/dao/JdbcDao.java</url>
+          <url>file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/loans/LoanInfoDaoImpl.java</url>
           <line>127</line>
           <properties />
           <option name="timeStamp" value="52" />
@@ -2832,18 +2661,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
           <folding>
-            <element signature="e#2198#2199#0" expanded="false" />
-            <element signature="e#2254#2255#0" expanded="false" />
-            <element signature="e#2638#2639#0" expanded="false" />
-            <element signature="e#2690#2691#0" expanded="false" />
-            <element signature="e#3096#3097#0" expanded="false" />
-            <element signature="e#3163#3164#0" expanded="false" />
-            <element signature="e#3288#3289#0" expanded="false" />
-            <element signature="e#3364#3365#0" expanded="false" />
-            <element signature="e#3491#3492#0" expanded="false" />
-            <element signature="e#3538#3539#0" expanded="false" />
-            <element signature="e#3681#3682#0" expanded="false" />
-            <element signature="e#3736#3737#0" expanded="false" />
+            <element signature="e#0#3727#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1309#1310#0" expanded="true" />
+            <element signature="e#1339#1340#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2867,13 +2688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/resources/spring/spring-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -2942,13 +2756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/login/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="12" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/RestAuthClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2994,23 +2801,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/beans/dao/JdbcDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="134" column="18" selection-start-line="134" selection-start-column="18" selection-end-line="134" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/beans/dao/IBkiDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="60" column="6" selection-start-line="60" selection-start-column="6" selection-end-line="60" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/mappers/CurrencyRowMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3032,16 +2822,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/beans/DaoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3092,28 +2872,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
           <folding>
-            <marker date="1430864376000" expanded="true" signature="832:893" placeholder="select usern..users..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/controllers/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding>
-            <element signature="e#2198#2199#0" expanded="false" />
-            <element signature="e#2254#2255#0" expanded="false" />
-            <element signature="e#2638#2639#0" expanded="false" />
-            <element signature="e#2690#2691#0" expanded="false" />
-            <element signature="e#3096#3097#0" expanded="false" />
-            <element signature="e#3163#3164#0" expanded="false" />
-            <element signature="e#3288#3289#0" expanded="false" />
-            <element signature="e#3364#3365#0" expanded="false" />
-            <element signature="e#3491#3492#0" expanded="false" />
-            <element signature="e#3538#3539#0" expanded="false" />
-            <element signature="e#3681#3682#0" expanded="false" />
-            <element signature="e#3736#3737#0" expanded="false" />
+            <marker date="1430864376000" expanded="true" signature="-1:-1" placeholder="select usern..users..." />
           </folding>
         </state>
       </provider>
@@ -3134,10 +2893,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/spring/dispatcher-servlet.xml">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5955056">
-          <caret line="31" column="83" selection-start-line="31" selection-start-column="83" selection-end-line="31" selection-end-column="83" />
+        <state vertical-scroll-proportion="0.57544756">
+          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/mappers/LoanInfoRowMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="48" selection-start-line="53" selection-start-column="48" selection-end-line="53" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/login/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="12" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/resources/spring/spring-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55128205">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -3145,7 +2930,7 @@
     <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/DaoRestTemplateService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+          <caret line="100" column="21" selection-start-line="100" selection-start-column="21" selection-end-line="100" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -3158,20 +2943,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/spring/dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57544756">
-          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+        <state vertical-scroll-proportion="-31.8">
+          <caret line="53" column="8" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/mappers/LoanInfoRowMapper.java">
+    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/loans/LoanInfoDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.71611255">
-          <caret line="51" column="38" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/controllers/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#3727#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1309#1310#0" expanded="true" />
+            <element signature="e#1339#1340#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/loans/LoanInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/loans/LoanInfoDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding>
+            <marker date="1430943840000" expanded="true" signature="1833:1878" placeholder="select * fro..client_info_view..." />
+            <marker date="1430943840000" expanded="true" signature="2093:2123" placeholder="SELECT * FRO..client_info_view..." />
+            <marker date="1430943840000" expanded="true" signature="2296:2470" placeholder="SELECT TOP 1..." />
+            <marker date="1430943840000" expanded="true" signature="3021:3436" placeholder="SELECT name,..client_info_view..." />
+            <marker date="1430943840000" expanded="true" signature="4274:4422" placeholder="INSERT INTO ..." />
+            <marker date="1430943840000" expanded="true" signature="5274:5446" placeholder="INSERT INTO ..." />
+            <marker date="1430943840000" expanded="true" signature="6517:6560" placeholder="update loan ..." />
+            <marker date="1430943840000" expanded="true" signature="7434:7481" placeholder="update clien..." />
+            <marker date="1430943840000" expanded="true" signature="7894:7931" placeholder="SELECT bank_..bank..." />
+            <marker date="1430943840000" expanded="true" signature="8241:8290" placeholder="SELECT curre..currency..." />
+            <marker date="1430943840000" expanded="true" signature="8597:8660" placeholder="INSERT INTO ..." />
+            <marker date="1430943840000" expanded="true" signature="8838:8889" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="49" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
+            <element signature="e#635#636#0" expanded="true" />
+            <element signature="e#688#689#0" expanded="true" />
+            <element signature="e#741#742#0" expanded="true" />
+            <element signature="e#810#811#0" expanded="true" />
+            <element signature="e#860#861#0" expanded="true" />
+            <element signature="e#912#913#0" expanded="true" />
+            <element signature="e#961#962#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/controllers/StatisticController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="80" selection-start-line="26" selection-start-column="80" selection-end-line="26" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5192308">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#662#663#0" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#769#770#0" expanded="true" />
+            <element signature="e#796#797#0" expanded="true" />
+            <element signature="e#859#860#0" expanded="true" />
+            <element signature="e#886#887#0" expanded="true" />
           </folding>
         </state>
       </provider>

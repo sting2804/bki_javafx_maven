@@ -1,4 +1,4 @@
-package com.privat.bki.apiserver.spring.beans.dao;
+package com.privat.bki.apiserver.spring.services.loans;
 import com.privat.bki.apiserver.mappers.BanksRowMapper;
 import com.privat.bki.apiserver.mappers.CurrencyRowMapper;
 import com.privat.bki.apiserver.mappers.LoanInfoRowMapper;
@@ -27,11 +27,11 @@ import java.util.Map;
 /**
  *
  */
-@Component("jdbcDao")
+@Component("loanInfoDao")
 @Service
-public class JdbcDao implements IBkiDao {
+public class LoanInfoDaoImpl implements LoanInfoDao {
 
-    private static final Logger log = Logger.getLogger(JdbcDao.class);
+    private static final Logger log = Logger.getLogger(LoanInfoDaoImpl.class);
 
     private List<LoanInfo> data;
     private Map<String, String> banks;
@@ -41,7 +41,7 @@ public class JdbcDao implements IBkiDao {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
-    public JdbcDao() {
+    public LoanInfoDaoImpl() {
         dateConverter = new SqlDateConverter();
         this.data = new ArrayList<>();
         this.currencies = new HashMap<>();

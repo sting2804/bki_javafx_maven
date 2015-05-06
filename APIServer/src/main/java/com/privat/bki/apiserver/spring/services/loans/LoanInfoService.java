@@ -1,6 +1,5 @@
-package com.privat.bki.apiserver.spring.beans;
+package com.privat.bki.apiserver.spring.services.loans;
 
-import com.privat.bki.apiserver.spring.beans.dao.IBkiDao;
 import com.privat.bki.business.entities.Bank;
 import com.privat.bki.business.entities.Currency;
 import com.privat.bki.business.entities.LoanInfo;
@@ -17,12 +16,13 @@ import java.util.Map;
 /**
  * Created by sting on 3/1/15.
  */
-@Component(value = "daoService")
+
 @Service
-public class DaoService {
+public class LoanInfoService {
+
+    @Qualifier("loanInfoDao")
     @Autowired
-    @Qualifier("jdbcDao")
-    private IBkiDao dao;
+    private LoanInfoDao dao;
 
     public List<LoanInfo> getRecord(int id) {
         return dao.getRecord(id);

@@ -1,4 +1,4 @@
-package com.privat.bki.apiserver.spring.beans.dao;
+package com.privat.bki.apiserver.spring.services.loans;
 
 import com.privat.bki.business.entities.Bank;
 import com.privat.bki.business.entities.Currency;
@@ -12,7 +12,7 @@ import java.util.Map;
 /**
  * Created by sting on 1/23/15.
  */
-public interface IBkiDao {
+public interface LoanInfoDao {
     List<LoanInfo> getRecord(int id);
     /**
      * получение всех записей из базы
