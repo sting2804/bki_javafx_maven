@@ -1,15 +1,11 @@
 package com.privat.bki.apiserver.spring.services.statistic;
 
-import com.privat.bki.apiserver.mappers.BanksRowMapper;
 import com.privat.bki.apiserver.mappers.PreferredBankRowMapper;
 import com.privat.bki.business.entities.Bank;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.PreparedStatementSetter;
 import org.springframework.stereotype.Component;
 
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -30,10 +26,11 @@ public class StatisticDaoImpl implements StatisticDao {
     }
 
     @Override
-    public Map<Integer, Bank> theMostPreferredBank(int... years) {
-        Map<Integer, Bank> banks = new LinkedHashMap<>();
+    public Map theMostPreferredBank(int... years) {
+        Map banks = new LinkedHashMap<>();
         for(int year : years){
-            banks.put(year, theMostPreferredBank(year));
+            banks.put("year", year);
+            banks.put("bank", theMostPreferredBank(year));
         }
         return banks;
     }
@@ -56,8 +53,8 @@ public class StatisticDaoImpl implements StatisticDao {
                         ")";
         data = jdbcTemplate.query(query,
                 preparedStatement -> {
-                    preparedStatement.setString(1, String.valueOf(year));
-                    preparedStatement.setString(2, String.valueOf(year));
+                    preparedStatement.setInt(1, year);
+                    preparedStatement.setInt(2, year);
                 }, new PreferredBankRowMapper()
         );
         if(data!=null && data.size()>0)

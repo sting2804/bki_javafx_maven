@@ -6,9 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import java.util.HashMap;
 import java.util.Map;
 
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
@@ -29,9 +29,9 @@ public class StatisticController {
      * @param years строка вида ../preferredBank?years=2013,3013,...
      * @return
      */
-    @RequestMapping(value = "/preferredBank", method = GET)
+    @RequestMapping(value = "/preferredBank", method = GET, params = "years")
     @ResponseBody
-    public Map<Integer,Bank> getTheMostPreferredBank(String years){
+    public Map getTheMostPreferredBank(@RequestParam (value = "years") String years){
         //сделать сплит по запятым, преобразовать к инту и вызвать метод сервиса
         String[] splitedYears = years.split(",");
         int [] integerYears = new int[splitedYears.length];

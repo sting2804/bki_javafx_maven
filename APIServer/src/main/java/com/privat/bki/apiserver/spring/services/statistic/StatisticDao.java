@@ -12,7 +12,7 @@ public interface StatisticDao {
      * вытягивает с сервера статистику по использованию банков в заданые года
      * @return возвращает мапку год-банк
      */
-    Map<Integer,Bank> theMostPreferredBank(int... years);
+    Map theMostPreferredBank(int... years);
 
     /**
      * вытягивает с сервера статистику по использованию банков для указанного года
