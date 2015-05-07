@@ -1,6 +1,7 @@
 package com.privat.bki.apiserver.spring.services.statistic;
 
 import com.privat.bki.business.entities.Bank;
+import com.sun.jdi.IncompatibleThreadStateException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
@@ -19,7 +20,7 @@ public class StatisticService {
     @Autowired
     StatisticDao dao;
 
-    public Map<Integer, Bank> getTheMostPreferredBank(int... years) {
+    public Map<Integer, Bank> getTheMostPreferredBank(int[] years) {
         return dao.theMostPreferredBank(years);
     }
 
@@ -27,7 +28,7 @@ public class StatisticService {
         return dao.theMostPreferredBank(year);
     }
 
-    public Map<Integer, Map<String,Integer>> getTheMostCreditAge(int... years) {
+    public Map<Integer, Map<String,Integer>> getTheMostCreditAge(int[] years) {
         return dao.theMostCreditAge(years);
     }
 

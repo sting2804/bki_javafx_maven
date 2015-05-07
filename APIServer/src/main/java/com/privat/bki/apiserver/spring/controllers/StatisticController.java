@@ -1,5 +1,9 @@
 package com.privat.bki.apiserver.spring.controllers;
 
+import com.privat.bki.apiserver.spring.services.statistic.StatisticService;
+import com.privat.bki.business.entities.Bank;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -16,6 +20,10 @@ import static org.springframework.web.bind.annotation.RequestMethod.GET;
 @RequestMapping(value = "/statistic")
 public class StatisticController {
 
+    @Qualifier("statisticService")
+    @Autowired
+    StatisticService statisticService;
+
     /**
      *
      * @param years строка вида ../preferredBank?years=2013,3013,...
@@ -23,8 +31,19 @@ public class StatisticController {
      */
     @RequestMapping(value = "/preferredBank", method = GET)
     @ResponseBody
-    public Map<String,String> getTheMostPreferredBank(String years){
+    public Map<Integer,Bank> getTheMostPreferredBank(String years){
         //сделать сплит по запятым, преобразовать к инту и вызвать метод сервиса
-        return new HashMap<>();
+        String[] splitedYears = years.split(",");
+        int [] integerYears = new int[splitedYears.length];
+        int i=0;
+        try {
+            for (String year : splitedYears) {
+                integerYears[i++] = Integer.parseInt(year);
+            }
+        }
+        catch (NumberFormatException e){
+            e.printStackTrace();
+        }
+        return statisticService.getTheMostPreferredBank(integerYears);
     }
 }
