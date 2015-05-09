@@ -2,6 +2,7 @@ package com.privat.bki.apiserver.spring.services.statistic;
 
 import com.privat.bki.business.entities.Bank;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -12,7 +13,7 @@ public interface StatisticDao {
      * вытягивает с сервера статистику по использованию банков в заданые года
      * @return возвращает мапку год-банк
      */
-    Map theMostPreferredBank(int... years);
+    List<Map> theMostPreferredBank(int... years);
 
     /**
      * вытягивает с сервера статистику по использованию банков для указанного года
@@ -24,11 +25,11 @@ public interface StatisticDao {
      * вытягивает с сервера статистику по самым берущим кредиты возрастам по годам
      * @return возвращает мапку классификация возраста-возраст
      */
-    Map<Integer, Map<String,Integer>> theMostCreditAge(int... years);
+    Map<Integer, String> theMostCreditAge(int... years);
     /**
      * вытягивает с сервера статистику по самым берущим кредиты возрастам за год
      * @return возвращает мапку классификация возраста-возраст
      */
-    Map<String, Integer> theMostCreditAge(int year);
+    String theMostCreditAge(int year);
 
 }

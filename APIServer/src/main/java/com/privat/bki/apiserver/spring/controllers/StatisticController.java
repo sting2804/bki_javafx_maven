@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.List;
 import java.util.Map;
 
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
@@ -31,7 +32,7 @@ public class StatisticController {
      */
     @RequestMapping(value = "/preferredBank", method = GET, params = "years")
     @ResponseBody
-    public Map getTheMostPreferredBank(@RequestParam (value = "years") String years){
+    public List<Map> getTheMostPreferredBank(@RequestParam(value = "years") String years){
         //сделать сплит по запятым, преобразовать к инту и вызвать метод сервиса
         String[] splitedYears = years.split(",");
         int [] integerYears = new int[splitedYears.length];

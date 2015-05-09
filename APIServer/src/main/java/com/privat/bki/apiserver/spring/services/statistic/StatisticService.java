@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -18,7 +19,7 @@ public class StatisticService {
     @Autowired
     StatisticDao dao;
 
-    public Map getTheMostPreferredBank(int[] years) {
+    public List<Map> getTheMostPreferredBank(int[] years) {
         return dao.theMostPreferredBank(years);
     }
 
@@ -26,11 +27,11 @@ public class StatisticService {
         return dao.theMostPreferredBank(year);
     }
 
-    public Map<Integer, Map<String,Integer>> getTheMostCreditAge(int[] years) {
+    public Map<Integer, String> getTheMostCreditAge(int[] years) {
         return dao.theMostCreditAge(years);
     }
 
-    public Map<String,Integer> getTheMostCreditAge(int year) {
+    public String getTheMostCreditAge(int year) {
         return dao.theMostCreditAge(year);
     }
 }
