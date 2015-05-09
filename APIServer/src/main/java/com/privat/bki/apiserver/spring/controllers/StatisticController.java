@@ -26,7 +26,7 @@ public class StatisticController {
     StatisticService statisticService;
 
     /**
-     *
+     * статистика самых предпочитаемых банков по годам
      * @param years строка вида ../preferredBank?years=2013,3013,...
      * @return
      */
@@ -56,7 +56,6 @@ public class StatisticController {
     @RequestMapping(value = "/creditAge", method = GET, params = "years")
     @ResponseBody
     public List<Map> getTheMostCreditAge(@RequestParam(value = "years") String years){
-        //сделать сплит по запятым, преобразовать к инту и вызвать метод сервиса
         String[] splitedYears = years.split(",");
         int [] integerYears = new int[splitedYears.length];
         int i=0;
