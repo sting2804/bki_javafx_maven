@@ -142,7 +142,7 @@ public class MainWindowController implements Initializable {
                 setGraphic(null);
                 if (item != null) {
                     SimpleStringProperty property = new SimpleStringProperty();
-                    DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
+                    DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd");
                     property.setValue(dateFormat.format(converter.to(item.getBirthday())));
                     Label bdLabel = new Label(property.get());
                     setGraphic(bdLabel);
@@ -175,13 +175,13 @@ public class MainWindowController implements Initializable {
         initAmountColumn.setCellValueFactory(new PropertyValueFactory<>("initAmount"));
         initDateColumn.setCellValueFactory(item -> {
             ObjectProperty property = new SimpleObjectProperty();
-            DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
+            DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd");
             property.setValue(dateFormat.format(converter.to(item.getValue().getInitDate())));
             return property;
         });
         finishDateColumn.setCellValueFactory(item -> {
             ObjectProperty property = new SimpleObjectProperty();
-            DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
+            DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd");
             try {
                 property.setValue(dateFormat.format(converter.to(item.getValue().getFinishDate())));
             } catch (Exception ignored) {

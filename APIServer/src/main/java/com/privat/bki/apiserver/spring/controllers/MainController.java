@@ -79,25 +79,25 @@ public class MainController {
         return loanInfoService.modify(loanId, clientId, newInfo);
     }
 
-    @RequestMapping(value = "/bank", method = GET)
+    @RequestMapping(value = "/banks", method = GET)
     @ResponseBody
     public BankMapWrapper selectBanks() {
         return new BankMapWrapper(loanInfoService.getBanksMap());
     }
 
-    @RequestMapping(value = "/currency", method = GET)
+    @RequestMapping(value = "/currencies", method = GET)
     @ResponseBody
     public CurrencyMapWrapper selectCurrencies() {
         return new CurrencyMapWrapper(loanInfoService.getCurrenciesMap());
     }
 
-    @RequestMapping(value = "/bank", method = POST)
+    @RequestMapping(value = "/banks", method = POST)
     @ResponseBody
     public boolean insertBank(@RequestBody Bank bank) {
         return loanInfoService.addBank(bank);
     }
 
-    @RequestMapping(value = "/currency", method = POST)
+    @RequestMapping(value = "/currencies", method = POST)
     @ResponseBody
     public boolean insertCurrency(@RequestBody Currency currency) {
         return loanInfoService.addCurrency(currency);

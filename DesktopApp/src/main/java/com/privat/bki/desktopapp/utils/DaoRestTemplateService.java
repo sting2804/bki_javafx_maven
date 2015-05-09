@@ -101,7 +101,7 @@ public class DaoRestTemplateService {
                     baseUrl + "/all", HttpMethod.GET, entity,
                     LoanInfoListWrapper.class);*/
             ResponseEntity<LoanInfoListWrapper> response = restTemplate.getForEntity(
-                    baseUrl+"/loans",LoanInfoListWrapper.class);
+                    baseUrl+"/loans", LoanInfoListWrapper.class);
             data = response.getBody();
         } catch (Exception e) {
             e.printStackTrace();
@@ -116,7 +116,7 @@ public class DaoRestTemplateService {
         try {
             HttpEntity<Person> client = new HttpEntity<>(person);
             ResponseEntity<LoanInfoListWrapper> response = restTemplate.postForEntity(
-                    baseUrl + "/get/client", client, LoanInfoListWrapper.class);
+                    baseUrl + "/loans/byClient", client, LoanInfoListWrapper.class);
             data = response.getBody();
         } catch (Exception e) {
             e.printStackTrace();
@@ -129,7 +129,7 @@ public class DaoRestTemplateService {
         try {
             HttpEntity<Person> client = new HttpEntity<>(person);
             res = restTemplate.postForObject(
-                    baseUrl + "/get/is-exists", client, Integer.class);
+                    baseUrl + "/loans/isExists", client, Integer.class);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -140,7 +140,7 @@ public class DaoRestTemplateService {
         BankMapWrapper map = null;
         try {
             ResponseEntity<BankMapWrapper> response = restTemplate.getForEntity(
-                    baseUrl + "/get/banks",
+                    baseUrl + "/banks",
                     BankMapWrapper.class);
             map = response.getBody();
         } catch (Exception e) {
@@ -153,7 +153,7 @@ public class DaoRestTemplateService {
         CurrencyMapWrapper map = null;
         try {
             ResponseEntity<CurrencyMapWrapper> response = restTemplate.getForEntity(
-                    baseUrl + "/get/currencies",
+                    baseUrl + "/currencies",
                     CurrencyMapWrapper.class);
             map = response.getBody();
         } catch (Exception e) {
@@ -166,7 +166,7 @@ public class DaoRestTemplateService {
         Boolean res = false;
         try {
             res = restTemplate.postForObject(
-                    baseUrl + "/new/info/{clientId}", info, Boolean.class, clientId);
+                    baseUrl + "/loans/byClient/{clientId}", info, Boolean.class, clientId);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -177,7 +177,7 @@ public class DaoRestTemplateService {
         Boolean res = false;
         try {
             res = restTemplate.postForObject(
-                    baseUrl + "/new/client", info, Boolean.class);
+                    baseUrl + "/client", info, Boolean.class);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -191,21 +191,22 @@ public class DaoRestTemplateService {
     }
 
     public boolean modify(int loanId, int clientId, LoanInfo newInfo) {
-        Boolean res = false;
         try {
-            res = restTemplate.postForObject(
-                    baseUrl + "/update/info/{loanId}/{clientId}", newInfo, Boolean.class, loanId, clientId);
+            HttpEntity<LoanInfo> info = new HttpEntity<>(newInfo);
+            ResponseEntity <Boolean> res = restTemplate.exchange(
+                    baseUrl + "/loans/{loanId}/{clientId}", HttpMethod.PUT, info, Boolean.class, loanId, clientId);
+            return res.getBody();
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return res;
+        return false;
     }
 
     public boolean addBank(Bank bank) {
         Boolean res = false;
         try {
             res = restTemplate.postForObject(
-                    baseUrl + "/new/bank", bank, Boolean.class);
+                    baseUrl + "/banks", bank, Boolean.class);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -216,7 +217,7 @@ public class DaoRestTemplateService {
         Boolean res = false;
         try {
             res = restTemplate.postForObject(
-                    baseUrl + "/new/currency", currency, Boolean.class);
+                    baseUrl + "/currencies", currency, Boolean.class);
         } catch (Exception e) {
             e.printStackTrace();
         }
