@@ -47,4 +47,29 @@ public class StatisticController {
         }
         return statisticService.getTheMostPreferredBank(integerYears);
     }
+
+    /**
+     * статистика самых кредитируемых возрастов по годам
+     * @param years строка вида ../creditAge?years=2013,3013,...
+     * @return
+     */
+    @RequestMapping(value = "/creditAge", method = GET, params = "years")
+    @ResponseBody
+    public List<Map> getTheMostCreditAge(@RequestParam(value = "years") String years){
+        //сделать сплит по запятым, преобразовать к инту и вызвать метод сервиса
+        String[] splitedYears = years.split(",");
+        int [] integerYears = new int[splitedYears.length];
+        int i=0;
+        try {
+            for (String year : splitedYears) {
+                integerYears[i++] = Integer.parseInt(year);
+            }
+        }
+        catch (NumberFormatException e){
+            e.printStackTrace();
+        }
+        return statisticService.getTheMostCreditAge(integerYears);
+    }
+
+
 }

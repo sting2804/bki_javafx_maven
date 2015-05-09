@@ -27,7 +27,7 @@ public class StatisticService {
         return dao.theMostPreferredBank(year);
     }
 
-    public Map<Integer, String> getTheMostCreditAge(int[] years) {
+    public List<Map> getTheMostCreditAge(int[] years) {
         return dao.theMostCreditAge(years);
     }
 

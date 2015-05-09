@@ -27,7 +27,7 @@ public class StatisticDaoImpl implements StatisticDao {
         List<Map> bankList = new ArrayList<>();
         Map <String,Object> banks;
         for(int year : years){
-            banks = new HashMap<>();
+            banks = new LinkedHashMap<>();
             banks.put("year", year);
             banks.put("bank", theMostPreferredBank(year));
             bankList.add(banks);
@@ -51,7 +51,7 @@ public class StatisticDaoImpl implements StatisticDao {
                         "WHERE DATEPART(year,l2.init_date)=:year " +
                         "GROUP BY b2.bank_code" +
                         ")";
-        Map<String, Integer> params = new HashMap<>();
+        Map<String, Integer> params = new LinkedHashMap<>();
         params.put("year",year);
         data = jdbcTemplate.query(query, params, new PreferredBankRowMapper());
         if(data!=null && data.size()>0)
@@ -60,10 +60,14 @@ public class StatisticDaoImpl implements StatisticDao {
     }
 
     @Override
-    public Map<Integer, String> theMostCreditAge(int... years) {
-        Map<Integer, String> ages = new LinkedHashMap<>();
+    public List<Map> theMostCreditAge(int... years) {
+        List<Map> ages = new ArrayList<>();
+        Map age;
         for(int year : years){
-            ages.put(year, theMostCreditAge(year));
+            age = new LinkedHashMap<>();
+            age.put("year", year);
+            age.put("age", theMostCreditAge(year));
+            ages.add(age);
         }
         return ages;
     }
@@ -72,7 +76,8 @@ public class StatisticDaoImpl implements StatisticDao {
     public String theMostCreditAge(int year) {
         String query =
                 "select (" +
-                        "case when young>=middle_I and young>=middle_II and young>=advanced and young>=senium and young>=long_liver then 'young' " +
+                        "case when young=0 and middle_I=0 and middle_II=0 and advanced=0 and senium=0 and long_liver=0 then 'neither' " +
+                        "       when young>=middle_I and young>=middle_II and young>=advanced and young>=senium and young>=long_liver then 'young' " +
                         "       when middle_I>young and middle_I>=middle_II and middle_I>=advanced and middle_I>=senium and middle_I>=long_liver then 'middle_I' " +
                         "       when middle_II>young and middle_II>middle_I and middle_II>=advanced and middle_II>=senium and middle_II>=long_liver then 'middle_II' " +
                         "       when advanced>young and advanced>middle_I and advanced>middle_II and advanced>=senium and advanced>=long_liver then 'advanced' " +
@@ -117,7 +122,7 @@ public class StatisticDaoImpl implements StatisticDao {
                         "and c.gender='woman' " +
                         ") as ages " +
                         ") as grouped ";
-        Map <String,Integer> namedParameters = new HashMap<>();
+        Map <String,Integer> namedParameters = new LinkedHashMap<>();
         namedParameters.put("year",year);
         String data = jdbcTemplate.queryForObject(query, namedParameters, String.class);
 
