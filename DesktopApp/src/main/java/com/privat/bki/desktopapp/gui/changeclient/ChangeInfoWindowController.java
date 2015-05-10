@@ -1,8 +1,6 @@
 package com.privat.bki.desktopapp.gui.changeclient;
-import com.privat.bki.business.entities.Bank;
+import com.privat.bki.business.entities.*;
 import com.privat.bki.business.entities.Currency;
-import com.privat.bki.business.entities.LoanInfo;
-import com.privat.bki.business.entities.Person;
 import com.privat.bki.desktopapp.gui.main.MainModel;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -16,8 +14,8 @@ import javafx.util.StringConverter;
 import java.net.URL;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.Map;
-import java.util.ResourceBundle;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * @author sting
@@ -27,7 +25,7 @@ public class ChangeInfoWindowController implements Initializable {
     @FXML
     public Button applyButton;
     @FXML
-    public ComboBox<String> bankCodeComboBox;
+    public ComboBox<String> bankNameComboBox;
     @FXML
     public ComboBox<String> currencyCodeComboBox;
     @FXML
@@ -48,15 +46,19 @@ public class ChangeInfoWindowController implements Initializable {
     public DatePicker birthdayDatePicker;
     @FXML
     public CheckBox arrearsCheckBox;
+    @FXML
+    public ComboBox<String> genderComboBox;
 
     private Person person;
     private LoanInfo searchInfo;
 
-    private ObservableList<String> bankCodes;
+    private ObservableList<String> bankNames;
     private ObservableList<String> currencyCodes;
+    private ObservableList<String> genderCodes;
 
     private Map<String, String> bankMap;
     private Map<String, String> currencyMap;
+    private Map<String,String> genderMap;
     private MainModel mainModel;
 
 
@@ -69,13 +71,16 @@ public class ChangeInfoWindowController implements Initializable {
     }
 
     private void initCollections() {
+        genderMap = mainModel.getGenderMap();
         bankMap = mainModel.getBankMap();
         currencyMap = mainModel.getCurrencyMap();
         if (bankMap == null || currencyMap == null) return;
-        bankCodes = FXCollections.observableArrayList(bankMap.keySet());
+        bankNames = FXCollections.observableArrayList(bankMap.values());
         currencyCodes = FXCollections.observableArrayList(currencyMap.keySet());
-        bankCodeComboBox.setItems(bankCodes);
+        genderCodes = FXCollections.observableArrayList(genderMap.keySet());
+        bankNameComboBox.setItems(bankNames);
         currencyCodeComboBox.setItems(currencyCodes);
+        genderComboBox.setItems(genderCodes);
     }
 
     @FXML
@@ -85,7 +90,8 @@ public class ChangeInfoWindowController implements Initializable {
         String inn = innTextField.getText();
         Alert alert = new Alert(Alert.AlertType.ERROR);
         LocalDate birthday = birthdayDatePicker.getValue();
-        Double initAmount, balance;
+        Double initAmount;
+        Double balance;
         try {
             initAmount = Double.parseDouble(initialAmountTextField.getText());
             balance = Double.parseDouble(balanceTextField.getText());
@@ -100,24 +106,26 @@ public class ChangeInfoWindowController implements Initializable {
             finishDate = finishdateDatePicker.getValue();
         } catch (NullPointerException e){
             finishDate = null;
+
         }
-        String bankCode = bankCodeComboBox.getValue();
+        String bankName = bankNameComboBox.getValue();
+        String genderValue = genderMap.get(genderComboBox.getValue());
         Boolean arrears = arrearsCheckBox.isSelected();
         Bank bank;
         Currency currency;
         if (fio[0].equals("") || passport[0].equals("") || inn.equals("") || birthday == null ||
                 initAmount == null || balance == null || currencyCode.equals("") ||
-                initDate == null || bankCode.equals("")) {
+                initDate == null || bankName.equals("") || genderValue.equals("")) {
             alert.setContentText("Заполните все поля");
             alert.showAndWait();
         } else {
-            if (bankMap.get(bankCode) == null) {
+            if (!bankMap.containsValue(bankName)) {
                 //вызов окна добавления нового банка
-                bank = mainModel.callNewBankWindow(bankCode);
+                bank = mainModel.callNewBankWindow(bankName);
                 //обновить карту банков
                 bankMap = mainModel.getBankMap();
             } else {
-                bank = new Bank(bankCode, bankMap.get(bankCode));
+                bank = new Bank(getKeyByValue(bankMap,bankName), bankName);
             }
             if (currencyMap.get(currencyCode) == null) {
                 //вызов окна добавления новой валюты
@@ -127,6 +135,8 @@ public class ChangeInfoWindowController implements Initializable {
             } else {
                 currency = new Currency(currencyCode, currencyMap.get(currencyCode));
             }
+            genderMap = mainModel.getGenderMap();
+
             person = new Person();
             searchInfo = new LoanInfo();
             person.setSurname(fio[0]);
@@ -137,6 +147,8 @@ public class ChangeInfoWindowController implements Initializable {
             person.setPassNumber(passport[1]);
             person.setPassSerial(passport[0]);
             person.setInn(inn);
+            person.setGender(genderValue);
+
             searchInfo.setPerson(person);
             searchInfo.setCurrency(currency);
             searchInfo.setBank(bank);
@@ -148,6 +160,15 @@ public class ChangeInfoWindowController implements Initializable {
             Stage curStage = (Stage) (applyButton.getScene().getWindow());
             curStage.close();
         }
+    }
+
+    public static <T, E> T getKeyByValue(Map<T, E> map, E value) {
+        for (Map.Entry<T, E> entry : map.entrySet()) {
+            if (Objects.equals(value, entry.getValue())) {
+                return entry.getKey();
+            }
+        }
+        return null;
     }
 
     @Override
@@ -201,7 +222,7 @@ public class ChangeInfoWindowController implements Initializable {
             setScreenForms(loanInfo.getPerson());
             initialAmountTextField.setText(loanInfo.getInitAmount().toString());
             balanceTextField.setText(loanInfo.getBalance().toString());
-            bankCodeComboBox.setValue(loanInfo.getBank().getCode());
+            bankNameComboBox.setValue(loanInfo.getBank().getName());
             currencyCodeComboBox.setValue(loanInfo.getCurrency().getCode());
             initdateDatePicker.setValue(loanInfo.getInitDate());
             try{
@@ -221,6 +242,7 @@ public class ChangeInfoWindowController implements Initializable {
             passportTextField.setText(curPerson.getPassSerial() + " " + curPerson.getPassNumber());
             birthdayDatePicker.setValue(curPerson.getBirthday());
             innTextField.setText(curPerson.getInn());
+            bankNameComboBox.setValue(mainModel.getGenderMap().get(curPerson.getGender()));
         }
     }
 
@@ -249,6 +271,10 @@ public class ChangeInfoWindowController implements Initializable {
 
     public void setBankMap(Map<String, String> bankMap) {
         this.bankMap = bankMap;
+    }
+
+    public void setGenderMap(Map<String, String> genderMap) {
+        this.genderMap = genderMap;
     }
 }
 

@@ -20,6 +20,7 @@ import java.time.LocalDate;
 
 @XmlRootElement(name = "information")
 public class LoanInfo implements Serializable {
+
     private IntegerProperty id;
     private DoubleProperty initAmount;
     @JsonDeserialize(using = JsonDateDeserializer.class)

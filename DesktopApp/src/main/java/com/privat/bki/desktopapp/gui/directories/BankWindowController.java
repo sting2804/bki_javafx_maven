@@ -37,9 +37,9 @@ public class BankWindowController implements Initializable {
         bank = new Bank();
     }
 
-    public void setScreenForms(String code) {
-        if (!code.equals("")) {
-            bankCodeTextField.setText(code);
+    public void setScreenForms(String name) {
+        if (!name.equals("")) {
+            bankNameTextField.setText(name);
         }
     }
 

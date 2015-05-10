@@ -1,8 +1,5 @@
 package com.privat.bki.desktopapp.gui.main;
-import com.privat.bki.business.entities.Bank;
-import com.privat.bki.business.entities.Currency;
-import com.privat.bki.business.entities.LoanInfo;
-import com.privat.bki.business.entities.Person;
+import com.privat.bki.business.entities.*;
 import com.privat.bki.business.utils.SqlDateConverter;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
@@ -22,6 +19,7 @@ import java.sql.Date;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.ResourceBundle;
 
@@ -51,6 +49,8 @@ public class MainWindowController implements Initializable {
     public TableColumn<LoanInfo, Person> innColumn;
     @FXML
     public TableColumn<LoanInfo, Person> passportColumn;
+    @FXML
+    public TableColumn<LoanInfo, Person> genderColumn;
     @FXML
     public TableColumn<LoanInfo, Double> initAmountColumn;
     @FXML
@@ -197,7 +197,7 @@ public class MainWindowController implements Initializable {
             protected void updateItem(Bank item, boolean empty) {
                 setGraphic(null);
                 if (item != null) {
-                    Label bankLabel = new Label(item.getCode());
+                    Label bankLabel = new Label(item.getName());
                     setGraphic(bankLabel);
                 }
             }
@@ -209,6 +209,17 @@ public class MainWindowController implements Initializable {
                 setGraphic(null);
                 if (item != null) {
                     Label currencyLabel = new Label(item.getCode());
+                    setGraphic(currencyLabel);
+                }
+            }
+        });
+        genderColumn.setCellValueFactory(new PropertyValueFactory<>("gender"));
+        genderColumn.setCellFactory(param -> new TableCell<LoanInfo, Person>() {
+            @Override
+            protected void updateItem(Person item, boolean empty) {
+                setGraphic(null);
+                if (item != null) {
+                    Label currencyLabel = new Label(mainModel.getGenderMap().get(item.getGender()));
                     setGraphic(currencyLabel);
                 }
             }

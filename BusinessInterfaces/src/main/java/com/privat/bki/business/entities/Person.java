@@ -28,6 +28,7 @@ public class Person implements Serializable {
     private StringProperty inn;
     private StringProperty passNumber;
     private StringProperty passSerial;
+    private StringProperty gender;
 
 
     public Person() {
@@ -38,6 +39,7 @@ public class Person implements Serializable {
         inn = new SimpleStringProperty();
         passNumber = new SimpleStringProperty();
         passSerial = new SimpleStringProperty();
+        gender = new SimpleStringProperty();
     }
 
     /**
@@ -50,7 +52,7 @@ public class Person implements Serializable {
      * @param passSerial серия паспорта
      */
     public Person(Integer id, String name, String surname, String patronymic,
-                  LocalDate birthday, String inn, String passNumber, String passSerial) {
+                  LocalDate birthday, String inn, String passNumber, String passSerial, String gender) {
         this.birthday = birthday;
         this.id = new SimpleIntegerProperty(id);
         this.name = new SimpleStringProperty(name);
@@ -59,6 +61,7 @@ public class Person implements Serializable {
         this.inn = new SimpleStringProperty(inn);
         this.passNumber = new SimpleStringProperty(passNumber);
         this.passSerial = new SimpleStringProperty(passSerial);
+        this.gender = new SimpleStringProperty(gender);
     }
 
     @XmlElement
@@ -133,6 +136,17 @@ public class Person implements Serializable {
         this.passSerial.set(passSerial);
     }
 
+    @XmlElement
+    public String getGender() {
+        return gender.get();
+    }
+
+    public void setGender(String gender) {
+        this.gender.set(gender);
+    }
+
+
+
     @Override
     public String toString() {
         return "Person{" +
@@ -143,6 +157,7 @@ public class Person implements Serializable {
                 ", inn='" + inn + '\'' +
                 ", passNumber='" + passNumber + '\'' +
                 ", passSerial='" + passSerial + '\'' +
+                ", gender='" + gender + '\'' +
                 '}';
     }
 
@@ -172,5 +187,9 @@ public class Person implements Serializable {
 
     public StringProperty innProperty() {
         return inn;
+    }
+
+    public StringProperty genderProperty() {
+        return gender;
     }
 }

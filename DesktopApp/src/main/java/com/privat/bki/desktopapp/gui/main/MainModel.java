@@ -20,6 +20,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -32,6 +33,7 @@ public class MainModel {
 
     @Autowired
     public DaoRestTemplateService service;
+    private Map<String,String> genderMap;
 
     private static final Logger log = Logger.getLogger(MainModel.class);
     /**
@@ -55,6 +57,9 @@ public class MainModel {
     private List<LoanInfo> foundInfo;
 
     public MainModel() {
+        genderMap=new LinkedHashMap<>();
+        genderMap.put("male","Мужской");
+        genderMap.put("female","Женский");
     }
 
     /**
@@ -172,6 +177,7 @@ public class MainModel {
         ciController.setMainModel(this);
         ciController.setCurrencyMap(getCurrencyMap());
         ciController.setBankMap(getBankMap());
+        ciController.setGenderMap(getGenderMap());
         ciController.setLoanInfo(curInfo);
         primaryStage.setOnCloseRequest(event -> primaryStage.close());
         primaryStage.setResizable(false);
@@ -211,6 +217,7 @@ public class MainModel {
         ciController.setMainModel(this);
         ciController.setCurrencyMap(getCurrencyMap());
         ciController.setBankMap(getBankMap());
+        ciController.setGenderMap(getGenderMap());
         ciController.setPerson(curInfo);
         primaryStage.setOnCloseRequest(event -> primaryStage.close());
         primaryStage.setResizable(false);
@@ -241,6 +248,7 @@ public class MainModel {
         ciController.setMainModel(this);
         ciController.setCurrencyMap(getCurrencyMap());
         ciController.setBankMap(getBankMap());
+        ciController.setGenderMap(getGenderMap());
 
         primaryStage.setOnCloseRequest(event -> primaryStage.close());
         primaryStage.setResizable(false);
@@ -256,7 +264,7 @@ public class MainModel {
         }
     }
 
-    public Bank callNewBankWindow(String bankCode) {
+    public Bank callNewBankWindow(String bankName) {
         final Stage primaryStage = new Stage();
         FXMLLoader root;
         primaryStage.initModality(Modality.APPLICATION_MODAL);
@@ -269,7 +277,7 @@ public class MainModel {
         //передача информации в контроллер;
         bwController = root.<BankWindowController>getController();
         bwController.setMainModel(this);
-        bwController.setScreenForms(bankCode);
+        bwController.setScreenForms(bankName);
         primaryStage.setOnCloseRequest(event -> primaryStage.close());
         primaryStage.setResizable(false);
         primaryStage.showAndWait();
@@ -334,5 +342,9 @@ public class MainModel {
 
     public void setFoundInfo(List<LoanInfo> foundInfo) {
         this.foundInfo = foundInfo;
+    }
+
+    public Map<String, String> getGenderMap() {
+        return genderMap;
     }
 }

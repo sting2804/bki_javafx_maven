@@ -10,6 +10,7 @@ import com.privat.bki.business.utils.Converter;
 import com.privat.bki.business.utils.SqlDateConverter;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
@@ -77,23 +78,26 @@ public class LoanInfoDaoImpl implements LoanInfoDao {
         params.put("patronymic", person.getPatronymic());
         params.put("birthday", dateConverter.to(person.getBirthday()));
         params.put("inn", person.getInn());
-        params.put("pass_serial",  person.getPassSerial());
+        params.put("pass_serial", person.getPassSerial());
         params.put("pass_number", person.getPassNumber());
-        Integer res = jdbcTemplate.queryForObject(query, params, Integer.class);
-        return res;
+        try{
+            return jdbcTemplate.queryForObject(query, params, Integer.class);
+        }
+        catch (EmptyResultDataAccessException e){
+            return null;
+        }
     }
 
     @Override
     public List<LoanInfo> getPersonInfo(Person person) {
-        //Integer clientId = isClientExists(person);
-        Integer clientId = person.getId();
+        Integer clientId = isClientExists(person);
+        //Integer clientId = person.getId();
         if (clientId == null) return null;
         data.removeAll(data);
         String query = "SELECT name, surname, patronymic, birthday, inn, " +
-                "pass_serial, pass_number, init_amount, init_date, finish_date, " +
+                "pass_serial, pass_number, gender, init_amount, init_date, finish_date, " +
                 "balance, arrears, bank_code, bank_name, currency_code,currency_name, client_id, loan_id " +
-                "FROM client_info_view WHERE (name=:name AND surname=:surname AND patronymic=:patronymic AND birthday =:birthday) " +
-                " OR inn=:inn OR  (pass_serial=:pass_serial AND pass_number=:pass_number)";
+                "FROM client_info_view WHERE client_id=:clientId";
         Map params = new HashMap<>();
         params.put("name", person.getName());
         params.put("surname", person.getSurname());
@@ -102,7 +106,9 @@ public class LoanInfoDaoImpl implements LoanInfoDao {
         params.put("inn", person.getInn());
         params.put("pass_serial",  person.getPassSerial());
         params.put("pass_number", person.getPassNumber());
-        return data = jdbcTemplate.query(query, params,new LoanInfoRowMapper());
+        params.put("clientId", clientId);
+        data = jdbcTemplate.query(query, params, new LoanInfoRowMapper());
+        return data;
     }
 
     @Override
@@ -122,19 +128,21 @@ public class LoanInfoDaoImpl implements LoanInfoDao {
      * @return Возвращает id клиента, вставленного в базу. Если вставка не произошла, возвращает -1
      */
     private Integer addNewPerson(Person person) {
-        int id;
+        Integer id=isClientExists(person);
         String query = "INSERT INTO client(client_id, inn, name, surname, patronymic," +
-                "birthday, pass_serial, pass_number) VALUES(:client_id, :inn, :name, :surname, :patronymic," +
-                ":birthday, :pass_serial, :pass_number)";
+                "birthday, pass_serial, pass_number, gender) VALUES(:client_id, :inn, :name, :surname, :patronymic," +
+                ":birthday, :pass_serial, :pass_number, :gender)";
         SimpleJdbcCall jdbcCall = new SimpleJdbcCall(dataSource).withProcedureName("GET_ID");
         Map<String, String> inParamMap = new HashMap();
         inParamMap.put("TABLE_NAME", "client");
         SqlParameterSource in = new MapSqlParameterSource(inParamMap);
 
         Map<String, Object> simpleJdbcCallResult = jdbcCall.execute(in);
-        id = (int) simpleJdbcCallResult.get("ID_OUT");
+        if(id!=null)
+            return -1;
+        else id = (int) simpleJdbcCallResult.get("ID_OUT");
         Map params = new HashMap<>();
-        params.put("client_id", person.getId());
+        params.put("client_id", id);
         params.put("name", person.getName());
         params.put("surname", person.getSurname());
         params.put("patronymic", person.getPatronymic());
@@ -142,6 +150,7 @@ public class LoanInfoDaoImpl implements LoanInfoDao {
         params.put("inn", person.getInn());
         params.put("pass_serial",  person.getPassSerial());
         params.put("pass_number", person.getPassNumber());
+        params.put("gender", person.getGender());
         Integer res = jdbcTemplate.update(query, params);
         if (res != 0 && res != null) return id;
         else return -1;
@@ -177,7 +186,8 @@ public class LoanInfoDaoImpl implements LoanInfoDao {
     public Boolean changeInfo(int loanId, int clientId, LoanInfo newInfo) {
         if (updatePerson(clientId, newInfo.getPerson())) {
             String str = "currency_code=:currency_code, bank_code=:bank_code, client_id=:client_id," +
-                    " init_amount=:init_amount, init_date=:init_date, finish_date=:finish_date, balance=:balance, arrears=:arrears";
+                    " init_amount=:init_amount, init_date=:init_date, finish_date=:finish_date, " +
+                    "balance=:balance, arrears=:arrears";
             String query = "update loan set " + str + " where loan_id=:loan_id";
             Map params = new HashMap<>();
             params.put("client_id", clientId);
@@ -203,7 +213,7 @@ public class LoanInfoDaoImpl implements LoanInfoDao {
      */
     private Boolean updatePerson(int clientId, Person newPerson) {
         String str = "inn=:inn, name=:name, surname=:surname, patronymic=:patronymic," +
-                "birthday=:birthday, pass_serial=:pass_serial, pass_number=:pass_number";
+                "birthday=:birthday, pass_serial=:pass_serial, pass_number=:pass_number, gender=:gender";
         String query = "update client set " + str + " where client_id=:client_id";
         Map params = new HashMap<>();
         params.put("client_id", clientId);
@@ -214,6 +224,7 @@ public class LoanInfoDaoImpl implements LoanInfoDao {
         params.put("inn", newPerson.getInn());
         params.put("pass_serial",  newPerson.getPassSerial());
         params.put("pass_number", newPerson.getPassNumber());
+        params.put("gender", newPerson.getGender());
         return jdbcTemplate.update(query, params) > 0;
     }
 

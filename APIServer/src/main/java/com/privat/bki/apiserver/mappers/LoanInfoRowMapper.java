@@ -32,6 +32,7 @@ public class LoanInfoRowMapper implements RowMapper<LoanInfo>{
         person.setInn(rs.getString(i++));
         person.setPassSerial(rs.getString(i++));
         person.setPassNumber(rs.getString(i++));
+        person.setGender(rs.getString(i++));
         loanInfo.setInitAmount(rs.getDouble(i++));
         try {
             loanInfo.setInitDate(rs.getDate(i++).toLocalDate());
