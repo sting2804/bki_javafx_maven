@@ -3,7 +3,7 @@
 angular.module('myApp.logining', ['ngRoute'])
 
     .config(function ($routeProvider, $httpProvider) {
-        $routeProvider.when('/logining', {
+        $routeProvider.when('/login', {
             templateUrl: 'views/logining/logining.html',
             controller: 'LoginingCtrl'
         });

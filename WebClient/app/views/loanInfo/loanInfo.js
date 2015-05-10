@@ -3,7 +3,7 @@
 angular.module('myApp.loanInfo', ['ngRoute'])
 
     .config(function ($routeProvider, $httpProvider) {
-        $routeProvider.when('/loanInfo', {
+        $routeProvider.when('/loan', {
             templateUrl: 'views/loanInfo/loanInfo.html',
             controller: 'LoanInfoCtrl'
         });
@@ -21,7 +21,7 @@ angular.module('myApp.loanInfo', ['ngRoute'])
 
         $scope.getAllRecords = function(){
 
-            $http({method: 'GET', url: 'http://localhost:8181/select/all.json'}).
+            $http({method: 'GET', url: 'http://localhost:8190/api/loans'}).
                 success(function(data) {
                     $scope.loans = angular.fromJson(data.clients);
                 }).
