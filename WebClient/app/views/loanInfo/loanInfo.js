@@ -16,7 +16,7 @@ angular.module('myApp.loanInfo', ['ngRoute'])
 
         var self = $scope;
 
-        self.query = null;
+        self.searchKeyword = null;
         self.loans = null;
 
         $scope.getAllRecords = function(){

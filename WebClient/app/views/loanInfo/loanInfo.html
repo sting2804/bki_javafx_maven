@@ -9,35 +9,37 @@
 
         </div>
         <div style="padding:60px 0px 20px 0px">
-            <button ng-click="openNewClientModal()" class="btn btn-default">Новий клієнт</button>
-            <button ng-click="openNewInfoModal(selectedItem)" class="btn btn-default">Додати інформацію</button>
-            <button ng-click="openEditModal(selectedItem)" class="btn btn-default">Редагувати інформацію</button>
-            <input type="text" placeholder="Пошук" class="form-control ng-pristine ng-valid" ng-model="searchKeyword">
+            <button ng-click="openNewClientModal()" class="btn btn-default">Новый клиент</button>
+            <button ng-click="openNewInfoModal(selectedItem)" class="btn btn-default">Добавить информацию</button>
+            <button ng-click="openEditModal(selectedItem)" class="btn btn-default">Изменить информацию</button>
+            <input type="text" placeholder="Поиск" class="form-control ng-pristine ng-valid" ng-model="f.$">
         </div>
         <table st-pipe="getAllRecords" st-table="loans" class="table table-bordered table-hover table-striped">
             <thead>
             <tr>
                 <th>#</th>
-                <th st-sort="loan.person.name">ПІБ</th>
-                <th ng-click="predicate = 'birthday'; reverse=!reverse">ДН</th>
-                <th ng-click="predicate = 'inn'; reverse=!reverse">ІНН</th>
+                <th st-sort="loan.person.name">ФИО</th>
+                <th ng-click="predicate = 'birthday'; reverse=!reverse">ДР</th>
+                <th ng-click="predicate = 'inn'; reverse=!reverse">ИНН</th>
                 <th ng-click="predicate = 'passSerial'; reverse=!reverse">Паспорт</th>
-                <th ng-click="predicate = 'amount'; reverse=!reverse">Сума</th>
-                <th>Залишок</th>
+                <th ng-click="predicate = 'gender'; reverse=!reverse">Пол</th>
+                <th ng-click="predicate = 'amount'; reverse=!reverse">Сумма</th>
+                <th>Баланс</th>
                 <th>Валюта</th>
                 <th>Банк</th>
-                <th>Відкрит</th>
-                <th>Закрит</th>
-                <th>Прострочки</th>
+                <th>Открыт</th>
+                <th>Закрыт</th>
+                <th>Просрочки</th>
             </tr>
             </thead>
             <tbody>
-            <tr ng-repeat="l in loans | filter: query" ng-click="selectItem(l)">
+            <tr ng-repeat="l in loans|filter:f" ng-click="selectItem(l)">
                 <td>{{l.id}}</td>
                 <td>{{l.person.surname}} {{l.person.name}} {{l.person.patronymic}}</td>
                 <td>{{l.person.birthday | date: 'yyyy-MM-dd'}}</td>
                 <td>{{l.person.inn}}</td>
                 <td>{{l.person.passSerial}} {{l.person.passNumber}}</td>
+                <td>{{l.person.gender}}</td>
                 <td>{{l.initAmount}}</td>
                 <td>{{l.balance}}</td>
                 <td>{{l.currency.name}} : {{l.currency.code}}</td>
