@@ -67,3 +67,10 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 /API/target/
+
+#angularjs app
+logs/*
+!.gitkeep
+node_modules/
+tmp
+.DS_Store
