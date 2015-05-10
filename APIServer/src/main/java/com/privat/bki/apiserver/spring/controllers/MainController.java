@@ -15,10 +15,7 @@ import com.privat.bki.business.wrappers.CurrencyMapWrapper;
 import com.privat.bki.business.wrappers.LoanInfoListWrapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import static org.springframework.web.bind.annotation.RequestMethod.*;
 
@@ -73,9 +70,9 @@ public class MainController {
         return loanInfoService.addNewClient(info);
     }
 
-    @RequestMapping(value = "/loans/{loanId}/{clientId}", method = PUT)
+    @RequestMapping(value = "/loans/{loanId}", method = PUT)
     @ResponseBody
-    public boolean update(@PathVariable("loanId") int loanId, @PathVariable("clientId") int clientId,  @RequestBody LoanInfo newInfo) {
+    public boolean update(@PathVariable("loanId") int loanId, @RequestParam("clientId") int clientId,  @RequestBody LoanInfo newInfo) {
         return loanInfoService.modify(loanId, clientId, newInfo);
     }
 

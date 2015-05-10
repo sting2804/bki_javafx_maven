@@ -270,5 +270,4 @@ public class LoanInfoDaoImpl implements LoanInfoDao {
         return jdbcTemplate.update(query, params) > 0;
     }
 
-
 }

@@ -194,7 +194,7 @@ public class DaoRestTemplateService {
         try {
             HttpEntity<LoanInfo> info = new HttpEntity<>(newInfo);
             ResponseEntity <Boolean> res = restTemplate.exchange(
-                    baseUrl + "/loans/{loanId}/{clientId}", HttpMethod.PUT, info, Boolean.class, loanId, clientId);
+                    baseUrl + "/loans/{loanId}?clientId={clientId}", HttpMethod.PUT, info, Boolean.class, loanId, clientId);
             return res.getBody();
         } catch (Exception e) {
             e.printStackTrace();

@@ -54,7 +54,7 @@ public class ChangeInfoWindowController implements Initializable {
 
     private ObservableList<String> bankNames;
     private ObservableList<String> currencyCodes;
-    private ObservableList<String> genderCodes;
+    private ObservableList<String> genderNames;
 
     private Map<String, String> bankMap;
     private Map<String, String> currencyMap;
@@ -77,10 +77,10 @@ public class ChangeInfoWindowController implements Initializable {
         if (bankMap == null || currencyMap == null) return;
         bankNames = FXCollections.observableArrayList(bankMap.values());
         currencyCodes = FXCollections.observableArrayList(currencyMap.keySet());
-        genderCodes = FXCollections.observableArrayList(genderMap.keySet());
+        genderNames = FXCollections.observableArrayList(genderMap.values());
         bankNameComboBox.setItems(bankNames);
         currencyCodeComboBox.setItems(currencyCodes);
-        genderComboBox.setItems(genderCodes);
+        genderComboBox.setItems(genderNames);
     }
 
     @FXML
@@ -109,7 +109,10 @@ public class ChangeInfoWindowController implements Initializable {
 
         }
         String bankName = bankNameComboBox.getValue();
-        String genderValue = genderMap.get(genderComboBox.getValue());
+
+        String genderValue = genderComboBox.getValue();
+        String genderKey = getKeyByValue(genderMap,genderValue);
+
         Boolean arrears = arrearsCheckBox.isSelected();
         Bank bank;
         Currency currency;
@@ -135,7 +138,6 @@ public class ChangeInfoWindowController implements Initializable {
             } else {
                 currency = new Currency(currencyCode, currencyMap.get(currencyCode));
             }
-            genderMap = mainModel.getGenderMap();
 
             person = new Person();
             searchInfo = new LoanInfo();
@@ -147,7 +149,7 @@ public class ChangeInfoWindowController implements Initializable {
             person.setPassNumber(passport[1]);
             person.setPassSerial(passport[0]);
             person.setInn(inn);
-            person.setGender(genderValue);
+            person.setGender(genderKey);
 
             searchInfo.setPerson(person);
             searchInfo.setCurrency(currency);
@@ -184,7 +186,7 @@ public class ChangeInfoWindowController implements Initializable {
      * @param datePicker
      */
     private void setDatePickerFormat(DatePicker datePicker) {
-        datePicker.setConverter(createConverter("dd.MM.yyyy"));
+        datePicker.setConverter(createConverter("yyyy-MM-dd"));
     }
 
     /**
@@ -242,7 +244,7 @@ public class ChangeInfoWindowController implements Initializable {
             passportTextField.setText(curPerson.getPassSerial() + " " + curPerson.getPassNumber());
             birthdayDatePicker.setValue(curPerson.getBirthday());
             innTextField.setText(curPerson.getInn());
-            bankNameComboBox.setValue(mainModel.getGenderMap().get(curPerson.getGender()));
+            genderComboBox.setValue(mainModel.getGenderMap().get(curPerson.getGender()));
         }
     }
 

@@ -88,4 +88,5 @@ public interface LoanInfoDao {
      * @return Возвращает true в случае успешного добавления и false в случае ошибки
      */
     Boolean addNewBank(Bank bank);
+
 }

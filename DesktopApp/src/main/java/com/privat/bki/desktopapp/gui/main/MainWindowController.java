@@ -213,13 +213,14 @@ public class MainWindowController implements Initializable {
                 }
             }
         });
-        genderColumn.setCellValueFactory(new PropertyValueFactory<>("gender"));
+        genderColumn.setCellValueFactory(new PropertyValueFactory<>("person"));
         genderColumn.setCellFactory(param -> new TableCell<LoanInfo, Person>() {
             @Override
             protected void updateItem(Person item, boolean empty) {
                 setGraphic(null);
                 if (item != null) {
-                    Label currencyLabel = new Label(mainModel.getGenderMap().get(item.getGender()));
+                    String str = mainModel.getGenderMap().get(item.getGender());
+                    Label currencyLabel = new Label(str);
                     setGraphic(currencyLabel);
                 }
             }

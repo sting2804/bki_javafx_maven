@@ -258,7 +258,8 @@ public class MainModel {
         if (newInfo != null) {
             int clientId = service.isClientExists(newInfo.getPerson());
             if (clientId != -1) {
-                service.addInfo(newInfo, clientId);
+                new Alert(Alert.AlertType.WARNING, "Данные клиента совпадают с существующим в базе. " +
+                        "Проверьте данные и повторите.").showAndWait();
             } else
                 service.addNewClient(newInfo);
         }
