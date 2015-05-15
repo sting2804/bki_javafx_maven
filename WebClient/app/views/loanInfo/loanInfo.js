@@ -1,4 +1,5 @@
 'use strict';
+var baseUrl = 'http://localhost:8190';
 
 angular.module('myApp.loanInfo', ['ngRoute'])
 
@@ -7,27 +8,42 @@ angular.module('myApp.loanInfo', ['ngRoute'])
             templateUrl: 'views/loanInfo/loanInfo.html',
             controller: 'LoanInfoCtrl'
         });
+        $httpProvider.defaults.useXDomain = true;
+        delete $httpProvider.defaults.headers.common['X-Requested-With'];
         $httpProvider.defaults.transformResponse.push(function(responseData){
             convertDateStringsToDates(responseData);
             return responseData;
         });
     })
-    .controller('LoanInfoCtrl', function ($scope,$modal, $http) {
+    .factory('Loan',function($resource) {
+        return $resource(baseUrl + '/api/loans/:id', {}, {
+            editInfo: {method: "PUT", url: baseUrl + '/api/loans/:id'},
+            addInfo: {method: "POST", url: baseUrl + '/api/loans/byClient/:id'},
+            addClient: {method: "POST", url: baseUrl + '/api/client'},
+            loanByClient: {method: "POST", url: baseUrl + '/api/loans/byClient'},
+            isExists: {method: "POST", url: baseUrl + '/api/loans/isExists'},
+            getBanks: {method: "GET", url: baseUrl + '/api/banks', isArray: false},
+            getCurrency: {method: "GET", url: baseUrl + '/api/currency', isArray: false},
+            newBanks: {method: "POST", url: baseUrl + '/api/banks'},
+            newCurrency: {method: "POST", url: baseUrl + '/api/currency'}
+        });
+    })
+    .controller('LoanInfoCtrl', function ($scope,$modal, Loan) {
 
         var self = $scope;
 
         self.searchKeyword = null;
         self.loans = null;
 
-        $scope.getAllRecords = function(){
-
-            $http({method: 'GET', url: 'http://localhost:8190/api/loans'}).
-                success(function(data) {
-                    $scope.loans = angular.fromJson(data.clients);
-                }).
-                error(function(data) {
-                    $scope.errors=data;
-                });
+        self.getAllRecords = function(){
+            Loan.get().$promise.then(
+                function(data) {
+                    self.loans = data.clients;
+                },
+                function(errors) {
+                    self.errors=errors;
+                }
+            );
         };
 
         /*var
@@ -153,11 +169,28 @@ angular.module('myApp.loanInfo', ['ngRoute'])
         };
     });
 
-angular.module('myApp.loanInfo').controller('EditModalInstanceCtrl', function ($scope, $modalInstance, item) {
+angular.module('myApp.loanInfo').controller('EditModalInstanceCtrl', function ($scope, $modalInstance, Loan, item) {
+    var self = $scope;
+    self.item = angular.copy(item);
 
-    $scope.item = angular.copy(item);
+    self.ok = function () {
+        var newItem={
 
-    $scope.ok = function () {
+        };
+        var loanId = item.id;
+        var clientId = item.person.id;
+        Loan.editInfo({
+            id:clientId
+        },newItem).$promise.then(
+            function(data) {
+                console.log(data);
+                self.loans=data;
+            },
+            function(data) {
+                self.errors=data;
+                console.log(data);
+            }
+        );
         $modalInstance.close($scope.item);
     };
 
@@ -165,7 +198,7 @@ angular.module('myApp.loanInfo').controller('EditModalInstanceCtrl', function ($
         $modalInstance.dismiss('cancel');
     };
 });
-angular.module('myApp.loanInfo').controller('NewClientModalInstanceCtrl', function ($scope, $modalInstance) {
+angular.module('myApp.loanInfo').controller('NewClientModalInstanceCtrl', function ($scope, $modalInstance, $http) {
 
     $scope.item=null;
 
@@ -177,11 +210,26 @@ angular.module('myApp.loanInfo').controller('NewClientModalInstanceCtrl', functi
         $modalInstance.dismiss('cancel');
     };
 });
-angular.module('myApp.loanInfo').controller('NewInfoModalInstanceCtrl', function ($scope, $modalInstance, item) {
+angular.module('myApp.loanInfo').controller('NewInfoModalInstanceCtrl', function ($scope, $modalInstance, Loan, item) {
 
     $scope.item = angular.copy(item);
 
     $scope.ok = function () {
+        var newItem = item;
+        console.log(newItem);
+        var clientId = item.person.id;
+        Loan.addInfo({
+            id:clientId
+        },newItem).$promise.then(
+            function(data) {
+                self.loans=data;
+                console.log(data);
+            },
+            function(data) {
+                self.errors=data;
+                console.log(data);
+            }
+        );
         $modalInstance.close($scope.item);
     };
 
