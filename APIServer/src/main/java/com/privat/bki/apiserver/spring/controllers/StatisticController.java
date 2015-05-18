@@ -77,10 +77,10 @@ public class StatisticController {
      * @param bankName имя банка для статистики
      * @return
      */
-    @RequestMapping(value = "/forBank", method = GET, params = "bankName,years")
+    @RequestMapping(value = "/forBank", method = GET, params = {"bankName", "years"})
     @ResponseBody
-    public Map<String, List> getStatisticByBankAndYears(@RequestParam(value = "bankName") String bankName,
-                                                        @RequestParam(value = "years")String years){
+    public Map<String, List> getStatisticByBankAndYears(@RequestParam("bankName") String bankName,
+                                                        @RequestParam("years")String years){
         String[] splitedYears = years.split(",");
         Integer [] integerYears = new Integer[splitedYears.length];
         int i=0;

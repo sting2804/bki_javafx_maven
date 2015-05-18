@@ -3,6 +3,7 @@ package com.privat.bki.apiserver.spring.services.statistic;
 import com.privat.bki.apiserver.mappers.PreferredBankRowMapper;
 import com.privat.bki.business.entities.Bank;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.stereotype.Component;
 
@@ -161,7 +162,13 @@ public class StatisticDaoImpl implements StatisticDao {
         Map params = new LinkedHashMap<>();
         params.put("year", year);
         params.put("bankName", bankName);
-        return jdbcTemplate.queryForObject(query, params, Integer.class);
+        Integer data = 0 ;
+        try{
+            data = jdbcTemplate.queryForObject(query, params, Integer.class);
+        } catch (EmptyResultDataAccessException e){
+            data = 0;
+        }
+        return data;
     }
 
 }
