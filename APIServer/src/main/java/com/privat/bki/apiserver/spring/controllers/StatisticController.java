@@ -70,5 +70,28 @@ public class StatisticController {
         return statisticService.getTheMostCreditAge(integerYears);
     }
 
+    /**
+     * статистика количества кредитов в указанном банке по годам
+     * ../forBank?bankName=bankName&years=2013,3013,...
+     * @param years строка вида years=2013,3013,...
+     * @param bankName имя банка для статистики
+     * @return
+     */
+    @RequestMapping(value = "/forBank", method = GET, params = "bankName,years")
+    @ResponseBody
+    public Map<String, List> getStatisticByBankAndYears(@RequestParam(value = "bankName") String bankName,
+                                                        @RequestParam(value = "years")String years){
+        String[] splitedYears = years.split(",");
+        Integer [] integerYears = new Integer[splitedYears.length];
+        int i=0;
+        try {
+            for (String year : splitedYears) {
+                integerYears[i++] = Integer.parseInt(year);
+            }
+        } catch (NumberFormatException e){
+            e.printStackTrace();
+        }
+        return statisticService.getStatisticByBankAndYears(bankName, integerYears);
+    }
 
 }

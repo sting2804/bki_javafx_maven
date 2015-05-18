@@ -34,4 +34,8 @@ public class StatisticService {
     public String getTheMostCreditAge(int year) {
         return dao.theMostCreditAge(year);
     }
+
+    public Map<String, List> getStatisticByBankAndYears(String bankName, Integer ... years){
+        return dao.bankCreditStatisticByYears(bankName, years);
+    }
 }

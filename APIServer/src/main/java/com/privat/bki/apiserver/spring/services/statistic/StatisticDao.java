@@ -32,4 +32,12 @@ public interface StatisticDao {
      */
     String theMostCreditAge(int year);
 
+    /**
+     * получение количества кредитов в указанном банке за заданные года
+     * @return map с годами и значением, типа
+     * Map<String, List<String>>
+     */
+    Map<String, List> bankCreditStatisticByYears(String bankName, Integer ... years);
+
+    Integer bankCreditStatisticByYear(String bankName, Integer year);
 }
