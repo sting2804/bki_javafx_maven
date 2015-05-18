@@ -7,6 +7,7 @@ import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.stereotype.Component;
 
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -162,7 +163,7 @@ public class StatisticDaoImpl implements StatisticDao {
         Map params = new LinkedHashMap<>();
         params.put("year", year);
         params.put("bankName", bankName);
-        Integer data = 0 ;
+        Integer data;
         try{
             data = jdbcTemplate.queryForObject(query, params, Integer.class);
         } catch (EmptyResultDataAccessException e){

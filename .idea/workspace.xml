@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abda6744-f048-4d01-bdc3-6e5b6ad88420" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/controllers/StatisticController.java" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/controllers/StatisticController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticDaoImpl.java" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticDaoImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -110,18 +109,18 @@
       <file leaf-file-name="StatisticDaoImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8530466">
-              <caret line="160" column="49" selection-start-line="160" selection-start-column="49" selection-end-line="160" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.56989247">
+              <caret line="165" column="20" selection-start-line="165" selection-start-column="20" selection-end-line="165" selection-end-column="20" />
               <folding>
                 <element signature="method#theMostCreditAge#1;class#StatisticDaoImpl#0" expanded="false" />
-                <marker date="1431987202000" expanded="true" signature="1357:2002" placeholder="SELECT DISTI..bank..." />
-                <marker date="1431987202000" expanded="true" signature="1714:1972" placeholder="SELECT max(c..loan..." />
-                <marker date="1431987202000" expanded="true" signature="2748:6650" placeholder="SELECT (CASE..sum..." />
-                <marker date="1431987202000" expanded="true" signature="3980:4038" placeholder="--calculate ..." />
-                <marker date="1431987202000" expanded="true" signature="4069:6608" placeholder="SELECT sum(s..count..." />
-                <marker date="1431987202000" expanded="true" signature="4537:5498" placeholder="SELECT count..client..." />
-                <marker date="1431987202000" expanded="true" signature="5606:6569" placeholder="SELECT count..client..." />
-                <marker date="1431987202000" expanded="true" signature="7724:8053" placeholder="SELECT count..loan..." />
+                <marker date="1431987826000" expanded="true" signature="1385:2030" placeholder="SELECT DISTI..bank..." />
+                <marker date="1431987826000" expanded="true" signature="1742:2000" placeholder="SELECT max(c..loan..." />
+                <marker date="1431987826000" expanded="true" signature="2776:6678" placeholder="SELECT (CASE..sum..." />
+                <marker date="1431987826000" expanded="true" signature="4008:4066" placeholder="--calculate ..." />
+                <marker date="1431987826000" expanded="true" signature="4097:6636" placeholder="SELECT sum(s..count..." />
+                <marker date="1431987826000" expanded="true" signature="4565:5526" placeholder="SELECT count..client..." />
+                <marker date="1431987826000" expanded="true" signature="5634:6597" placeholder="SELECT count..client..." />
+                <marker date="1431987826000" expanded="true" signature="7752:8081" placeholder="SELECT count..loan..." />
               </folding>
             </state>
           </provider>
@@ -143,8 +142,8 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="dd" />
         <option value="sting2804 &lt;slinnik284@gmail.com&gt;" />
+        <option value="dd" />
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -2181,7 +2180,7 @@
       <workItem from="1431290956537" duration="17844000" />
       <workItem from="1431727332896" duration="1904000" />
       <workItem from="1431982990984" duration="96000" />
-      <workItem from="1431983543472" duration="2586000" />
+      <workItem from="1431983543472" duration="3139000" />
     </task>
     <task id="LOCAL-00001" summary="Почти готовый рест. Работает для json, почти работает под xml">
       <created>1425498065232</created>
@@ -2369,11 +2368,17 @@
       <option name="project" value="LOCAL" />
       <updated>1431727607773</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="remake statistic for bank by year">
+      <created>1431987376459</created>
+      <option name="number" value="00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1431987376459</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="305784000" />
+    <option name="totallyTimeSpent" value="306337000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -2386,7 +2391,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2410,7 +2415,7 @@
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33333334" sideWeight="0.57439196" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27114427" sideWeight="0.49499285" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27114427" sideWeight="0.49499285" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22031474" sideWeight="0.5009901" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16881259" sideWeight="0.50497514" order="9" side_tool="true" content_ui="tabs" />
@@ -2579,7 +2584,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticDaoImpl.java</url>
-          <line>154</line>
+          <line>155</line>
           <properties />
           <option name="timeStamp" value="196" />
         </line-breakpoint>
@@ -3020,18 +3025,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8530466">
-          <caret line="160" column="49" selection-start-line="160" selection-start-column="49" selection-end-line="160" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.56989247">
+          <caret line="165" column="20" selection-start-line="165" selection-start-column="20" selection-end-line="165" selection-end-column="20" />
           <folding>
             <element signature="method#theMostCreditAge#1;class#StatisticDaoImpl#0" expanded="false" />
-            <marker date="1431987202000" expanded="true" signature="1357:2002" placeholder="SELECT DISTI..bank..." />
-            <marker date="1431987202000" expanded="true" signature="1714:1972" placeholder="SELECT max(c..loan..." />
-            <marker date="1431987202000" expanded="true" signature="2748:6650" placeholder="SELECT (CASE..sum..." />
-            <marker date="1431987202000" expanded="true" signature="3980:4038" placeholder="--calculate ..." />
-            <marker date="1431987202000" expanded="true" signature="4069:6608" placeholder="SELECT sum(s..count..." />
-            <marker date="1431987202000" expanded="true" signature="4537:5498" placeholder="SELECT count..client..." />
-            <marker date="1431987202000" expanded="true" signature="5606:6569" placeholder="SELECT count..client..." />
-            <marker date="1431987202000" expanded="true" signature="7724:8053" placeholder="SELECT count..loan..." />
+            <marker date="1431987826000" expanded="true" signature="1385:2030" placeholder="SELECT DISTI..bank..." />
+            <marker date="1431987826000" expanded="true" signature="1742:2000" placeholder="SELECT max(c..loan..." />
+            <marker date="1431987826000" expanded="true" signature="2776:6678" placeholder="SELECT (CASE..sum..." />
+            <marker date="1431987826000" expanded="true" signature="4008:4066" placeholder="--calculate ..." />
+            <marker date="1431987826000" expanded="true" signature="4097:6636" placeholder="SELECT sum(s..count..." />
+            <marker date="1431987826000" expanded="true" signature="4565:5526" placeholder="SELECT count..client..." />
+            <marker date="1431987826000" expanded="true" signature="5634:6597" placeholder="SELECT count..client..." />
+            <marker date="1431987826000" expanded="true" signature="7752:8081" placeholder="SELECT count..loan..." />
           </folding>
         </state>
       </provider>
