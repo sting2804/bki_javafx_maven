@@ -18,6 +18,8 @@ public class StatisticService {
     @Qualifier("statisticDao")
     @Autowired
     StatisticDao dao;
+    @Autowired
+    RegressionAnalysis ra;
 
     public List<Map> getTheMostPreferredBank(int[] years) {
         return dao.theMostPreferredBank(years);
@@ -37,5 +39,17 @@ public class StatisticService {
 
     public Map<String, List> getStatisticByBankAndYears(String bankName, Integer ... years){
         return dao.bankCreditStatisticByYears(bankName, years);
+    }
+
+    public Map<String, List> getStatisticByBankAndYears(String bankName){
+        return dao.bankCreditStatisticByYears(bankName);
+    }
+
+    public double calculatePrognosticationForBank(Map<String,List> statistics, String bankName, int prognosticationYear){
+        return ra.calculatePrognosticationForBank(statistics, bankName, prognosticationYear);
+    }
+
+    public List<Integer> getCreditYearsOfBank(String bankName){
+        return dao.getCreditYearsOfBank(bankName);
     }
 }

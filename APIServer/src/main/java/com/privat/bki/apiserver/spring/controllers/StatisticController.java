@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
@@ -77,21 +78,46 @@ public class StatisticController {
      * @param bankName имя банка для статистики
      * @return
      */
-    @RequestMapping(value = "/forBank", method = GET, params = {"bankName", "years"})
+    @RequestMapping(value = "/forBank", method = GET, params = {"bankName"})
     @ResponseBody
     public Map<String, List> getStatisticByBankAndYears(@RequestParam("bankName") String bankName,
-                                                        @RequestParam("years")String years){
-        String[] splitedYears = years.split(",");
-        Integer [] integerYears = new Integer[splitedYears.length];
-        int i=0;
-        try {
-            for (String year : splitedYears) {
-                integerYears[i++] = Integer.parseInt(year);
+                                                        @RequestParam(value = "years", required = false)String years){
+        if(years != null && !years.equals("")) {
+            String[] splitedYears = years.split(",");
+            Integer[] integerYears = new Integer[splitedYears.length];
+            int i = 0;
+            try {
+                for (String year : splitedYears) {
+                    integerYears[i++] = Integer.parseInt(year);
+                }
+            } catch (NumberFormatException e) {
+                e.printStackTrace();
             }
+            return statisticService.getStatisticByBankAndYears(bankName, integerYears);
+        } else{
+            return statisticService.getStatisticByBankAndYears(bankName);
+        }
+    }
+
+    @RequestMapping(value = "/prognos/forBank", method = GET, params = {"bankName","prognosticationYear"})
+    @ResponseBody
+    public double getPrognosticationForBank(@RequestParam("bankName") String bankName,
+                                            @RequestParam("prognosticationYear") String prognosticationYear){
+        Integer year=0;
+        try {
+            year = Integer.parseInt(prognosticationYear);
         } catch (NumberFormatException e){
             e.printStackTrace();
         }
-        return statisticService.getStatisticByBankAndYears(bankName, integerYears);
+        List<Integer> res = statisticService.getCreditYearsOfBank(bankName);
+        Integer [] bankYears = new Integer[res.size()];
+        for(int i=0; i<res.size(); i++){
+            bankYears[i]=res.get(i);
+        }
+        return statisticService.calculatePrognosticationForBank(
+                statisticService.getStatisticByBankAndYears(
+                        bankName, bankYears
+                ), bankName, year);
     }
 
 }

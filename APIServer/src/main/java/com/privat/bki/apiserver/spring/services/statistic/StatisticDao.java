@@ -39,5 +39,19 @@ public interface StatisticDao {
      */
     Map<String, List> bankCreditStatisticByYears(String bankName, Integer ... years);
 
+    /**
+     * получение количества кредитов в указанном банке за все года
+     * @return map с годами и значением, типа
+     * Map<String, List<String>>
+     */
+    Map<String, List> bankCreditStatisticByYears(String bankName);
+
     Integer bankCreditStatisticByYear(String bankName, Integer year);
+
+    /**
+     * получение всех готов, в которые у банка брали кредиты
+     * @param bankName имя бака
+     * @return возвращает список годов в формате yyyy
+     */
+    List<Integer> getCreditYearsOfBank(String bankName);
 }

@@ -4,14 +4,14 @@ import com.privat.bki.apiserver.mappers.PreferredBankRowMapper;
 import com.privat.bki.business.entities.Bank;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.stereotype.Component;
 
 import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.*;
 
 /**
  * Created by sting on 5/6/15.
@@ -152,6 +152,23 @@ public class StatisticDaoImpl implements StatisticDao {
     }
 
     @Override
+    public Map<String, List> bankCreditStatisticByYears(String bankName) {
+        Map<String, List> bankCreditStatistic = new LinkedHashMap<>();
+        List<Map> bankStatisticList = new ArrayList<>();
+        Map<String,Integer> statistic;
+        List<Integer> years = getCreditYearsOfBank(bankName);
+        Collections.sort(years);
+        for (int year : years) {
+            statistic = new LinkedHashMap<>();
+            statistic.put("year", year);
+            statistic.put("count", bankCreditStatisticByYear(bankName, year));
+            bankStatisticList.add(statistic);
+        }
+        bankCreditStatistic.put(bankName, bankStatisticList);
+        return bankCreditStatistic;
+    }
+
+    @Override
     public Integer bankCreditStatisticByYear(String bankName, Integer year) {
         String query =
                 "SELECT count(*) cnt " +
@@ -168,6 +185,29 @@ public class StatisticDaoImpl implements StatisticDao {
             data = jdbcTemplate.queryForObject(query, params, Integer.class);
         } catch (EmptyResultDataAccessException e){
             data = 0;
+        }
+        return data;
+    }
+
+    @Override
+    public List<Integer> getCreditYearsOfBank(String bankName) {
+        String query =
+                "SELECT DISTINCT datepart(YEAR,l.init_date) year " +
+                        "FROM loan l " +
+                        "RIGHT JOIN bank b ON b.bank_code = l.bank_code " +
+                        "WHERE b.bank_name = :bankName " +
+                        "GROUP BY datepart(YEAR,l.init_date)";
+        Map params = new LinkedHashMap<>();
+        params.put("bankName", bankName);
+
+        List <Integer> data;
+        try{
+            data = jdbcTemplate.query(query, params, (rs, rowNum) -> {
+                return rs.getInt(1);
+            });
+
+        } catch (EmptyResultDataAccessException e){
+            data = new ArrayList<>();
         }
         return data;
     }
