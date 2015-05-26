@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.privat.bki.desktopapp.MainApp</OriginalElement>
+  <nodes>
+    <node x="999.1375749250751" y="248.0">com.privat.bki.desktopapp.gui.directories.BankWindowController</node>
+    <node x="935.875" y="79.0">com.privat.bki.business.entities.Currency</node>
+    <node x="828.1443181818184" y="644.0">com.privat.bki.desktopapp.MainApp</node>
+    <node x="163.0" y="248.0">com.privat.bki.desktopapp.gui.searchuser.ClientSearchWindowController</node>
+    <node x="565.0067432567433" y="337.0">com.privat.bki.business.wrappers.LoanInfoListWrapper</node>
+    <node x="1306.6197240259742" y="436.0">com.privat.bki.desktopapp.gui.login.LoginController</node>
+    <node x="664.75" y="248.0">com.privat.bki.business.entities.LoanInfo</node>
+    <node x="821.6443181818184" y="565.0">com.privat.bki.desktopapp.gui.main.MainModel</node>
+    <node x="552.5067432567433" y="436.0">com.privat.bki.desktopapp.utils.DaoRestTemplateService</node>
+    <node x="861.1375749250751" y="248.0">com.privat.bki.business.utils.Converter</node>
+    <node x="0.0" y="248.0">com.privat.bki.business.wrappers.ClientListWrapper</node>
+    <node x="786.875" y="79.0">com.privat.bki.business.entities.Bank</node>
+    <node x="837.1375749250751" y="337.0">com.privat.bki.business.utils.SqlDateConverter</node>
+    <node x="851.875" y="0.0">com.privat.bki.business.entities.IDirectory</node>
+    <node x="1193.1375749250751" y="248.0">com.privat.bki.desktopapp.gui.directories.CurrencyWindowController</node>
+    <node x="784.3817432567433" y="436.0">com.privat.bki.desktopapp.gui.main.MainWindowController</node>
+    <node x="329.00674325674333" y="337.0">com.privat.bki.desktopapp.gui.changeclient.ChangeInfoWindowController</node>
+    <node x="358.49999999999994" y="79.0">com.privat.bki.business.entities.Person</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.privat.bki.business.entities.Bank" target="com.privat.bki.business.entities.IDirectory">
+      <point x="0.0" y="-14.5" />
+      <point x="817.875" y="54.0" />
+      <point x="875.375" y="54.0" />
+      <point x="-23.5" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.desktopapp.gui.main.MainWindowController" target="com.privat.bki.desktopapp.gui.main.MainModel">
+      <point x="43.5" y="14.5" />
+      <point x="914.8817432567433" y="485.0" />
+      <point x="871.6443181818184" y="485.0" />
+      <point x="0.0" y="-14.5" />
+    </edge>
+    <edge source="com.privat.bki.desktopapp.gui.main.MainModel" target="com.privat.bki.desktopapp.gui.directories.CurrencyWindowController">
+      <point x="23.076923076923094" y="-14.5" />
+      <point x="894.7212412587415" y="515.0" />
+      <point x="1288.4274163336665" y="515.0" />
+      <point x="1288.4274163336665" y="317.0" />
+      <point x="1243.1375749250751" y="317.0" />
+      <point x="-50.0" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.desktopapp.gui.main.MainModel" target="com.privat.bki.desktopapp.gui.directories.BankWindowController">
+      <point x="15.384615384615358" y="-14.5" />
+      <point x="887.0289335664338" y="505.0" />
+      <point x="1089.983728771229" y="505.0" />
+      <point x="1089.983728771229" y="317.0" />
+      <point x="1129.6375749250751" y="317.0" />
+      <point x="43.5" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.business.utils.SqlDateConverter" target="com.privat.bki.business.utils.Converter">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.business.wrappers.LoanInfoListWrapper" target="com.privat.bki.business.entities.LoanInfo">
+      <point x="0.0" y="-14.5" />
+      <point x="645.5067432567433" y="317.0" />
+      <point x="701.0" y="317.0" />
+      <point x="-7.25" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.desktopapp.gui.main.MainWindowController" target="com.privat.bki.business.entities.Bank">
+      <point x="14.5" y="-14.5" />
+      <point x="885.8817432567433" y="386.0" />
+      <point x="826.6375749250751" y="386.0" />
+      <point x="826.6375749250751" y="168.0" />
+      <point x="817.875" y="168.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.desktopapp.gui.main.MainWindowController" target="com.privat.bki.business.entities.LoanInfo">
+      <point x="-43.5" y="-14.5" />
+      <point x="827.8817432567433" y="406.0" />
+      <point x="783.2693181818184" y="406.0" />
+      <point x="783.2693181818184" y="297.0" />
+      <point x="744.5" y="297.0" />
+      <point x="36.25" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.desktopapp.gui.directories.BankWindowController" target="com.privat.bki.desktopapp.gui.main.MainModel">
+      <point x="-43.5" y="14.5" />
+      <point x="1042.6375749250751" y="317.0" />
+      <point x="1082.2914210789213" y="317.0" />
+      <point x="1082.2914210789213" y="495.0" />
+      <point x="879.3366258741262" y="495.0" />
+      <point x="7.692307692307736" y="-14.5" />
+    </edge>
+    <edge source="com.privat.bki.desktopapp.gui.directories.CurrencyWindowController" target="com.privat.bki.desktopapp.gui.main.MainModel">
+      <point x="50.00000000000006" y="14.5" />
+      <point x="1343.1375749250751" y="317.0" />
+      <point x="1296.1197240259742" y="317.0" />
+      <point x="1296.1197240259742" y="525.0" />
+      <point x="902.4135489510492" y="525.0" />
+      <point x="30.769230769230717" y="-14.5" />
+    </edge>
+    <edge source="com.privat.bki.business.wrappers.ClientListWrapper" target="com.privat.bki.business.entities.Person">
+      <point x="0.0" y="-14.5" />
+      <point x="71.5" y="208.0" />
+      <point x="363.7857142857142" y="208.0" />
+      <point x="-31.714285714285722" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.desktopapp.gui.main.MainModel" target="com.privat.bki.desktopapp.gui.login.LoginController">
+      <point x="38.46153846153845" y="-14.5" />
+      <point x="910.1058566433569" y="535.0" />
+      <point x="1339.1197240259742" y="535.0" />
+      <point x="-32.5" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.desktopapp.gui.main.MainWindowController" target="com.privat.bki.business.utils.SqlDateConverter">
+      <point x="43.5" y="-14.5" />
+      <point x="914.8817432567433" y="416.0" />
+      <point x="907.6375749250751" y="416.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.business.entities.LoanInfo" target="com.privat.bki.business.entities.Person">
+      <point x="-29.0" y="-14.5" />
+      <point x="679.25" y="188.0" />
+      <point x="416.64285714285705" y="188.0" />
+      <point x="21.14285714285711" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.desktopapp.gui.main.MainModel" target="com.privat.bki.desktopapp.gui.main.MainWindowController">
+      <point x="-7.692307692307736" y="-14.5" />
+      <point x="863.9520104895107" y="495.0" />
+      <point x="827.8817432567433" y="495.0" />
+      <point x="-43.5" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.desktopapp.gui.login.LoginController" target="com.privat.bki.desktopapp.gui.main.MainModel">
+      <point x="32.5" y="14.5" />
+      <point x="1404.1197240259742" y="545.0" />
+      <point x="917.7981643356646" y="545.0" />
+      <point x="46.15384615384619" y="-14.5" />
+    </edge>
+    <edge source="com.privat.bki.desktopapp.gui.changeclient.ChangeInfoWindowController" target="com.privat.bki.business.entities.Person">
+      <point x="-54.0" y="-14.5" />
+      <point x="383.00674325674333" y="317.0" />
+      <point x="406.49999999999994" y="317.0" />
+      <point x="10.571428571428555" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.desktopapp.gui.directories.CurrencyWindowController" target="com.privat.bki.business.entities.Currency">
+      <point x="-50.0" y="-14.5" />
+      <point x="1243.1375749250751" y="138.0" />
+      <point x="997.4749999999999" y="138.0" />
+      <point x="17.600000000000023" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.desktopapp.MainApp" target="com.privat.bki.desktopapp.gui.main.MainModel">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.business.entities.Currency" target="com.privat.bki.business.entities.IDirectory">
+      <point x="0.0" y="-14.5" />
+      <point x="979.875" y="54.0" />
+      <point x="922.375" y="54.0" />
+      <point x="23.5" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.desktopapp.gui.changeclient.ChangeInfoWindowController" target="com.privat.bki.business.entities.Currency">
+      <point x="18.0" y="-14.5" />
+      <point x="455.00674325674333" y="317.0" />
+      <point x="428.49999999999994" y="317.0" />
+      <point x="428.49999999999994" y="218.0" />
+      <point x="944.675" y="218.0" />
+      <point x="-35.200000000000045" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.business.entities.LoanInfo" target="com.privat.bki.business.entities.Bank">
+      <point x="0.0" y="-14.5" />
+      <point x="708.25" y="208.0" />
+      <point x="805.4749999999999" y="208.0" />
+      <point x="-12.399999999999977" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.desktopapp.gui.main.MainModel" target="com.privat.bki.desktopapp.gui.searchuser.ClientSearchWindowController">
+      <point x="-46.15384615384619" y="-14.5" />
+      <point x="825.4904720279723" y="545.0" />
+      <point x="274.0" y="545.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.desktopapp.gui.main.MainModel" target="com.privat.bki.desktopapp.utils.DaoRestTemplateService">
+      <point x="-23.076923076923094" y="-14.5" />
+      <point x="848.5673951048954" y="515.0" />
+      <point x="645.5067432567433" y="515.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.desktopapp.gui.changeclient.ChangeInfoWindowController" target="com.privat.bki.business.entities.Bank">
+      <point x="-18.0" y="-14.5" />
+      <point x="419.00674325674333" y="317.0" />
+      <point x="417.49999999999994" y="317.0" />
+      <point x="417.49999999999994" y="198.0" />
+      <point x="793.075" y="198.0" />
+      <point x="-24.799999999999955" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.desktopapp.gui.main.MainModel" target="com.privat.bki.business.entities.LoanInfo">
+      <point x="-15.384615384615358" y="-14.5" />
+      <point x="856.2597027972031" y="505.0" />
+      <point x="749.0067432567433" y="505.0" />
+      <point x="749.0067432567433" y="317.0" />
+      <point x="715.5" y="317.0" />
+      <point x="7.25" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.desktopapp.gui.changeclient.ChangeInfoWindowController" target="com.privat.bki.business.entities.LoanInfo">
+      <point x="90.0" y="-14.5" />
+      <point x="527.0067432567433" y="307.0" />
+      <point x="686.5" y="307.0" />
+      <point x="-21.75" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.desktopapp.gui.main.MainModel" target="com.privat.bki.desktopapp.gui.changeclient.ChangeInfoWindowController">
+      <point x="-30.769230769230717" y="-14.5" />
+      <point x="840.8750874125877" y="525.0" />
+      <point x="437.6197240259743" y="525.0" />
+      <point x="437.6197240259743" y="416.0" />
+      <point x="491.00674325674333" y="416.0" />
+      <point x="54.0" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.desktopapp.gui.directories.BankWindowController" target="com.privat.bki.business.entities.Bank">
+      <point x="43.5" y="-14.5" />
+      <point x="1129.6375749250751" y="148.0" />
+      <point x="842.675" y="148.0" />
+      <point x="24.799999999999955" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.desktopapp.gui.searchuser.ClientSearchWindowController" target="com.privat.bki.business.entities.Person">
+      <point x="55.5" y="-14.5" />
+      <point x="329.5" y="228.0" />
+      <point x="384.9285714285714" y="228.0" />
+      <point x="-10.571428571428555" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.desktopapp.gui.main.MainWindowController" target="com.privat.bki.business.entities.Currency">
+      <point x="72.5" y="-14.5" />
+      <point x="943.8817432567433" y="416.0" />
+      <point x="988.6375749250751" y="416.0" />
+      <point x="988.6375749250751" y="228.0" />
+      <point x="979.875" y="228.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.desktopapp.gui.main.MainWindowController" target="com.privat.bki.business.entities.Person">
+      <point x="-14.5" y="-14.5" />
+      <point x="856.8817432567433" y="396.0" />
+      <point x="815.6375749250751" y="396.0" />
+      <point x="815.6375749250751" y="178.0" />
+      <point x="427.21428571428567" y="178.0" />
+      <point x="31.714285714285722" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.desktopapp.gui.changeclient.ChangeInfoWindowController" target="com.privat.bki.desktopapp.gui.main.MainModel">
+      <point x="-54.0" y="14.5" />
+      <point x="383.00674325674333" y="416.0" />
+      <point x="429.92741633366654" y="416.0" />
+      <point x="429.92741633366654" y="535.0" />
+      <point x="833.18277972028" y="535.0" />
+      <point x="-38.46153846153845" y="-14.5" />
+    </edge>
+    <edge source="com.privat.bki.desktopapp.utils.DaoRestTemplateService" target="com.privat.bki.business.wrappers.LoanInfoListWrapper">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.business.entities.LoanInfo" target="com.privat.bki.business.entities.Currency">
+      <point x="29.0" y="-14.5" />
+      <point x="737.25" y="228.0" />
+      <point x="962.2749999999999" y="228.0" />
+      <point x="-17.600000000000023" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7721345229924502" x="718.5" y="336.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
