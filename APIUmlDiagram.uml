@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.privat.bki.apiserver</OriginalElement>
+  <nodes>
+    <node x="174.0" y="178.0">com.privat.bki.apiserver.spring.services.statistic.StatisticDao</node>
+    <node x="66.0" y="346.0">com.privat.bki.apiserver.spring.controllers.StatisticController</node>
+    <node x="512.0" y="178.0">com.privat.bki.apiserver.mappers.BanksRowMapper</node>
+    <node x="378.0" y="494.0">com.privat.bki.business.utils.View</node>
+    <node x="1450.2169117647059" y="257.0">com.privat.bki.apiserver.spring.services.loans.LoanInfoService</node>
+    <node x="928.5594362745098" y="346.0">com.privat.bki.apiserver.spring.services.loans.LoanInfoDaoImpl</node>
+    <node x="296.0" y="420.0">com.privat.bki.apiserver.spring.security.RestAuthenticationEntryPoint</node>
+    <node x="302.0" y="178.0">com.privat.bki.apiserver.mappers.PreferredBankRowMapper</node>
+    <node x="1465.125" y="178.0">com.privat.bki.business.wrappers.ClientListWrapper</node>
+    <node x="790.782475490196" y="79.0">com.privat.bki.business.entities.Bank</node>
+    <node x="767.3094362745098" y="178.0">com.privat.bki.business.utils.Converter</node>
+    <node x="756.0" y="257.0">com.privat.bki.business.utils.SqlDateConverter</node>
+    <node x="0.0" y="420.0">com.privat.bki.apiserver.spring.security.RestAuthenticationSuccessHandler</node>
+    <node x="75.5" y="257.0">com.privat.bki.apiserver.spring.services.statistic.StatisticService</node>
+    <node x="918.0" y="178.0">com.privat.bki.apiserver.mappers.CurrencyRowMapper</node>
+    <node x="258.0" y="257.0">com.privat.bki.apiserver.spring.services.statistic.StatisticDaoImpl</node>
+    <node x="1601.2169117647059" y="257.0">com.privat.bki.business.wrappers.CurrencyMapWrapper</node>
+    <node x="0.0" y="494.0">com.privat.bki.business.utils.JsonDateSerializer</node>
+    <node x="1067.407475490196" y="79.0">com.privat.bki.business.entities.Currency</node>
+    <node x="1188.5594362745098" y="178.0">com.privat.bki.business.entities.LoanInfo</node>
+    <node x="1269.2169117647059" y="257.0">com.privat.bki.business.wrappers.LoanInfoListWrapper</node>
+    <node x="0.0" y="178.0">com.privat.bki.apiserver.spring.services.statistic.RegressionAnalysis</node>
+    <node x="593.0" y="257.0">com.privat.bki.business.utils.UniDateConverter</node>
+    <node x="190.0" y="494.0">com.privat.bki.business.utils.LocalDateAdapter</node>
+    <node x="557.0" y="420.0">com.privat.bki.business.utils.JsonDateDeserializer</node>
+    <node x="1037.9669117647059" y="257.0">com.privat.bki.apiserver.mappers.LoanInfoRowMapper</node>
+    <node x="1333.125" y="178.0">com.privat.bki.apiserver.spring.services.loans.LoanInfoDao</node>
+    <node x="1786.2169117647059" y="257.0">com.privat.bki.business.wrappers.BankMapWrapper</node>
+    <node x="822.282475490196" y="0.0">com.privat.bki.business.entities.IDirectory</node>
+    <node x="1628.125" y="178.0">com.privat.bki.apiserver.mappers.PersonRowMapper</node>
+    <node x="1525.3094362745096" y="346.0">com.privat.bki.apiserver.spring.controllers.MainController</node>
+    <node x="1392.532475490196" y="79.0">com.privat.bki.business.entities.Person</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.privat.bki.apiserver.spring.controllers.MainController" target="com.privat.bki.business.wrappers.CurrencyMapWrapper">
+      <point x="15.625" y="-14.5" />
+      <point x="1603.4344362745096" y="316.0" />
+      <point x="1683.7169117647059" y="316.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.apiserver.spring.controllers.MainController" target="com.privat.bki.business.wrappers.LoanInfoListWrapper">
+      <point x="-46.875" y="-14.5" />
+      <point x="1540.9344362745096" y="326.0" />
+      <point x="1349.7169117647059" y="326.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.business.entities.Bank" target="com.privat.bki.business.entities.IDirectory">
+      <point x="0.0" y="-14.5" />
+      <point x="821.782475490196" y="54.0" />
+      <point x="845.782475490196" y="54.0" />
+      <point x="-23.5" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.apiserver.mappers.CurrencyRowMapper" target="com.privat.bki.business.entities.Currency">
+      <point x="0.0" y="-14.5" />
+      <point x="998.0" y="158.0" />
+      <point x="1082.0741421568628" y="158.0" />
+      <point x="-29.33333333333337" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.business.utils.SqlDateConverter" target="com.privat.bki.business.utils.Converter">
+      <point x="0.0" y="-14.5" />
+      <point x="826.5" y="237.0" />
+      <point x="813.8094362745098" y="237.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.apiserver.spring.services.loans.LoanInfoDaoImpl" target="com.privat.bki.business.entities.LoanInfo">
+      <point x="40.0" y="-14.5" />
+      <point x="1038.5594362745098" y="316.0" />
+      <point x="1207.4669117647059" y="316.0" />
+      <point x="1207.4669117647059" y="237.0" />
+      <point x="1232.0594362745098" y="237.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.apiserver.spring.services.statistic.StatisticDaoImpl" target="com.privat.bki.apiserver.spring.services.statistic.StatisticDao">
+      <point x="-34.0" y="-14.5" />
+      <point x="292.0" y="237.0" />
+      <point x="255.0" y="237.0" />
+      <point x="27.0" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.apiserver.mappers.LoanInfoRowMapper" target="com.privat.bki.business.entities.Person">
+      <point x="19.875" y="-14.5" />
+      <point x="1137.3419117647059" y="237.0" />
+      <point x="1122.407475490196" y="237.0" />
+      <point x="1122.407475490196" y="148.0" />
+      <point x="1401.782475490196" y="148.0" />
+      <point x="-27.75" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.business.wrappers.LoanInfoListWrapper" target="com.privat.bki.business.entities.LoanInfo">
+      <point x="0.0" y="-14.5" />
+      <point x="1349.7169117647059" y="227.0" />
+      <point x="1261.0594362745098" y="227.0" />
+      <point x="29.0" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.apiserver.mappers.LoanInfoRowMapper" target="com.privat.bki.business.entities.LoanInfo">
+      <point x="59.625" y="-14.5" />
+      <point x="1177.0919117647059" y="227.0" />
+      <point x="1203.0594362745098" y="227.0" />
+      <point x="-29.0" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.apiserver.spring.controllers.MainController" target="com.privat.bki.apiserver.spring.services.loans.LoanInfoService">
+      <point x="-15.625" y="-14.5" />
+      <point x="1572.1844362745096" y="316.0" />
+      <point x="1515.7169117647059" y="316.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.apiserver.mappers.PreferredBankRowMapper" target="com.privat.bki.business.entities.Bank">
+      <point x="0.0" y="-14.5" />
+      <point x="397.0" y="148.0" />
+      <point x="798.532475490196" y="148.0" />
+      <point x="-23.25" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.business.wrappers.ClientListWrapper" target="com.privat.bki.business.entities.Person">
+      <point x="0.0" y="-14.5" />
+      <point x="1536.625" y="158.0" />
+      <point x="1438.782475490196" y="158.0" />
+      <point x="9.249999999999943" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.business.entities.LoanInfo" target="com.privat.bki.business.entities.Person">
+      <point x="29.0" y="-14.5" />
+      <point x="1261.0594362745098" y="158.0" />
+      <point x="1420.282475490196" y="158.0" />
+      <point x="-9.25" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.apiserver.spring.services.loans.LoanInfoDaoImpl" target="com.privat.bki.business.utils.Converter">
+      <point x="-20.0" y="-14.5" />
+      <point x="978.5594362745098" y="306.0" />
+      <point x="933.532475490196" y="306.0" />
+      <point x="933.532475490196" y="237.0" />
+      <point x="844.8094362745098" y="237.0" />
+      <point x="31.0" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.apiserver.mappers.PersonRowMapper" target="com.privat.bki.business.entities.Person">
+      <point x="0.0" y="-14.5" />
+      <point x="1701.125" y="148.0" />
+      <point x="1457.282475490196" y="148.0" />
+      <point x="27.749999999999943" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.apiserver.spring.services.loans.LoanInfoDaoImpl" target="com.privat.bki.apiserver.spring.services.loans.LoanInfoDao">
+      <point x="60.0" y="-14.5" />
+      <point x="1058.5594362745098" y="326.0" />
+      <point x="1258.7169117647059" y="326.0" />
+      <point x="1258.7169117647059" y="237.0" />
+      <point x="1361.125" y="237.0" />
+      <point x="-28.0" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.apiserver.spring.controllers.StatisticController" target="com.privat.bki.apiserver.spring.services.statistic.StatisticService">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.apiserver.mappers.LoanInfoRowMapper" target="com.privat.bki.business.entities.Bank">
+      <point x="-59.625" y="-14.5" />
+      <point x="1057.8419117647059" y="237.0" />
+      <point x="1088.5" y="237.0" />
+      <point x="1088.5" y="148.0" />
+      <point x="829.532475490196" y="148.0" />
+      <point x="7.75" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.apiserver.spring.services.loans.LoanInfoDaoImpl" target="com.privat.bki.apiserver.mappers.CurrencyRowMapper">
+      <point x="0.0" y="-14.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.business.entities.Currency" target="com.privat.bki.business.entities.IDirectory">
+      <point x="0.0" y="-14.5" />
+      <point x="1111.407475490196" y="54.0" />
+      <point x="892.782475490196" y="54.0" />
+      <point x="23.5" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.apiserver.spring.services.loans.LoanInfoDaoImpl" target="com.privat.bki.apiserver.mappers.LoanInfoRowMapper">
+      <point x="20.0" y="-14.5" />
+      <point x="1018.5594362745098" y="306.0" />
+      <point x="1117.4669117647059" y="306.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.apiserver.spring.services.loans.LoanInfoDaoImpl" target="com.privat.bki.business.utils.SqlDateConverter">
+      <point x="-40.0" y="-14.5" />
+      <point x="958.5594362745098" y="316.0" />
+      <point x="826.5" y="316.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.business.entities.LoanInfo" target="com.privat.bki.business.entities.Bank">
+      <point x="-29.0" y="-14.5" />
+      <point x="1203.0594362745098" y="138.0" />
+      <point x="845.032475490196" y="138.0" />
+      <point x="23.25" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.apiserver.spring.controllers.MainController" target="com.privat.bki.business.wrappers.BankMapWrapper">
+      <point x="46.875" y="-14.5" />
+      <point x="1634.6844362745096" y="326.0" />
+      <point x="1855.7169117647059" y="326.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.apiserver.spring.services.loans.LoanInfoDaoImpl" target="com.privat.bki.apiserver.mappers.BanksRowMapper">
+      <point x="-60.0" y="-14.5" />
+      <point x="938.5594362745098" y="326.0" />
+      <point x="582.5" y="326.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.apiserver.mappers.LoanInfoRowMapper" target="com.privat.bki.business.entities.Currency">
+      <point x="-19.875" y="-14.5" />
+      <point x="1097.5919117647059" y="237.0" />
+      <point x="1111.407475490196" y="237.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.business.utils.UniDateConverter" target="com.privat.bki.business.utils.Converter">
+      <point x="0.0" y="-14.5" />
+      <point x="664.5" y="237.0" />
+      <point x="782.8094362745098" y="237.0" />
+      <point x="-31.0" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.apiserver.spring.services.statistic.StatisticService" target="com.privat.bki.apiserver.spring.services.statistic.StatisticDao">
+      <point x="31.75" y="-14.5" />
+      <point x="170.75" y="237.0" />
+      <point x="201.0" y="237.0" />
+      <point x="-27.0" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.apiserver.mappers.BanksRowMapper" target="com.privat.bki.business.entities.Bank">
+      <point x="0.0" y="-14.5" />
+      <point x="582.5" y="158.0" />
+      <point x="814.032475490196" y="158.0" />
+      <point x="-7.75" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.apiserver.spring.services.statistic.StatisticService" target="com.privat.bki.apiserver.spring.services.statistic.RegressionAnalysis">
+      <point x="-31.75" y="-14.5" />
+      <point x="107.25" y="237.0" />
+      <point x="77.0" y="237.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.apiserver.spring.services.loans.LoanInfoService" target="com.privat.bki.apiserver.spring.services.loans.LoanInfoDao">
+      <point x="0.0" y="-14.5" />
+      <point x="1515.7169117647059" y="237.0" />
+      <point x="1417.125" y="237.0" />
+      <point x="28.0" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.apiserver.spring.services.statistic.StatisticDaoImpl" target="com.privat.bki.apiserver.mappers.PreferredBankRowMapper">
+      <point x="34.0" y="-14.5" />
+      <point x="360.0" y="237.0" />
+      <point x="397.0" y="237.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="com.privat.bki.business.entities.LoanInfo" target="com.privat.bki.business.entities.Currency">
+      <point x="0.0" y="-14.5" />
+      <point x="1232.0594362745098" y="128.0" />
+      <point x="1140.7408088235295" y="128.0" />
+      <point x="29.33333333333337" y="14.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.5236382322713258" x="963.0" y="261.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
