@@ -9,6 +9,7 @@ import com.privat.bki.desktopapp.gui.directories.CurrencyWindowController;
 import com.privat.bki.desktopapp.gui.login.LoginController;
 import com.privat.bki.desktopapp.gui.searchuser.ClientSearchWindowController;
 import com.privat.bki.desktopapp.utils.DaoRestTemplateService;
+import com.privat.bki.desktopapp.utils.ExcelWriter;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -20,6 +21,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -50,6 +52,8 @@ public class MainModel {
     private BankWindowController bwController;
     private CurrencyWindowController cwController;
     private LoginController liController;
+    @Autowired
+    private ExcelWriter excelWriter;
 
     /**
      * foundInfo хранит информацию об искомом клиенте
@@ -347,5 +351,14 @@ public class MainModel {
 
     public Map<String, String> getGenderMap() {
         return genderMap;
+    }
+
+    public void writeTableIntoFile(){
+        List<LoanInfo> loans = new ArrayList<>(foundInfo);
+        try {
+            excelWriter.writeExcel(loans);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

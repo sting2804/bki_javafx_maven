@@ -13,6 +13,7 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.CheckBoxTableCell;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.GridPane;
+import javafx.stage.Stage;
 
 import java.net.URL;
 import java.sql.Date;
@@ -36,6 +37,8 @@ public class MainWindowController implements Initializable {
     public Button addInfoButton;
     @FXML
     public Button resetButton;
+    public MenuItem saveAsXlsMenuItem;
+    public MenuItem closeMenuItem;
 
     private ObservableList<LoanInfo> infoList;
 
@@ -297,5 +300,14 @@ public class MainWindowController implements Initializable {
         refreshTable(tableView);
         List<LoanInfo> tmpList = mainModel.getAllRecords();
         if (tmpList != null) infoList.addAll(tmpList);
+    }
+
+    public void saveAsXls(ActionEvent actionEvent) {
+        mainModel.writeTableIntoFile();
+    }
+
+    public void close(ActionEvent actionEvent) {
+        Stage stage = (Stage) rootScene.getScene().getWindow();
+        stage.close();
     }
 }

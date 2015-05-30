@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.geometry.*?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-
-<GridPane fx:id="rootScene" alignment="center" hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="534.0" prefWidth="1187.0" vgap="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.privat.bki.desktopapp.gui.main.MainWindowController">
+<GridPane fx:id="rootScene" alignment="center" hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="534.0" prefWidth="1208.0" vgap="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.privat.bki.desktopapp.gui.main.MainWindowController">
     <padding>
         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
     </padding>
     <children>
            
-        <Label style="-fx-font: NORMAL 20 Tahoma;" text="Сервис кредитных историй" GridPane.columnIndex="0" GridPane.rowIndex="0">
+        <Label style="-fx-font: NORMAL 20 Tahoma;" text="Сервис кредитных историй" GridPane.rowIndex="1">
          <GridPane.margin>
             <Insets />
          </GridPane.margin></Label>
 
-        <TableView fx:id="tableView" prefHeight="400.0" prefWidth="1172.0" GridPane.rowIndex="3">
+        <TableView fx:id="tableView" prefHeight="400.0" prefWidth="1196.0" GridPane.rowIndex="3">
             <columns>
                 <TableColumn fx:id="fioColumn" prefWidth="228.0" text="ФИО" />
                 <TableColumn fx:id="bdColumn" prefWidth="87.0" text="ДР" />
@@ -27,10 +24,10 @@
                 <TableColumn fx:id="initAmountColumn" prefWidth="87.0" text="Сумма" />
                 <TableColumn fx:id="balanceColumn" minWidth="0.0" prefWidth="73.0" text="Остаток" />
                 <TableColumn fx:id="currencyColumn" prefWidth="57.0" text="Валюта" />
-                <TableColumn fx:id="bankColumn" prefWidth="78.0" text="Банк" />
-                <TableColumn fx:id="initDateColumn" prefWidth="87.0" text="Открыт" />
-                <TableColumn fx:id="finishDateColumn" prefWidth="87.0" text="Закрыт" />
-                <TableColumn fx:id="arrearsColumn" editable="false" prefWidth="89.0" text="Просрочки" />
+                <TableColumn fx:id="bankColumn" prefWidth="84.0" text="Банк" />
+                <TableColumn fx:id="initDateColumn" prefWidth="92.0" text="Открыт" />
+                <TableColumn fx:id="finishDateColumn" prefWidth="86.0" text="Закрыт" />
+                <TableColumn fx:id="arrearsColumn" editable="false" prefWidth="86.0" text="Просрочки" />
             </columns>
             <sortOrder>
                 <fx:reference source="fioColumn" />
@@ -49,11 +46,32 @@
             <Button fx:id="resetButton" mnemonicParsing="false" onAction="#resetTableRecords" text="Сброс" />
         </items>
       </ToolBar>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="saveAsXlsMenuItem" mnemonicParsing="false" onAction="#saveAsXls" text="Сохранить как .xls" />
+              <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" onAction="#close" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
     </children>
    <columnConstraints>
       <ColumnConstraints />
    </columnConstraints>
    <rowConstraints>
+      <RowConstraints />
       <RowConstraints />
       <RowConstraints />
       <RowConstraints />
