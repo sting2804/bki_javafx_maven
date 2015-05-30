@@ -27,7 +27,7 @@ public class ExcelWriter {
 
     public void writeExcel(List<LoanInfo> loans) throws Exception {
         try {
-            File file = new File("Loans.csv.");
+            File file = new File("Loans.csv");
             writer = new BufferedWriter(new FileWriter(file));
             for (LoanInfo loan : loans) {
                 String text = loan.toString() + "\n";
