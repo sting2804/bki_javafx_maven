@@ -4,5 +4,14 @@
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/APIServer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/DesktopApp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/images/1433045142_Save.png" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/images/1433045150_Add.png" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/images/1433045150_Add_new.png" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/images/1433045154_Log Out.png" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/images/1433045194_Search.png" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/images/1433045201_Synchronize.png" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/images/1433047292_Edit.png" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/images/1433047661_Help.png" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/images/1433047669_Delete.png" charset="windows-1251" />
   </component>
 </project>
