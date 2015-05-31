@@ -1,163 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.image.*?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.image.Image?>
-
-<GridPane fx:id="rootScene" alignment="center" hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="534.0" prefWidth="1208.0" vgap="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.privat.bki.desktopapp.gui.main.MainWindowController">
+<GridPane fx:id="rootScene" alignment="center" hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="534.0"
+          prefWidth="1208.0" vgap="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="com.privat.bki.desktopapp.gui.main.MainWindowController">
     <padding>
-        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
     </padding>
-    <children>
-           
-        <Label style="-fx-font: NORMAL 20 Tahoma;" text="Сервис кредитных историй" GridPane.rowIndex="1">
-         <GridPane.margin>
-            <Insets />
-         </GridPane.margin></Label>
+    <columnConstraints>
+        <ColumnConstraints/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+        <RowConstraints/>
+    </rowConstraints>
 
-        <TableView fx:id="tableView" prefHeight="400.0" prefWidth="1196.0" GridPane.rowIndex="3">
-            <columns>
-                <TableColumn fx:id="fioColumn" prefWidth="228.0" text="ФИО" />
-                <TableColumn fx:id="bdColumn" prefWidth="87.0" text="ДР" />
-                <TableColumn fx:id="innColumn" prefWidth="125.0" text="ИНН" />
-                <TableColumn fx:id="passportColumn" prefWidth="90.0" text="Паспорт" />
-                <TableColumn fx:id="genderColumn" prefWidth="78.0" text="Пол" />
-                <TableColumn fx:id="initAmountColumn" prefWidth="87.0" text="Сумма" />
-                <TableColumn fx:id="balanceColumn" minWidth="0.0" prefWidth="73.0" text="Остаток" />
-                <TableColumn fx:id="currencyColumn" prefWidth="57.0" text="Валюта" />
-                <TableColumn fx:id="bankColumn" prefWidth="84.0" text="Банк" />
-                <TableColumn fx:id="initDateColumn" prefWidth="92.0" text="Открыт" />
-                <TableColumn fx:id="finishDateColumn" prefWidth="86.0" text="Закрыт" />
-                <TableColumn fx:id="arrearsColumn" editable="false" prefWidth="86.0" text="Просрочки" />
-            </columns>
-            <sortOrder>
-                <fx:reference source="fioColumn" />
-            </sortOrder> 
-        </TableView>
-      <ToolBar prefHeight="40.0" prefWidth="200.0" GridPane.rowIndex="2">
-        <items>
-            <Button fx:id="newClientButton" mnemonicParsing="false" onAction="#newClientOnClick" text="Новый клиент">
+    <Label style="-fx-font: NORMAL 20 Tahoma;" text="Сервис кредитных историй" GridPane.rowIndex="1">
+        <GridPane.margin>
+        <Insets/>
+        </GridPane.margin>
+    </Label>
+
+    <TableView fx:id="tableView" prefHeight="400.0" prefWidth="1196.0" GridPane.rowIndex="3">
+        <columns>
+            <TableColumn fx:id="fioColumn" prefWidth="228.0" text="ФИО"/>
+            <TableColumn fx:id="bdColumn" prefWidth="87.0" text="ДР"/>
+            <TableColumn fx:id="innColumn" prefWidth="125.0" text="ИНН"/>
+            <TableColumn fx:id="passportColumn" prefWidth="90.0" text="Паспорт"/>
+            <TableColumn fx:id="genderColumn" prefWidth="78.0" text="Пол"/>
+            <TableColumn fx:id="initAmountColumn" prefWidth="87.0" text="Сумма"/>
+            <TableColumn fx:id="balanceColumn" minWidth="0.0" prefWidth="73.0" text="Остаток"/>
+            <TableColumn fx:id="currencyColumn" prefWidth="57.0" text="Валюта"/>
+            <TableColumn fx:id="bankColumn" prefWidth="84.0" text="Банк"/>
+            <TableColumn fx:id="initDateColumn" prefWidth="92.0" text="Открыт"/>
+            <TableColumn fx:id="finishDateColumn" prefWidth="86.0" text="Закрыт"/>
+            <TableColumn fx:id="arrearsColumn" editable="false" prefWidth="86.0" text="Просрочки"/>
+        </columns>
+        <sortOrder>
+            <fx:reference source="fioColumn"/>
+        </sortOrder>
+    </TableView>
+    <ToolBar prefHeight="40.0" prefWidth="200.0" GridPane.rowIndex="2">
+        <Button fx:id="newClientButton" mnemonicParsing="false" onAction="#newClientOnClick" text="Новый клиент">
+            <graphic>
+                <ImageView fitHeight="15" fitWidth="15">
+                    <Image url="@images/1433045150_Add_new.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+        <HBox>
+            <Button fx:id="addInfoButton" mnemonicParsing="false" onAction="#addInfoOnClick"
+                    text="Добавить информацию">
                 <graphic>
                     <ImageView fitHeight="15" fitWidth="15">
-                        <image>
-                            <Image url="@images/1433045150_Add_new.png" />
-                        </image>
+                        <Image url="@images/1433045150_Add.png"/>
                     </ImageView>
                 </graphic>
             </Button>
-            <HBox>
-               <children>
-                <Button fx:id="addInfoButton" mnemonicParsing="false" onAction="#addInfoOnClick" text="Добавить информацию">
-                    <graphic>
-                        <ImageView fitHeight="15" fitWidth="15">
-                            <image>
-                                <Image url="@images/1433045150_Add.png" />
-                            </image>
-                        </ImageView>
-                    </graphic>
-                </Button>
-                  <Button fx:id="changeInfoButton" mnemonicParsing="false" onAction="#changeInfoOnClick" text="Изменить информацию">
-                      <graphic>
-                          <ImageView fitHeight="15" fitWidth="15">
-                              <image>
-                                  <Image url="@images/1433047292_Edit.png" />
-                              </image>
-                          </ImageView>
-                      </graphic>
-                  </Button>
-               </children>
-            </HBox>
-            <Button fx:id="findClientButton" mnemonicParsing="false" onAction="#findClientOnClick" text="Найти">
+            <Button fx:id="changeInfoButton" mnemonicParsing="false" onAction="#changeInfoOnClick"
+                    text="Изменить информацию">
                 <graphic>
                     <ImageView fitHeight="15" fitWidth="15">
-                        <image>
-                            <Image url="@images/1433045194_Search.png" />
-                        </image>
+                        <Image url="@images/1433047292_Edit.png"/>
                     </ImageView>
                 </graphic>
             </Button>
-            <Button fx:id="resetButton" mnemonicParsing="false" onAction="#resetTableRecords" text="Сброс">
+        </HBox>
+        <Button fx:id="findClientButton" mnemonicParsing="false" onAction="#findClientOnClick" text="Найти">
+            <graphic>
+                <ImageView fitHeight="15" fitWidth="15">
+                    <Image url="@images/1433045194_Search.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id="resetButton" mnemonicParsing="false" onAction="#resetTableRecords" text="Сброс">
+            <graphic>
+                <ImageView fitHeight="15" fitWidth="15">
+                    <Image url="@images/1433045201_Synchronize.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+    </ToolBar>
+    <MenuBar>
+        <Menu mnemonicParsing="false" text="Файл">
+            <MenuItem fx:id="saveAsXlsMenuItem" mnemonicParsing="false" onAction="#saveAsXls"
+                      text="Сохранить как .csv">
                 <graphic>
                     <ImageView fitHeight="15" fitWidth="15">
-                        <image>
-                            <Image url="@images/1433045201_Synchronize.png" />
-                        </image>
+                        <Image url="@images/1433045142_Save.png"/>
                     </ImageView>
                 </graphic>
-            </Button>
-        </items>
-      </ToolBar>
-      <MenuBar>
-        <menus>
-          <Menu mnemonicParsing="false" text="Файл">
-            <items>
-                  <MenuItem fx:id="saveAsXlsMenuItem" mnemonicParsing="false" onAction="#saveAsXls" text="Сохранить как .csv">
-                      <graphic>
-                          <ImageView fitHeight="15" fitWidth="15">
-                              <image>
-                                  <Image url="@images/1433045142_Save.png" />
-                              </image>
-                          </ImageView>
-                      </graphic>
-                  </MenuItem>
-              <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" onAction="#close" text="Закрыть">
-                  <graphic>
-                      <ImageView fitHeight="15" fitWidth="15">
-                          <image>
-                              <Image url="@images/1433045154_Log Out.png" />
-                          </image>
-                      </ImageView>
-                  </graphic>
-              </MenuItem>
-            </items>
-          </Menu>
-            <Menu mnemonicParsing="false" text="Статистика">
-              <items>
-                <MenuItem fx:id="bankStatistic" mnemonicParsing="false" onAction="#getStatistic" text="Статистика банка" />
-              </items>
-            </Menu>
-          <Menu mnemonicParsing="false" text="Изменить">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Удалить">
-                  <graphic>
-                      <ImageView fitHeight="15" fitWidth="15">
-                          <image>
-                              <Image url="@images/1433047669_Delete.png" />
-                          </image>
-                      </ImageView>
-                  </graphic>
-              </MenuItem>
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Справка">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Помощь">
-                  <graphic>
-                      <ImageView fitHeight="15" fitWidth="15">
-                          <image>
-                              <Image url="@images/1433047661_Help.png" />
-                          </image>
-                      </ImageView>
-                  </graphic>
-              </MenuItem>
-            </items>
-          </Menu>
-        </menus>
-      </MenuBar>
-    </children>
-   <columnConstraints>
-      <ColumnConstraints />
-   </columnConstraints>
-   <rowConstraints>
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-   </rowConstraints>
+            </MenuItem>
+            <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" onAction="#close" text="Закрыть">
+                <graphic>
+                    <ImageView fitHeight="15" fitWidth="15">
+                        <Image url="@images/1433045154_Log Out.png"/>
+                    </ImageView>
+                </graphic>
+            </MenuItem>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Статистика">
+            <MenuItem fx:id="bankStatistic" mnemonicParsing="false" onAction="#getStatistic"
+                      text="Статистика банка">
+                <graphic>
+                    <ImageView fitHeight="15" fitWidth="15">
+                        <Image url="@images/1433126340_chart.png"/>
+                    </ImageView>
+                </graphic>
+            </MenuItem>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Изменить">
+            <MenuItem mnemonicParsing="false" text="Удалить">
+                <graphic>
+                    <ImageView fitHeight="15" fitWidth="15">
+                        <Image url="@images/1433047669_Delete.png"/>
+                    </ImageView>
+                </graphic>
+            </MenuItem>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Справка">
+            <MenuItem mnemonicParsing="false" text="Помощь">
+                <graphic>
+                    <ImageView fitHeight="15" fitWidth="15">
+                        <Image url="@images/1433047661_Help.png"/>
+                    </ImageView>
+                </graphic>
+            </MenuItem>
+        </Menu>
+    </MenuBar>
 </GridPane>

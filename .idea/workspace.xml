@@ -4,12 +4,10 @@
     <bookmark url="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticDaoImpl.java" description="Map&lt;String, List&gt; bankCreditStatistic = new Linked..." line="155" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abda6744-f048-4d01-bdc3-6e5b6ad88420" name="Default" comment="the graph builds right">
+    <list default="true" id="abda6744-f048-4d01-bdc3-6e5b6ad88420" name="Default" comment="added icon for statistic menu item">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/images/1433126340_chart.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopAppUmlDiagram.uml" afterPath="$PROJECT_DIR$/DesktopAppUmlDiagram.uml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/ChartDrawer.java" afterPath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/ChartDrawer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/StatisticScene.fxml" afterPath="$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/StatisticScene.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/statistic/StatisticWindowController.java" afterPath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/statistic/StatisticWindowController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopApp/logFile.log" afterPath="$PROJECT_DIR$/DesktopApp/logFile.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/MainScene.fxml" afterPath="$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/MainScene.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bki_diplom.iws" />
@@ -83,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChartDrawer.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ChartDrawer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/ChartDrawer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.59749556">
-              <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -107,6 +105,16 @@
                 <element signature="e#1255#1256#0" expanded="true" />
                 <element signature="e#1293#1294#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainScene.fxml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/MainScene.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7316637">
+              <caret line="133" column="23" selection-start-line="133" selection-start-column="23" selection-end-line="133" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -148,16 +156,6 @@
                 <marker date="1432398590000" expanded="true" signature="8484:8813" placeholder="SELECT count..loan..." />
                 <marker date="1432398590000" expanded="true" signature="9280:9568" placeholder="SELECT DISTI..loan..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BankMapWrapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/wrappers/BankMapWrapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="30" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -315,7 +313,6 @@
         <option value="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/WriteExcel.java" />
         <option value="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/ExcelWriter.java" />
         <option value="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/statisctic/StatisticWindowController.java" />
-        <option value="$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/MainScene.fxml" />
         <option value="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/main/MainModel.java" />
         <option value="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/main/MainWindowController.java" />
         <option value="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/wrappers/StatisticWrapper.java" />
@@ -323,6 +320,7 @@
         <option value="$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/StatisticScene.fxml" />
         <option value="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/statistic/StatisticWindowController.java" />
         <option value="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/ChartDrawer.java" />
+        <option value="$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/MainScene.fxml" />
       </list>
     </option>
   </component>
@@ -621,6 +619,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fxml" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bki_javafx_maven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bki_javafx_maven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DesktopApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -660,6 +692,44 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bki_javafx_maven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bki_javafx_maven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DesktopApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="desktopapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="statistic" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1038,11 +1108,11 @@
       <recent name="desktopclient.utils" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/images" />
       <recent name="$PROJECT_DIR$/DesktopApp/src/main/resources/fxml" />
       <recent name="C:\Users\Home\IdeaProjects\bki_javafx_maven\DesktopApp\src\main\resources\fxml\images" />
       <recent name="C:\Users\Home\IdeaProjects\bki_javafx_maven\DesktopApp\src\main\resources\images" />
       <recent name="$PROJECT_DIR$/WebClient/app" />
-      <recent name="$PROJECT_DIR$/WebAngular/app" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.privat.bki.desktopapp.gui.statisctic" />
@@ -2414,7 +2484,7 @@
       <workItem from="1432587766662" duration="1740000" />
       <workItem from="1432663590876" duration="1780000" />
       <workItem from="1433019750893" duration="9401000" />
-      <workItem from="1433091483548" duration="13575000" />
+      <workItem from="1433091483548" duration="14340000" />
     </task>
     <task id="LOCAL-00001" summary="Почти готовый рест. Работает для json, почти работает под xml">
       <created>1425498065232</created>
@@ -2662,11 +2732,17 @@
       <option name="project" value="LOCAL" />
       <updated>1433106507554</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="the graph builds right">
+      <created>1433107954525</created>
+      <option name="number" value="00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1433107954525</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="347996000" />
+    <option name="totallyTimeSpent" value="348761000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -2700,6 +2776,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22761194" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32711443" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35945272" sideWeight="0.57439196" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2699005" sideWeight="0.49499285" order="15" side_tool="false" content_ui="tabs" />
@@ -2715,7 +2792,6 @@
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32743362" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2774,7 +2850,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
-    <MESSAGE value="DesktopClient works, but only for ../api/loans. Another requests should be rewrite" />
     <MESSAGE value="renamed tha daoService to loanInfoService, added an implementation of the method theMostPreferredBank(int ... years) in the class StatisticDaoImpl. Renamed almost all spring service classes" />
     <MESSAGE value="added realisation of the method theMostCreditAge(int... years)" />
     <MESSAGE value="added realisation of the method theMostPreferredBank(int years), wrote the controller's method getTheMostPreferredBank" />
@@ -2799,7 +2874,8 @@
     <MESSAGE value="added statistic controller into DA, added statisticWrapper (not tested yet),  added ChartDrawer, added the method for working with statistic into DaoRestTemplateService, made ExcelWriter with static method, added statistic scene with chart and bankName field" />
     <MESSAGE value="the graph is constructed" />
     <MESSAGE value="the graph builds right" />
-    <option name="LAST_COMMIT_MESSAGE" value="the graph builds right" />
+    <MESSAGE value="added icon for statistic menu item" />
+    <option name="LAST_COMMIT_MESSAGE" value="added icon for statistic menu item" />
     <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.6362683" />
   </component>
   <component name="XDebuggerManager">
@@ -3254,60 +3330,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DesktopAppUmlDiagram.uml">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>com.privat.bki.desktopapp.MainApp</OriginalElement>
-          <nodes>
-            <node x="552.5067432567433" y="436.0">com.privat.bki.desktopapp.utils.DaoRestTemplateService</node>
-            <node x="358.49999999999994" y="79.0">com.privat.bki.business.entities.Person</node>
-            <node x="786.875" y="79.0">com.privat.bki.business.entities.Bank</node>
-            <node x="935.875" y="79.0">com.privat.bki.business.entities.Currency</node>
-            <node x="851.875" y="0.0">com.privat.bki.business.entities.IDirectory</node>
-            <node x="565.0067432567433" y="337.0">com.privat.bki.business.wrappers.LoanInfoListWrapper</node>
-            <node x="1193.1375749250751" y="248.0">com.privat.bki.desktopapp.gui.directories.CurrencyWindowController</node>
-            <node x="163.0" y="248.0">com.privat.bki.desktopapp.gui.searchuser.ClientSearchWindowController</node>
-            <node x="821.6443181818184" y="565.0">com.privat.bki.desktopapp.gui.main.MainModel</node>
-            <node x="837.1375749250751" y="337.0">com.privat.bki.business.utils.SqlDateConverter</node>
-            <node x="861.1375749250751" y="248.0">com.privat.bki.business.utils.Converter</node>
-            <node x="664.75" y="248.0">com.privat.bki.business.entities.LoanInfo</node>
-            <node x="1306.6197240259742" y="436.0">com.privat.bki.desktopapp.gui.login.LoginController</node>
-            <node x="784.3817432567433" y="436.0">com.privat.bki.desktopapp.gui.main.MainWindowController</node>
-            <node x="999.1375749250751" y="248.0">com.privat.bki.desktopapp.gui.directories.BankWindowController</node>
-            <node x="828.1443181818184" y="644.0">com.privat.bki.desktopapp.MainApp</node>
-            <node x="0.0" y="248.0">com.privat.bki.business.wrappers.ClientListWrapper</node>
-            <node x="329.00674325674333" y="337.0">com.privat.bki.desktopapp.gui.changeclient.ChangeInfoWindowController</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="com.privat.bki.business.entities.Bank" target="com.privat.bki.business.entities.IDirectory">
-              <point x="0.0" y="-14.5" />
-              <point x="817.875" y="54.0" />
-              <point x="875.375" y="54.0" />
-              <point x="-23.5" y="14.5" />
-            </edge>
-            <edge source="com.privat.bki.business.entities.Currency" target="com.privat.bki.business.entities.IDirectory">
-              <point x="0.0" y="-14.5" />
-              <point x="979.875" y="54.0" />
-              <point x="922.375" y="54.0" />
-              <point x="23.5" y="14.5" />
-            </edge>
-            <edge source="com.privat.bki.business.utils.SqlDateConverter" target="com.privat.bki.business.utils.Converter">
-              <point x="0.0" y="-14.5" />
-              <point x="0.0" y="14.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.7721345229924502" x="719.0" y="337.0" />
-          <SelectedNodes>
-            <node>com.privat.bki.desktopapp.MainApp</node>
-          </SelectedNodes>
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/login/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3425,17 +3447,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/MainScene.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38398358">
-          <caret line="120" column="87" selection-start-line="120" selection-start-column="87" selection-end-line="120" selection-end-column="87" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3659,6 +3670,207 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/ChartDrawer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DesktopAppUmlDiagram.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.privat.bki.desktopapp.MainApp</OriginalElement>
+          <nodes>
+            <node x="222.0" y="210.0">com.privat.bki.desktopapp.gui.directories.BankWindowController</node>
+            <node x="354.1747619047621" y="80.0">com.privat.bki.business.entities.Currency</node>
+            <node x="732.5725396825399" y="610.0">com.privat.bki.desktopapp.MainApp</node>
+            <node x="1162.5639682539686" y="210.0">com.privat.bki.desktopapp.gui.searchuser.ClientSearchWindowController</node>
+            <node x="699.9583333333335" y="210.0">com.privat.bki.business.entities.LoanInfo</node>
+            <node x="907.2639682539684" y="390.0">com.privat.bki.desktopapp.gui.login.LoginController</node>
+            <node x="710.9139682539684" y="300.0">com.privat.bki.business.wrappers.LoanInfoListWrapper</node>
+            <node x="0.0" y="685.0">com.privat.bki.desktopapp.utils.ChartDrawer</node>
+            <node x="698.4139682539684" y="390.0">com.privat.bki.desktopapp.utils.DaoRestTemplateService</node>
+            <node x="726.0725396825399" y="530.0">com.privat.bki.desktopapp.gui.main.MainModel</node>
+            <node x="157.0" y="685.0">com.privat.bki.desktopapp.utils.ExcelWriter</node>
+            <node x="1067.0639682539686" y="390.0">com.privat.bki.desktopapp.gui.statistic.StatisticWindowController</node>
+            <node x="1406.5639682539686" y="210.0">com.privat.bki.business.wrappers.ClientListWrapper</node>
+            <node x="464.174761904762" y="80.0">com.privat.bki.business.entities.Bank</node>
+            <node x="514.8723015873018" y="210.0">com.privat.bki.business.utils.Converter</node>
+            <node x="490.87230158730176" y="300.0">com.privat.bki.business.utils.SqlDateConverter</node>
+            <node x="399.6747619047621" y="0.0">com.privat.bki.business.entities.IDirectory</node>
+            <node x="0.0" y="210.0">com.privat.bki.desktopapp.gui.directories.CurrencyWindowController</node>
+            <node x="471.31981481481506" y="390.0">com.privat.bki.desktopapp.gui.main.MainWindowController</node>
+            <node x="944.1639682539684" y="300.0">com.privat.bki.desktopapp.gui.changeclient.ChangeInfoWindowController</node>
+            <node x="1087.6330952380952" y="80.0">com.privat.bki.business.entities.Person</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="com.privat.bki.business.entities.Bank" target="com.privat.bki.business.entities.IDirectory">
+              <point x="5.6843418860808015E-14" y="-15.0" />
+              <point x="496.1747619047621" y="55.0" />
+              <point x="471.6747619047621" y="55.0" />
+              <point x="24.0" y="15.0" />
+            </edge>
+            <edge source="com.privat.bki.desktopapp.gui.main.MainModel" target="com.privat.bki.desktopapp.gui.directories.CurrencyWindowController">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.privat.bki.desktopapp.gui.main.MainWindowController" target="com.privat.bki.desktopapp.gui.main.MainModel">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.privat.bki.desktopapp.gui.main.MainModel" target="com.privat.bki.desktopapp.gui.statistic.StatisticWindowController">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.privat.bki.business.utils.SqlDateConverter" target="com.privat.bki.business.utils.Converter">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.privat.bki.desktopapp.gui.main.MainModel" target="com.privat.bki.desktopapp.gui.directories.BankWindowController">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.privat.bki.business.wrappers.LoanInfoListWrapper" target="com.privat.bki.business.entities.LoanInfo">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.privat.bki.desktopapp.gui.main.MainWindowController" target="com.privat.bki.business.entities.Bank">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.privat.bki.desktopapp.gui.directories.BankWindowController" target="com.privat.bki.desktopapp.gui.main.MainModel">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.privat.bki.desktopapp.gui.main.MainWindowController" target="com.privat.bki.business.entities.LoanInfo">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.privat.bki.desktopapp.gui.directories.CurrencyWindowController" target="com.privat.bki.desktopapp.gui.main.MainModel">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.privat.bki.desktopapp.gui.main.MainWindowController" target="com.privat.bki.business.utils.SqlDateConverter">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.privat.bki.business.wrappers.ClientListWrapper" target="com.privat.bki.business.entities.Person">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.privat.bki.desktopapp.gui.main.MainModel" target="com.privat.bki.desktopapp.gui.login.LoginController">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.privat.bki.desktopapp.gui.statistic.StatisticWindowController" target="com.privat.bki.desktopapp.gui.main.MainModel">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.privat.bki.business.entities.LoanInfo" target="com.privat.bki.business.entities.Person">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.privat.bki.desktopapp.gui.main.MainModel" target="com.privat.bki.desktopapp.gui.main.MainWindowController">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.privat.bki.desktopapp.gui.changeclient.ChangeInfoWindowController" target="com.privat.bki.business.entities.Person">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.privat.bki.desktopapp.gui.login.LoginController" target="com.privat.bki.desktopapp.gui.main.MainModel">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.privat.bki.desktopapp.gui.directories.CurrencyWindowController" target="com.privat.bki.business.entities.Currency">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.privat.bki.desktopapp.MainApp" target="com.privat.bki.desktopapp.gui.main.MainModel">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.privat.bki.business.entities.Currency" target="com.privat.bki.business.entities.IDirectory">
+              <point x="0.0" y="-15.0" />
+              <point x="399.1747619047621" y="55.0" />
+              <point x="423.6747619047621" y="55.0" />
+              <point x="-24.0" y="15.0" />
+            </edge>
+            <edge source="com.privat.bki.desktopapp.gui.changeclient.ChangeInfoWindowController" target="com.privat.bki.business.entities.Currency">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.privat.bki.business.entities.LoanInfo" target="com.privat.bki.business.entities.Bank">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.privat.bki.desktopapp.gui.main.MainModel" target="com.privat.bki.desktopapp.gui.searchuser.ClientSearchWindowController">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.privat.bki.desktopapp.gui.main.MainModel" target="com.privat.bki.desktopapp.utils.DaoRestTemplateService">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.privat.bki.desktopapp.gui.changeclient.ChangeInfoWindowController" target="com.privat.bki.business.entities.Bank">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.privat.bki.desktopapp.gui.main.MainModel" target="com.privat.bki.desktopapp.gui.changeclient.ChangeInfoWindowController">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.privat.bki.desktopapp.gui.main.MainModel" target="com.privat.bki.business.entities.LoanInfo">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.privat.bki.desktopapp.gui.changeclient.ChangeInfoWindowController" target="com.privat.bki.business.entities.LoanInfo">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.privat.bki.desktopapp.gui.directories.BankWindowController" target="com.privat.bki.business.entities.Bank">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.privat.bki.desktopapp.gui.searchuser.ClientSearchWindowController" target="com.privat.bki.business.entities.Person">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.privat.bki.desktopapp.gui.main.MainWindowController" target="com.privat.bki.business.entities.Currency">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.privat.bki.desktopapp.gui.main.MainWindowController" target="com.privat.bki.business.entities.Person">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.privat.bki.desktopapp.gui.changeclient.ChangeInfoWindowController" target="com.privat.bki.desktopapp.gui.main.MainModel">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.privat.bki.business.entities.LoanInfo" target="com.privat.bki.business.entities.Currency">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.privat.bki.desktopapp.utils.DaoRestTemplateService" target="com.privat.bki.business.wrappers.LoanInfoListWrapper">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.5349872773536896" x="438.6087990487515" y="351.8923900118906" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/StatisticScene.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3667,13 +3879,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/ChartDrawer.java">
+    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/MainScene.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59749556">
-          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.7316637">
+          <caret line="133" column="23" selection-start-line="133" selection-start-column="23" selection-end-line="133" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
