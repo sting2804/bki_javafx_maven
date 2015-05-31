@@ -90,7 +90,7 @@
       </ToolBar>
       <MenuBar>
         <menus>
-          <Menu mnemonicParsing="false" text="File">
+          <Menu mnemonicParsing="false" text="Файл">
             <items>
                   <MenuItem fx:id="saveAsXlsMenuItem" mnemonicParsing="false" onAction="#saveAsXls" text="Сохранить как .csv" >
                       <graphic>
@@ -101,7 +101,7 @@
                           </ImageView>
                       </graphic>
                   </MenuItem>
-              <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" onAction="#close" text="Close" >
+              <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" onAction="#close" text="Закрыть" >
                   <graphic>
                       <ImageView fitWidth="15" fitHeight="15">
                           <image>
@@ -112,9 +112,9 @@
               </MenuItem>
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Edit">
+          <Menu mnemonicParsing="false" text="Изменить">
             <items>
-              <MenuItem mnemonicParsing="false" text="Delete" >
+              <MenuItem mnemonicParsing="false" text="Удалить" >
                   <graphic>
                       <ImageView fitWidth="15" fitHeight="15">
                           <image>
@@ -125,9 +125,9 @@
               </MenuItem>
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Help">
+          <Menu mnemonicParsing="false" text="Справка">
             <items>
-              <MenuItem mnemonicParsing="false" text="About" >
+              <MenuItem mnemonicParsing="false" text="Помощь" >
                   <graphic>
                       <ImageView fitWidth="15" fitHeight="15">
                           <image>
