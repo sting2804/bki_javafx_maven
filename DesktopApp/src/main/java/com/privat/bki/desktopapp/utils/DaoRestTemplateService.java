@@ -11,6 +11,7 @@ import com.privat.bki.business.entities.Person;
 import com.privat.bki.business.wrappers.BankMapWrapper;
 import com.privat.bki.business.wrappers.CurrencyMapWrapper;
 import com.privat.bki.business.wrappers.LoanInfoListWrapper;
+import com.privat.bki.business.wrappers.StatisticWrapper;
 import org.apache.commons.codec.binary.Base64;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;
@@ -32,6 +33,7 @@ public class DaoRestTemplateService {
     private HttpHeaders headers;
     private LoanInfoListWrapper data;
     private static final String baseUrl = "http://localhost:8190/api";
+    private static final String statisticUrl = "http://localhost:8190/statistic";
 
     public DaoRestTemplateService() {
     }
@@ -220,6 +222,20 @@ public class DaoRestTemplateService {
                     baseUrl + "/currencies", currency, Boolean.class);
         } catch (Exception e) {
             e.printStackTrace();
+        }
+        return res;
+    }
+
+    public Map<String, List> getStatisticForBank(String bankName){
+        Map<String, List> res;
+        try{
+            ResponseEntity<StatisticWrapper> response = restTemplate.getForEntity(
+                    statisticUrl + "/forBank",
+                    StatisticWrapper.class, bankName);
+            res = response.getBody().getStat();
+        } catch (Exception ex){
+            ex.printStackTrace();
+            res = null;
         }
         return res;
     }

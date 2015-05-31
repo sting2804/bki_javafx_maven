@@ -15,17 +15,9 @@ import java.util.List;
 @Component
 public class ExcelWriter {
 
-    Writer writer = null;
-    List<LoanInfo> loans;
+    private static Writer writer = null;
 
-    public ExcelWriter() {
-    }
-
-    public ExcelWriter(List<LoanInfo> loans) {
-        this.loans = loans;
-    }
-
-    public void writeExcel(List<LoanInfo> loans) throws Exception {
+    public static void writeExcel(List<LoanInfo> loans) throws Exception {
         try {
             File file = new File("Loans.csv");
             writer = new BufferedWriter(new FileWriter(file));

@@ -8,6 +8,7 @@ import com.privat.bki.desktopapp.gui.directories.BankWindowController;
 import com.privat.bki.desktopapp.gui.directories.CurrencyWindowController;
 import com.privat.bki.desktopapp.gui.login.LoginController;
 import com.privat.bki.desktopapp.gui.searchuser.ClientSearchWindowController;
+import com.privat.bki.desktopapp.gui.statistic.StatisticWindowController;
 import com.privat.bki.desktopapp.utils.DaoRestTemplateService;
 import com.privat.bki.desktopapp.utils.ExcelWriter;
 import javafx.application.Platform;
@@ -52,13 +53,12 @@ public class MainModel {
     private BankWindowController bwController;
     private CurrencyWindowController cwController;
     private LoginController liController;
-    @Autowired
-    private ExcelWriter excelWriter;
 
     /**
      * foundInfo хранит информацию об искомом клиенте
      */
     private List<LoanInfo> foundInfo;
+    private StatisticWindowController stController;
 
     public MainModel() {
         genderMap=new LinkedHashMap<>();
@@ -356,9 +356,34 @@ public class MainModel {
     public void writeTableIntoFile(){
         List<LoanInfo> loans = new ArrayList<>(foundInfo);
         try {
-            excelWriter.writeExcel(loans);
+            ExcelWriter.writeExcel(loans);
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public void callStatisticWindow(){
+        final Stage primaryStage = new Stage();
+        FXMLLoader root;
+        primaryStage.initModality(Modality.APPLICATION_MODAL);
+        root = new FXMLLoader(getClass().getResource("/fxml/StatisticScene.fxml"));
+        try {
+            primaryStage.setScene(new Scene(root.load()));
+        } catch (IOException e) {
+            log.error(e.getMessage());
+        }
+        //передача информации в контроллер;
+        stController = root.<StatisticWindowController>getController();
+        stController.setMainModel(this);
+        stController.setBankMap(getBankMap());
+        stController.setScreenForms();
+        primaryStage.setOnCloseRequest(event -> primaryStage.close());
+        primaryStage.setResizable(false);
+        primaryStage.showAndWait();
+
+    }
+
+    public Map<String, List> getStatisticForBank(String bankName) {
+        return service.getStatisticForBank(bankName);
     }
 }
