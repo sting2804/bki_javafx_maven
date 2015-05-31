@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.image.Image?>
+
 <GridPane fx:id="rootScene" alignment="center" hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="534.0" prefWidth="1208.0" vgap="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.privat.bki.desktopapp.gui.main.MainWindowController">
     <padding>
         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
@@ -37,9 +41,9 @@
         </TableView>
       <ToolBar prefHeight="40.0" prefWidth="200.0" GridPane.rowIndex="2">
         <items>
-            <Button fx:id="newClientButton" mnemonicParsing="false" onAction="#newClientOnClick" text="Новый клиент" >
+            <Button fx:id="newClientButton" mnemonicParsing="false" onAction="#newClientOnClick" text="Новый клиент">
                 <graphic>
-                    <ImageView fitWidth="15" fitHeight="15">
+                    <ImageView fitHeight="15" fitWidth="15">
                         <image>
                             <Image url="@images/1433045150_Add_new.png" />
                         </image>
@@ -50,16 +54,16 @@
                <children>
                 <Button fx:id="addInfoButton" mnemonicParsing="false" onAction="#addInfoOnClick" text="Добавить информацию">
                     <graphic>
-                        <ImageView fitWidth="15" fitHeight="15">
+                        <ImageView fitHeight="15" fitWidth="15">
                             <image>
                                 <Image url="@images/1433045150_Add.png" />
                             </image>
                         </ImageView>
                     </graphic>
                 </Button>
-                  <Button fx:id="changeInfoButton" mnemonicParsing="false" onAction="#changeInfoOnClick" text="Изменить информацию" >
+                  <Button fx:id="changeInfoButton" mnemonicParsing="false" onAction="#changeInfoOnClick" text="Изменить информацию">
                       <graphic>
-                          <ImageView fitWidth="15" fitHeight="15">
+                          <ImageView fitHeight="15" fitWidth="15">
                               <image>
                                   <Image url="@images/1433047292_Edit.png" />
                               </image>
@@ -68,9 +72,9 @@
                   </Button>
                </children>
             </HBox>
-            <Button fx:id="findClientButton" mnemonicParsing="false" onAction="#findClientOnClick" text="Найти" >
+            <Button fx:id="findClientButton" mnemonicParsing="false" onAction="#findClientOnClick" text="Найти">
                 <graphic>
-                    <ImageView fitWidth="15" fitHeight="15">
+                    <ImageView fitHeight="15" fitWidth="15">
                         <image>
                             <Image url="@images/1433045194_Search.png" />
                         </image>
@@ -79,7 +83,7 @@
             </Button>
             <Button fx:id="resetButton" mnemonicParsing="false" onAction="#resetTableRecords" text="Сброс">
                 <graphic>
-                    <ImageView fitWidth="15" fitHeight="15">
+                    <ImageView fitHeight="15" fitWidth="15">
                         <image>
                             <Image url="@images/1433045201_Synchronize.png" />
                         </image>
@@ -92,18 +96,18 @@
         <menus>
           <Menu mnemonicParsing="false" text="Файл">
             <items>
-                  <MenuItem fx:id="saveAsXlsMenuItem" mnemonicParsing="false" onAction="#saveAsXls" text="Сохранить как .csv" >
+                  <MenuItem fx:id="saveAsXlsMenuItem" mnemonicParsing="false" onAction="#saveAsXls" text="Сохранить как .csv">
                       <graphic>
-                          <ImageView fitWidth="15" fitHeight="15">
+                          <ImageView fitHeight="15" fitWidth="15">
                               <image>
                                   <Image url="@images/1433045142_Save.png" />
                               </image>
                           </ImageView>
                       </graphic>
                   </MenuItem>
-              <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" onAction="#close" text="Закрыть" >
+              <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" onAction="#close" text="Закрыть">
                   <graphic>
-                      <ImageView fitWidth="15" fitHeight="15">
+                      <ImageView fitHeight="15" fitWidth="15">
                           <image>
                               <Image url="@images/1433045154_Log Out.png" />
                           </image>
@@ -112,11 +116,16 @@
               </MenuItem>
             </items>
           </Menu>
+            <Menu mnemonicParsing="false" text="Статистика">
+              <items>
+                <MenuItem fx:id="bankStatistic" mnemonicParsing="false" onAction="#getStatistic" text="Статистика банка" />
+              </items>
+            </Menu>
           <Menu mnemonicParsing="false" text="Изменить">
             <items>
-              <MenuItem mnemonicParsing="false" text="Удалить" >
+              <MenuItem mnemonicParsing="false" text="Удалить">
                   <graphic>
-                      <ImageView fitWidth="15" fitHeight="15">
+                      <ImageView fitHeight="15" fitWidth="15">
                           <image>
                               <Image url="@images/1433047669_Delete.png" />
                           </image>
@@ -127,9 +136,9 @@
           </Menu>
           <Menu mnemonicParsing="false" text="Справка">
             <items>
-              <MenuItem mnemonicParsing="false" text="Помощь" >
+              <MenuItem mnemonicParsing="false" text="Помощь">
                   <graphic>
-                      <ImageView fitWidth="15" fitHeight="15">
+                      <ImageView fitHeight="15" fitWidth="15">
                           <image>
                               <Image url="@images/1433047661_Help.png" />
                           </image>

@@ -24,7 +24,9 @@ public class StatisticWindowController {
     public void drawChart(ActionEvent actionEvent) {
         String bankName = bankNameComboBox.getValue();
         Map<String,List> stat = mainModel.getStatisticForBank(bankName);
-        areaChart = (AreaChart<Number, Number>) ChartDrawer.drawStatisticForBankByYears(stat,bankName, areaChart);
+        if(bankName!=null)
+            areaChart= (AreaChart<Number, Number>) ChartDrawer.drawStatisticForBankByYears(stat,bankName, areaChart);
+
     }
 
     public void setMainModel(MainModel mainModel) {

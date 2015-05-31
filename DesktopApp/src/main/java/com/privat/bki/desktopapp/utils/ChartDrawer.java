@@ -6,6 +6,8 @@ import javafx.scene.chart.Chart;
 import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
@@ -15,10 +17,16 @@ import java.util.Map;
 public class ChartDrawer {
 
     public static Chart drawStatisticForBankByYears(Map<String,List> statistic, String bankName, AreaChart<Number,Number> areaChart){
-        List years = statistic.get("years");
-        List count = statistic.get("count");
-        final NumberAxis xAxis = new NumberAxis();
-        final NumberAxis yAxis = new NumberAxis();
+        List<Map<String,Integer>> bankInfo = statistic.get(bankName);
+        List<Integer> years = new ArrayList<>();
+        List<Integer> count = new ArrayList<>();
+        for(int i=0; i < bankInfo.size(); i++){
+            years.add(bankInfo.get(i).get("year"));
+            count.add(bankInfo.get(i).get("count"));
+        }
+        final NumberAxis xAxis = new NumberAxis(Collections.min(years),Collections.max(years),1);
+        final NumberAxis yAxis = new NumberAxis(0,Collections.max(count),0.1);
+        //areaChart = new AreaChart<Number, Number>(xAxis,yAxis);
         areaChart.setTitle("Статистика для "+bankName);
 
         XYChart.Series series= new XYChart.Series();
@@ -29,18 +37,5 @@ public class ChartDrawer {
         areaChart.getData().addAll(series);
         return areaChart;
 
-        /*XYChart.Series seriesMay = new XYChart.Series();
-        seriesMay.setName("May");
-        seriesMay.getData().add(new XYChart.Data(1, 20));
-        seriesMay.getData().add(new XYChart.Data(3, 15));
-        seriesMay.getData().add(new XYChart.Data(6, 13));
-        seriesMay.getData().add(new XYChart.Data(9, 12));
-        seriesMay.getData().add(new XYChart.Data(12, 14));
-        seriesMay.getData().add(new XYChart.Data(15, 18));
-        seriesMay.getData().add(new XYChart.Data(18, 25));
-        seriesMay.getData().add(new XYChart.Data(21, 25));
-        seriesMay.getData().add(new XYChart.Data(24, 23));
-        seriesMay.getData().add(new XYChart.Data(27, 26));
-        seriesMay.getData().add(new XYChart.Data(31, 26));*/
     }
 }

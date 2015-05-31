@@ -39,6 +39,7 @@ public class MainWindowController implements Initializable {
     public Button resetButton;
     public MenuItem saveAsXlsMenuItem;
     public MenuItem closeMenuItem;
+    public MenuItem bankStatistic;
 
     private ObservableList<LoanInfo> infoList;
 
@@ -309,5 +310,9 @@ public class MainWindowController implements Initializable {
     public void close(ActionEvent actionEvent) {
         Stage stage = (Stage) rootScene.getScene().getWindow();
         stage.close();
+    }
+
+    public void getStatistic(ActionEvent actionEvent) {
+        mainModel.callStatisticWindow();
     }
 }

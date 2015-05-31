@@ -14,12 +14,14 @@ import com.privat.bki.business.wrappers.LoanInfoListWrapper;
 import com.privat.bki.business.wrappers.StatisticWrapper;
 import org.apache.commons.codec.binary.Base64;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.*;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.nio.charset.Charset;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -33,7 +35,7 @@ public class DaoRestTemplateService {
     private HttpHeaders headers;
     private LoanInfoListWrapper data;
     private static final String baseUrl = "http://localhost:8190/api";
-    private static final String statisticUrl = "http://localhost:8190/statistic";
+    private static final String statisticUrl = "http://localhost:8190/api/statistic";
 
     public DaoRestTemplateService() {
     }
@@ -229,10 +231,12 @@ public class DaoRestTemplateService {
     public Map<String, List> getStatisticForBank(String bankName){
         Map<String, List> res;
         try{
-            ResponseEntity<StatisticWrapper> response = restTemplate.getForEntity(
-                    statisticUrl + "/forBank",
-                    StatisticWrapper.class, bankName);
-            res = response.getBody().getStat();
+            ParameterizedTypeReference<Map<String,List>> responseType = new ParameterizedTypeReference<Map<String,List>>() {
+            };
+            ResponseEntity<Map<String,List>> response = restTemplate.exchange(
+                    statisticUrl + "/forBank?bankName={bankName}", HttpMethod.GET, null,
+                    responseType, bankName);
+            res = response.getBody();
         } catch (Exception ex){
             ex.printStackTrace();
             res = null;

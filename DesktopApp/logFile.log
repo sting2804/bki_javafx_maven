@@ -295,3 +295,21 @@ Caused by: java.lang.ClassNotFoundException: org.springframework.oxm.jaxb.Jaxb2M
 	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1349)
 	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1320)
 	... 31 more
+conf xml: 2015-05-31 23:18:00,351 ERROR (com.privat.bki.desktopapp.gui.main.MainModel:373) - 
+/Users/sting/GitHub/bki_javafx_maven/DesktopApp/target/classes/fxml/StatisticScene.fxml:21
+
+conf xml: 2015-05-31 23:18:45,630 ERROR (com.privat.bki.desktopapp.gui.main.MainModel:373) - 
+/Users/sting/GitHub/bki_javafx_maven/DesktopApp/target/classes/fxml/StatisticScene.fxml:22
+
+conf xml: 2015-05-31 23:19:06,724 ERROR (com.privat.bki.desktopapp.gui.main.MainModel:373) - 
+/Users/sting/GitHub/bki_javafx_maven/DesktopApp/target/classes/fxml/StatisticScene.fxml:22
+
+conf xml: 2015-05-31 23:19:37,229 ERROR (com.privat.bki.desktopapp.gui.main.MainModel:373) - 
+/Users/sting/GitHub/bki_javafx_maven/DesktopApp/target/classes/fxml/StatisticScene.fxml:25
+
+conf xml: 2015-05-31 23:20:41,970 ERROR (com.privat.bki.desktopapp.gui.main.MainModel:373) - 
+/Users/sting/GitHub/bki_javafx_maven/DesktopApp/target/classes/fxml/StatisticScene.fxml:22
+
+conf xml: 2015-05-31 23:21:29,877 ERROR (com.privat.bki.desktopapp.gui.main.MainModel:373) - 
+/Users/sting/GitHub/bki_javafx_maven/DesktopApp/target/classes/fxml/StatisticScene.fxml:25
+
