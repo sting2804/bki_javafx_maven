@@ -313,3 +313,6 @@ conf xml: 2015-05-31 23:20:41,970 ERROR (com.privat.bki.desktopapp.gui.main.Main
 conf xml: 2015-05-31 23:21:29,877 ERROR (com.privat.bki.desktopapp.gui.main.MainModel:373) - 
 /Users/sting/GitHub/bki_javafx_maven/DesktopApp/target/classes/fxml/StatisticScene.fxml:25
 
+conf xml: 2015-06-01 00:13:37,198 ERROR (com.privat.bki.desktopapp.gui.main.MainModel:373) - 
+/Users/sting/GitHub/bki_javafx_maven/DesktopApp/target/classes/fxml/StatisticScene.fxml:33
+
