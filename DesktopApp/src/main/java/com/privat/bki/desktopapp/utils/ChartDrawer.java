@@ -1,9 +1,9 @@
 package com.privat.bki.desktopapp.utils;
 
-import javafx.collections.ObservableList;
-import javafx.scene.Node;
-import javafx.scene.Scene;
-import javafx.scene.chart.*;
+import javafx.scene.chart.Chart;
+import javafx.scene.chart.LineChart;
+import javafx.scene.chart.NumberAxis;
+import javafx.scene.chart.XYChart;
 
 import java.util.ArrayList;
 import java.util.Collections;

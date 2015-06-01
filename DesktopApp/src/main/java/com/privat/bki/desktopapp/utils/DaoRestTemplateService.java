@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package com.privat.bki.desktopapp.utils;
+
 import com.privat.bki.business.entities.Bank;
 import com.privat.bki.business.entities.Currency;
 import com.privat.bki.business.entities.LoanInfo;
@@ -11,7 +12,6 @@ import com.privat.bki.business.entities.Person;
 import com.privat.bki.business.wrappers.BankMapWrapper;
 import com.privat.bki.business.wrappers.CurrencyMapWrapper;
 import com.privat.bki.business.wrappers.LoanInfoListWrapper;
-import com.privat.bki.business.wrappers.StatisticWrapper;
 import org.apache.commons.codec.binary.Base64;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.ParameterizedTypeReference;
@@ -21,7 +21,6 @@ import org.springframework.web.client.RestTemplate;
 
 import java.nio.charset.Charset;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 

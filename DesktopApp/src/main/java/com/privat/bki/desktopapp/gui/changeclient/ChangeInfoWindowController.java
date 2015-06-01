@@ -1,6 +1,9 @@
 package com.privat.bki.desktopapp.gui.changeclient;
-import com.privat.bki.business.entities.*;
+
+import com.privat.bki.business.entities.Bank;
 import com.privat.bki.business.entities.Currency;
+import com.privat.bki.business.entities.LoanInfo;
+import com.privat.bki.business.entities.Person;
 import com.privat.bki.desktopapp.gui.main.MainModel;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -14,8 +17,9 @@ import javafx.util.StringConverter;
 import java.net.URL;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.Map;
+import java.util.Objects;
+import java.util.ResourceBundle;
 
 /**
  * @author sting

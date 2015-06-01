@@ -1,16 +1,10 @@
 package com.privat.bki.business.wrappers;
+
 import com.privat.bki.business.entities.LoanInfo;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlSeeAlso;
+import javax.xml.bind.annotation.*;
 import java.util.List;
 
-/**
- * Created by sting on 3/4/15.
- */
 @XmlAccessorType( XmlAccessType.NONE )
 @XmlRootElement(name = "summary-information")
 @XmlSeeAlso(value = LoanInfo.class)

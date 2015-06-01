@@ -1,4 +1,5 @@
 package com.privat.bki.apiserver.spring.services.loans;
+
 import com.privat.bki.apiserver.mappers.BanksRowMapper;
 import com.privat.bki.apiserver.mappers.CurrencyRowMapper;
 import com.privat.bki.apiserver.mappers.LoanInfoRowMapper;
@@ -11,7 +12,6 @@ import com.privat.bki.business.utils.SqlDateConverter;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
-import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;

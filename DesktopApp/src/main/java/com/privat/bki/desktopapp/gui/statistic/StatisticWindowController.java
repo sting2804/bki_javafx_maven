@@ -5,8 +5,6 @@ import com.privat.bki.desktopapp.utils.ChartDrawer;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
-import javafx.scene.chart.AreaChart;
-import javafx.scene.chart.BarChart;
 import javafx.scene.chart.LineChart;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
@@ -14,10 +12,11 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 
-import java.text.ParseException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import static com.privat.bki.desktopapp.utils.ChartDrawer.drawStatisticForBankByYears;
 
 public class StatisticWindowController {
 
@@ -35,7 +34,7 @@ public class StatisticWindowController {
         String bankName = bankNameComboBox.getValue();
         Map<String,List> stat = mainModel.getStatisticForBank(bankName);
         if(bankName!=null) {
-            LineChart<Number, Number> areaChart = (LineChart<Number, Number>) ChartDrawer.drawStatisticForBankByYears(stat, bankName);
+            LineChart<Number, Number> areaChart = (LineChart<Number, Number>) drawStatisticForBankByYears(stat, bankName);
             panel.getChildren().clear();
             panel.getChildren().addAll(areaChart);
         }
