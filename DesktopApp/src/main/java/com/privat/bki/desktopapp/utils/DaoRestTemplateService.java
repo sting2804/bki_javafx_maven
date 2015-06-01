@@ -243,4 +243,17 @@ public class DaoRestTemplateService {
         }
         return res;
     }
+
+    public Double getPrognosticationForBankAndYear(String bankName, Integer prognosticationYear) {
+        Double res;
+        try{
+            ResponseEntity<Double> response = restTemplate.getForEntity(
+                    statisticUrl + "/prognos/forBank?bankName={bankName}&prognosticationYear={prognosticationYear}", Double.class, bankName, prognosticationYear);
+            res = response.getBody();
+        } catch (Exception ex){
+            ex.printStackTrace();
+            res = null;
+        }
+        return res;
+    }
 }

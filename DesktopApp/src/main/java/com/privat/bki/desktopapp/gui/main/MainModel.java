@@ -68,8 +68,8 @@ public class MainModel {
 
     /**
      * вход в систему
-     * @param username
-     * @param password
+     * @param username имя пользователя
+     * @param password пароль пользователя
      */
     public boolean authenticateUser(String username, String password){
         return service.restAuthenticate(username,password);
@@ -376,7 +376,6 @@ public class MainModel {
         stController = root.<StatisticWindowController>getController();
         stController.setMainModel(this);
         stController.setBankMap(getBankMap());
-        stController.setScreenForms();
         primaryStage.setOnCloseRequest(event -> primaryStage.close());
         primaryStage.setResizable(false);
         primaryStage.showAndWait();
@@ -385,5 +384,9 @@ public class MainModel {
 
     public Map<String, List> getStatisticForBank(String bankName) {
         return service.getStatisticForBank(bankName);
+    }
+
+    public Double getPrognosticationValue(String bankName, Integer prognosYear) {
+        return service.getPrognosticationForBankAndYear(bankName,prognosYear);
     }
 }
