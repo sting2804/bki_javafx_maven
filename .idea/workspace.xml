@@ -1,25 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticDaoImpl.java" description="Map&lt;String, List&gt; bankCreditStatistic = new Linked..." line="151" />
+    <bookmark url="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticDaoImpl.java" description="Map&lt;String, List&gt; bankCreditStatistic = new Linked..." line="148" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abda6744-f048-4d01-bdc3-6e5b6ad88420" name="Default" comment="added an algorithm for regression analysis from  Ryano121">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/LinearRegressionModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/MathUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/RegressionModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/changeclient/ChangeInfoWindowController.java" afterPath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/changeclient/ChangeInfoWindowController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/ChartDrawer.java" afterPath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/ChartDrawer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/DaoRestTemplateService.java" afterPath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/DaoRestTemplateService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/loans/LoanInfoDaoImpl.java" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/loans/LoanInfoDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/wrappers/LoanInfoListWrapper.java" afterPath="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/wrappers/LoanInfoListWrapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/MainScene.fxml" afterPath="$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/MainScene.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/main/MainWindowController.java" afterPath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/main/MainWindowController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/RegressionAnalysis.java" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/RegressionAnalysis.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/controllers/StatisticController.java" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/controllers/StatisticController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticDaoImpl.java" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/StatisticScene.fxml" afterPath="$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/StatisticScene.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/statistic/StatisticWindowController.java" afterPath="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/statistic/StatisticWindowController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticService.java" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bki_diplom.iml" afterPath="$PROJECT_DIR$/bki_diplom.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bki_diplom.iws" />
@@ -69,11 +58,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RegressionAnalysis.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RegressionAnalysis.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/RegressionAnalysis.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.061601643">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -83,75 +72,7 @@
         <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="45" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StatisticDaoImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.6666665">
-              <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="method#theMostCreditAge#1;class#StatisticDaoImpl#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DaoRestTemplateService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/DaoRestTemplateService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="248" column="0" selection-start-line="248" selection-start-column="0" selection-end-line="248" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="method#createHeaders#0;class#DaoRestTemplateService#0" expanded="false" />
-                <element signature="method#doAuthenticate#0;class#DaoRestTemplateService#0" expanded="false" />
-                <element signature="method#listAll#0;class#DaoRestTemplateService#0" expanded="false" />
-                <element signature="method#listSpecificInfo#0;class#DaoRestTemplateService#0" expanded="false" />
-                <element signature="method#isClientExists#0;class#DaoRestTemplateService#0" expanded="false" />
-                <element signature="method#getBanksMap#0;class#DaoRestTemplateService#0" expanded="false" />
-                <element signature="method#getCurrenciesMap#0;class#DaoRestTemplateService#0" expanded="false" />
-                <element signature="method#addInfo#0;class#DaoRestTemplateService#0" expanded="false" />
-                <element signature="method#addNewClient#0;class#DaoRestTemplateService#0" expanded="false" />
-                <element signature="method#modify#0;class#DaoRestTemplateService#0" expanded="false" />
-                <element signature="method#modify#1;class#DaoRestTemplateService#0" expanded="false" />
-                <element signature="method#addBank#0;class#DaoRestTemplateService#0" expanded="false" />
-                <element signature="method#addCurrency#0;class#DaoRestTemplateService#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StatisticScene.fxml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/StatisticScene.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.51699466">
-              <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainScene.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/MainScene.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="131" column="18" selection-start-line="131" selection-start-column="18" selection-end-line="131" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoanInfoListWrapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/wrappers/LoanInfoListWrapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -246,7 +167,6 @@
         <option value="$PROJECT_DIR$/WebClient/app/views/loanInfo/loanInfo.html" />
         <option value="$PROJECT_DIR$/WebClient/app/app.js" />
         <option value="$PROJECT_DIR$/WebClient/app/index.html" />
-        <option value="$PROJECT_DIR$/APIServer/pom.xml" />
         <option value="$PROJECT_DIR$/.idea/compiler.xml" />
         <option value="$PROJECT_DIR$/WebClient/app/views/loanInfo/loanInfo.js" />
         <option value="$PROJECT_DIR$/WebClient/app/views/modals/editModal.html" />
@@ -255,10 +175,8 @@
         <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/RegressionAnalize.java" />
         <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/RegressionAnalise.java" />
         <option value="$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticService.java" />
         <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticDao.java" />
         <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/controllers/StatisticController.java" />
-        <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticDaoImpl.java" />
         <option value="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/WriteExcel.java" />
         <option value="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/ExcelWriter.java" />
         <option value="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/statisctic/StatisticWindowController.java" />
@@ -274,7 +192,10 @@
         <option value="$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/StatisticScene.fxml" />
         <option value="$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/MainScene.fxml" />
         <option value="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/wrappers/LoanInfoListWrapper.java" />
+        <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticDaoImpl.java" />
+        <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticService.java" />
         <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/RegressionAnalysis.java" />
+        <option value="$PROJECT_DIR$/APIServer/pom.xml" />
       </list>
     </option>
   </component>
@@ -2527,7 +2448,7 @@
       <workItem from="1432663590876" duration="1780000" />
       <workItem from="1433019750893" duration="9401000" />
       <workItem from="1433091483548" duration="21296000" />
-      <workItem from="1433183323016" duration="3749000" />
+      <workItem from="1433183323016" duration="5019000" />
     </task>
     <task id="LOCAL-00001" summary="Почти готовый рест. Работает для json, почти работает под xml">
       <created>1425498065232</created>
@@ -2793,11 +2714,17 @@
       <option name="project" value="LOCAL" />
       <updated>1433158526119</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="added an algorithm for regression analysis from  Ryano121">
+      <created>1433196584886</created>
+      <option name="number" value="00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1433196584886</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="359466000" />
+    <option name="totallyTimeSpent" value="360736000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -2831,9 +2758,9 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22761194" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35945272" sideWeight="0.57439196" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35945272" sideWeight="0.57439196" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2699005" sideWeight="0.49499285" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2699005" sideWeight="0.49499285" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22031474" sideWeight="0.5009901" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13018598" sideWeight="0.50992554" order="9" side_tool="true" content_ui="tabs" />
@@ -3002,12 +2929,6 @@
           <option name="timeStamp" value="200" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticDaoImpl.java</url>
-          <line>136</line>
-          <properties />
-          <option name="timeStamp" value="207" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/main/MainModel.java</url>
           <line>358</line>
           <properties />
@@ -3066,14 +2987,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36726806">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APIServer/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.066079296">
-          <caret line="18" column="74" selection-start-line="18" selection-start-column="74" selection-end-line="18" selection-end-column="74" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3370,7 +3283,7 @@
         <state vertical-scroll-proportion="0.8932238">
           <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3782,37 +3695,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/DaoRestTemplateService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="248" column="0" selection-start-line="248" selection-start-column="0" selection-end-line="248" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#createHeaders#0;class#DaoRestTemplateService#0" expanded="false" />
-            <element signature="method#doAuthenticate#0;class#DaoRestTemplateService#0" expanded="false" />
-            <element signature="method#listAll#0;class#DaoRestTemplateService#0" expanded="false" />
-            <element signature="method#listSpecificInfo#0;class#DaoRestTemplateService#0" expanded="false" />
-            <element signature="method#isClientExists#0;class#DaoRestTemplateService#0" expanded="false" />
-            <element signature="method#getBanksMap#0;class#DaoRestTemplateService#0" expanded="false" />
-            <element signature="method#getCurrenciesMap#0;class#DaoRestTemplateService#0" expanded="false" />
-            <element signature="method#addInfo#0;class#DaoRestTemplateService#0" expanded="false" />
-            <element signature="method#addNewClient#0;class#DaoRestTemplateService#0" expanded="false" />
-            <element signature="method#modify#0;class#DaoRestTemplateService#0" expanded="false" />
-            <element signature="method#modify#1;class#DaoRestTemplateService#0" expanded="false" />
-            <element signature="method#addBank#0;class#DaoRestTemplateService#0" expanded="false" />
-            <element signature="method#addCurrency#0;class#DaoRestTemplateService#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="45" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/ChartDrawer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33264887">
@@ -3833,25 +3715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.6666665">
-          <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#theMostCreditAge#1;class#StatisticDaoImpl#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/LinearRegressionModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="79" column="5" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/MainScene.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3863,26 +3726,91 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/StatisticScene.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51699466">
+          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/wrappers/LoanInfoListWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.107334524">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/LinearRegressionModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="79" column="5" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/DaoRestTemplateService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5706619">
+          <caret line="248" column="0" selection-start-line="248" selection-start-column="0" selection-end-line="248" selection-end-column="0" />
+          <folding>
+            <element signature="method#createHeaders#0;class#DaoRestTemplateService#0" expanded="false" />
+            <element signature="method#doAuthenticate#0;class#DaoRestTemplateService#0" expanded="false" />
+            <element signature="method#listAll#0;class#DaoRestTemplateService#0" expanded="false" />
+            <element signature="method#listSpecificInfo#0;class#DaoRestTemplateService#0" expanded="false" />
+            <element signature="method#isClientExists#0;class#DaoRestTemplateService#0" expanded="false" />
+            <element signature="method#getBanksMap#0;class#DaoRestTemplateService#0" expanded="false" />
+            <element signature="method#getCurrenciesMap#0;class#DaoRestTemplateService#0" expanded="false" />
+            <element signature="method#addInfo#0;class#DaoRestTemplateService#0" expanded="false" />
+            <element signature="method#addNewClient#0;class#DaoRestTemplateService#0" expanded="false" />
+            <element signature="method#modify#0;class#DaoRestTemplateService#0" expanded="false" />
+            <element signature="method#modify#1;class#DaoRestTemplateService#0" expanded="false" />
+            <element signature="method#addBank#0;class#DaoRestTemplateService#0" expanded="false" />
+            <element signature="method#addCurrency#0;class#DaoRestTemplateService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08050089">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="method#theMostCreditAge#1;class#StatisticDaoImpl#0" expanded="false" />
+            <marker date="1433196617000" expanded="true" signature="-1:-1" placeholder="SELECT DISTI..bank..." />
+            <marker date="1433196617000" expanded="true" signature="-1:-1" placeholder="SELECT max(c..loan..." />
+            <marker date="1433196617000" expanded="true" signature="-1:-1" placeholder="SELECT (CASE..sum..." />
+            <marker date="1433196617000" expanded="true" signature="-1:-1" placeholder="--calculate ..." />
+            <marker date="1433196617000" expanded="true" signature="-1:-1" placeholder="SELECT sum(s..count..." />
+            <marker date="1433196617000" expanded="true" signature="-1:-1" placeholder="SELECT count..client..." />
+            <marker date="1433196617000" expanded="true" signature="-1:-1" placeholder="SELECT count..client..." />
+            <marker date="1433196617000" expanded="true" signature="-1:-1" placeholder="SELECT count..loan..." />
+            <marker date="1433196617000" expanded="true" signature="-1:-1" placeholder="SELECT DISTI..loan..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APIServer/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28336754">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/RegressionAnalysis.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/StatisticScene.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51699466">
-          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.061601643">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>

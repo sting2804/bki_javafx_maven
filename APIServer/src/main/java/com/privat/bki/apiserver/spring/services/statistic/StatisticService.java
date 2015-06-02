@@ -9,9 +9,6 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by sting on 5/6/15.
- */
 @Component
 @Service
 public class StatisticService {

@@ -9,9 +9,6 @@ import org.springframework.stereotype.Component;
 
 import java.util.*;
 
-/**
- * Created by sting on 5/6/15.
- */
 @Component("statisticDao")
 public class StatisticDaoImpl implements StatisticDao {
 
