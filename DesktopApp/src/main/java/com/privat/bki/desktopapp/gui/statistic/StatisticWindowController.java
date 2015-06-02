@@ -25,6 +25,7 @@ public class StatisticWindowController {
     public Pane panel;
     public TextField yearTextField;
     public Button applyPrognosButton;
+    public TextField resultTextField;
     private MainModel mainModel;
     private Map<String, String> bankMap;
     private Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -76,6 +77,7 @@ public class StatisticWindowController {
             LineChart<Number, Number> areaChart = (LineChart<Number, Number>) ChartDrawer.drawPrognosticationForBankForYears(stat, bankName, prognosticationMap);
             panel.getChildren().clear();
             panel.getChildren().addAll(areaChart);
+            resultTextField.setText(prognosticationValue.toString());
         }
     }
 }

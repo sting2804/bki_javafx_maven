@@ -319,10 +319,10 @@ public class MainModel {
         Currency c = cwController.getCurrency();
         if (c != null) {
             if (service.addCurrency(c))
-                new Alert(Alert.AlertType.INFORMATION, "Банк добавлен").showAndWait();
-            else new Alert(Alert.AlertType.WARNING, "Банк не добавлен").showAndWait();
+                new Alert(Alert.AlertType.INFORMATION, "Валюта добавлена").showAndWait();
+            else new Alert(Alert.AlertType.WARNING, "Валюта не добавлена").showAndWait();
         } else {
-            new Alert(Alert.AlertType.WARNING, "Банк не добавлен").showAndWait();
+            new Alert(Alert.AlertType.WARNING, "Валюта не добавлена").showAndWait();
         }
         return c;
     }
