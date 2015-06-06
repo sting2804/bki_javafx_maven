@@ -25,8 +25,8 @@ public class RegressionAnalysis {
         }
         double [] yearsArray = convertListOfIntToDoubleArray(yearList);
         double [] dataArray = convertListOfIntToDoubleArray(dataList);
-        regressionModel.setxValues(yearsArray);
-        regressionModel.setyValues(dataArray);
+        regressionModel.setXValues(yearsArray);
+        regressionModel.setYValues(dataArray);
         regressionModel.compute();
         return regressionModel.evaluateAt(prognosticationYear);
     }

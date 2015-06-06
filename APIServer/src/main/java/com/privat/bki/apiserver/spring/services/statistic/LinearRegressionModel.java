@@ -83,7 +83,8 @@ public class LinearRegressionModel extends RegressionModel {
     public double evaluateAt(double x) {
         if (!computed)
             throw new IllegalStateException("Model has not yet computed");
-
+        if (x<=0)
+            throw new IllegalStateException("Parameter should be great than 0");
         return a + b * x;
     }
 }

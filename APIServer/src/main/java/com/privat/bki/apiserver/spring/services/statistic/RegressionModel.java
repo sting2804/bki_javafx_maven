@@ -75,12 +75,12 @@ public abstract class RegressionModel {
      */
     public abstract double evaluateAt(double x);
 
-    public void setxValues(double[] xValues) {
+    public void setXValues(double[] xValues) {
         this.xValues = xValues;
         computed=false;
     }
 
-    public void setyValues(double[] yValues) {
+    public void setYValues(double[] yValues) {
         this.yValues = yValues;
         computed=false;
     }
