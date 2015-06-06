@@ -14,8 +14,13 @@ public abstract class RegressionModel {
     /** The X values of the data set points */
     protected double[] yValues;
 
+
     /** Have the unknown parameters been calculated yet? */
     protected boolean  computed;
+
+    public RegressionModel() {
+        computed=false;
+    }
 
     /**
      * Construct a new RegressionModel object with the specified data points
@@ -69,4 +74,19 @@ public abstract class RegressionModel {
      * @return The underlying models computed function evaluated at x
      */
     public abstract double evaluateAt(double x);
+
+    public void setxValues(double[] xValues) {
+        this.xValues = xValues;
+        computed=false;
+    }
+
+    public void setyValues(double[] yValues) {
+        this.yValues = yValues;
+        computed=false;
+    }
+
+    public void setComputed(boolean computed) {
+        this.computed = computed;
+    }
+
 }

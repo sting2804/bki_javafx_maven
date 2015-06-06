@@ -4,11 +4,15 @@
     <bookmark url="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticDaoImpl.java" description="Map&lt;String, List&gt; bankCreditStatistic = new Linked..." line="148" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abda6744-f048-4d01-bdc3-6e5b6ad88420" name="Default" comment="added an algorithm for regression analysis from  Ryano121">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticDaoImpl.java" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticDaoImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticService.java" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bki_diplom.iml" afterPath="$PROJECT_DIR$/bki_diplom.iml" />
+    <list default="true" id="abda6744-f048-4d01-bdc3-6e5b6ad88420" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/RegressionAnalysisTest.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/APIServer.iml" afterPath="$PROJECT_DIR$/APIServer/APIServer.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/APIServer_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/APIServer_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/LinearRegressionModel.java" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/LinearRegressionModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/RegressionAnalysis.java" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/RegressionAnalysis.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/RegressionModel.java" afterPath="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/RegressionModel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APIServer/pom.xml" afterPath="$PROJECT_DIR$/APIServer/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bki_diplom.iws" />
@@ -58,21 +62,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RegressionAnalysis.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RegressionAnalysis.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/RegressionAnalysis.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.061601643">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="43" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="43" />
+              <folding>
+                <element signature="e#309#310#0" expanded="true" />
+                <element signature="e#370#371#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StatisticService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticService.java">
+      <file leaf-file-name="RegressionAnalysisTest.groovy" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/RegressionAnalysisTest.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.53892213">
+              <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -82,30 +89,8 @@
         <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/LinearRegressionModel.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="79" column="5" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
+              <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegressionModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/RegressionModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StatisticController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/controllers/StatisticController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -120,6 +105,7 @@
         <option value="Jsp File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -145,8 +131,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/utils/View.java" />
-        <option value="$PROJECT_DIR$/BusinessInterfaces/pom.xml" />
         <option value="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/utils/JsonDateDeserializer.java" />
         <option value="$PROJECT_DIR$/WebClient/bower.json" />
         <option value="$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/InfoScene.fxml" />
@@ -167,7 +151,6 @@
         <option value="$PROJECT_DIR$/WebClient/app/views/loanInfo/loanInfo.html" />
         <option value="$PROJECT_DIR$/WebClient/app/app.js" />
         <option value="$PROJECT_DIR$/WebClient/app/index.html" />
-        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
         <option value="$PROJECT_DIR$/WebClient/app/views/loanInfo/loanInfo.js" />
         <option value="$PROJECT_DIR$/WebClient/app/views/modals/editModal.html" />
         <option value="$PROJECT_DIR$/WebClient/app/views/modals/newClientModal.html" />
@@ -184,18 +167,21 @@
         <option value="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/wrappers/StatisticWrapper.java" />
         <option value="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/DaoRestTemplateService.java" />
         <option value="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/ChartDrawer.java" />
-        <option value="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/main/MainModel.java" />
-        <option value="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/statistic/StatisticWindowController.java" />
-        <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/RegressionModel.java" />
         <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/MathUtils.java" />
-        <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/LinearRegressionModel.java" />
-        <option value="$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/StatisticScene.fxml" />
         <option value="$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/MainScene.fxml" />
         <option value="$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/wrappers/LoanInfoListWrapper.java" />
         <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticDaoImpl.java" />
         <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticService.java" />
-        <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/RegressionAnalysis.java" />
+        <option value="$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/StatisticScene.fxml" />
+        <option value="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/statistic/StatisticWindowController.java" />
+        <option value="$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/main/MainModel.java" />
+        <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/RegressionAnalysisJUTest.java" />
+        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
         <option value="$PROJECT_DIR$/APIServer/pom.xml" />
+        <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/LinearRegressionModel.java" />
+        <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/RegressionAnalysis.java" />
+        <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/RegressionModel.java" />
+        <option value="$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/RegressionAnalysisTest.groovy" />
       </list>
     </option>
   </component>
@@ -302,6 +288,20 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
+          <option name="myItemId" value="Run Configurations" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RunConfigurationsNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="APIServer" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
           <option name="myItemId" value="Lifecycle" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
         </PATH_ELEMENT>
@@ -362,7 +362,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -531,40 +530,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bki_javafx_maven" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bki_javafx_maven" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DesktopApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="desktopapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="gui" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -682,10 +647,6 @@
               <option name="myItemId" value="gui" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="login" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -697,65 +658,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DesktopApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="desktopapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bki_javafx_maven" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bki_javafx_maven" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DesktopApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="desktopapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gui" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="changeclient" />
+              <option name="myItemId" value="BusinessInterfaces" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -770,6 +673,60 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="BusinessInterfaces" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="business" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wrappers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bki_javafx_maven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bki_javafx_maven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BusinessInterfaces" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="business" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -918,6 +875,10 @@
               <option name="myItemId" value="services" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="loans" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -982,9 +943,62 @@
               <option name="myItemId" value="apiserver" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bki_javafx_maven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bki_javafx_maven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="APIServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apiserver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bki_javafx_maven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bki_javafx_maven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".idea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -1009,9 +1023,9 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Spock" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
-    <property name="settings.editor.selected.configurable" value="coverage" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$USER_HOME$/Dropbox/Documents/Діплом/Документация/картинки/3.1_da_diagram.png" />
     <property name="Groovy.Shell.LastModule" value="APIServer" />
@@ -1034,14 +1048,16 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.privat.bki.apiserver.spring.controllers" />
-      <recent name="com.privat.bki.apiserver.spring.beans" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
+      <recent name="org.junit.runners.JUnit4" />
       <recent name="spock.lang.Specification" />
       <recent name="" />
       <recent name="groovy.util.GroovyTestCase" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.privat.bki.apiserver.spring.services.statistic" />
+      <recent name="com.privat.bki.apiserver.spring.controllers" />
+      <recent name="com.privat.bki.apiserver.spring.beans" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.privat.bki.apiserver.mappers" />
@@ -1059,15 +1075,15 @@
       <recent name="com.privat.bki.desktopapp.gui.statisctic" />
       <recent name="com.privat.bki.apiserver.mappers" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.privat.bki" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Home\IdeaProjects\bki_javafx_maven\DesktopApp\src\main\resources\images" />
       <recent name="$PROJECT_DIR$/APIServer/src/main/webapp" />
       <recent name="$PROJECT_DIR$/APIServer/src/main/webapp/pages/css" />
       <recent name="$PROJECT_DIR$/APIServer/src/main/webapp/pages" />
       <recent name="$PROJECT_DIR$/WebAngular/app/views" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.privat.bki" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -1802,7 +1818,27 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.ApiServer-7">
+  <component name="RunManager" selected="JUnit.RegressionAnalysisTest.CalculatePrognosticationForBank">
+    <configuration default="false" name="LinearRegressionModel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.privat.bki.apiserver.spring.services.statistic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.privat.bki.apiserver.spring.services.statistic.LinearRegressionModel" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="APIServer" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/bki_javafx_maven/WebClient/app/index.html">
       <method />
     </configuration>
@@ -1833,24 +1869,30 @@
       </MavenSettings>
       <method />
     </configuration>
-    <configuration default="false" name="LinearRegressionModel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="RegressionAnalysisTest.CalculatePrognosticationForBank" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.privat.bki.apiserver.spring.services.statistic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.privat.bki.apiserver.spring.services.statistic.LinearRegressionModel" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <module name="APIServer" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="PACKAGE_NAME" value="com.privat.bki.apiserver.spring.services.statistic" />
+      <option name="MAIN_CLASS_NAME" value="com.privat.bki.apiserver.spring.services.statistic.RegressionAnalysisTest" />
+      <option name="METHOD_NAME" value="CalculatePrognosticationForBank" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="APIServer" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
       <envs />
+      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
@@ -2158,14 +2200,6 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <configuration default="false" name="webclient" type="nginx.configuration.type" factoryName="nginx server" singleton="true">
-      <option name="serverDescriptorId" value="nginx.descriptor.1431291132174" />
-      <option name="showHttpLog" value="false" />
-      <option name="showErrorLog" value="false" />
-      <option name="httpLogPath" value="/usr/local/var/log/nginx/access.log" />
-      <option name="errorLogPath" value="/usr/local/var/log/nginx/error.log" />
-      <method />
-    </configuration>
     <configuration default="false" name="APIServer [install]" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -2192,6 +2226,7 @@
       <method />
     </configuration>
     <configuration default="false" name="ApiServer-7" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.59" ALTERNATIVE_JRE_ENABLED="false" ALTERNATIVE_JRE_PATH="">
+      <option name="OPEN_IN_BROWSER" value="false" />
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8190/api/loans" />
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
@@ -2344,20 +2379,30 @@
         </option>
       </method>
     </configuration>
-    <list size="7">
-      <item index="0" class="java.lang.String" itemvalue="nginx server.webclient" />
-      <item index="1" class="java.lang.String" itemvalue="Maven.APIServer [install]" />
-      <item index="2" class="java.lang.String" itemvalue="Tomcat Server.ApiServer-7" />
-      <item index="3" class="java.lang.String" itemvalue="Tomcat Server.ApiServer-8" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-      <item index="5" class="java.lang.String" itemvalue="Maven.DesktopApp [clean,install,exec:java...]" />
-      <item index="6" class="java.lang.String" itemvalue="Application.LinearRegressionModel" />
+    <configuration default="false" name="webclient" type="nginx.configuration.type" factoryName="nginx server" singleton="true">
+      <option name="serverDescriptorId" value="nginx.descriptor.1431291132174" />
+      <option name="showHttpLog" value="false" />
+      <option name="showErrorLog" value="false" />
+      <option name="httpLogPath" value="/usr/local/var/log/nginx/access.log" />
+      <option name="errorLogPath" value="/usr/local/var/log/nginx/error.log" />
+      <method />
+    </configuration>
+    <list size="8">
+      <item index="0" class="java.lang.String" itemvalue="Maven.APIServer [install]" />
+      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.ApiServer-7" />
+      <item index="2" class="java.lang.String" itemvalue="Tomcat Server.ApiServer-8" />
+      <item index="3" class="java.lang.String" itemvalue="nginx server.webclient" />
+      <item index="4" class="java.lang.String" itemvalue="Application.LinearRegressionModel" />
+      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="6" class="java.lang.String" itemvalue="Maven.DesktopApp [clean,install,exec:java...]" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.RegressionAnalysisTest.CalculatePrognosticationForBank" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Maven.DesktopApp [clean,install,exec:java...]" />
-        <item index="1" class="java.lang.String" itemvalue="Application.LinearRegressionModel" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.RegressionAnalysisTest.CalculatePrognosticationForBank" />
+        <item index="1" class="java.lang.String" itemvalue="Maven.DesktopApp [clean,install,exec:java...]" />
+        <item index="2" class="java.lang.String" itemvalue="Application.LinearRegressionModel" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -2448,7 +2493,9 @@
       <workItem from="1432663590876" duration="1780000" />
       <workItem from="1433019750893" duration="9401000" />
       <workItem from="1433091483548" duration="21296000" />
-      <workItem from="1433183323016" duration="5019000" />
+      <workItem from="1433183323016" duration="9283000" />
+      <workItem from="1433358091658" duration="4128000" />
+      <workItem from="1433597598184" duration="4445000" />
     </task>
     <task id="LOCAL-00001" summary="Почти готовый рест. Работает для json, почти работает под xml">
       <created>1425498065232</created>
@@ -2720,11 +2767,23 @@
       <option name="project" value="LOCAL" />
       <updated>1433196584886</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="deleted some default comments">
+      <created>1433264993999</created>
+      <option name="number" value="00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1433264993999</updated>
+    </task>
+    <task id="LOCAL-00047" summary="changed an error message when add a new currency, added fields for showing a result on statisticWindow">
+      <created>1433278660638</created>
+      <option name="number" value="00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1433278660638</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="360736000" />
+    <option name="totallyTimeSpent" value="373573000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -2736,7 +2795,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2753,12 +2812,12 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32587063" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19241774" sideWeight="0.4990099" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3420398" sideWeight="0.4936034" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3420398" sideWeight="0.4936034" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22761194" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35945272" sideWeight="0.57439196" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35945272" sideWeight="0.57439196" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2699005" sideWeight="0.49499285" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22031474" sideWeight="0.5009901" order="6" side_tool="true" content_ui="tabs" />
@@ -2773,7 +2832,7 @@
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32711443" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32711443" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2832,9 +2891,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
-    <MESSAGE value="added realisation of the method theMostPreferredBank(int years), wrote the controller's method getTheMostPreferredBank" />
-    <MESSAGE value="fixed result map for statistic of preferred bank. Now needs to fix result for result by a few years" />
-    <MESSAGE value="refactored the services for using namedParameterJdbcTemplate, works the statistic for preferred bank by years" />
     <MESSAGE value="realized a statistic for the most credit age by years" />
     <MESSAGE value="added comments for javaDocs" />
     <MESSAGE value="doesn't work adding of new client and works incorrect changing info on existing client. Now i need to change all algorithms which works with Person, because a added the field Gender in the table Client" />
@@ -2857,7 +2913,10 @@
     <MESSAGE value="added icon for statistic menu item" />
     <MESSAGE value="added prognostication to the graph" />
     <MESSAGE value="added an algorithm for regression analysis from  Ryano121" />
-    <option name="LAST_COMMIT_MESSAGE" value="added an algorithm for regression analysis from  Ryano121" />
+    <MESSAGE value="deleted some default comments" />
+    <MESSAGE value="changed an error message when add a new currency" />
+    <MESSAGE value="changed an error message when add a new currency, added fields for showing a result on statisticWindow" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed an error message when add a new currency, added fields for showing a result on statisticWindow" />
     <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.6362683" />
   </component>
   <component name="XDebuggerManager">
@@ -2958,23 +3017,11 @@
           <properties />
           <option name="timeStamp" value="235" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/RegressionAnalysis.java</url>
-          <line>23</line>
-          <properties />
-          <option name="timeStamp" value="239" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/RegressionAnalysis.java</url>
-          <line>30</line>
-          <properties />
-          <option name="timeStamp" value="240" />
-        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="241" />
+      <option name="time" value="247" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2983,326 +3030,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/loans/LoanInfoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36726806">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.1.6.RELEASE/spring-web-4.1.6.RELEASE.jar!/org/springframework/web/bind/annotation/RequestParam.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebClient/app/views/modals/newClientModal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="50" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/controllers/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding>
-            <element signature="e#1333#1334#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/spring/dao-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APIServer/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="68" column="27" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes>
-            <node x="" y="">resources</node>
-            <node x="" y="">fxml</node>
-            <node x="" y="">com</node>
-            <node x="" y="">impl</node>
-            <node x="" y="">netscape</node>
-            <node x="" y="">styles</node>
-            <node x="" y="">junit</node>
-            <node x="" y="">licenses</node>
-            <node x="" y="">org</node>
-            <node x="" y="">oracle</node>
-            <node x="" y="">net</node>
-            <node x="" y="">javafx</node>
-            <node x="" y="">META-INF</node>
-            <node x="" y="">spring</node>
-            <node x="" y="">sun</node>
-            <node x="" y="">junit3.8.1</node>
-            <node x="" y="">javax</node>
-            <node x="" y="">apple</node>
-            <node x="" y="">jdk</node>
-            <node x="" y="">java</node>
-            <node x="" y="">toolbarButtonGraphics</node>
-            <node x="" y="">edu</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="260.0" y="274.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Constructors</Category>
-            <Category>Fields</Category>
-            <Category>Methods</Category>
-            <Category>Inner Classes</Category>
-            <Category>Properties</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://MODULES/mdl-DesktopApp">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>MODULES</ID>
-          <OriginalElement>mdl-DesktopApp</OriginalElement>
-          <nodes>
-            <node x="" y="">mdl-BusinessInterfaces</node>
-            <node x="" y="">mdl-DesktopApp</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="103.0" y="54.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/com.privat.bki.desktopapp">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>com.privat.bki.desktopapp</OriginalElement>
-          <nodes />
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="87.0" y="111.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Inner Classes</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/loans/LoanInfoDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="230" column="0" selection-start-line="230" selection-start-column="0" selection-end-line="230" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#LoanInfoDaoImpl#0" expanded="false" />
-            <element signature="e#1248#1273#0" expanded="false" />
-            <element signature="method#LoanInfoDaoImpl#0;class#LoanInfoDaoImpl#0" expanded="false" />
-            <element signature="method#getRecord#0;class#LoanInfoDaoImpl#0" expanded="false" />
-            <element signature="method#isClientExists#0;class#LoanInfoDaoImpl#0" expanded="false" />
-            <element signature="method#getPersonInfo#0;class#LoanInfoDaoImpl#0" expanded="false" />
-            <element signature="docComment;method#addNewPerson#0;class#LoanInfoDaoImpl#0" expanded="false" />
-            <element signature="method#addNewPerson#0;class#LoanInfoDaoImpl#0" expanded="false" />
-            <element signature="method#changeInfo#0;class#LoanInfoDaoImpl#0" expanded="false" />
-            <element signature="docComment;method#updatePerson#0;class#LoanInfoDaoImpl#0" expanded="false" />
-            <element signature="method#updatePerson#0;class#LoanInfoDaoImpl#0" expanded="false" />
-            <element signature="method#getBanksMap#0;class#LoanInfoDaoImpl#0" expanded="false" />
-            <element signature="method#getCurrenciesMap#0;class#LoanInfoDaoImpl#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/com.privat.bki.desktopapp.MainApp">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>com.privat.bki.desktopapp.MainApp</OriginalElement>
-          <nodes>
-            <node x="569.5806068931068" y="436.0">com.privat.bki.desktopapp.utils.DaoRestTemplateService</node>
-            <node x="358.5" y="79.0">com.privat.bki.business.entities.Person</node>
-            <node x="781.25" y="79.0">com.privat.bki.business.entities.Bank</node>
-            <node x="930.25" y="79.0">com.privat.bki.business.entities.Currency</node>
-            <node x="846.25" y="0.0">com.privat.bki.business.entities.IDirectory</node>
-            <node x="582.0806068931068" y="337.0">com.privat.bki.business.wrappers.LoanInfoListWrapper</node>
-            <node x="1197.3165521978021" y="248.0">com.privat.bki.desktopapp.gui.directories.CurrencyWindowController</node>
-            <node x="163.0" y="248.0">com.privat.bki.desktopapp.gui.searchuser.ClientSearchWindowController</node>
-            <node x="585.8971590909089" y="565.0">com.privat.bki.desktopapp.gui.main.MainModel</node>
-            <node x="841.3165521978021" y="337.0">com.privat.bki.business.utils.SqlDateConverter</node>
-            <node x="865.3165521978021" y="248.0">com.privat.bki.business.utils.Converter</node>
-            <node x="574.75" y="248.0">com.privat.bki.business.entities.LoanInfo</node>
-            <node x="133.5" y="436.0">com.privat.bki.desktopapp.gui.login.LoginController</node>
-            <node x="782.3306068931068" y="436.0">com.privat.bki.desktopapp.gui.main.MainWindowController</node>
-            <node x="1003.3165521978021" y="248.0">com.privat.bki.desktopapp.gui.directories.BankWindowController</node>
-            <node x="592.3971590909089" y="644.0">com.privat.bki.desktopapp.MainApp</node>
-            <node x="0.0" y="248.0">com.privat.bki.business.wrappers.ClientListWrapper</node>
-            <node x="332.58060689310685" y="337.0">com.privat.bki.desktopapp.gui.changeclient.ChangeInfoWindowController</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="com.privat.bki.business.entities.Bank" target="com.privat.bki.business.entities.IDirectory">
-              <point x="0.0" y="-14.5" />
-              <point x="812.25" y="54.0" />
-              <point x="869.75" y="54.0" />
-              <point x="-23.5" y="14.5" />
-            </edge>
-            <edge source="com.privat.bki.business.entities.Currency" target="com.privat.bki.business.entities.IDirectory">
-              <point x="0.0" y="-14.5" />
-              <point x="974.25" y="54.0" />
-              <point x="916.75" y="54.0" />
-              <point x="23.5" y="14.5" />
-            </edge>
-            <edge source="com.privat.bki.business.utils.SqlDateConverter" target="com.privat.bki.business.utils.Converter">
-              <point x="0.0" y="-14.5" />
-              <point x="0.0" y="14.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.7933709449929478" x="293.0" y="166.0" />
-          <SelectedNodes>
-            <node>com.privat.bki.desktopapp.MainApp</node>
-          </SelectedNodes>
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/login/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="30" selection-start-line="51" selection-start-column="16" selection-end-line="52" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APIUmlDiagram.uml">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>com.privat.bki.apiserver</OriginalElement>
-          <nodes>
-            <node x="" y="">com.privat.bki.apiserver.spring.services.loans.LoanInfoDaoImpl</node>
-            <node x="" y="">com.privat.bki.business.entities.Currency</node>
-            <node x="" y="">com.privat.bki.business.wrappers.LoanInfoListWrapper</node>
-            <node x="" y="">com.privat.bki.apiserver.spring.services.statistic.StatisticDao</node>
-            <node x="" y="">com.privat.bki.apiserver.spring.controllers.MainController</node>
-            <node x="" y="">com.privat.bki.apiserver.mappers.PersonRowMapper</node>
-            <node x="" y="">com.privat.bki.business.utils.View</node>
-            <node x="" y="">com.privat.bki.apiserver.spring.services.loans.LoanInfoService</node>
-            <node x="" y="">com.privat.bki.business.utils.UniDateConverter</node>
-            <node x="" y="">com.privat.bki.business.wrappers.CurrencyMapWrapper</node>
-            <node x="" y="">com.privat.bki.business.entities.LoanInfo</node>
-            <node x="" y="">com.privat.bki.apiserver.spring.services.statistic.RegressionAnalysis</node>
-            <node x="" y="">com.privat.bki.apiserver.mappers.BanksRowMapper</node>
-            <node x="" y="">com.privat.bki.business.wrappers.BankMapWrapper</node>
-            <node x="" y="">com.privat.bki.business.entities.Person</node>
-            <node x="" y="">com.privat.bki.apiserver.spring.security.RestAuthenticationEntryPoint</node>
-            <node x="" y="">com.privat.bki.business.utils.LocalDateAdapter</node>
-            <node x="" y="">com.privat.bki.business.entities.Bank</node>
-            <node x="" y="">com.privat.bki.apiserver.mappers.CurrencyRowMapper</node>
-            <node x="" y="">com.privat.bki.apiserver.spring.services.loans.LoanInfoDao</node>
-            <node x="" y="">com.privat.bki.apiserver.spring.controllers.StatisticController</node>
-            <node x="" y="">com.privat.bki.business.entities.IDirectory</node>
-            <node x="" y="">com.privat.bki.apiserver.mappers.LoanInfoRowMapper</node>
-            <node x="" y="">com.privat.bki.business.utils.JsonDateSerializer</node>
-            <node x="" y="">com.privat.bki.apiserver.spring.services.statistic.StatisticService</node>
-            <node x="" y="">com.privat.bki.apiserver.spring.services.statistic.StatisticDaoImpl</node>
-            <node x="" y="">com.privat.bki.apiserver.spring.security.RestAuthenticationSuccessHandler</node>
-            <node x="" y="">com.privat.bki.business.utils.SqlDateConverter</node>
-            <node x="" y="">com.privat.bki.business.utils.Converter</node>
-            <node x="" y="">com.privat.bki.apiserver.mappers.PreferredBankRowMapper</node>
-            <node x="" y="">com.privat.bki.business.utils.JsonDateDeserializer</node>
-            <node x="" y="">com.privat.bki.business.wrappers.ClientListWrapper</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.5236382322713258" x="963.0" y="188.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/images/1433045150_Add.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/MainApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/images/1433047661_Help.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/RestAuthClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/directories/BankWindowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4201031">
-          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/ExcelWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8932238">
-          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7002053">
-          <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.1.6.RELEASE/spring-web-4.1.6.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.6666665">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.1.6.RELEASE/spring-webmvc-4.1.6.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.6666665">
@@ -3310,59 +3037,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/wrappers/StatisticWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6776181">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#294#295#0" expanded="false" />
-            <element signature="e#326#327#0" expanded="false" />
-            <element signature="e#404#405#0" expanded="false" />
-            <element signature="e#431#432#0" expanded="false" />
-            <element signature="e#482#483#0" expanded="false" />
-            <element signature="e#514#515#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/wrappers/CurrencyMapWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/wrappers/ClientListWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/wrappers/BankMapWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/utils/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15400411">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/utils/JsonDateDeserializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3389,52 +3067,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/main/MainWindowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="295" column="18" selection-start-line="295" selection-start-column="18" selection-end-line="295" selection-end-column="18" />
-          <folding>
-            <element signature="docComment;class#MainWindowController#0" expanded="false" />
-            <element signature="e#2475#2518#0" expanded="false" />
-            <element signature="method#setPropertyValueFactory#0;class#MainWindowController#0" expanded="false" />
-            <element signature="class#4341:4803" expanded="false" />
-            <element signature="method#updateItem#0;class#4341:4803" expanded="false" />
-            <element signature="class#4928:5517" expanded="false" />
-            <element signature="method#updateItem#0;class#4928:5517" expanded="false" />
-            <element signature="class#5644:5982" expanded="false" />
-            <element signature="method#updateItem#0;class#5644:5982" expanded="false" />
-            <element signature="class#6118:6514" expanded="false" />
-            <element signature="method#updateItem#0;class#6118:6514" expanded="false" />
-            <element signature="class#7715:8052" expanded="false" />
-            <element signature="method#updateItem#0;class#7715:8052" expanded="false" />
-            <element signature="class#8190:8543" expanded="false" />
-            <element signature="method#updateItem#0;class#8190:8543" expanded="false" />
-            <element signature="class#8675:9094" expanded="false" />
-            <element signature="method#updateItem#0;class#8675:9094" expanded="false" />
-            <element signature="method#findClientOnClick#0;class#MainWindowController#0" expanded="false" />
-            <element signature="docComment;method#refreshTable#0;class#MainWindowController#0" expanded="false" />
-            <element signature="method#refreshTable#0;class#MainWindowController#0" expanded="false" />
-            <element signature="method#addInfoOnClick#0;class#MainWindowController#0" expanded="false" />
-            <element signature="method#resetTableRecords#0;class#MainWindowController#0" expanded="false" />
-            <element signature="e#11747#11748#0" expanded="true" />
-            <element signature="e#11794#11795#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/javafx-src.zip!/javafx/scene/chart/NumberAxis.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="149" column="11" selection-start-line="149" selection-start-column="11" selection-end-line="149" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/changeclient/ChangeInfoWindowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7166324">
-          <caret line="122" column="32" selection-start-line="121" selection-start-column="12" selection-end-line="122" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3633,103 +3269,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/statistic/StatisticWindowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23952095">
-          <caret line="39" column="79" selection-start-line="39" selection-start-column="79" selection-end-line="39" selection-end-column="79" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/MathUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3473054">
-          <caret line="45" column="23" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/main/MainModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52095807">
-          <caret line="380" column="0" selection-start-line="380" selection-start-column="0" selection-end-line="380" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#MainModel#0" expanded="false" />
-            <element signature="docComment;field#csController#0;class#MainModel#0" expanded="false" />
-            <element signature="docComment;field#foundInfo#0;class#MainModel#0" expanded="false" />
-            <element signature="method#MainModel#0;class#MainModel#0" expanded="false" />
-            <element signature="method#authenticateUser#0;class#MainModel#0" expanded="false" />
-            <element signature="docComment;method#callLoginWindow#0;class#MainModel#0" expanded="false" />
-            <element signature="docComment;method#callMainWindow#0;class#MainModel#0" expanded="false" />
-            <element signature="docComment;method#callSearchWindow#0;class#MainModel#0" expanded="false" />
-            <element signature="method#callSearchWindow#0;class#MainModel#0" expanded="false" />
-            <element signature="docComment;method#callChangeClientWindow#0;class#MainModel#0" expanded="false" />
-            <element signature="method#callChangeClientWindow#0;class#MainModel#0" expanded="false" />
-            <element signature="docComment;method#callAddInfoWindow#0;class#MainModel#0" expanded="false" />
-            <element signature="method#callAddInfoWindow#0;class#MainModel#0" expanded="false" />
-            <element signature="method#callNewBankWindow#0;class#MainModel#0" expanded="false" />
-            <element signature="method#callNewCurrencyWindow#0;class#MainModel#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/RegressionModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/ChartDrawer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33264887">
-          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/controllers/StatisticController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/MainScene.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="131" column="18" selection-start-line="131" selection-start-column="18" selection-end-line="131" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/StatisticScene.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51699466">
-          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="131" column="18" selection-start-line="131" selection-start-column="18" selection-end-line="131" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -3742,19 +3291,262 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/LinearRegressionModel.java">
+    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/StatisticScene.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="79" column="5" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
+          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/resources/fxml/InfoScene.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="100" column="75" selection-start-line="100" selection-start-column="75" selection-end-line="100" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/changeclient/ChangeInfoWindowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="90" column="33" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/directories/BankWindowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/directories/CurrencyWindowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/login/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/main/MainWindowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="295" column="18" selection-start-line="295" selection-start-column="18" selection-end-line="295" selection-end-column="18" />
+          <folding>
+            <element signature="docComment;class#MainWindowController#0" expanded="false" />
+            <element signature="e#2475#2518#0" expanded="false" />
+            <element signature="method#setPropertyValueFactory#0;class#MainWindowController#0" expanded="false" />
+            <element signature="class#4341:4803" expanded="false" />
+            <element signature="method#updateItem#0;class#4341:4803" expanded="false" />
+            <element signature="class#4928:5517" expanded="false" />
+            <element signature="method#updateItem#0;class#4928:5517" expanded="false" />
+            <element signature="class#5644:5982" expanded="false" />
+            <element signature="method#updateItem#0;class#5644:5982" expanded="false" />
+            <element signature="class#6118:6514" expanded="false" />
+            <element signature="method#updateItem#0;class#6118:6514" expanded="false" />
+            <element signature="class#7715:8052" expanded="false" />
+            <element signature="method#updateItem#0;class#7715:8052" expanded="false" />
+            <element signature="class#8190:8543" expanded="false" />
+            <element signature="method#updateItem#0;class#8190:8543" expanded="false" />
+            <element signature="class#8675:9094" expanded="false" />
+            <element signature="method#updateItem#0;class#8675:9094" expanded="false" />
+            <element signature="method#findClientOnClick#0;class#MainWindowController#0" expanded="false" />
+            <element signature="docComment;method#refreshTable#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#refreshTable#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#addInfoOnClick#0;class#MainWindowController#0" expanded="false" />
+            <element signature="method#resetTableRecords#0;class#MainWindowController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/searchuser/ClientSearchWindowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/utils/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14619882">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/wrappers/CurrencyMapWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20467836">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/wrappers/BankMapWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46783626">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61988306">
+          <caret line="201" column="15" selection-start-line="201" selection-start-column="15" selection-end-line="201" selection-end-column="15" />
+          <folding>
+            <element signature="method#theMostCreditAge#1;class#StatisticDaoImpl#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1754386">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/security/RestAuthenticationEntryPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23391813">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/loans/LoanInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/controllers/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/utils/Converter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14619882">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/utils/JsonDateSerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20467836">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/utils/JsonDateDeserializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20467836">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/controllers/StatisticController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.9239767">
+          <caret line="111" column="27" selection-start-line="111" selection-start-column="27" selection-end-line="111" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/utils/LocalDateAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/utils/SqlDateConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/wrappers/StatisticWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+          <folding>
+            <element signature="e#482#483#0" expanded="false" />
+            <element signature="e#514#515#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/ChartDrawer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="36" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BusinessInterfaces/src/main/java/com/privat/bki/business/entities/LoanInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="160" column="18" selection-start-line="160" selection-start-column="18" selection-end-line="160" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/ExcelWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/MathUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="23" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/DaoRestTemplateService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5706619">
-          <caret line="248" column="0" selection-start-line="248" selection-start-column="0" selection-end-line="248" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="207" column="19" selection-start-line="207" selection-start-column="19" selection-end-line="207" selection-end-column="19" />
           <folding>
+            <element signature="e#0#9124#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1470#1471#0" expanded="false" />
+            <element signature="e#1518#1519#0" expanded="false" />
             <element signature="method#createHeaders#0;class#DaoRestTemplateService#0" expanded="false" />
             <element signature="method#doAuthenticate#0;class#DaoRestTemplateService#0" expanded="false" />
             <element signature="method#listAll#0;class#DaoRestTemplateService#0" expanded="false" />
@@ -3766,51 +3558,169 @@
             <element signature="method#addNewClient#0;class#DaoRestTemplateService#0" expanded="false" />
             <element signature="method#modify#0;class#DaoRestTemplateService#0" expanded="false" />
             <element signature="method#modify#1;class#DaoRestTemplateService#0" expanded="false" />
-            <element signature="method#addBank#0;class#DaoRestTemplateService#0" expanded="false" />
             <element signature="method#addCurrency#0;class#DaoRestTemplateService#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/loans/LoanInfoDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08050089">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="70" column="13" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
           <folding>
-            <element signature="method#theMostCreditAge#1;class#StatisticDaoImpl#0" expanded="false" />
-            <marker date="1433196617000" expanded="true" signature="-1:-1" placeholder="SELECT DISTI..bank..." />
-            <marker date="1433196617000" expanded="true" signature="-1:-1" placeholder="SELECT max(c..loan..." />
-            <marker date="1433196617000" expanded="true" signature="-1:-1" placeholder="SELECT (CASE..sum..." />
-            <marker date="1433196617000" expanded="true" signature="-1:-1" placeholder="--calculate ..." />
-            <marker date="1433196617000" expanded="true" signature="-1:-1" placeholder="SELECT sum(s..count..." />
-            <marker date="1433196617000" expanded="true" signature="-1:-1" placeholder="SELECT count..client..." />
-            <marker date="1433196617000" expanded="true" signature="-1:-1" placeholder="SELECT count..client..." />
-            <marker date="1433196617000" expanded="true" signature="-1:-1" placeholder="SELECT count..loan..." />
-            <marker date="1433196617000" expanded="true" signature="-1:-1" placeholder="SELECT DISTI..loan..." />
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;class#LoanInfoDaoImpl#0" expanded="false" />
+            <element signature="e#1248#1273#0" expanded="false" />
+            <element signature="method#LoanInfoDaoImpl#0;class#LoanInfoDaoImpl#0" expanded="false" />
+            <element signature="method#getRecord#0;class#LoanInfoDaoImpl#0" expanded="false" />
+            <element signature="method#isClientExists#0;class#LoanInfoDaoImpl#0" expanded="false" />
+            <element signature="method#getPersonInfo#0;class#LoanInfoDaoImpl#0" expanded="false" />
+            <element signature="docComment;method#addNewPerson#0;class#LoanInfoDaoImpl#0" expanded="false" />
+            <element signature="method#addNewPerson#0;class#LoanInfoDaoImpl#0" expanded="false" />
+            <element signature="method#changeInfo#0;class#LoanInfoDaoImpl#0" expanded="false" />
+            <element signature="docComment;method#updatePerson#0;class#LoanInfoDaoImpl#0" expanded="false" />
+            <element signature="method#updatePerson#0;class#LoanInfoDaoImpl#0" expanded="false" />
+            <element signature="method#getBanksMap#0;class#LoanInfoDaoImpl#0" expanded="false" />
+            <element signature="method#getCurrenciesMap#0;class#LoanInfoDaoImpl#0" expanded="false" />
+            <marker date="1433196334000" expanded="true" signature="-1:-1" placeholder="SELECT TOP 1..client_info_view..." />
+            <marker date="1433196334000" expanded="true" signature="-1:-1" placeholder="SELECT name,..client_info_view..." />
+            <marker date="1433196334000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1433196334000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1433196334000" expanded="true" signature="-1:-1" placeholder="currency_cod..." />
+            <marker date="1433196334000" expanded="true" signature="-1:-1" placeholder="update loan ..." />
+            <marker date="1433196334000" expanded="true" signature="-1:-1" placeholder="inn=:inn, na..." />
+            <marker date="1433196334000" expanded="true" signature="-1:-1" placeholder="update clien..." />
+            <marker date="1433196334000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1433196334000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/StatisticService.java">
+    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/utils/RestAuthClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1966#1967#0" expanded="false" />
+            <element signature="e#2004#2005#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/MainApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/statistic/StatisticWindowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="79" column="67" selection-start-line="79" selection-start-column="67" selection-end-line="79" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1925#1926#0" expanded="false" />
+            <element signature="e#1963#1964#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APIServer/src/main/webapp/redirect.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DesktopApp/src/main/java/com/privat/bki/desktopapp/gui/main/MainModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="290" column="27" selection-start-line="290" selection-start-column="27" selection-end-line="290" selection-end-column="27" />
+          <folding>
+            <element signature="docComment;class#MainModel#0" expanded="false" />
+            <element signature="docComment;field#csController#0;class#MainModel#0" expanded="false" />
+            <element signature="docComment;field#foundInfo#0;class#MainModel#0" expanded="false" />
+            <element signature="method#MainModel#0;class#MainModel#0" expanded="false" />
+            <element signature="docComment;method#callLoginWindow#0;class#MainModel#0" expanded="false" />
+            <element signature="docComment;method#callMainWindow#0;class#MainModel#0" expanded="false" />
+            <element signature="docComment;method#callSearchWindow#0;class#MainModel#0" expanded="false" />
+            <element signature="method#callSearchWindow#0;class#MainModel#0" expanded="false" />
+            <element signature="docComment;method#callChangeClientWindow#0;class#MainModel#0" expanded="false" />
+            <element signature="method#callChangeClientWindow#0;class#MainModel#0" expanded="false" />
+            <element signature="docComment;method#callAddInfoWindow#0;class#MainModel#0" expanded="false" />
+            <element signature="method#callAddInfoWindow#0;class#MainModel#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.70483005">
+          <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/APIServer/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28336754">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+          <folding>
+            <marker date="1433600615000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/spockframework/spock-core/1.0-groovy-2.4/spock-core-1.0-groovy-2.4.jar!/org/spockframework/util/ReflectionUtil.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35217392">
+          <caret line="180" column="0" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/RegressionModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="66" column="25" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
+          <folding>
+            <element signature="e#631#632#0" expanded="true" />
+            <element signature="e#661#662#0" expanded="true" />
+            <element signature="e#2218#2219#0" expanded="true" />
+            <element signature="e#2258#2259#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/LinearRegressionModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/RegressionAnalysis.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.061601643">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="43" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="43" />
+          <folding>
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#370#371#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/APIServer/src/main/java/com/privat/bki/apiserver/spring/services/statistic/RegressionAnalysisTest.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53892213">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -3870,11 +3780,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>DesktopApp</last-edited>
+          <last-edited>bki_diplom</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

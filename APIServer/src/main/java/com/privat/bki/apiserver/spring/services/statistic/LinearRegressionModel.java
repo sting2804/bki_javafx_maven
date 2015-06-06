@@ -1,8 +1,11 @@
 package com.privat.bki.apiserver.spring.services.statistic;
 
+import org.springframework.stereotype.Service;
+
 /**
  * A RegressionModel that fits a straight line to a data set
  */
+@Service
 public class LinearRegressionModel extends RegressionModel {
 
     /** The y intercept of the straight line */
@@ -10,6 +13,11 @@ public class LinearRegressionModel extends RegressionModel {
 
     /** The gradient of the line */
     private double b;
+
+    public LinearRegressionModel() {
+        super();
+        a = b = 0;
+    }
 
     /**
      * Construct a new LinearRegressionModel with the supplied data set
@@ -48,7 +56,7 @@ public class LinearRegressionModel extends RegressionModel {
     public void compute() {
 
         // throws exception if regression can not be performed
-        if (xValues.length < 2 | yValues.length < 2) {
+        if (xValues.length < 2 || yValues.length < 2) {
             throw new IllegalArgumentException("Must have more than two values");
         }
 

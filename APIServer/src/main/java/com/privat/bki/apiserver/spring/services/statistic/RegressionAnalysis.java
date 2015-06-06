@@ -9,7 +9,10 @@ import java.util.Map;
 @Component
 public class RegressionAnalysis {
 
+    private RegressionModel regressionModel;
+
     public RegressionAnalysis() {
+        regressionModel = new LinearRegressionModel();
     }
 
     public double calculatePrognosticationForBank(Map<String,List> statistics, String bankName, int prognosticationYear){
@@ -22,7 +25,8 @@ public class RegressionAnalysis {
         }
         double [] yearsArray = convertListOfIntToDoubleArray(yearList);
         double [] dataArray = convertListOfIntToDoubleArray(dataList);
-        RegressionModel regressionModel = new LinearRegressionModel(yearsArray,dataArray);
+        regressionModel.setxValues(yearsArray);
+        regressionModel.setyValues(dataArray);
         regressionModel.compute();
         return regressionModel.evaluateAt(prognosticationYear);
     }
