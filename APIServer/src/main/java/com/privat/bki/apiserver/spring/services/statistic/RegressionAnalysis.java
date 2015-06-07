@@ -3,6 +3,7 @@ package com.privat.bki.apiserver.spring.services.statistic;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
@@ -15,13 +16,18 @@ public class RegressionAnalysis {
         regressionModel = new LinearRegressionModel();
     }
 
-    public double calculatePrognosticationForBank(Map<String,List> statistics, String bankName, int prognosticationYear){
+    public double calculatePrognosticationForBank(Map<String,List> statistics,
+                                                  String bankName, int prognosticationYear) {
         List<Integer> yearList = new ArrayList<>();
         List dataList = new ArrayList<>();
         List<Map> statisticWithoutBankName = statistics.get(bankName);
-        for(Map stat : statisticWithoutBankName){
-            yearList.add((Integer) stat.get("year"));
-            dataList.add(stat.get("count"));
+        try {
+            for (Map stat : statisticWithoutBankName) {
+                yearList.add((Integer) stat.get("year"));
+                dataList.add(stat.get("count"));
+            }
+        } catch (Exception e){
+            e.printStackTrace();
         }
         double [] yearsArray = convertListOfIntToDoubleArray(yearList);
         double [] dataArray = convertListOfIntToDoubleArray(dataList);

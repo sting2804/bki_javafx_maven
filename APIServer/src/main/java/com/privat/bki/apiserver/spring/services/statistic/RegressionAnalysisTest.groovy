@@ -24,4 +24,18 @@ class RegressionAnalysisTest extends Specification {
         expect:
         ra.calculatePrognosticationForBank(preparedValues,bankName,prognosYear) == 0
     }
+
+    def "CalculatePrognosticationForBank for empty statistics list"() {
+        setup:
+        RegressionAnalysis ra = new RegressionAnalysis()
+        ra.regressionModel = Mock(LinearRegressionModel)
+        def preparedValues = [privat: []]
+        def bankName = 'privat'
+        int prognosYear = 2015
+
+        ra.regressionModel.evaluateAt(_) >> 0
+
+        expect:
+        ra.calculatePrognosticationForBank(preparedValues,bankName,prognosYear) == 0
+    }
 }

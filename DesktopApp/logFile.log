@@ -316,3 +316,7 @@ conf xml: 2015-05-31 23:21:29,877 ERROR (com.privat.bki.desktopapp.gui.main.Main
 conf xml: 2015-06-01 00:13:37,198 ERROR (com.privat.bki.desktopapp.gui.main.MainModel:373) - 
 /Users/sting/GitHub/bki_javafx_maven/DesktopApp/target/classes/fxml/StatisticScene.fxml:33
 
+conf xml: 2015-06-07 14:55:54,361 ERROR (com.privat.bki.desktopapp.utils.MyResponseErrorHandler:23) - Response error: 500, Internal Server Error
+conf xml: 2015-06-07 15:03:16,570 ERROR (com.privat.bki.desktopapp.utils.MyResponseErrorHandler:23) - Response error: 500, Internal Server Error
+conf xml: 2015-06-07 15:05:04,958 ERROR (com.privat.bki.desktopapp.utils.MyResponseErrorHandler:23) - Response error: 500, Internal Server Error
+conf xml: 2015-06-07 15:12:56,716 ERROR (com.privat.bki.desktopapp.utils.MyResponseErrorHandler:23) - Response error: 500, Internal Server Error

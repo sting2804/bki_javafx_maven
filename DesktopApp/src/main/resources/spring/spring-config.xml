@@ -26,6 +26,9 @@
                 <ref bean="jaxb2CollectionConverter"/>
             </list>
         </property>
+        <!--<property name="errorHandler">
+            <bean class="com.privat.bki.desktopapp.utils.MyResponseErrorHandler" />
+        </property>-->
     </bean>
 
 </beans>

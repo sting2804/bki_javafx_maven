@@ -77,7 +77,8 @@ public class StatisticWindowController {
             LineChart<Number, Number> areaChart = (LineChart<Number, Number>) ChartDrawer.drawPrognosticationForBankForYears(stat, bankName, prognosticationMap);
             panel.getChildren().clear();
             panel.getChildren().addAll(areaChart);
-            resultTextField.setText(prognosticationValue.toString());
+            if (prognosticationValue != null)
+                resultTextField.setText(prognosticationValue.toString());
         }
     }
 }
