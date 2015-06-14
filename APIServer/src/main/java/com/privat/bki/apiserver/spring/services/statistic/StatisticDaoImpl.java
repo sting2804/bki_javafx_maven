@@ -58,20 +58,20 @@ public class StatisticDaoImpl implements StatisticDao {
     }
 
     @Override
-    public List<Map> theMostCreditAge(int... years) {
+    public List<Map> theMostCreditAge(String bankName, int... years) {
         List<Map> ages = new ArrayList<>();
         Map age;
         for (int year : years) {
             age = new LinkedHashMap<>();
             age.put("year", year);
-            age.put("age", theMostCreditAge(year));
+            age.put("age", theMostCreditAge(bankName, year));
             ages.add(age);
         }
         return ages;
     }
 
     @Override
-    public String theMostCreditAge(int year) {
+    public String theMostCreditAge(String bankName, int year) {
         String query =
                 "SELECT (" +
                         "CASE WHEN young=0 AND middle_I=0 AND middle_II=0 AND advanced=0 AND senium=0 AND long_liver=0 THEN 'neither' " +
@@ -82,17 +82,17 @@ public class StatisticDaoImpl implements StatisticDao {
                         "       WHEN senium>young AND senium>middle_I AND senium>middle_II AND senium>advanced AND senium>=long_liver THEN 'senium' " +
                         "       WHEN long_liver>young AND long_liver>middle_I AND long_liver>middle_II AND long_liver>advanced AND long_liver>senium THEN 'long_liver' " +
                         "       END) greatest " +
-                        "FROM ( " +
-                        "--calculate the summary of loans of men and women by ages \n" +
-                        "SELECT " +
-                        "sum(summary)summary, " +
-                        "sum(young)young, " +
-                        "sum(middle_I)middle_I, " +
-                        "sum(middle_II)middle_II, " +
-                        "sum(advanced)advanced, " +
-                        "sum(senium)senium, " +
-                        "sum(long_liver)long_liver " +
-                        "FROM(" +
+                    "FROM ( " +
+                    "--calculate the summary of loans of men and women by ages \n" +
+                    "SELECT " +
+                    "sum(summary)summary, " +
+                    "sum(young)young, " +
+                    "sum(middle_I)middle_I, " +
+                    "sum(middle_II)middle_II, " +
+                    "sum(advanced)advanced, " +
+                    "sum(senium)senium, " +
+                    "sum(long_liver)long_liver " +
+                    "FROM(" +
                         "--for men \n" +
                         "SELECT count(*) summary, " +
                         "count(CASE WHEN datediff(YEAR,c.birthday,getdate()) BETWEEN 17 AND 21 THEN 1 END) young, " +
@@ -103,9 +103,13 @@ public class StatisticDaoImpl implements StatisticDao {
                         "count(CASE WHEN datediff(YEAR,c.birthday,getdate()) > 90 THEN 1 END) long_liver " +
                         "FROM client c " +
                         "JOIN loan l ON l.client_id=c.client_id " +
+                        "join bank b on b.bank_code = l.bank_code "+
                         "WHERE datepart(YEAR,l.init_date)=:year " +
-                        "AND c.gender='man' " +
+                        "AND c.gender='male' " +
+                        "and b.bank_name=:bankName " +
+
                         "UNION " +
+
                         "--for women \n" +
                         "SELECT count(*) summary, " +
                         "count(CASE WHEN datediff(YEAR,c.birthday,getdate()) BETWEEN 16 AND 20 THEN 1 END) young, " +
@@ -116,12 +120,15 @@ public class StatisticDaoImpl implements StatisticDao {
                         "count(CASE WHEN datediff(YEAR,c.birthday,getdate()) > 90 THEN 1 END) long_liver " +
                         "FROM client c " +
                         "JOIN loan l ON l.client_id=c.client_id " +
+                        "join bank b on b.bank_code = l.bank_code "+
                         "WHERE datepart(YEAR,l.init_date)=:year " +
-                        "AND c.gender='woman' " +
+                        "AND c.gender='female' " +
+                        "and b.bank_name=:bankName " +
                         ") AS ages " +
-                        ") AS grouped ";
-        Map<String, Integer> namedParameters = new LinkedHashMap<>();
+                    ") AS grouped ";
+        Map namedParameters = new LinkedHashMap<>();
         namedParameters.put("year", year);
+        namedParameters.put("bankName", bankName);
         String data = jdbcTemplate.queryForObject(query, namedParameters, String.class);
 
         if (data != null && data.length() > 0)

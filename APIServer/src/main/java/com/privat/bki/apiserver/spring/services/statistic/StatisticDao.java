@@ -25,12 +25,12 @@ public interface StatisticDao {
      * вытягивает с сервера статистику по самым берущим кредиты возрастам по годам
      * @return возвращает мапку классификация возраста-возраст
      */
-    List<Map> theMostCreditAge(int... years);
+    List<Map> theMostCreditAge(String bankName, int... years);
     /**
      * вытягивает с сервера статистику по самым берущим кредиты возрастам за год
      * @return возвращает мапку классификация возраста-возраст
      */
-    String theMostCreditAge(int year);
+    String theMostCreditAge(String bankName, int year);
 
     /**
      * получение количества кредитов в указанном банке за заданные года

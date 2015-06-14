@@ -19,6 +19,7 @@ import org.springframework.http.*;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import javax.xml.soap.SAAJResult;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
@@ -243,11 +244,40 @@ public class DaoRestTemplateService {
         return res;
     }
 
+    public Map<String, List> getStatisticOfClientAgesByBank(String bankName){
+        Map<String, List> res;
+        try{
+            ParameterizedTypeReference<Map<String,List>> responseType = new ParameterizedTypeReference<Map<String,List>>() {
+            };
+            ResponseEntity<Map<String,List>> response = restTemplate.exchange(
+                    statisticUrl + "/creditAge?bankName={bankName}", HttpMethod.GET, null,
+                    responseType, bankName);
+            res = response.getBody();
+        } catch (Exception ex){
+            ex.printStackTrace();
+            res = null;
+        }
+        return res;
+    }
+
     public Double getPrognosticationForBankAndYear(String bankName, Integer prognosticationYear) {
         Double res;
         try{
             ResponseEntity<Double> response = restTemplate.getForEntity(
                     statisticUrl + "/prognos/forBank?bankName={bankName}&prognosticationYear={prognosticationYear}", Double.class, bankName, prognosticationYear);
+            res = response.getBody();
+        } catch (Exception ex){
+            ex.printStackTrace();
+            res = null;
+        }
+        return res;
+    }
+
+    public String getPrognosticationForClientAgesByBankAndYear(String bankName, Integer prognosticationYear) {
+        String res;
+        try{
+            ResponseEntity<String> response = restTemplate.getForEntity(
+                    statisticUrl + "/prognos/forClientAge?bankName={bankName}&prognosticationYear={prognosticationYear}", String.class, bankName, prognosticationYear);
             res = response.getBody();
         } catch (Exception ex){
             ex.printStackTrace();

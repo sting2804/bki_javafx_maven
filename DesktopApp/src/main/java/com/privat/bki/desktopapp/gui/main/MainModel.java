@@ -390,7 +390,15 @@ public class MainModel {
         return service.getStatisticForBank(bankName);
     }
 
+    public Map<String, List> getStatisticOfClientAgesByBank(String bankName) {
+        return service.getStatisticOfClientAgesByBank(bankName);
+    }
+
     public Double getPrognosticationValue(String bankName, Integer prognosYear) {
         return service.getPrognosticationForBankAndYear(bankName,prognosYear);
+    }
+
+    public String getPrognosticationValueForCreditAges(String bankName, Integer prognosYear) {
+        return service.getPrognosticationForClientAgesByBankAndYear(bankName, prognosYear);
     }
 }

@@ -49,24 +49,13 @@ public class StatisticController {
 
     /**
      * статистика самых кредитируемых возрастов по годам
-     * @param years строка вида ../creditAge?years=2013,3013,...
+     * @param bankName имя банка для статистики
      * @return
      */
-    @RequestMapping(value = "/creditAge", method = GET, params = "years")
+    @RequestMapping(value = "/creditAge", method = GET, params = {"bankName"})
     @ResponseBody
-    public List<Map> getTheMostCreditAge(@RequestParam(value = "years") String years){
-        String[] splitedYears = years.split(",");
-        int [] integerYears = new int[splitedYears.length];
-        int i=0;
-        try {
-            for (String year : splitedYears) {
-                integerYears[i++] = Integer.parseInt(year);
-            }
-        }
-        catch (NumberFormatException e){
-            e.printStackTrace();
-        }
-        return statisticService.getTheMostCreditAge(integerYears);
+    public Map<String, List> getStatisticOfClientAgesByBank(@RequestParam("bankName") String bankName){
+        return statisticService.getStatisticOfClientAgesByBank(bankName);
     }
 
     /**
@@ -81,11 +70,11 @@ public class StatisticController {
     public Map<String, List> getStatisticByBankAndYears(@RequestParam("bankName") String bankName,
                                                         @RequestParam(value = "years", required = false)String years){
         if(years != null && !years.equals("")) {
-            String[] splitedYears = years.split(",");
-            Integer[] integerYears = new Integer[splitedYears.length];
+            String[] splittedYears = years.split(",");
+            Integer[] integerYears = new Integer[splittedYears.length];
             int i = 0;
             try {
-                for (String year : splitedYears) {
+                for (String year : splittedYears) {
                     integerYears[i++] = Integer.parseInt(year);
                 }
             } catch (NumberFormatException e) {
@@ -96,6 +85,7 @@ public class StatisticController {
             return statisticService.getStatisticByBankAndYears(bankName);
         }
     }
+
 
     @RequestMapping(value = "/prognos/forBank", method = GET, params = {"bankName","prognosticationYear"})
     @ResponseBody
@@ -116,6 +106,25 @@ public class StatisticController {
                 statisticService.getStatisticByBankAndYears(
                         bankName, bankYears
                 ), bankName, year);
+    }
+
+    @RequestMapping(value = "/prognos/forClientAge", method = GET, params = {"bankName","prognosticationYear"})
+    @ResponseBody
+    public String getPrognosticationForClientAgesByBank(@RequestParam("bankName") String bankName,
+                                            @RequestParam("prognosticationYear") String prognosticationYear){
+        Integer year=0;
+        try {
+            year = Integer.parseInt(prognosticationYear);
+        } catch (NumberFormatException e){
+            e.printStackTrace();
+        }
+        List<Integer> res = statisticService.getCreditYearsOfBank(bankName);
+        Integer [] bankYears = new Integer[res.size()];
+        for(int i=0; i<res.size(); i++){
+            bankYears[i]=res.get(i);
+        }
+        return statisticService.calculatePrognosticationForClientAgesByBank(
+                statisticService.getStatisticOfClientAgesByBank(bankName), bankName, year);
     }
 
 }
