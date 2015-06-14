@@ -354,7 +354,12 @@ public class MainModel {
     }
 
     public void writeTableIntoFile(){
-        List<LoanInfo> loans = new ArrayList<>(foundInfo);
+        List<LoanInfo> loans = new ArrayList<>();
+        if(foundInfo!=null && foundInfo.size()!=0){
+            loans.addAll(foundInfo);
+        }
+        else
+            loans.addAll(getAllRecords());
         try {
             ExcelWriter.writeExcel(loans);
         } catch (Exception e) {
@@ -379,7 +384,6 @@ public class MainModel {
         primaryStage.setOnCloseRequest(event -> primaryStage.close());
         primaryStage.setResizable(false);
         primaryStage.showAndWait();
-
     }
 
     public Map<String, List> getStatisticForBank(String bankName) {

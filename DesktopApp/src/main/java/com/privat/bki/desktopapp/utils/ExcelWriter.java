@@ -22,7 +22,7 @@ public class ExcelWriter {
             File file = new File("Loans.csv");
             writer = new BufferedWriter(new FileWriter(file));
             for (LoanInfo loan : loans) {
-                String text = loan.toString() + "\n";
+                String text = formatLoanToString(loan);
                 writer.write(text);
             }
         } catch (Exception ex) {
@@ -31,5 +31,28 @@ public class ExcelWriter {
             writer.flush();
             writer.close();
         }
+    }
+
+    private static String formatLoanToString(LoanInfo loan){
+        String formattedLoan = "";
+        formattedLoan = formattedLoan.concat(loan.getId()+",");
+        formattedLoan = formattedLoan.concat(loan.getPerson().getName()+",");
+        formattedLoan = formattedLoan.concat(loan.getPerson().getSurname()+",");
+        formattedLoan = formattedLoan.concat(loan.getPerson().getPatronymic()+",");
+        formattedLoan = formattedLoan.concat(loan.getPerson().getBirthday()+",");
+        formattedLoan = formattedLoan.concat(loan.getPerson().getInn()+",");
+        formattedLoan = formattedLoan.concat(loan.getPerson().getGender()+",");
+        formattedLoan = formattedLoan.concat(loan.getPerson().getPassSerial()+",");
+        formattedLoan = formattedLoan.concat(loan.getPerson().getPassNumber()+",");
+        formattedLoan = formattedLoan.concat(loan.getBalance()+",");
+        formattedLoan = formattedLoan.concat(loan.getInitAmount()+",");
+        formattedLoan = formattedLoan.concat(loan.getInitDate()+",");
+        formattedLoan = formattedLoan.concat(loan.getFinishDate()+",");
+        formattedLoan = formattedLoan.concat(loan.getArrears()+",");
+        formattedLoan = formattedLoan.concat(loan.getBank().getName()+",");
+        formattedLoan = formattedLoan.concat(loan.getBank().getCode()+",");
+        formattedLoan = formattedLoan.concat(loan.getCurrency().getName()+",");
+        formattedLoan = formattedLoan.concat(loan.getCurrency().getCode()+"\n");
+        return formattedLoan;
     }
 }

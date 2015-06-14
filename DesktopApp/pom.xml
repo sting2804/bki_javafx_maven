@@ -21,7 +21,7 @@
 
 
     <build>
-        <defaultGoal>clean install exec:java -Dexec.mainClass=${mainClass}</defaultGoal>
+        <defaultGoal>clean package install exec:java -Dexec.mainClass=${mainClass}</defaultGoal>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -57,9 +57,15 @@
                 <version>2.5</version>
                 <configuration>
                     <archive>
+                        <manifestEntries>
+                            <JavaFX-Version>{javafx.version}+</JavaFX-Version>
+                            <Main-Class>com.privat.bki.desktopapp.MainApp</Main-Class>
+                            <implementation-version>1.0</implementation-version>
+                            <JavaFX-Application-Class>com.privat.bki.desktopapp.MainApp</JavaFX-Application-Class>
+                        </manifestEntries>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>${mainClass}</mainClass>
+                            <mainClass>com.privat.bki.desktopapp.MainApp</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

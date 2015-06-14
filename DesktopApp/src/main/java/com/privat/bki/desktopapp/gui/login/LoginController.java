@@ -47,8 +47,10 @@ public class LoginController implements Initializable {
         if (username != null && !username.equals("") &&
                 password != null && !password.equals("")) {
             //isAuthenticated = mainModel.authenticateUser(username, password);
-            isAuthenticated = true;
-            if (isAuthenticated) {
+            if((!username.equals("user") || !username.equals("admin"))
+                    && !password.equals("••••••"))
+                showErrorAuthenticationMessage();
+            else {
                 Stage stage = (Stage) usernameTextField.getScene().getWindow();
                 stage.close();
             }

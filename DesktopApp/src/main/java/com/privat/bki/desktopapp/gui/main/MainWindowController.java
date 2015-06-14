@@ -16,6 +16,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.CheckBoxTableCell;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
@@ -110,6 +111,7 @@ public class MainWindowController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        tableView.setEditable(true);
         setPropertyValueFactory();
     }
 
@@ -130,9 +132,9 @@ public class MainWindowController implements Initializable {
         SqlDateConverter converter = new SqlDateConverter();
         fioColumn.setSortType(TableColumn.SortType.ASCENDING);
         fioColumn.setCellValueFactory(new PropertyValueFactory<>("person"));
-        fioColumn.setCellFactory(param -> new TableCell<LoanInfo, Person>() {
+        fioColumn.setCellFactory(param -> new TextFieldTableCell<LoanInfo, Person>() {
             @Override
-            protected void updateItem(Person item, boolean empty) {
+            public void updateItem(Person item, boolean empty) {
                 setGraphic(null);
                 if (item != null) {
                     String text = item.getSurname().concat(" ").concat(item.getName());
@@ -149,7 +151,7 @@ public class MainWindowController implements Initializable {
                 setGraphic(null);
                 if (item != null) {
                     SimpleStringProperty property = new SimpleStringProperty();
-                    DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd");
+                    DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
                     property.setValue(dateFormat.format(converter.to(item.getBirthday())));
                     Label bdLabel = new Label(property.get());
                     setGraphic(bdLabel);
@@ -182,13 +184,13 @@ public class MainWindowController implements Initializable {
         initAmountColumn.setCellValueFactory(new PropertyValueFactory<>("initAmount"));
         initDateColumn.setCellValueFactory(item -> {
             ObjectProperty property = new SimpleObjectProperty();
-            DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd");
+            DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
             property.setValue(dateFormat.format(converter.to(item.getValue().getInitDate())));
             return property;
         });
         finishDateColumn.setCellValueFactory(item -> {
             ObjectProperty property = new SimpleObjectProperty();
-            DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd");
+            DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
             try {
                 property.setValue(dateFormat.format(converter.to(item.getValue().getFinishDate())));
             } catch (Exception ignored) {
@@ -304,6 +306,7 @@ public class MainWindowController implements Initializable {
         refreshTable(tableView);
         List<LoanInfo> tmpList = mainModel.getAllRecords();
         if (tmpList != null) infoList.addAll(tmpList);
+        mainModel.setFoundInfo(null);
     }
 
     public void saveAsXls(ActionEvent actionEvent) {

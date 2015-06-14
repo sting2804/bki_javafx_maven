@@ -110,8 +110,8 @@ public class ChangeInfoWindowController implements Initializable {
             finishDate = finishdateDatePicker.getValue();
         } catch (NullPointerException e){
             finishDate = null;
-
         }
+
         String bankName = bankNameComboBox.getValue();
 
         String genderValue = genderComboBox.getValue();
@@ -120,10 +120,17 @@ public class ChangeInfoWindowController implements Initializable {
         Boolean arrears = arrearsCheckBox.isSelected();
         Bank bank;
         Currency currency;
-        if (fio[0].equals("") || passport[0].equals("") || inn.equals("") || birthday == null ||
+        if (fio[0].equals("") || fio.length<2 || passport[0].equals("") || passport.length<2 ||
+                inn.equals("") || birthday == null ||
                 initAmount == null || balance == null || currencyCode.equals("") ||
-                initDate == null || bankName.equals("") || genderValue.equals("")) {
+                initDate == null || finishDate == null|| bankName.equals("") || genderValue.equals("")) {
             alert.setContentText("Заполните все поля");
+            alert.showAndWait();
+        } else if(finishDate.compareTo(initDate)<=0){
+            alert.setContentText("Дата окончания кредитирования должна быть больше даты начала кредитирования");
+            alert.showAndWait();
+        } else if(initAmount.compareTo(balance)<=0){
+            alert.setContentText("Баланс по кредиту не может быть больше суммы кредита");
             alert.showAndWait();
         } else {
             if (!bankMap.containsValue(bankName)) {

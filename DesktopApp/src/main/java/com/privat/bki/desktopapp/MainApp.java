@@ -10,7 +10,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class MainApp extends Application {
 
-    private static final ApplicationContext context = new ClassPathXmlApplicationContext("/spring/spring-config.xml");
+    private static final ApplicationContext context = new ClassPathXmlApplicationContext("classpath*:**/spring/spring-config.xml");
 
     private MainModel mainModel;
     @Override
@@ -22,7 +22,7 @@ public class MainApp extends Application {
     }
 
     public static void main(String[] args) {
-        String logPropertyPath = "/Users/sting/GitHub/bki_javafx_maven/demoMavenIntellij/src/main/resources/log4j.xml";
+        String logPropertyPath = "classpath*:**/log4j.xml";
         DOMConfigurator.configureAndWatch(logPropertyPath);
         launch(args);
     }
